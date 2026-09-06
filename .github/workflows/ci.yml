@@ -1,0 +1,14 @@
+name: offline-reproduction
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install PDF and LaTeX tools
+        run: sudo apt-get update && sudo apt-get install -y latexmk poppler-utils texlive-latex-extra texlive-fonts-recommended
+      - run: pip install -r requirements.lock.txt
+      - run: make reproduce-offline
+      - run: make verify

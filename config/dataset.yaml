@@ -1,0 +1,8 @@
+benchmark_scope: frozen_wvs7_matched_persona_pilot
+joint_evs_wvs_v5_used: false
+joint_evs_wvs_v5_target_doi_gesis: 10.4232/1.14320
+joint_evs_wvs_v5_target_doi_wvsa: 10.14281/18241.26
+worldvaluesbench_commit: 635db7455e2c656978929210eba984bc09ddd659
+oxford_wvs_sft_commit: 026d11792ba88decb0b1198116a57745a8132433
+ethosgpt_commit: d9d15ab588a8159f0913de5e656d8f9d76bef05a
+seed: 20260828

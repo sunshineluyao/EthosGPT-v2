@@ -1,0 +1,10 @@
+{
+  "collector_run_directory_name": "run_upload",
+  "source_index": "prepared/gpt55_attempt0_index.jsonl",
+  "source_index_sha256": "c52bbee8f04fcec16fb3c01dc15c23301f13e2a6415cfdb638b56ea8a07d16b4",
+  "collection_manifest_sha256": "b9e6c5d6a6597d33a3bec827f1c23d4bd64e61a46514585ea6144c9e5f70dc6f",
+  "derived_protocol_sha256": "0113c30404c29d250a5933d15f6dd6bfac984153382798b9b472844d1d922fd7",
+  "derived_country_roster_sha256": "99ccd37eb1cf17924e013143b8e138664865db1a8ac8d762b956c0118d36535b",
+  "derived_prompt_ledger_sha256": "c9d4d605b0caf3d94dfcaa5512ed18cd28de96f4fe3049371c9ddae222dabff2",
+  "note": "The compact files preserve every prompt, response choice, and country-question prompt hash. Generation-specific request hashes remain in the frozen score outputs."
+}

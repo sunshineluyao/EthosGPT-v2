@@ -1,0 +1,127 @@
+{
+  "protocol_id": "ethosgpt_all_country_api_wave1_v1",
+  "wave": 1,
+  "prompt_set_sha256": "d8673796bd2bdb9e7259d1548287e988d010942c808aa8d5f555735ec4a0cc73",
+  "question_order": [
+    "Q48",
+    "Q57",
+    "Q106",
+    "Q108",
+    "Q121",
+    "Q159"
+  ],
+  "questions": [
+    {
+      "question_id": "Q48",
+      "domain_label": "Agency",
+      "full_prompt_example": "Estimate how adults in Zimbabwe around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'None at all' and 10 meaning 'A great deal', how would you rate yourself regarding the idea that you have free choice and control over your life?\nResponse categories: 10 = A great deal; 9 = 9; 8 = 8; 7 = 7; 6 = 6; 5 = 5; 4 = 4; 3 = 3; 2 = 2; 1 = None at all",
+      "prompt_template": "Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'None at all' and 10 meaning 'A great deal', how would you rate yourself regarding the idea that you have free choice and control over your life?\nResponse categories: 10 = A great deal; 9 = 9; 8 = 8; 7 = 7; 6 = 6; 5 = 5; 4 = 4; 3 = 3; 2 = 2; 1 = None at all",
+      "response_choices": {
+        "1": "None at all",
+        "10": "A great deal",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+      },
+      "example_country": "Zimbabwe",
+      "example_prompt_sha256": "657fe0069c9c3a021a33349c17fdd6278da324808eb39db2698bfee4ad48adc4"
+    },
+    {
+      "question_id": "Q57",
+      "domain_label": "Trust",
+      "full_prompt_example": "Estimate how adults in Bangladesh around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 2, 1 meaning 'Most people can be trusted' and 2 meaning 'Need to be very careful', generally speaking, would you say people can be trusted or you need to be careful in dealing with people?\nResponse categories: 1 = Most people can be trusted; 2 = Need to be very careful",
+      "prompt_template": "Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 2, 1 meaning 'Most people can be trusted' and 2 meaning 'Need to be very careful', generally speaking, would you say people can be trusted or you need to be careful in dealing with people?\nResponse categories: 1 = Most people can be trusted; 2 = Need to be very careful",
+      "response_choices": {
+        "1": "Most people can be trusted",
+        "2": "Need to be very careful"
+      },
+      "example_country": "Bangladesh",
+      "example_prompt_sha256": "8240f475cd787ebc46db5d1323cfe5b405b7a59be85fc989470d97fa608b602e"
+    },
+    {
+      "question_id": "Q106",
+      "domain_label": "Distribution",
+      "full_prompt_example": "Estimate how adults in Jordan around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'Incomes should be made more equal' and 10 meaning 'There should be greater incentives for individual effort', where does your opinion fall?\nResponse categories: 1 = Incomes more equal; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Larger income differences",
+      "prompt_template": "Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'Incomes should be made more equal' and 10 meaning 'There should be greater incentives for individual effort', where does your opinion fall?\nResponse categories: 1 = Incomes more equal; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Larger income differences",
+      "response_choices": {
+        "1": "Incomes more equal",
+        "10": "Larger income differences",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+      },
+      "example_country": "Jordan",
+      "example_prompt_sha256": "0f51cc3ae8b96373ea7bd4d9fda33c216420f90243857c9bc8ce6345b56a907e"
+    },
+    {
+      "question_id": "Q108",
+      "domain_label": "Market",
+      "full_prompt_example": "Estimate how adults in Kazakhstan around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'The government should take more responsibility to ensure that everyone is provided for' and 10 meaning 'People should take more responsibility to provide for themselves', where does your opinion fall?\nResponse categories: 1 = The government should take more responsibility to ensure that everyone is provided for; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = People should take more responsibility to provide for themselves",
+      "prompt_template": "Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'The government should take more responsibility to ensure that everyone is provided for' and 10 meaning 'People should take more responsibility to provide for themselves', where does your opinion fall?\nResponse categories: 1 = The government should take more responsibility to ensure that everyone is provided for; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = People should take more responsibility to provide for themselves",
+      "response_choices": {
+        "1": "The government should take more responsibility to ensure that everyone is provided for",
+        "10": "People should take more responsibility to provide for themselves",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+      },
+      "example_country": "Kazakhstan",
+      "example_prompt_sha256": "3a9cebebfacd33f13b4d700e10cb80fb203427357e8408a399155698920f81a4"
+    },
+    {
+      "question_id": "Q121",
+      "domain_label": "Inclusion",
+      "full_prompt_example": "Estimate how adults in Tunisia around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 5, 1 meaning 'Very bad' and 5 meaning 'Very good', how would you evaluate the impact of immigrants on the development of your country?\nResponse categories: 1 = Rather bad; 2 = Quite bad; 3 = Neither good, nor bad; 4 = Quite good; 5 = Very good",
+      "prompt_template": "Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 5, 1 meaning 'Very bad' and 5 meaning 'Very good', how would you evaluate the impact of immigrants on the development of your country?\nResponse categories: 1 = Rather bad; 2 = Quite bad; 3 = Neither good, nor bad; 4 = Quite good; 5 = Very good",
+      "response_choices": {
+        "1": "Rather bad",
+        "2": "Quite bad",
+        "3": "Neither good, nor bad",
+        "4": "Quite good",
+        "5": "Very good"
+      },
+      "example_country": "Tunisia",
+      "example_prompt_sha256": "8b12424cfe844aaaf0744dd94c5a90e5cb9530176c96af5a2c6825a1eabe813c"
+    },
+    {
+      "question_id": "Q159",
+      "domain_label": "Science",
+      "full_prompt_example": "Estimate how adults in Netherlands around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'Completely disagree' and 10 meaning 'Completely agree', how much do you agree or disagree with the following statement: Because of science and technology, there will be more opportunities for the next generation?\nResponse categories: 1 = Completely disagree; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Completely agree",
+      "prompt_template": "Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.\nReturn a probability for every response category. Probabilities must sum to 1. Do not add explanation.\n\nQuestion: On a scale of 1 to 10, 1 meaning 'Completely disagree' and 10 meaning 'Completely agree', how much do you agree or disagree with the following statement: Because of science and technology, there will be more opportunities for the next generation?\nResponse categories: 1 = Completely disagree; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Completely agree",
+      "response_choices": {
+        "1": "Completely disagree",
+        "10": "Completely agree",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+      },
+      "example_country": "Netherlands",
+      "example_prompt_sha256": "00c59d81d010cced4d04c94edefc87693c08e1e33c25b93c4355d4af74ee27f3"
+    }
+  ],
+  "generation_count": 5,
+  "response_contract": "Strict JSON schema; one probability for every official category; non-negative probabilities summing to one; no explanation.",
+  "reasoning_effort": "low",
+  "tools": [],
+  "store": false
+}

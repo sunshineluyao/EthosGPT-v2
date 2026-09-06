@@ -1,0 +1,38 @@
+\section{What changed between the two releases?}
+
+\input{tabs/table1_main}
+
+GPT-5.6 has lower global TVD error ($\Delta=-0.0080$, 95\% BCa CI
+$[-0.0107,-0.0050]$, Holm $p<0.001$; Table~\ref{tab:main}). The ordered W1 change is
+smaller and uncertain ($-0.0020$, CI $[-0.0040,0.0003]$), and CRG is nearly unchanged.
+VDR moves toward the human spread target ($0.587\rightarrow0.609$) while CSR falls
+($0.321\rightarrow0.288$); neither target-loss contrast is conclusive. Thus lower
+category-mass error does not imply uniformly better country representation.
+
+Within one 12-outcome family, responsibility improves under W1 ($-0.0082$,
+simultaneous CI $[-0.0156,-0.0009]$, max-$T$ $p=0.017$) and TVD ($-0.0207$,
+$[-0.0301,-0.0113]$, $p<0.001$). Income distribution improves under TVD
+($-0.0266$, $[-0.0389,-0.0143]$, $p<0.001$), whereas its W1 result remains borderline
+after joint correction ($p=0.059$). No other item passes this familywise test; the
+disclosed Q121 conflict is not a corrected worsening.
+
+A five-run mean removes only 1.18\% of GPT-5.5 and 1.31\% of GPT-5.6 single-run squared
+probability error (Figure~\ref{fig:results}b). The GPT-5.6 five-run residual is lower by
+$0.0063$ (95\% CI $[-0.0083,-0.0045]$), while run-varying components do not differ
+reliably. Spatial-error estimates over $k=4,6,8$ graphs and spatial-HAC intervals over
+1,000--5,000 km keep the global TVD interval below zero. TVD changes are not spatially
+clustered after diagnostic correction; CRG retains a local Geary signal. These checks
+support the average contrast, not diffusion or spillover.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figs/fig2_multiview_results.pdf}
+  \caption{Four views of the update. \textbf{a}, country TVD changes and threshold-defined
+  examples. \textbf{b}, exact error remaining after averaging subsets of five outputs.
+  \textbf{c}, simultaneous 95\% W1/TVD intervals; circles denote W1, squares TVD, and
+  fill max-$T$ significance. \textbf{d}, India's model-minus-survey profile on a common
+  $[-0.20,+0.20]$ scale; the outcome-free human-profile medoid has CRG
+  $0.756\rightarrow0.732$. The zero ring is the survey baseline, not a normative target.
+  Appendix Figure~\ref{fig:country-profiles-appendix} shows the three CRG-class medoids.}
+  \label{fig:results}
+\end{figure}

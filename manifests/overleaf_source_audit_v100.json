@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "root": "/workspace/scratch/74cbb174eecb/source/work/github/paper",
+  "main": "main.tex",
+  "counts": {
+    "tex_files": 28,
+    "graphics": 8,
+    "bibliographies": 1,
+    "errors": 0,
+    "warnings": 6
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "build_artifact",
+      "message": "Build artifact should be excluded from release ZIP",
+      "path": "main.blg"
+    },
+    {
+      "severity": "warning",
+      "code": "build_artifact",
+      "message": "Build artifact should be excluded from release ZIP",
+      "path": "main.log"
+    },
+    {
+      "severity": "warning",
+      "code": "build_artifact",
+      "message": "Build artifact should be excluded from release ZIP",
+      "path": "main.fdb_latexmk"
+    },
+    {
+      "severity": "warning",
+      "code": "build_artifact",
+      "message": "Build artifact should be excluded from release ZIP",
+      "path": "main.out"
+    },
+    {
+      "severity": "warning",
+      "code": "build_artifact",
+      "message": "Build artifact should be excluded from release ZIP",
+      "path": "main.aux"
+    },
+    {
+      "severity": "warning",
+      "code": "build_artifact",
+      "message": "Build artifact should be excluded from release ZIP",
+      "path": "main.fls"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+mode: archived_matched_persona
+population_distribution_mode_completed: false
+work_demo_population_distribution_mode_completed: true
+work_demo_protocol: experiments/gpt55_gpt56_demo/protocol.yaml
+prompt_source: WorldValuesBench archived outputs
+target_question_recovery: exact_suffix_pattern_contract

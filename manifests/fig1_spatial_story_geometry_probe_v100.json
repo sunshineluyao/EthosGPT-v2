@@ -1,0 +1,50 @@
+{
+  "pdf": "paper/figs/fig1_spatial_story.pdf",
+  "pages": [
+    1
+  ],
+  "thresholds_pt": {
+    "min_font_size": 7.0,
+    "min_text_gap": 0.0,
+    "text_padding": 0.0,
+    "caption_gap": 4.0
+  },
+  "passed": false,
+  "issue_count": 2,
+  "issues": [
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '11%'",
+      "bbox": [
+        43.02,
+        68.696,
+        55.851,
+        75.696
+      ],
+      "other_bbox": [
+        32.058,
+        45.252,
+        95.188,
+        72.905
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '75%'",
+      "bbox": [
+        79.692,
+        43.556,
+        92.523,
+        50.556
+      ],
+      "other_bbox": [
+        32.058,
+        45.252,
+        95.188,
+        72.905
+      ]
+    }
+  ]
+}

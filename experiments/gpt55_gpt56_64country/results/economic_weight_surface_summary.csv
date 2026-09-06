@@ -1,0 +1,2 @@
+grid_step,grid_points,fraction_point_estimate_favors_gpt56,fraction_ci_favors_gpt56,fraction_ci_favors_gpt55,fraction_uncertain,interpretation
+0.02,1326,0.9592760180995475,0.8876319758672699,0.0,0.11236802413273002,Exploratory theory-indexed sensitivity; not realized welfare or policy impact

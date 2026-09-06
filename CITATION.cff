@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "EthosGPT: Whose Values Guide Technological Change? Cultural Representation, Language-Model Updates, and Creative Destruction"
+message: "Please cite the accompanying anonymous manuscript and the upstream datasets."
+type: software
+version: 1.0.0
+date-released: 2026-09-05
+license: MIT
+authors:
+  - name: Anonymous Authors

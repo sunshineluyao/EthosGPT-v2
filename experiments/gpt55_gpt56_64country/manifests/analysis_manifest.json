@@ -1,0 +1,62 @@
+{
+  "protocol_id": "ethosgpt_all_country_api_wave1_v1",
+  "prompt_set_sha256": "d8673796bd2bdb9e7259d1548287e988d010942c808aa8d5f555735ec4a0cc73",
+  "analysis_seed": 20260902,
+  "models": {
+    "GPT-5.5": "gpt-5.5-2026-04-23",
+    "GPT-5.6 Sol": "gpt-5.6-sol"
+  },
+  "records": {
+    "GPT-5.5": 1920,
+    "GPT-5.6 Sol": 1920
+  },
+  "countries": 64,
+  "questions": [
+    "Q48",
+    "Q57",
+    "Q106",
+    "Q108",
+    "Q121",
+    "Q159"
+  ],
+  "generations_per_country_question": 5,
+  "primary_analysis_unit": "country",
+  "country_bootstrap_draws": 20000,
+  "randomization_permutations": 19999,
+  "spatial_permutations": 9999,
+  "interval": "95% bias-corrected and accelerated country-cluster bootstrap",
+  "multiplicity": "Holm within the five global metrics and within each six-domain family; BH for primary spatial diagnostic family",
+  "spatial_weight_primary": "symmetric 4-nearest-neighbor graph from great-circle distances, row-standardized",
+  "spatial_weight_sensitivity": [
+    6,
+    8
+  ],
+  "temporal_boundary": "Two model versions do not identify a temporal panel; spatial tests are cross-sectional version-contrast diagnostics.",
+  "retry_summary": [
+    {
+      "model": "GPT-5.5",
+      "attempt": 0,
+      "records": 1913
+    },
+    {
+      "model": "GPT-5.5",
+      "attempt": 1,
+      "records": 7
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "attempt": 0,
+      "records": 1917
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "attempt": 1,
+      "records": 3
+    }
+  ],
+  "frozen_output_sha256": {
+    "GPT-5.5": "cb35dea83bdc08e50d8d79d2760acb3b79e130c5c22e69c80bd7c5568d8ce729",
+    "GPT-5.6 Sol": "3c94ddebb870ded526ac99780c845cd5788c333e5fd34444c1cd0a5cae4d6a28"
+  },
+  "human_sampling_boundary": "Country-item distributions are unweighted public derivative cells; resampling cannot recover unavailable survey weights or provenance."
+}

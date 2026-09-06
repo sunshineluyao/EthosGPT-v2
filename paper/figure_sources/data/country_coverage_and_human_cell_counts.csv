@@ -1,0 +1,65 @@
+country_code,country,cultural_region,Q48,Q57,Q106,Q108,Q121,Q159,six_anchor_complete
+50,Bangladesh,African-Islamic,13,18,31,31,27,38,True
+818,Egypt,African-Islamic,11,15,39,33,32,27,True
+231,Ethiopia,African-Islamic,14,13,28,45,18,25,True
+368,Iraq,African-Islamic,10,7,51,28,34,28,True
+400,Jordan,African-Islamic,18,16,42,29,36,23,True
+404,Kenya,African-Islamic,11,9,29,31,38,35,True
+422,Lebanon,African-Islamic,13,15,25,28,37,30,True
+434,Libya,African-Islamic,16,16,26,15,29,33,True
+462,Maldives,African-Islamic,15,8,14,20,21,29,True
+504,Morocco,African-Islamic,13,10,28,20,22,23,True
+566,Nigeria,African-Islamic,9,15,33,26,28,32,True
+586,Pakistan,African-Islamic,26,22,59,58,49,50,True
+788,Tunisia,African-Islamic,22,15,30,21,29,27,True
+792,Turkey,African-Islamic,26,26,45,61,70,66,True
+716,Zimbabwe,African-Islamic,16,4,37,37,26,27,True
+20,Andorra,Catholic Europe,12,13,21,16,36,22,True
+196,Cyprus,Catholic Europe,5,16,18,21,27,24,True
+156,China,Confucian,49,39,69,71,85,88,True
+344,Hong Kong SAR,Confucian,24,30,31,45,49,38,True
+392,Japan,Confucian,11,20,26,31,26,34,True
+446,Macau SAR,Confucian,8,18,22,21,20,19,True
+496,Mongolia,Confucian,21,19,40,38,42,40,True
+702,Singapore,Confucian,33,27,35,43,60,49,True
+410,South Korea,Confucian,10,16,20,33,33,28,True
+158,Taiwan ROC,Confucian,16,14,30,35,30,21,True
+704,Vietnam,Confucian,18,9,18,35,24,27,True
+36,Australia,English-Speaking,26,13,41,36,43,45,True
+124,Canada,English-Speaking,38,44,78,85,96,76,True
+826,Great Britain,English-Speaking,32,28,59,61,80,45,True
+554,New Zealand,English-Speaking,18,10,20,26,31,21,True
+909,Northern Ireland,English-Speaking,10,6,7,19,13,6,True
+840,United States,English-Speaking,34,31,59,57,79,52,True
+32,Argentina,Latin America,15,12,16,24,22,27,True
+68,Bolivia,Latin America,27,20,50,46,64,66,True
+76,Brazil,Latin America,30,21,47,51,42,53,True
+152,Chile,Latin America,12,13,17,18,20,22,True
+170,Colombia,Latin America,25,18,30,28,41,39,True
+218,Ecuador,Latin America,23,19,32,32,38,36,True
+320,Guatemala,Latin America,17,15,36,38,35,34,True
+484,Mexico,Latin America,23,18,42,35,51,40,True
+558,Nicaragua,Latin America,13,12,34,38,40,27,True
+604,Peru,Latin America,16,22,29,36,39,24,True
+608,Philippines,Latin America,13,17,22,19,29,22,True
+630,Puerto Rico,Latin America,15,9,24,34,26,31,True
+51,Armenia,Orthodox Europe,21,17,35,35,17,42,True
+300,Greece,Orthodox Europe,11,10,25,23,32,30,True
+642,Romania,Orthodox Europe,21,14,36,39,22,40,True
+643,Russia,Orthodox Europe,22,24,44,50,33,52,True
+688,Serbia,Orthodox Europe,12,9,22,21,27,27,True
+804,Ukraine,Orthodox Europe,16,13,26,29,31,20,True
+203,Czechia,Protestant Europe,15,15,16,25,20,30,True
+276,Germany,Protestant Europe,15,18,29,33,53,34,True
+528,Netherlands,Protestant Europe,13,32,42,35,45,38,True
+703,Slovakia,Protestant Europe,17,15,29,26,34,30,True
+356,India,West & South Asia,25,19,47,46,43,35,True
+360,Indonesia,West & South Asia,43,31,70,86,85,75,True
+364,Iran,West & South Asia,18,17,25,30,27,40,True
+398,Kazakhstan,West & South Asia,15,10,23,21,34,33,True
+417,Kyrgyzstan,West & South Asia,11,12,32,30,28,28,True
+458,Malaysia,West & South Asia,14,14,21,29,40,26,True
+104,Myanmar,West & South Asia,10,10,21,37,29,30,True
+762,Tajikistan,West & South Asia,14,17,24,22,25,32,True
+764,Thailand,West & South Asia,14,13,32,31,39,38,True
+860,Uzbekistan,West & South Asia,13,13,25,28,22,50,True

@@ -1,0 +1,3 @@
+source: EthosGPT data/indices.csv at pinned commit
+country_code_rule: floor(D_INTERVIEW / 1000000)
+region_role: external_description_not_ranking

@@ -1,0 +1,54 @@
+\section{Spatial-econometric diagnostics}
+\label{app:spatial}
+
+\subsection{Question and weight matrices}
+The spatial analysis asks whether countries with similar version changes are geographic
+neighbors and whether the mean contrasts survive spatial dependence. It does not estimate
+cultural diffusion, policy spillovers, or a temporal model. Coordinates are pinned to
+the versioned roster and Natural Earth \citep{naturalearth}. The primary matrix is a
+symmetric four-nearest-neighbor graph based on great-circle distance and row-standardized
+after symmetrization; $k=6,8$ are robustness checks.
+
+\subsection{Global diagnostics}
+Moran's $I$ evaluates spatial covariance \citep{moran1950notes}; Geary's $C$ emphasizes
+squared local differences \citep{geary1954contiguity}. Each uses 9,999 random
+permutations and a plus-one two-sided Monte Carlo $p$-value. Benjamini--Hochberg
+adjustment spans 27 primary $k=4$ outcomes: nine outcomes for GPT-5.5, GPT-5.6 Sol, and
+their contrast. The CRG version contrast gives Moran $I=0.225$ ($q=0.059$) and Geary
+$C=0.752$ ($q=0.032$); only Geary's local-difference signal crosses the corrected 5\%
+threshold. The global TVD contrast is not significantly clustered after this correction.
+
+\subsection{Spatial-error and spatial-HAC sensitivity}
+For a country-level contrast $y$, the maximum-likelihood spatial-error model is
+\[
+y=\alpha\mathbf 1+u,\qquad u=\lambda Wu+\varepsilon,
+\]
+where $\alpha$ is a spatially adjusted mean \citep{anselin1988spatial}. We fit the model
+to global and item W1/TVD contrasts and global CRG. We also estimate intercept-only
+spatial-HAC standard errors with Bartlett kernels at 1,000, 2,000, 3,000, and 5,000 km
+\citep{conley1999gmm}. Holm correction spans all 15 outcomes within each graph or cutoff;
+within-metric corrections are also released.
+
+The global TVD mean is $-0.00809$, $-0.00805$, and $-0.00808$ for $k=4,6,8$, and every
+spatial-error 95\% interval remains below zero after adjustment. All four spatial-HAC
+intervals do likewise. Global W1 and CRG means remain uncertain. Robustness to spatial
+dependence is evidence about the mean contrast, not evidence of diffusion or causation.
+
+\input{tabs/appendix_spatial_tables}
+
+Figure~\ref{fig:country-maps-appendix} reports both country-level metrics at full width.
+Its descriptive role remains distinct from the confirmatory mean TVD contrast and the
+dependence adjustments reported here.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{figs/figS4_country_maps.pdf}
+  \caption{Country-level GPT-5.6-minus-GPT-5.5 changes in \textbf{a} TVD and \textbf{b}
+  CRG. For each metric, lower, near-zero, and higher classes use
+  $\tau=0.1\max|\Delta|$; external arrows locate three illustrative countries without
+  obscuring the maps. Marker area tracks absolute magnitude. Countries are survey
+  comparison units, and the patterns imply neither cultural homogeneity nor spatial
+  diffusion.}
+  \label{fig:country-maps-appendix}
+\end{figure}
+\FloatBarrier

@@ -1,0 +1,48 @@
+\section{Tracing survey disagreement across scales}
+
+From a versioned public derivative of WVS 2017--2022 responses
+\citep{oxfordllmswvs,haerpfer2022wvs}, 64 countries have usable, unweighted cells for six
+pre-specified anchors: agency (Q48), trust (Q57), income distribution (Q106), social
+responsibility (Q108), immigration (Q121), and science (Q159). The median cell has 30.5
+records (range 4--96), so this derivative, rather than an official population statistic,
+is the target. On 2 September 2026, the same English prompt elicited five distributions
+per country and item from \texttt{gpt-5.5-2026-04-23} and \texttt{gpt-5.6-sol}, yielding
+3,840 valid records. Ten malformed attempts were rerun and retained. Archived responses,
+metadata, and hashes support reproduction if the service changes
+\citep{openai2026models,openai2026changelog}. Five-anchor exclusion and relabeling
+sensitivities address a disclosed Q121 stem/label conflict.
+
+Every measure begins with the same survey share $h_{cjr}$ and model mean probability
+$\bar p_{mcjr}$ for category $r$, country $c$, and item $j$. At the item level,
+$\mathrm{W1}_{mcj}=(R_j-1)^{-1}\sum_{r<R_j}|F^m_{mcj}(r)-F^H_{cj}(r)|$ asks how far
+mass moves along the ordered response scale, whereas
+$\mathrm{TVD}_{mcj}=\tfrac12\sum_r|\bar p_{mcjr}-h_{cjr}|$ asks how much mass is
+reassigned regardless of distance.
+
+Applying the same direction coding to both distributions yields model and survey
+six-item profiles $A_{mc}$ and $H_c$. We define country-level profile error as
+$\CRG_{mc}=[\tfrac16\sum_{k=1}^6((A_{mck}-H_{ck})/\sigma_k)^2]^{1/2}$, where
+$\sigma_k$ is the across-country survey SD. Across all 2,016 country pairs,
+$\VDR_m=\overline d^A_m/\overline d^H$ asks whether mean survey separation is compressed
+or expanded, while $\CSR_m=\rho_S(\mathbf d^A_m,\mathbf d^H)$ asks whether the ordering
+of near and far pairs is preserved. W1 and TVD thus compare item distributions, CRG
+compares country profiles, and VDR/CSR compare relations among countries. We do not
+combine them: an update can improve one scale without improving another. W1, TVD, and
+CRG target 0; VDR and CSR target 1, so the five contrasts are W1, TVD, CRG,
+$|\VDR-1|$, and $1-\CSR$, with negative change favoring GPT-5.6. Appendix~\ref{app:tutorial}
+derives each measure from survey shares with worked arithmetic.
+
+Countries are the independent units. After averaging generations within each cell, we
+use 20,000 country-cluster draws for BCa intervals, 19,999 paired sign flips, and Holm
+correction across the five global metrics. A shared-sign max-$T$ test and simultaneous
+bootstrap interval cover all 12 item-level W1/TVD contrasts. Human-cell and generation
+resampling, leave-region-out estimates, and spatial-error/HAC models provide sensitivity
+checks \citep{moran1950notes,geary1954contiguity,anselin1988spatial,conley1999gmm}.
+
+For each country--item and subset of $K=1,\ldots,5$ outputs, squared error satisfies
+$E_K=E_5+(5-K)V/(4K)$; $V$ is run-varying error and $E_5$ the five-run residual. Because
+the generations do not interact, this is a pre-interaction baseline. For economic
+interpretation, squared-TVD loss is grouped into opportunity and participation (Q48,Q159),
+distribution and adjustment (Q106,Q108), and coordination and legitimacy (Q57,Q121).
+Paired bootstrap intervals cover every nonnegative 0.02-grid weight as one declared
+sensitivity analysis.

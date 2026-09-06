@@ -1,0 +1,15 @@
+<mxfile host="app.diagrams.net" modified="2026-09-05T00:00:00.000Z" agent="EthosGPT-v1.0" version="24.7.17">
+  <diagram id="ethosgpt-methods" name="How the comparison is built">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" page="1" pageWidth="1200" pageHeight="500"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
+      <mxCell id="title" value="How the comparison is built" style="text;html=1;fontFamily=Times New Roman;fontSize=24;fontStyle=1;fontColor=#18324A;align=left;" vertex="1" parent="1"><mxGeometry x="35" y="25" width="500" height="40" as="geometry"/></mxCell>
+      <mxCell id="survey" value="Survey patterns&#xa;64 countries · 6 WVS items" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B5CCC;fillColor=#EAF0FF;fontFamily=Times New Roman;fontSize=16;fontColor=#18324A;spacing=14;" vertex="1" parent="1"><mxGeometry x="35" y="95" width="245" height="220" as="geometry"/></mxCell>
+      <mxCell id="models" value="Paired model outputs&#xa;2 versions · 5 responses per cell" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B5CCC;fillColor=#FFFFFF;fontFamily=Times New Roman;fontSize=16;fontColor=#18324A;spacing=14;" vertex="1" parent="1"><mxGeometry x="325" y="95" width="245" height="220" as="geometry"/></mxCell>
+      <mxCell id="measures" value="Three measurements&#xa;fidelity · geometry · run persistence" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#078C82;fillColor=#E5F4F1;fontFamily=Times New Roman;fontSize=16;fontColor=#18324A;spacing=14;" vertex="1" parent="1"><mxGeometry x="615" y="95" width="245" height="220" as="geometry"/></mxCell>
+      <mxCell id="economics" value="Economic reading&#xa;opportunity · adjustment · coordination" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#D88A24;dashed=1;fillColor=#FFF3E8;fontFamily=Times New Roman;fontSize=16;fontColor=#18324A;spacing=14;" vertex="1" parent="1"><mxGeometry x="905" y="95" width="245" height="220" as="geometry"/></mxCell>
+      <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#6B7786;strokeWidth=2;" edge="1" parent="1" source="survey" target="models"><mxGeometry relative="1" as="geometry"/></mxCell>
+      <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#6B7786;strokeWidth=2;" edge="1" parent="1" source="models" target="measures"><mxGeometry relative="1" as="geometry"/></mxCell>
+      <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#D88A24;strokeWidth=2;dashed=1;" edge="1" parent="1" source="measures" target="economics"><mxGeometry relative="1" as="geometry"/></mxCell>
+      <mxCell id="note" value="Solid: observed and computed    ·    Dashed: theory-guided interpretation" style="text;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=#4E5B68;align=center;" vertex="1" parent="1"><mxGeometry x="220" y="350" width="760" height="35" as="geometry"/></mxCell>
+    </root></mxGraphModel>
+  </diagram>
+</mxfile>

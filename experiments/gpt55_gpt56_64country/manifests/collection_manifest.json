@@ -1,0 +1,187 @@
+{
+  "api_key_written_to_disk": false,
+  "attempt_ledger": {
+    "path": "validated/attempt_ledger.jsonl",
+    "records": 3850,
+    "sha256": "55ab45070ad7f0194f5d734de4ade5cf43e6f264ab8709c6faaacae0fe1b4e59"
+  },
+  "canaries": {
+    "gpt55": {
+      "created_at": 1788364965,
+      "raw_sha256": "932831c0e0f0173809cc058db091beffabb2130cefcbd213a0e941086357f6c9",
+      "request_id": "req_79f9f13cf2514f2285ed5342ac8afb42",
+      "requested_model_id": "gpt-5.5-2026-04-23",
+      "response_id": "resp_05189202fcc58476016a9848a57cf087d2bf5dc7e3660e755a",
+      "returned_model_id": "gpt-5.5-2026-04-23",
+      "status": "valid",
+      "validated_probability_sum": 1.0,
+      "validation_error": null
+    },
+    "gpt56": {
+      "created_at": 1788364971,
+      "raw_sha256": "d7fd9426ad9610787c3187ff1481726e52d9f63931be376bd135437046379bcb",
+      "request_id": "req_789c13d81c2c4f1ba1db4ee37679e487",
+      "requested_model_id": "gpt-5.6-sol",
+      "response_id": "resp_02d35090441bdbfa016a9848ab05b087d28bb051303674084d",
+      "returned_model_id": "gpt-5.6-sol",
+      "status": "valid",
+      "validated_probability_sum": 1.0,
+      "validation_error": null
+    }
+  },
+  "claim_boundary": "This is a new API-snapshot extension of the eight-country ChatGPT Work pilot. It must not be described as a rerun of the Work surface. GPT-5.5 is pinned to a dated API snapshot; the official GPT-5.6 Sol model page currently exposes only the gpt-5.6-sol identifier, so request IDs, returned model identifiers, timestamps, and response hashes must be retained.",
+  "collection_surface": "OpenAI Responses API through Batch API",
+  "completed_at_utc": "2026-09-02T17:22:12Z",
+  "expected_paired_blocks": 1920,
+  "failed_records": {
+    "path": "validated/failed_records.jsonl",
+    "records": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "jobs": {
+    "gpt55:attempt0": {
+      "attempt": 0,
+      "batch_id": "batch_6a9848dfd8c08190b38a6040f60cc85f",
+      "batch_path": "prepared/gpt55_attempt0_batch.jsonl",
+      "batch_sha256": "178d729e1b937b7e51da1076366b7a46be56e5a236b988b432c33836c01b18f4",
+      "create_request_id": "req_d3e4eacd391645f19a2459cd1f93d707",
+      "error_file_id": null,
+      "index_path": "prepared/gpt55_attempt0_index.jsonl",
+      "input_file_id": "file-G4JHihpqQURFmaow8MusUg",
+      "model_tag": "gpt55",
+      "output_download_request_id": "req_5450d966e3ab4a58af36f45f8e33b302",
+      "output_file_id": "file-1MrvZ68TUL4xM8NwTc9QmX",
+      "output_local_path": "raw/gpt55_attempt0_output.jsonl",
+      "output_sha256": "e339568eb9c23af8f08c652d7c26084a2d1af9268e5e874944e422161913d4c3",
+      "remote_files_checked": true,
+      "request_count": 1920,
+      "request_counts": {
+        "completed": 1920,
+        "failed": 0,
+        "total": 1920
+      },
+      "retrieve_request_id": "req_9cf37b00aabf4557b105bbcbbeda711e",
+      "status": "completed",
+      "submitted_at_utc": "2026-09-02T16:03:44Z",
+      "upload_request_id": "req_43bb34949ea545b6bc123a76e4db500d"
+    },
+    "gpt55:attempt1": {
+      "attempt": 1,
+      "batch_id": "batch_6a9852d7405081908d8c18cf94057d13",
+      "batch_path": "prepared/gpt55_attempt1_batch.jsonl",
+      "batch_sha256": "aec81a212b76915def331af5c724b9df032abf73b27404a5bec9e634752549c8",
+      "create_request_id": "req_1d52c4c2a7174125a553ab4e714e0194",
+      "error_file_id": null,
+      "index_path": "prepared/gpt55_attempt1_index.jsonl",
+      "input_file_id": "file-Rzn6fL216eutkwNhhT6FGg",
+      "model_tag": "gpt55",
+      "output_download_request_id": "req_4c815b3093bc4e308b108bb1abb82930",
+      "output_file_id": "file-VL6beHAZx3PTEW9euQ16BQ",
+      "output_local_path": "raw/gpt55_attempt1_output.jsonl",
+      "output_sha256": "6207888ce725a9daf2188bd19b306560c538c886d1fe8b1f7bdbbdcc763f4f31",
+      "remote_files_checked": true,
+      "request_count": 7,
+      "request_counts": {
+        "completed": 7,
+        "failed": 0,
+        "total": 7
+      },
+      "retrieve_request_id": "req_283a6d372ffe460bb0de4c124a926747",
+      "status": "completed",
+      "submitted_at_utc": "2026-09-02T16:46:15Z",
+      "upload_request_id": "req_8daf921df0b645ca9f42bb3e10ab5a45"
+    },
+    "gpt56:attempt0": {
+      "attempt": 0,
+      "batch_id": "batch_6a9848c51dc08190b52918f3e12e7ce7",
+      "batch_path": "prepared/gpt56_attempt0_batch.jsonl",
+      "batch_sha256": "83bf33d5382845255be455c0555b9873785aa51810b8e62ecb4d02d5df3675db",
+      "create_request_id": "req_c5146c0bd06e4a8a86c2a64912f6a09d",
+      "error_file_id": null,
+      "index_path": "prepared/gpt56_attempt0_index.jsonl",
+      "input_file_id": "file-RmBhEwtQYkE4NqgRHtRXYg",
+      "model_tag": "gpt56",
+      "output_download_request_id": "req_0751402858b348e3aa42d7b330f0076f",
+      "output_file_id": "file-Mac86F9jPuN5vq6oiqNLhz",
+      "output_local_path": "raw/gpt56_attempt0_output.jsonl",
+      "output_sha256": "7bb0f1a53e26153488eb433a7d892b31eecff4a73c35b444b1ca3b1dd4f7243c",
+      "remote_files_checked": true,
+      "request_count": 1920,
+      "request_counts": {
+        "completed": 1920,
+        "failed": 0,
+        "total": 1920
+      },
+      "retrieve_request_id": "req_37755b35f4864d8bb63a80cc29c106f4",
+      "status": "completed",
+      "submitted_at_utc": "2026-09-02T16:03:18Z",
+      "upload_request_id": "req_cfd95502b8b84697b549dd18999ad61c"
+    },
+    "gpt56:attempt1": {
+      "attempt": 1,
+      "batch_id": "batch_6a9852d43ffc8190920ced67f4b2e1ec",
+      "batch_path": "prepared/gpt56_attempt1_batch.jsonl",
+      "batch_sha256": "32e4ededc9e7e1ece0d07c87e3b4032130469be60626a08724bdb50ebd14ca31",
+      "create_request_id": "req_7361923080624bfeb7c4adfef8147b10",
+      "error_file_id": null,
+      "index_path": "prepared/gpt56_attempt1_index.jsonl",
+      "input_file_id": "file-VzqfVLqvKiwGWKoTfZveBP",
+      "model_tag": "gpt56",
+      "output_download_request_id": "req_fe6c968ed25248d5afd45ac8ac208f23",
+      "output_file_id": "file-7xpWTDr5WX36frC6XbPUKp",
+      "output_local_path": "raw/gpt56_attempt1_output.jsonl",
+      "output_sha256": "a88c5622d8295a7b376537496e7f7d125f9a64a8f8c9b662f765616e9ce08951",
+      "remote_files_checked": true,
+      "request_count": 3,
+      "request_counts": {
+        "completed": 3,
+        "failed": 0,
+        "total": 3
+      },
+      "retrieve_request_id": "req_18ec417f31bd45d184482fbf1d5d2834",
+      "status": "completed",
+      "submitted_at_utc": "2026-09-02T16:46:12Z",
+      "upload_request_id": "req_b7e6aaa057d9498da4d22143ce70aedf"
+    }
+  },
+  "models": [
+    {
+      "display_name": "GPT-5.5",
+      "model_id_type": "dated_snapshot",
+      "official_documentation": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "requested_model_id": "gpt-5.5-2026-04-23",
+      "standard_input_usd_per_million_tokens": 5.0,
+      "standard_output_usd_per_million_tokens": 30.0,
+      "tag": "gpt55"
+    },
+    {
+      "display_name": "GPT-5.6 Sol",
+      "model_id_type": "documented_identifier_without_dated_snapshot",
+      "official_documentation": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "requested_model_id": "gpt-5.6-sol",
+      "standard_input_usd_per_million_tokens": 4.0,
+      "standard_output_usd_per_million_tokens": 20.0,
+      "tag": "gpt56"
+    }
+  ],
+  "outputs": {
+    "gpt55": {
+      "expected_records": 1920,
+      "path": "validated/gpt-5.5_scores.jsonl",
+      "sha256": "cb35dea83bdc08e50d8d79d2760acb3b79e130c5c22e69c80bd7c5568d8ce729",
+      "valid_records": 1920
+    },
+    "gpt56": {
+      "expected_records": 1920,
+      "path": "validated/gpt-5.6-sol_scores.jsonl",
+      "sha256": "3c94ddebb870ded526ac99780c845cd5788c333e5fd34444c1cd0a5cae4d6a28",
+      "valid_records": 1920
+    }
+  },
+  "paired_complete_blocks": 1920,
+  "prompt_sha256": "d8673796bd2bdb9e7259d1548287e988d010942c808aa8d5f555735ec4a0cc73",
+  "protocol_id": "ethosgpt_all_country_api_wave1_v1",
+  "protocol_sha256": "9841093345fcb80944f1e30e676a69aad131d9432f42903cde5dd3ed9cd31000",
+  "status": "completed",
+  "upload_zip": "UPLOAD_THIS_RUN.zip"
+}

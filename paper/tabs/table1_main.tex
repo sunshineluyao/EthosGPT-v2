@@ -1,0 +1,21 @@
+\begin{table}[!b]
+\centering
+\caption{Primary 64-country contrasts. $\Delta$ is GPT-5.6 Sol minus GPT-5.5 target loss; negative values favor GPT-5.6. Intervals resample countries and Holm correction spans five global metrics.}
+\label{tab:main}
+\small
+\setlength{\tabcolsep}{4.2pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrl@{}}
+\toprule
+\rowcolor{tablehead}
+Metric target & $\Delta$ loss & 95\% BCa CI & Holm $p$ & Corrected read \\
+\midrule
+W1 $\downarrow$ & -0.0020 & [-0.0040,0.0003] & 0.319 & uncertain \\
+\rowcolor{improvebg}
+TVD $\downarrow$ & \textbf{-0.0080} & \textbf{[-0.0107,-0.0050]} & \textbf{$<0.001$} & \textbf{lower error} \\
+CRG $\downarrow$ & -0.0022 & [-0.0243,0.0215] & 0.845 & uncertain \\
+VDR $\to 1$ & -0.0220 & [-0.0506,0.0025] & 0.319 & uncertain \\
+CSR $\uparrow$ & 0.0333 & [-0.0082,0.0834] & 0.319 & uncertain \\
+\bottomrule
+\end{tabular*}
+\vspace{1pt}\parbox{.98\linewidth}{\small W1 measures ordered displacement; TVD measures category mass; CRG measures profile error. VDR and CSR target cross-country spread and relational ordering. Model levels and standard errors appear in Appendix Table~\ref{tab:global-estimates}.}
+\end{table}

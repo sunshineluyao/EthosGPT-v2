@@ -1,0 +1,56 @@
+\clearpage
+\section{Complete estimates and sensitivity results}
+\label{app:results}
+
+Tables~\ref{tab:global-estimates}--\ref{tab:run-stability} report the global and legacy
+within-metric results with standard errors, intervals, randomization $p$-values, and
+multiplicity adjustments. Negative target-loss contrasts favor GPT-5.6 Sol; for VDR the
+loss is $|\VDR-1|$, and for CSR it is $1-\CSR$. The five-metric global family supports
+one corrected conclusion: TVD improves.
+
+\input{tabs/appendix_full_results}
+
+Table~\ref{tab:joint-items} gives the stricter joint item family used for current claims.
+Q108 improves under W1 and TVD, and Q106 improves under TVD; Q106 W1 and Q159 TVD
+narrowly miss the 5\% familywise threshold. Tables~\ref{tab:composition}--\ref{tab:cell-quartiles}
+then report composition, creative-destruction margins, and influence analyses.
+
+\input{tabs/appendix_extended_results}
+
+\subsection{Five-anchor and Q121 conclusions}
+Excluding Q121 yields a five-anchor W1 target-loss contrast of $-0.0033$
+(SE $0.0013$, 95\% BCa CI $[-0.0057,-0.0007]$, five-metric Holm $p=0.048$) and TVD
+contrast $-0.0112$ (SE $0.0016$, CI $[-0.0142,-0.0079]$, Holm $p<0.001$). CRG, VDR,
+and CSR target-loss contrasts remain uncertain. Under the Q121 relabeling bounds, neither
+W1 nor TVD worsening survives correction. The wording defect therefore attenuates the
+average-fidelity result rather than generating the joint improvements on Q106 and Q108.
+
+\subsection{Signed bias and generational stability}
+Signed expected-score errors (Table~\ref{tab:signed-bias}) reveal what unsigned distances
+conceal. Both models understate the derivative's agency and science scores and overstate
+its equality-oriented distribution score; the corresponding model-versus-human intervals
+exclude zero after within-model correction. These are descriptive directional biases,
+not preferred social positions. Table~\ref{tab:run-stability} summarizes five-generation
+within-cell standard deviations; machine-readable files contain every country, question,
+and generation.
+
+Figure~\ref{fig:country-profiles-appendix} prevents favorable or adverse examples from
+being chosen by eye. Countries are first assigned to the declared CRG-change classes
+using $\tau=0.1\max|\Delta|=0.0225$. Within each class, the displayed country minimizes
+mean Euclidean distance to the other countries' 12 standardized residual coordinates
+(six model-minus-human coordinates for each model). These are profile-shape medoids,
+not representative national populations or culturally uniform regions.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth]{figs/figS5_country_profiles.pdf}
+  \caption{Country-specific signed profiles spanning the CRG-change classes.
+  \textbf{a}, Greece is the lower-CRG class medoid. \textbf{b}, Indonesia is the
+  near-zero class medoid. \textbf{c}, Argentina is the higher-CRG class medoid.
+  Every spoke is the model directed score minus that country's human-survey score;
+  the black ring is zero and all panels share the $-0.20$ to $+0.20$ scale. Class
+  medoids are descriptive views of heterogeneity; the full 64-country sample, rather
+  than these cases, determines the estimates and uncertainty intervals.}
+  \label{fig:country-profiles-appendix}
+\end{figure}
+\FloatBarrier

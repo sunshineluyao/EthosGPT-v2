@@ -1,0 +1,2 @@
+# Convenience entry point; all exact versions are pinned in the lock file.
+-r requirements.lock.txt

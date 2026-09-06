@@ -1,0 +1,15 @@
+{
+  "artifact": "paper/main.pdf",
+  "version": "v1.0.0-revision-6",
+  "status": "PASS_WITH_AUTHOR_ACTION",
+  "total_pages": 33,
+  "body_pages": 4,
+  "references_start_page": 5,
+  "appendix_start_page": 7,
+  "cited_references_with_urls": 23,
+  "figures": 8,
+  "drawio_masters": 2,
+  "unit_tests_passed": 16,
+  "negative_tests_passed": 3,
+  "blocking_author_action": "Replace the pending appendix access line with the verified anonymous repository URL before submission."
+}

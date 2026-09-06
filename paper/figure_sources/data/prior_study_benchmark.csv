@@ -1,0 +1,6 @@
+study,model,metric,value,unit,source_url,value_upper
+WorldValuesBench,Alpaca-7B,questions with normalized W1 < 0.2,11.1,percent,https://aclanthology.org/2024.lrec-main.1539/,
+WorldValuesBench,Vicuna-7B-v1.5,questions with normalized W1 < 0.2,25.0,percent,https://aclanthology.org/2024.lrec-main.1539/,
+WorldValuesBench,Mixtral-8x7B,questions with normalized W1 < 0.2,72.2,percent,https://aclanthology.org/2024.lrec-main.1539/,
+WorldValuesBench,GPT-3.5-Turbo,questions with normalized W1 < 0.2,75.0,percent,https://aclanthology.org/2024.lrec-main.1539/,
+Tao et al. (PNAS Nexus),GPT-4 / GPT-4-Turbo / GPT-4o,countries or territories with improved alignment under country prompting,71.0,percent range,https://doi.org/10.1093/pnasnexus/pgae346,81.0

@@ -1,0 +1,116 @@
+country_code,country,cultural_region,traditional_secular,survival_self_expression
+8,Albania,Orthodox Europe,-0.7451,-0.8307
+12,Algeria,African-Islamic,-0.7798,-0.9247
+20,Andorra,Catholic Europe,0.5486,2.1823
+32,Argentina,Latin America,-0.4009,0.1913
+51,Armenia,Orthodox Europe,-1.311,-0.71
+36,Australia,English-Speaking,0.5493,2.2627
+40,Austria,Catholic Europe,0.6196,1.94
+31,Azerbaijan,West & South Asia,-0.4055,-0.8403
+50,Bangladesh,African-Islamic,-1.5034,-0.6875
+112,Belarus,Orthodox Europe,0.292,-0.3205
+56,Belgium,Catholic Europe,0.1427,1.481
+68,Bolivia,Latin America,-1.2266,-0.3828
+70,Bosnia and Herzegovina,Orthodox Europe,-0.0654,-0.6772
+76,Brazil,Latin America,-0.3078,-0.0973
+100,Bulgaria,Orthodox Europe,0.6678,-0.538
+854,Burkina Faso,African-Islamic,-1.2225,-0.8016
+124,Canada,English-Speaking,0.7975,2.0555
+152,Chile,Latin America,0.2133,-0.1089
+156,China,Confucian,0.5755,-0.1071
+170,Colombia,Latin America,-1.5681,0.2642
+191,Croatia,Protestant Europe,0.0937,0.0821
+196,Cyprus,Catholic Europe,-0.4121,-0.4995
+203,Czechia,Protestant Europe,1.3322,0.7298
+208,Denmark,Protestant Europe,1.0181,2.8933
+214,Dominican Republic,Latin America,-1.0012,-0.1476
+218,Ecuador,Latin America,-1.7248,0.0182
+818,Egypt,African-Islamic,-0.8544,-2.2318
+233,Estonia,Protestant Europe,0.8958,0.7035
+231,Ethiopia,African-Islamic,-1.3259,-0.9801
+246,Finland,Protestant Europe,0.7985,2.446
+250,France,Catholic Europe,0.4644,1.9024
+268,Georgia,Orthodox Europe,-1.0179,-0.8171
+276,Germany,Protestant Europe,0.8909,2.1561
+288,Ghana,African-Islamic,-1.8358,-1.0443
+826,Great Britain,English-Speaking,0.9808,2.2364
+300,Greece,Orthodox Europe,0.2686,-0.2853
+320,Guatemala,Latin America,-1.006,0.0042
+332,Haiti,Latin America,-0.8593,0.0686
+344,Hong Kong SAR,Confucian,1.4589,-0.0582
+348,Hungary,Protestant Europe,0.5932,0.0235
+352,Iceland,Protestant Europe,0.5042,2.908
+356,India,West & South Asia,-0.7095,-0.8615
+360,Indonesia,West & South Asia,-1.2194,-0.8403
+364,Iran,West & South Asia,-0.5392,-0.9236
+368,Iraq,African-Islamic,-0.8453,-1.3175
+372,Ireland,Catholic Europe,-0.8482,1.1297
+376,Israel,West & South Asia,0.192,0.584
+380,Italy,Catholic Europe,0.347,0.8011
+392,Japan,Confucian,1.6146,1.302
+400,Jordan,African-Islamic,-1.5785,-1.209
+398,Kazakhstan,West & South Asia,-0.1288,-0.6824
+404,Kenya,African-Islamic,-0.9285,-0.2731
+915,Kosovo,Orthodox Europe,-1.1318,-0.4243
+417,Kyrgyzstan,West & South Asia,-1.3943,-0.5518
+428,Latvia,Protestant Europe,0.8398,-0.0484
+422,Lebanon,African-Islamic,-0.5352,-1.0751
+434,Libya,African-Islamic,-1.7575,-1.1256
+440,Lithuania,Protestant Europe,0.8619,-0.1841
+442,Luxembourg,Catholic Europe,0.3274,1.3817
+446,Macau SAR,Confucian,1.2713,0.2036
+458,Malaysia,West & South Asia,0.0546,-0.3823
+462,Maldives,African-Islamic,-1.378,-0.6482
+466,Mali,African-Islamic,-1.3851,-0.114
+470,Malta,Catholic Europe,-1.2713,0.1761
+484,Mexico,Latin America,-1.0603,0.226
+498,Moldova,Orthodox Europe,0.1818,-1.5502
+496,Mongolia,Confucian,0.7472,0.147
+499,Montenegro,Orthodox Europe,-0.4359,-0.0171
+504,Morocco,African-Islamic,-0.3176,-0.8135
+104,Myanmar,West & South Asia,-1.0254,-0.9508
+528,Netherlands,Protestant Europe,1.1562,2.3876
+554,New Zealand,English-Speaking,0.5317,2.8566
+558,Nicaragua,Latin America,-1.7126,-0.3604
+566,Nigeria,African-Islamic,-1.3736,-1.1028
+807,North Macedonia,Orthodox Europe,0.0872,-0.2686
+909,Northern Ireland,English-Speaking,0.1189,1.6764
+578,Norway,Protestant Europe,0.9265,3.0307
+586,Pakistan,African-Islamic,-1.3833,-0.633
+275,Palestine,African-Islamic,-0.9166,-1.3679
+604,Peru,Latin America,-1.0557,-0.5629
+608,Philippines,Latin America,-1.4145,0.1057
+616,Poland,Catholic Europe,-0.431,0.5982
+620,Portugal,Catholic Europe,-0.2696,0.3353
+630,Puerto Rico,Latin America,-1.5551,0.6597
+634,Qatar,West & South Asia,-2.1667,-0.7143
+642,Romania,Orthodox Europe,-0.3876,-0.8017
+643,Russia,Orthodox Europe,0.3895,-0.595
+646,Rwanda,African-Islamic,-1.0995,-0.7069
+682,Saudi Arabia,West & South Asia,-1.5044,-0.4165
+688,Serbia,Orthodox Europe,0.3106,-0.577
+702,Singapore,Confucian,0.0888,-0.1201
+703,Slovakia,Protestant Europe,0.7261,0.1217
+705,Slovenia,Protestant Europe,0.7767,1.231
+710,South Africa,West & South Asia,-0.2706,0.027
+410,South Korea,Confucian,1.4536,-0.4708
+724,Spain,Catholic Europe,0.5884,1.4319
+752,Sweden,Protestant Europe,1.1067,3.1133
+756,Switzerland,Protestant Europe,0.6754,2.3516
+158,Taiwan ROC,Confucian,1.1261,-0.1447
+762,Tajikistan,West & South Asia,-1.368,-0.6182
+834,Tanzania,African-Islamic,-1.8021,-0.6821
+764,Thailand,West & South Asia,0.2545,0.0658
+780,Trinidad and Tobago,African-Islamic,-1.7556,-0.3584
+788,Tunisia,African-Islamic,-0.5962,-1.4324
+792,Turkey,African-Islamic,-0.4563,-0.7041
+800,Uganda,African-Islamic,-1.2236,-0.9602
+804,Ukraine,Orthodox Europe,0.4312,-0.493
+840,United States,English-Speaking,0.1444,1.4034
+858,Uruguay,Latin America,-0.3293,1.3611
+860,Uzbekistan,West & South Asia,-1.323,-0.5776
+862,Venezuela,Latin America,-1.0603,-0.2503
+704,Vietnam,Confucian,-0.4429,0.6128
+887,Yemen,African-Islamic,-1.3641,-1.2543
+894,Zambia,West & South Asia,-0.5099,-0.9148
+716,Zimbabwe,African-Islamic,-0.585,-1.8709

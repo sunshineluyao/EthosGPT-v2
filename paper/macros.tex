@@ -1,0 +1,39 @@
+\newcommand{\obs}{\textcolor{obsblue}{\textbf{OBS}}}
+\newcommand{\modout}{\textcolor{modpurple}{\textbf{MOD}}}
+\newcommand{\derived}{\textcolor{dergreen}{\textbf{DER}}}
+\newcommand{\simout}{\textcolor{simorange}{\textbf{SIM}}}
+\newcommand{\CRG}{\mathrm{CRG}}
+\newcommand{\VDR}{\mathrm{VDR}}
+\newcommand{\CSR}{\mathrm{CSR}}
+\definecolor{obsblue}{HTML}{2563EB}
+\definecolor{dergreen}{HTML}{00A896}
+\definecolor{modpurple}{HTML}{00AEEF}
+\definecolor{simorange}{HTML}{7C3AED}
+\definecolor{improvebg}{HTML}{DDF7F1}
+\definecolor{worsebg}{HTML}{FCE4EC}
+\definecolor{bestbg}{HTML}{E8F1FF}
+\definecolor{tablehead}{HTML}{EAF0FF}
+\definecolor{cautionbg}{HTML}{FFF3E8}
+\definecolor{improveink}{HTML}{00796B}
+\definecolor{worseink}{HTML}{B01257}
+\setlist{nosep,leftmargin=*}
+\captionsetup{font=small,labelfont=bf}
+\newtcolorbox{promptbox}[1]{
+  enhanced,breakable,colback=black!2,colframe=obsblue!65!black,
+  boxrule=0.55pt,arc=1.4mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,
+  title={#1},fonttitle=\small\bfseries,fontupper=\small\ttfamily,
+  before skip=5pt,after skip=6pt
+}
+\newtcblisting{promptlisting}[1]{
+  enhanced,breakable,listing only,colback=black!2,colframe=obsblue!65!black,
+  boxrule=0.55pt,arc=1.4mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,
+  title={#1},fonttitle=\small\bfseries,
+  listing options={basicstyle=\small\ttfamily,breaklines=true,breakatwhitespace=true,columns=fullflexible},
+  before skip=5pt,after skip=6pt
+}
+\newtcolorbox{auditbox}[1]{
+  enhanced,breakable,colback=simorange!4,colframe=simorange!65!black,
+  boxrule=0.55pt,arc=1.4mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,
+  title={#1},fonttitle=\small\bfseries,fontupper=\small,
+  before skip=5pt,after skip=6pt
+}

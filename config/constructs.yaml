@@ -1,0 +1,10 @@
+normalization: min_max_to_0_1
+aggregation: equal_item_weight
+domains:
+  Market: {Q107: reverse, Q108: forward}
+  Distribution: {Q106: reverse}
+  Trust: {Q57: reverse, Q58: reverse, Q59: reverse}
+  Inclusion: {Q121: forward, Q122: forward, Q123: forward}
+  Science: {Q158: forward, Q159: forward, Q160: reverse}
+  Agency: {Q48: forward, Q199: reverse, Q200: reverse, Q201: reverse}
+coverage_rule: at_least_four_of_six_domains_for_country_crg

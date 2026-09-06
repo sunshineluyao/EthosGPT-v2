@@ -1,0 +1,4 @@
+status: illustrative_not_causal
+policy_dimensions: [innovation_support, transition_assistance, safeguards]
+sensitivity: [0.5, 1.0, 2.0]
+seed: 20260828

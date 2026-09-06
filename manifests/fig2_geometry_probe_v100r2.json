@@ -1,0 +1,832 @@
+{
+  "pdf": "paper/figs/fig2_multiview_results.pdf",
+  "pages": [
+    1
+  ],
+  "thresholds_pt": {
+    "min_font_size": 7.0,
+    "min_text_gap": 1.0,
+    "text_padding": 0.75,
+    "caption_gap": 4.0
+  },
+  "passed": false,
+  "issue_count": 48,
+  "issues": [
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'a  Country \u0394TVD distribution'",
+      "bbox": [
+        29.592,
+        22.787,
+        170.628,
+        32.922
+      ],
+      "other_bbox": [
+        126.537,
+        33.519,
+        127.237,
+        71.716
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'a  Country \u0394TVD distribution'",
+      "bbox": [
+        29.592,
+        22.787,
+        170.628,
+        32.922
+      ],
+      "other_bbox": [
+        43.141,
+        33.519,
+        43.841,
+        71.716
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '98.82%'",
+      "bbox": [
+        350.592,
+        59.194,
+        379.754,
+        67.349
+      ],
+      "other_bbox": [
+        264.005,
+        61.831,
+        383.073,
+        62.531
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '98.82%'",
+      "bbox": [
+        350.592,
+        59.194,
+        379.754,
+        67.349
+      ],
+      "other_bbox": [
+        347.652,
+        63.418,
+        352.692,
+        67.3
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '98.82%'",
+      "bbox": [
+        350.592,
+        59.194,
+        379.754,
+        67.349
+      ],
+      "other_bbox": [
+        344.526,
+        67.798,
+        349.9,
+        73.172
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '98.82%'",
+      "bbox": [
+        350.592,
+        59.194,
+        379.754,
+        67.349
+      ],
+      "other_bbox": [
+        346.713,
+        67.298,
+        350.4,
+        70.985
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '98.69%'",
+      "bbox": [
+        350.592,
+        69.094,
+        379.754,
+        77.249
+      ],
+      "other_bbox": [
+        344.526,
+        67.798,
+        349.9,
+        73.172
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '98.69%'",
+      "bbox": [
+        350.592,
+        69.094,
+        379.754,
+        77.249
+      ],
+      "other_bbox": [
+        346.713,
+        69.985,
+        350.4,
+        73.672
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '98.69%'",
+      "bbox": [
+        350.592,
+        69.094,
+        379.754,
+        77.249
+      ],
+      "other_bbox": [
+        347.652,
+        70.135,
+        352.692,
+        74.018
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'b  Shared residual'",
+      "bbox": [
+        264.355,
+        17.948,
+        354.043,
+        28.084
+      ],
+      "other_bbox": [
+        267.951,
+        28.68,
+        268.651,
+        78.974
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'b  Shared residual'",
+      "bbox": [
+        264.355,
+        17.948,
+        354.043,
+        28.084
+      ],
+      "other_bbox": [
+        307.407,
+        28.68,
+        308.107,
+        78.974
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'b  Shared residual'",
+      "bbox": [
+        264.355,
+        17.948,
+        354.043,
+        28.084
+      ],
+      "other_bbox": [
+        346.863,
+        28.68,
+        347.563,
+        78.974
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'b  Shared residual'",
+      "bbox": [
+        264.355,
+        17.948,
+        354.043,
+        28.084
+      ],
+      "other_bbox": [
+        264.005,
+        28.68,
+        264.705,
+        78.974
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        68.548,
+        144.652,
+        189.541,
+        145.652
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        188.666,
+        144.777,
+        189.416,
+        212.055
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        79.606,
+        144.802,
+        80.306,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        106.877,
+        144.802,
+        107.577,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        134.149,
+        144.802,
+        134.849,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        161.42,
+        144.802,
+        162.12,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        188.691,
+        144.802,
+        189.391,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'c  Joint simultaneous intervals'",
+      "bbox": [
+        69.048,
+        134.07,
+        217.975,
+        144.205
+      ],
+      "other_bbox": [
+        215.962,
+        144.802,
+        216.662,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'W1'",
+      "bbox": [
+        88.998,
+        148.511,
+        100.373,
+        156.666
+      ],
+      "other_bbox": [
+        72.548,
+        148.652,
+        134.792,
+        157.518
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'W1'",
+      "bbox": [
+        88.998,
+        148.511,
+        100.373,
+        156.666
+      ],
+      "other_bbox": [
+        73.448,
+        157.018,
+        133.892,
+        158.018
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'TVD'",
+      "bbox": [
+        119.273,
+        148.511,
+        133.728,
+        156.666
+      ],
+      "other_bbox": [
+        134.149,
+        144.802,
+        134.849,
+        212.03
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'TVD'",
+      "bbox": [
+        119.273,
+        148.511,
+        133.728,
+        156.666
+      ],
+      "other_bbox": [
+        72.548,
+        148.652,
+        134.792,
+        157.518
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'TVD'",
+      "bbox": [
+        119.273,
+        148.511,
+        133.728,
+        156.666
+      ],
+      "other_bbox": [
+        73.448,
+        157.018,
+        133.892,
+        158.018
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Trust'",
+      "bbox": [
+        364.444,
+        149.844,
+        381.412,
+        157.999
+      ],
+      "other_bbox": [
+        296.129,
+        141.523,
+        368.705,
+        214.099
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Trust'",
+      "bbox": [
+        364.444,
+        149.844,
+        381.412,
+        157.999
+      ],
+      "other_bbox": [
+        362.882,
+        158.297,
+        364.191,
+        160.014
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Distrib.'",
+      "bbox": [
+        360.327,
+        196.632,
+        385.548,
+        204.787
+      ],
+      "other_bbox": [
+        296.129,
+        141.523,
+        368.705,
+        214.099
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Distrib.'",
+      "bbox": [
+        360.327,
+        196.632,
+        385.548,
+        204.787
+      ],
+      "other_bbox": [
+        332.067,
+        177.461,
+        364.193,
+        196.305
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Distrib.'",
+      "bbox": [
+        360.327,
+        196.632,
+        385.548,
+        204.787
+      ],
+      "other_bbox": [
+        363.491,
+        194.571,
+        364.768,
+        196.308
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Distrib.'",
+      "bbox": [
+        360.327,
+        196.632,
+        385.548,
+        204.787
+      ],
+      "other_bbox": [
+        358.554,
+        201.384,
+        360.052,
+        202.965
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Immigr.'",
+      "bbox": [
+        278.624,
+        196.632,
+        305.178,
+        204.787
+      ],
+      "other_bbox": [
+        296.129,
+        141.523,
+        368.705,
+        214.099
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Immigr.'",
+      "bbox": [
+        278.624,
+        196.632,
+        305.178,
+        204.787
+      ],
+      "other_bbox": [
+        300.64,
+        177.461,
+        332.767,
+        196.305
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Immigr.'",
+      "bbox": [
+        278.624,
+        196.632,
+        305.178,
+        204.787
+      ],
+      "other_bbox": [
+        305.58,
+        202.265,
+        307.107,
+        203.821
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Immigr.'",
+      "bbox": [
+        278.624,
+        196.632,
+        305.178,
+        204.787
+      ],
+      "other_bbox": [
+        300.066,
+        194.571,
+        301.342,
+        196.308
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Science'",
+      "bbox": [
+        278.327,
+        149.844,
+        305.466,
+        157.999
+      ],
+      "other_bbox": [
+        296.129,
+        141.523,
+        368.705,
+        214.099
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Science'",
+      "bbox": [
+        278.327,
+        149.844,
+        305.466,
+        157.999
+      ],
+      "other_bbox": [
+        300.642,
+        158.297,
+        301.952,
+        160.014
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Science'",
+      "bbox": [
+        278.327,
+        149.844,
+        305.466,
+        157.999
+      ],
+      "other_bbox": [
+        305.58,
+        151.802,
+        307.107,
+        153.357
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '0.5'",
+      "bbox": [
+        342.032,
+        154.468,
+        353.162,
+        162.623
+      ],
+      "other_bbox": [
+        332.067,
+        159.317,
+        364.193,
+        178.161
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '0.5'",
+      "bbox": [
+        342.032,
+        154.468,
+        353.162,
+        162.623
+      ],
+      "other_bbox": [
+        340.094,
+        161.189,
+        341.322,
+        162.161
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '1.0'",
+      "bbox": [
+        351.647,
+        139.081,
+        362.777,
+        147.236
+      ],
+      "other_bbox": [
+        296.129,
+        141.523,
+        368.705,
+        214.099
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '1.0'",
+      "bbox": [
+        351.647,
+        139.081,
+        362.777,
+        147.236
+      ],
+      "other_bbox": [
+        349.177,
+        145.46,
+        350.914,
+        146.737
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '1.0'",
+      "bbox": [
+        351.647,
+        139.081,
+        362.777,
+        147.236
+      ],
+      "other_bbox": [
+        353.202,
+        147.964,
+        354.855,
+        149.37
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Ecuador \u22120.0233'",
+      "bbox": [
+        43.402,
+        105.5,
+        104.589,
+        113.655
+      ],
+      "other_bbox": [
+        97.863,
+        102.485,
+        103.363,
+        107.985
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Ecuador \u22120.0233'",
+      "bbox": [
+        43.402,
+        105.5,
+        104.589,
+        113.655
+      ],
+      "other_bbox": [
+        100.113,
+        107.479,
+        101.294,
+        108.485
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Kenya \u22120.0007'",
+      "bbox": [
+        106.531,
+        105.5,
+        160.535,
+        113.655
+      ],
+      "other_bbox": [
+        160.992,
+        102.485,
+        166.492,
+        107.985
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Kenya \u22120.0007'",
+      "bbox": [
+        106.531,
+        105.5,
+        160.535,
+        113.655
+      ],
+      "other_bbox": [
+        160.492,
+        101.985,
+        164.242,
+        108.485
+      ]
+    }
+  ]
+}

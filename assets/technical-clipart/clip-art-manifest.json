@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "set_id": "ethosgpt-regime-geometry-v1",
+  "title": "EthosGPT regime-geometry technical clip art",
+  "purpose": "Provide coherent semantic micro-scenes for Figure 1 without carrying quantitative evidence.",
+  "source": {
+    "kind": "paper",
+    "title": "EthosGPT",
+    "locator": "Abstract; Sections 1\u20132; Figure 1"
+  },
+  "target_figure": {
+    "type": "conceptual framework",
+    "background": "light",
+    "placement": "Figure 1 regime inputs, model operator, and policy bridge"
+  },
+  "evidence_boundary": "These original vector assets are conceptual illustrations. They do not encode measured values, causal effects, significance, certification, or implementation status.",
+  "art_direction": {
+    "mode": "editorial-vector",
+    "viewpoint": "front orthographic",
+    "outline": "2 px equivalent, round caps and joins",
+    "lighting": "flat scientific; no shadow",
+    "detail_level": "medium",
+    "palette": {
+      "ink": "#102A43",
+      "surface": "#F6F8FC",
+      "primary": "#2563EB",
+      "secondary": "#00A896",
+      "status_accent": "#D81B60",
+      "divider": "#D7E0EA"
+    }
+  },
+  "hero_asset_id": "asset-model-chip",
+  "contact_sheet": "contact-sheet.png",
+  "assets": [
+    {
+      "id": "asset-data-stack",
+      "concept": "Harmonized value records",
+      "semantic_role": "data",
+      "source_locator": "Figure 1 and Sections 1\u20132",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-data-stack.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "Original vector micro-scene for harmonized value records.",
+      "alt_text": "Unlabeled original vector micro-scene representing harmonized value records.",
+      "visual_recipe": [
+        "front-view technical object",
+        "dark-ink rounded outline",
+        "one semantic accent"
+      ],
+      "unsupported_implications": [
+        "measured effect size",
+        "causal identification",
+        "certification or guaranteed performance"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front orthographic",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 96,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-08-29",
+        "editable_master": "assets/asset-data-stack.svg"
+      },
+      "checksum_sha256": "491f48bb51ad48d06b5d408f6ece7de790d398acbfb14f3c57020491a8b6f425"
+    },
+    {
+      "id": "asset-model-chip",
+      "concept": "Model regime bundle",
+      "semantic_role": "hero",
+      "source_locator": "Figure 1 and Sections 1\u20132",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-model-chip.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "Original vector micro-scene for model regime bundle.",
+      "alt_text": "Unlabeled original vector micro-scene representing model regime bundle.",
+      "visual_recipe": [
+        "front-view technical object",
+        "dark-ink rounded outline",
+        "one semantic accent"
+      ],
+      "unsupported_implications": [
+        "measured effect size",
+        "causal identification",
+        "certification or guaranteed performance"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front orthographic",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 96,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-08-29",
+        "editable_master": "assets/asset-model-chip.svg"
+      },
+      "checksum_sha256": "eb43cfeb0567d48184b2d3542a16a0a409707db5095ff5680788fe4a56324126"
+    },
+    {
+      "id": "asset-tuning-sliders",
+      "concept": "Instruction tuning controls",
+      "semantic_role": "process",
+      "source_locator": "Figure 1 and Sections 1\u20132",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-tuning-sliders.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "Original vector micro-scene for instruction tuning controls.",
+      "alt_text": "Unlabeled original vector micro-scene representing instruction tuning controls.",
+      "visual_recipe": [
+        "front-view technical object",
+        "dark-ink rounded outline",
+        "one semantic accent"
+      ],
+      "unsupported_implications": [
+        "measured effect size",
+        "causal identification",
+        "certification or guaranteed performance"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front orthographic",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 96,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-08-29",
+        "editable_master": "assets/asset-tuning-sliders.svg"
+      },
+      "checksum_sha256": "26984f5a629f9d6d06c3f4ee35bd7e9648301cd257fe8f6c5ca064848372084d"
+    },
+    {
+      "id": "asset-preference-compare",
+      "concept": "Preference comparison",
+      "semantic_role": "process",
+      "source_locator": "Figure 1 and Sections 1\u20132",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-preference-compare.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "Original vector micro-scene for preference comparison.",
+      "alt_text": "Unlabeled original vector micro-scene representing preference comparison.",
+      "visual_recipe": [
+        "front-view technical object",
+        "dark-ink rounded outline",
+        "one semantic accent"
+      ],
+      "unsupported_implications": [
+        "measured effect size",
+        "causal identification",
+        "certification or guaranteed performance"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front orthographic",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 96,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-08-29",
+        "editable_master": "assets/asset-preference-compare.svg"
+      },
+      "checksum_sha256": "4e0075896912753e4138ab773db8e849f0810c369ac5e3186acf49b778c7fcc3"
+    },
+    {
+      "id": "asset-runtime-branch",
+      "concept": "Runtime decoding alternatives",
+      "semantic_role": "process",
+      "source_locator": "Figure 1 and Sections 1\u20132",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-runtime-branch.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "Original vector micro-scene for runtime decoding alternatives.",
+      "alt_text": "Unlabeled original vector micro-scene representing runtime decoding alternatives.",
+      "visual_recipe": [
+        "front-view technical object",
+        "dark-ink rounded outline",
+        "one semantic accent"
+      ],
+      "unsupported_implications": [
+        "measured effect size",
+        "causal identification",
+        "certification or guaranteed performance"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front orthographic",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 96,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-08-29",
+        "editable_master": "assets/asset-runtime-branch.svg"
+      },
+      "checksum_sha256": "6788f410926ca38c908f1651f8e9d4fbe26f4c63d37c3c1de5841485cea50732"
+    },
+    {
+      "id": "asset-policy-levers",
+      "concept": "Illustrative policy mapping",
+      "semantic_role": "output",
+      "source_locator": "Figure 1 and Sections 1\u20132",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-policy-levers.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "Original vector micro-scene for illustrative policy mapping.",
+      "alt_text": "Unlabeled original vector micro-scene representing illustrative policy mapping.",
+      "visual_recipe": [
+        "front-view technical object",
+        "dark-ink rounded outline",
+        "one semantic accent"
+      ],
+      "unsupported_implications": [
+        "measured effect size",
+        "causal identification",
+        "certification or guaranteed performance"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front orthographic",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 96,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-08-29",
+        "editable_master": "assets/asset-policy-levers.svg"
+      },
+      "checksum_sha256": "ca4b644eb7b736de1a07526826fda098dec6bc95e8369a7ddc057dde12595e71"
+    }
+  ]
+}

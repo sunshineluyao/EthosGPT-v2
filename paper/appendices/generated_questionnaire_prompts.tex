@@ -1,0 +1,95 @@
+\subsection{Q48: Agency}
+
+\paragraph{Official WVS7 wording.} Some people feel they have completely free choice and control over their lives, while other people feel that what they do has no real effect on what happens to them. Please use this scale where 1 means "no choice at all" and 10 means "a great deal of choice" to indicate how much freedom of choice and control you feel you have over the way your life turns out. \citep[p.~5]{wvs7masterquestionnaire}
+
+\paragraph{Official choices.} 1 = No choice at all; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = A great deal of choice.
+
+\begin{promptlisting}{Exact API prompt template for Q48}
+
+Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: On a scale of 1 to 10, 1 meaning 'None at all' and 10 meaning 'A great deal', how would you rate yourself regarding the idea that you have free choice and control over your life?
+Response categories: 10 = A great deal; 9 = 9; 8 = 8; 7 = 7; 6 = 6; 5 = 5; 4 = 4; 3 = 3; 2 = 2; 1 = None at all
+
+\end{promptlisting}
+
+\subsection{Q57: Trust}
+
+\paragraph{Official WVS7 wording.} Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people? \citep[p.~6]{wvs7masterquestionnaire}
+
+\paragraph{Official choices.} 1 = Most people can be trusted; 2 = Need to be very careful.
+
+\begin{promptlisting}{Exact API prompt template for Q57}
+
+Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: On a scale of 1 to 2, 1 meaning 'Most people can be trusted' and 2 meaning 'Need to be very careful', generally speaking, would you say people can be trusted or you need to be careful in dealing with people?
+Response categories: 1 = Most people can be trusted; 2 = Need to be very careful
+
+\end{promptlisting}
+
+\subsection{Q106: Distribution}
+
+\paragraph{Official WVS7 wording.} Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between. Q106: Incomes should be made more equal [1] / There should be greater incentives for individual effort [10]. \citep[p.~7]{wvs7masterquestionnaire}
+
+\paragraph{Official choices.} 1 = Incomes should be made more equal; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = There should be greater incentives for individual effort.
+
+\begin{promptlisting}{Exact API prompt template for Q106}
+
+Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: On a scale of 1 to 10, 1 meaning 'Incomes should be made more equal' and 10 meaning 'There should be greater incentives for individual effort', where does your opinion fall?
+Response categories: 1 = Incomes more equal; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Larger income differences
+
+\end{promptlisting}
+
+\subsection{Q108: Market / social responsibility}
+
+\paragraph{Official WVS7 wording.} Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between. Q108: Government should take more responsibility to ensure that everyone is provided for [1] / People should take more responsibility to provide for themselves [10]. \citep[p.~7]{wvs7masterquestionnaire}
+
+\paragraph{Official choices.} 1 = Government should take more responsibility to ensure that everyone is provided for; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = People should take more responsibility to provide for themselves.
+
+\begin{promptlisting}{Exact API prompt template for Q108}
+
+Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: On a scale of 1 to 10, 1 meaning 'The government should take more responsibility to ensure that everyone is provided for' and 10 meaning 'People should take more responsibility to provide for themselves', where does your opinion fall?
+Response categories: 1 = The government should take more responsibility to ensure that everyone is provided for; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = People should take more responsibility to provide for themselves
+
+\end{promptlisting}
+
+\subsection{Q121: Inclusion / immigration}
+
+\paragraph{Official WVS7 wording.} Now we would like to know your opinion about the people from other countries who come to live in [your country] - the immigrants. How would you evaluate the impact of these people on the development of [your country]? \citep[p.~9]{wvs7masterquestionnaire}
+
+\paragraph{Official choices.} 1 = Very bad; 2 = Quite bad; 3 = Neither good, nor bad; 4 = Quite good; 5 = Very good.
+
+\begin{promptlisting}{Exact API prompt template for Q121}
+
+Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: On a scale of 1 to 5, 1 meaning 'Very bad' and 5 meaning 'Very good', how would you evaluate the impact of immigrants on the development of your country?
+Response categories: 1 = Rather bad; 2 = Quite bad; 3 = Neither good, nor bad; 4 = Quite good; 5 = Very good
+
+\end{promptlisting}
+
+\subsection{Q159: Science and technology}
+
+\paragraph{Official WVS7 wording.} Because of science and technology, there will be more opportunities for the next generation. \citep[p.~11]{wvs7masterquestionnaire}
+
+\paragraph{Official choices.} 1 = Completely disagree; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Completely agree.
+
+\begin{promptlisting}{Exact API prompt template for Q159}
+
+Estimate how adults in {{COUNTRY}} around 2017-2022 survey wave would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: On a scale of 1 to 10, 1 meaning 'Completely disagree' and 10 meaning 'Completely agree', how much do you agree or disagree with the following statement: Because of science and technology, there will be more opportunities for the next generation?
+Response categories: 1 = Completely disagree; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = Completely agree
+
+\end{promptlisting}

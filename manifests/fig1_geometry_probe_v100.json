@@ -1,0 +1,713 @@
+{
+  "pdf": "paper/figs/fig1_spatial_story.pdf",
+  "pages": [
+    1
+  ],
+  "thresholds_pt": {
+    "min_font_size": 6.95,
+    "min_text_gap": 0.0,
+    "text_padding": 0.0,
+    "caption_gap": 0.0
+  },
+  "passed": false,
+  "issue_count": 41,
+  "issues": [
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '0'",
+      "bbox": [
+        28.865,
+        129.54,
+        33.317,
+        137.695
+      ],
+      "other_bbox": [
+        30.691,
+        125.831,
+        31.491,
+        130.131
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '50'",
+      "bbox": [
+        50.068,
+        129.54,
+        58.972,
+        137.695
+      ],
+      "other_bbox": [
+        54.121,
+        125.831,
+        54.921,
+        130.131
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '100'",
+      "bbox": [
+        71.27,
+        129.54,
+        84.626,
+        137.695
+      ],
+      "other_bbox": [
+        77.55,
+        125.831,
+        78.35,
+        130.131
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'W1<0.2 share (%)'",
+      "bbox": [
+        23.512,
+        137.306,
+        87.863,
+        145.461
+      ],
+      "other_bbox": [
+        8.7,
+        141.6,
+        84.022,
+        174.246
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'W1<0.2 share (%)'",
+      "bbox": [
+        23.512,
+        137.306,
+        87.863,
+        145.461
+      ],
+      "other_bbox": [
+        83.672,
+        142.741,
+        84.372,
+        173.106
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '11%'",
+      "bbox": [
+        37.324,
+        118.972,
+        52.878,
+        127.127
+      ],
+      "other_bbox": [
+        31.091,
+        67.143,
+        80.293,
+        126.231
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '11%'",
+      "bbox": [
+        37.324,
+        118.972,
+        52.878,
+        127.127
+      ],
+      "other_bbox": [
+        30.741,
+        125.881,
+        80.643,
+        126.581
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '11%'",
+      "bbox": [
+        37.324,
+        118.972,
+        52.878,
+        127.127
+      ],
+      "other_bbox": [
+        34.171,
+        121.424,
+        38.414,
+        125.666
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '11%'",
+      "bbox": [
+        37.324,
+        118.972,
+        52.878,
+        127.127
+      ],
+      "other_bbox": [
+        36.493,
+        125.203,
+        37.325,
+        125.943
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '25%'",
+      "bbox": [
+        43.837,
+        101.066,
+        59.391,
+        109.221
+      ],
+      "other_bbox": [
+        54.171,
+        66.793,
+        54.871,
+        126.581
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '25%'",
+      "bbox": [
+        43.837,
+        101.066,
+        59.391,
+        109.221
+      ],
+      "other_bbox": [
+        40.685,
+        103.518,
+        44.927,
+        107.761
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '25%'",
+      "bbox": [
+        43.837,
+        101.066,
+        59.391,
+        109.221
+      ],
+      "other_bbox": [
+        43.007,
+        107.298,
+        43.839,
+        108.038
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '72%'",
+      "bbox": [
+        65.954,
+        83.161,
+        81.508,
+        91.316
+      ],
+      "other_bbox": [
+        31.091,
+        67.143,
+        80.293,
+        126.231
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '72%'",
+      "bbox": [
+        65.954,
+        83.161,
+        81.508,
+        91.316
+      ],
+      "other_bbox": [
+        77.6,
+        66.793,
+        78.3,
+        126.581
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '72%'",
+      "bbox": [
+        65.954,
+        83.161,
+        81.508,
+        91.316
+      ],
+      "other_bbox": [
+        62.802,
+        85.613,
+        67.045,
+        89.855
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '72%'",
+      "bbox": [
+        65.954,
+        83.161,
+        81.508,
+        91.316
+      ],
+      "other_bbox": [
+        65.124,
+        89.392,
+        65.956,
+        90.132
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '75%'",
+      "bbox": [
+        67.266,
+        65.255,
+        82.82,
+        73.41
+      ],
+      "other_bbox": [
+        31.091,
+        67.143,
+        80.293,
+        126.231
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '75%'",
+      "bbox": [
+        67.266,
+        65.255,
+        82.82,
+        73.41
+      ],
+      "other_bbox": [
+        77.6,
+        66.793,
+        78.3,
+        126.581
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: '75%'",
+      "bbox": [
+        67.266,
+        65.255,
+        82.82,
+        73.41
+      ],
+      "other_bbox": [
+        64.114,
+        67.707,
+        68.357,
+        71.95
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: '75%'",
+      "bbox": [
+        67.266,
+        65.255,
+        82.82,
+        73.41
+      ],
+      "other_bbox": [
+        66.436,
+        71.487,
+        67.268,
+        72.227
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'survey'",
+      "bbox": [
+        108.965,
+        76.014,
+        132.52,
+        84.169
+      ],
+      "other_bbox": [
+        127.417,
+        70.408,
+        144.948,
+        77.349
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'survey'",
+      "bbox": [
+        108.965,
+        76.014,
+        132.52,
+        84.169
+      ],
+      "other_bbox": [
+        127.067,
+        76.999,
+        145.298,
+        77.699
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'survey'",
+      "bbox": [
+        108.965,
+        76.014,
+        132.52,
+        84.169
+      ],
+      "other_bbox": [
+        130.756,
+        74.792,
+        133.094,
+        76.253
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'GPT-5.5'",
+      "bbox": [
+        171.661,
+        57.434,
+        201.606,
+        65.589
+      ],
+      "other_bbox": [
+        159.139,
+        58.172,
+        200.044,
+        65.843
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'GPT-5.5'",
+      "bbox": [
+        171.661,
+        57.434,
+        201.606,
+        65.589
+      ],
+      "other_bbox": [
+        162.913,
+        65.443,
+        196.27,
+        66.243
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'GPT-5.6'",
+      "bbox": [
+        171.661,
+        67.662,
+        201.606,
+        75.817
+      ],
+      "other_bbox": [
+        159.139,
+        68.399,
+        200.044,
+        76.07
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'GPT-5.6'",
+      "bbox": [
+        171.661,
+        67.662,
+        201.606,
+        75.817
+      ],
+      "other_bbox": [
+        162.913,
+        75.67,
+        196.27,
+        76.47
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'GPT-5.6'",
+      "bbox": [
+        171.661,
+        67.662,
+        201.606,
+        75.817
+      ],
+      "other_bbox": [
+        167.972,
+        71.885,
+        171.672,
+        75.585
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'fidelity'",
+      "bbox": [
+        227.592,
+        58.164,
+        251.532,
+        66.319
+      ],
+      "other_bbox": [
+        215.571,
+        58.281,
+        261.317,
+        76.691
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'fidelity'",
+      "bbox": [
+        227.592,
+        58.164,
+        251.532,
+        66.319
+      ],
+      "other_bbox": [
+        218.844,
+        57.881,
+        258.044,
+        58.681
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'geometry'",
+      "bbox": [
+        227.592,
+        62.913,
+        261.514,
+        71.068
+      ],
+      "other_bbox": [
+        215.571,
+        58.281,
+        261.317,
+        76.691
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'geometry'",
+      "bbox": [
+        227.592,
+        62.913,
+        261.514,
+        71.068
+      ],
+      "other_bbox": [
+        260.917,
+        58.685,
+        261.717,
+        76.288
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'composition'",
+      "bbox": [
+        227.592,
+        67.662,
+        270.278,
+        75.817
+      ],
+      "other_bbox": [
+        215.571,
+        58.281,
+        261.317,
+        76.691
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'composition'",
+      "bbox": [
+        227.592,
+        67.662,
+        270.278,
+        75.817
+      ],
+      "other_bbox": [
+        260.688,
+        75.733,
+        261.615,
+        76.639
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'Country \u0394TVD \u00b7 mean \u22120.0080'",
+      "bbox": [
+        130.654,
+        92.858,
+        285.522,
+        102.993
+      ],
+      "other_bbox": [
+        97.062,
+        18.382,
+        281.321,
+        236.228
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'Country \u0394TVD \u00b7 mean \u22120.0080'",
+      "bbox": [
+        130.654,
+        92.858,
+        285.522,
+        102.993
+      ],
+      "other_bbox": [
+        280.946,
+        20.987,
+        281.696,
+        233.623
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'classes: \u0394<\u2212\u03c4  |  |\u0394|\u2264\u03c4  |  \u0394>\u03c4; \u03c4=0.0030'",
+      "bbox": [
+        115.832,
+        172.065,
+        262.615,
+        180.22
+      ],
+      "other_bbox": [
+        114.791,
+        173.99,
+        119.951,
+        177.939
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'classes: \u0394<\u2212\u03c4  |  |\u0394|\u2264\u03c4  |  \u0394>\u03c4; \u03c4=0.0030'",
+      "bbox": [
+        115.832,
+        172.065,
+        262.615,
+        180.22
+      ],
+      "other_bbox": [
+        167.451,
+        176.847,
+        170.785,
+        180.796
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'classes: \u0394<\u2212\u03c4  |  |\u0394|\u2264\u03c4  |  \u0394>\u03c4; \u03c4=0.0030'",
+      "bbox": [
+        115.832,
+        172.065,
+        262.615,
+        180.22
+      ],
+      "other_bbox": [
+        223.247,
+        176.03,
+        224.232,
+        180.354
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "fill_text_collision",
+      "message": "filled vector primitive enters text safety box: 'CI line \u00b7 equal-loss dash'",
+      "bbox": [
+        299.203,
+        136.428,
+        382.216,
+        144.583
+      ],
+      "other_bbox": [
+        296.595,
+        143.749,
+        384.81,
+        178.544
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "stroke_text_collision",
+      "message": "stroked vector path enters text safety box: 'CI line \u00b7 equal-loss dash'",
+      "bbox": [
+        299.203,
+        136.428,
+        382.216,
+        144.583
+      ],
+      "other_bbox": [
+        382.093,
+        143.399,
+        383.171,
+        144.109
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "artifact_version": "v1.0.0-revision-6",
+  "status": "READY_AFTER_AUTHOR_ACTION",
+  "claim_result_consistency": "PASS",
+  "measure_transparency": "PASS",
+  "computational_reproducibility": "PASS",
+  "data_provenance": "PARTIAL_UNWEIGHTED_DERIVATIVE",
+  "model_provenance": "PARTIAL_UNDATED_SERVING_IDENTIFIER",
+  "open_science_availability": "PENDING_ANONYMOUS_UPLOAD",
+  "community_validity": "NOT_ESTABLISHED",
+  "agent_interaction_validity": "NOT_TESTED",
+  "required_action": "Insert and verify the anonymous repository URL before submission."
+}

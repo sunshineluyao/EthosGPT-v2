@@ -1,0 +1,92 @@
+\section{Open science, compute, and future research}
+\label{app:open}
+
+\subsection{Reproducing the reported results}
+The command \texttt{make reproduce-offline} validates the two versioned JSONL files,
+rebuilds all country--question scores, runs the global, joint-item, composition,
+economic-margin, and spatial analyses, regenerates every table and figure, and compiles
+the venue-neutral workshop PDF. It requires neither an API key nor network access.
+The companion command \texttt{make verify} checks record counts, hashes, model
+identifiers, prompt hashes, country completeness, reported values, TeX claims, citations,
+checklist completion, and absence of credentials. A clean environment installs the
+recorded dependencies from \texttt{requirements.lock.txt}.
+
+The package reproduces every reported statistic and visual from archived
+proprietary-model outputs. A future live query to GPT-5.6 Sol may return different
+answers because the serving identifier is undated. Output hashes are
+\texttt{cb35dea8...ce729} for GPT-5.5 and
+\texttt{3c94ddeb...d6a28} for GPT-5.6 Sol; complete hashes and the 384-row prompt ledger
+are included.
+
+\begin{table}[!htbp]
+\centering
+\caption{How each reported result maps to source files and commands.}
+\small
+\begin{tabular}{p{0.26\linewidth}p{0.38\linewidth}p{0.24\linewidth}}
+\toprule
+\rowcolor{tablehead}
+Reported result & Source file & Rebuild command \\
+\midrule
+Table 1 and Figure 2 & global, joint-item, and composition CSV files & \texttt{make assets} \\
+Spatial maps & country scores and versioned coordinates & \texttt{make assets} \\
+Economic sensitivity & margin, scenario, and weight-surface CSV files & \texttt{make assets} \\
+Appendix inference & bootstrap, influence, sensitivity, and spatial files & \texttt{make analysis} \\
+Question/prompt appendix & official-question JSON and prompt ledger & \texttt{make assets} \\
+Workshop PDF and checklist & one official NeurIPS source and \texttt{checklist.tex} & \texttt{make papers} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Compute accounting}
+Offline analysis is CPU-compatible. The collection consumed 454,560 input tokens for
+each model, 380,594 GPT-5.5 output tokens, and 353,135 GPT-5.6 output tokens; provider
+reasoning-token fields report 253,898 and 226,415, respectively. The package records
+these quantities but does not infer a dollar charge from list prices or shared-traffic
+credits. Local package verification reports software versions and wall time. Provider
+hardware, energy use, and internal serving compute remain unavailable.
+
+\subsection{Future research roadmap}
+\label{app:future-roadmap}
+
+The present study is a starting point for research that moves from measurement validity,
+to mechanisms, and finally to economic and institutional consequences. Table~\ref{tab:future-roadmap}
+turns each evidentiary limit into a testable question and a corresponding design. These are
+proposed studies, not results implied by the current comparison.
+
+\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.18\linewidth}>{\raggedright\arraybackslash}p{0.48\linewidth}>{\raggedright\arraybackslash}p{0.24\linewidth}}
+\caption{Future research roadmap from present boundaries to testable extensions.}
+\label{tab:future-roadmap}\\
+\toprule
+\rowcolor{tablehead}
+Research path & Testable question and next design & Why it matters \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{tablehead}
+Research path & Testable question and next design & Why it matters \\
+\midrule
+\endhead
+Measurement: multilingual validity & Does an apparent update effect survive language and measurement equivalence? Use official local-language questionnaires where available; otherwise combine translation, back-translation, adjudication, local review, and measurement-invariance tests. & Separate linguistic adaptation from changes in country-conditioned representation. \\
+\addlinespace
+Measurement: within-country distribution & Which communities gain or lose representational fidelity within countries? Use official survey weights and stratified samples by region, language, class, age, and other locally meaningful dimensions, with multilevel and spatial models plus disclosure controls. & Replace country averages with evidence about social heterogeneity and distributional inclusion. \\
+\addlinespace
+Measurement: construct breadth & How sensitive is the geometry to item coverage and interpretation? Expand to validated multi-item batteries, preregister wording repairs, test alternative direction codings, and replicate across independent survey programs. & Distinguish robust geometry from artifacts of a narrow instrument or wording conflict. \\
+\addlinespace
+Mechanisms: release dynamics & Are representational changes persistent, cyclical, or specific to one serving date? Build a preregistered longitudinal panel of versioned releases, prompts, serving dates, and repeated survey anchors. & Establish an empirical economics of model evolution and innovation-led adjustment. \\
+\addlinespace
+Mechanisms: agent interaction & Do interaction rules attenuate or amplify shared pre-interaction mismatch? Randomize voting, deliberation, feedback, memory, and heterogeneous roles; compare each treatment with the finite-pool residual $E_5$. & Connect representation to collective-agent mechanisms without treating repeated samples as an agent society. \\
+\addlinespace
+Impact: decisions and welfare & When does mismatch alter economically consequential recommendations or choices? Pair survey anchors with preregistered laboratory or field tasks on entrepreneurship, innovation support, labor adjustment, compensation, and coordination; use causal designs where assignment is feasible. & Test behavioral and welfare consequences instead of inferring them from survey distance. \\
+\addlinespace
+Impact: participatory governance & Which representations and safeguards are legitimate in a particular setting? Co-design questions, thresholds, and deployment criteria with affected communities and domain experts; document disagreement and governance decisions. & Turn local knowledge into accountable validation and adoption practices. \\
+\bottomrule
+\end{longtable}
+\normalsize
+
+The sequence matters. Multilingual measurement equivalence and within-country sampling
+should precede stronger mechanism claims; interactive-agent experiments should precede
+claims about collective behavior; and causal or participatory field evidence should
+precede welfare, legitimacy, or deployment conclusions. Repeating the paired comparison
+across future releases provides the common empirical spine linking these research paths.
+\FloatBarrier

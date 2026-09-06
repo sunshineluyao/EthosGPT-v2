@@ -1,0 +1,65 @@
+country,country_code,cultural_region,latitude,longitude,coordinate_source
+Andorra,20,Catholic Europe,42.5063,1.5218,manual geographic center for Natural Earth-omitted survey entity
+Argentina,32,Latin America,-34.54819974167782,-64.34358367367363,Natural Earth low-resolution equal-area polygon centroid
+Armenia,51,Orthodox Europe,40.210298851610084,45.005587821522326,Natural Earth low-resolution equal-area polygon centroid
+Australia,36,English-Speaking,-25.34771094772458,133.76945721251775,Natural Earth low-resolution equal-area polygon centroid
+Bangladesh,50,African-Islamic,23.82768152623293,90.25983687806702,Natural Earth low-resolution equal-area polygon centroid
+Bolivia,68,Latin America,-16.67555525077011,-64.59375570297115,Natural Earth low-resolution equal-area polygon centroid
+Brazil,76,Latin America,-10.503996827378222,-52.82841143326394,Natural Earth low-resolution equal-area polygon centroid
+Canada,124,English-Speaking,58.20795994240579,-94.74504972549948,Natural Earth low-resolution equal-area polygon centroid
+Chile,152,Latin America,-36.982545242836835,-69.9831794595457,Natural Earth low-resolution equal-area polygon centroid
+China,156,Confucian,35.77277358266934,102.7946566697478,Natural Earth low-resolution equal-area polygon centroid
+Colombia,170,Latin America,3.9089005331558138,-72.99757448397403,Natural Earth low-resolution equal-area polygon centroid
+Cyprus,196,Catholic Europe,34.90684247255044,33.03921502803187,Natural Earth low-resolution equal-area polygon centroid
+Czechia,203,Protestant Europe,49.76768994268681,15.340491911696462,Natural Earth low-resolution equal-area polygon centroid
+Ecuador,218,Latin America,-1.453707062470914,-78.36906524130436,Natural Earth low-resolution equal-area polygon centroid
+Egypt,818,African-Islamic,26.427737491299258,29.83013825009724,Natural Earth low-resolution equal-area polygon centroid
+Ethiopia,231,African-Islamic,8.630354004471746,39.529301007256,Natural Earth low-resolution equal-area polygon centroid
+Germany,276,Protestant Europe,51.04444722313548,10.265813662803396,Natural Earth low-resolution equal-area polygon centroid
+Great Britain,826,English-Speaking,53.77057079843011,-2.772221733667652,Natural Earth low-resolution equal-area polygon centroid
+Greece,300,Orthodox Europe,39.020731604243096,22.710720341585912,Natural Earth low-resolution equal-area polygon centroid
+Guatemala,320,Latin America,15.692947399185318,-90.36062190207777,Natural Earth low-resolution equal-area polygon centroid
+Hong Kong SAR,344,Confucian,22.3193,114.1694,manual geographic center for Natural Earth-omitted survey entity
+India,356,West & South Asia,22.669036640732216,79.2975294194695,Natural Earth low-resolution equal-area polygon centroid
+Indonesia,360,West & South Asia,-2.2080895627578783,117.26707054204832,Natural Earth low-resolution equal-area polygon centroid
+Iran,364,West & South Asia,32.3668017266671,54.34017492100118,Natural Earth low-resolution equal-area polygon centroid
+Iraq,368,African-Islamic,32.98173084430044,43.75795233101914,Natural Earth low-resolution equal-area polygon centroid
+Japan,392,Confucian,37.43431682022288,137.50744125099823,Natural Earth low-resolution equal-area polygon centroid
+Jordan,400,African-Islamic,31.232165316045943,36.762787870836576,Natural Earth low-resolution equal-area polygon centroid
+Kazakhstan,398,West & South Asia,47.97641097991646,67.1180880831522,Natural Earth low-resolution equal-area polygon centroid
+Kenya,404,African-Islamic,0.5944065467444356,37.77134018387392,Natural Earth low-resolution equal-area polygon centroid
+Kyrgyzstan,417,West & South Asia,41.489567746469824,74.5817405664241,Natural Earth low-resolution equal-area polygon centroid
+Lebanon,422,African-Islamic,33.909481139104756,35.86766353917289,Natural Earth low-resolution equal-area polygon centroid
+Libya,434,African-Islamic,26.899973232093814,17.998135557661804,Natural Earth low-resolution equal-area polygon centroid
+Macau SAR,446,Confucian,22.1987,113.5439,manual geographic center for Natural Earth-omitted survey entity
+Malaysia,458,West & South Asia,3.7228098887725514,109.67226310829403,Natural Earth low-resolution equal-area polygon centroid
+Maldives,462,African-Islamic,3.2028,73.2207,manual geographic center for Natural Earth-omitted survey entity
+Mexico,484,Latin America,23.74450992573914,-102.05506770388912,Natural Earth low-resolution equal-area polygon centroid
+Mongolia,496,Confucian,46.71760330159685,102.91255591376111,Natural Earth low-resolution equal-area polygon centroid
+Morocco,504,African-Islamic,29.721612729351794,-8.627685548387525,Natural Earth low-resolution equal-area polygon centroid
+Myanmar,104,West & South Asia,20.917533909944577,96.37925663169398,Natural Earth low-resolution equal-area polygon centroid
+Netherlands,528,Protestant Europe,52.28818364857084,5.502619025591697,Natural Earth low-resolution equal-area polygon centroid
+New Zealand,554,English-Speaking,-41.48442455699637,172.6391574219091,Natural Earth low-resolution equal-area polygon centroid
+Nicaragua,558,Latin America,12.843614237081624,-85.01321671243511,Natural Earth low-resolution equal-area polygon centroid
+Nigeria,566,African-Islamic,9.530124315639682,7.9835138717955765,Natural Earth low-resolution equal-area polygon centroid
+Northern Ireland,909,English-Speaking,54.7877,-6.4923,manual geographic center for Natural Earth-omitted survey entity
+Pakistan,586,African-Islamic,29.838081877254915,69.17546759319801,Natural Earth low-resolution equal-area polygon centroid
+Peru,604,Latin America,-9.124963688591706,-74.28156586626768,Natural Earth low-resolution equal-area polygon centroid
+Philippines,608,Latin America,11.703699911964845,122.76443214864285,Natural Earth low-resolution equal-area polygon centroid
+Puerto Rico,630,Latin America,18.237080085574746,-66.47893947938704,Natural Earth low-resolution equal-area polygon centroid
+Romania,642,Orthodox Europe,45.830133816902716,24.94614180990721,Natural Earth low-resolution equal-area polygon centroid
+Russia,643,Orthodox Europe,60.04422795043797,93.18630765233657,Natural Earth low-resolution equal-area polygon centroid
+Serbia,688,Orthodox Europe,44.21577395764386,20.830835199843495,Natural Earth low-resolution equal-area polygon centroid
+Singapore,702,Confucian,1.3521,103.8198,manual geographic center for Natural Earth-omitted survey entity
+Slovakia,703,Protestant Europe,48.72306681380555,19.498394403237445,Natural Earth low-resolution equal-area polygon centroid
+South Korea,410,Confucian,36.411556781039664,127.79978916881659,Natural Earth low-resolution equal-area polygon centroid
+Taiwan ROC,158,Confucian,23.73663918263604,120.96212866509863,Natural Earth low-resolution equal-area polygon centroid
+Tajikistan,762,West & South Asia,38.570638868158206,71.03713206342697,Natural Earth low-resolution equal-area polygon centroid
+Thailand,764,West & South Asia,14.962267137701465,100.88982762617185,Natural Earth low-resolution equal-area polygon centroid
+Tunisia,788,African-Islamic,34.13392892747056,9.534255556275323,Natural Earth low-resolution equal-area polygon centroid
+Turkey,792,African-Islamic,39.03438442078579,35.107017571064596,Natural Earth low-resolution equal-area polygon centroid
+Ukraine,804,Orthodox Europe,48.9082508709635,31.417330568392966,Natural Earth low-resolution equal-area polygon centroid
+United States,840,English-Speaking,42.630832208723696,-103.2042307733481,Natural Earth low-resolution equal-area polygon centroid
+Uzbekistan,860,West & South Asia,41.68847863021575,63.29174590993545,Natural Earth low-resolution equal-area polygon centroid
+Vietnam,704,Confucian,16.529984241590125,106.09358208335786,Natural Earth low-resolution equal-area polygon centroid
+Zimbabwe,716,African-Islamic,-18.88911169191015,29.780671744935358,Natural Earth low-resolution equal-area polygon centroid

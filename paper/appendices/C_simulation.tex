@@ -1,0 +1,67 @@
+\section{Questionnaire, prompts, and API protocol}
+\label{app:instrument}
+
+\subsection{How the model prompts relate to the WVS questionnaire}
+The official English WVS7 master questionnaire supplies the reference wording and
+response meanings \citep{wvs7masterquestionnaire}. The public derivative supplies the
+survey counts, while the API prompt record shows exactly what each model received. We
+keep these sources separate so that a prompt paraphrase is never presented as verbatim
+survey administration.
+
+\begin{table}[!htbp]
+\centering
+\caption{Comparison of the model prompts with the official WVS7 instrument.}
+\label{tab:prompt-audit}
+\small
+\begin{tabular}{p{0.10\linewidth}p{0.30\linewidth}p{0.48\linewidth}}
+\toprule
+\rowcolor{tablehead}
+Item & Status & Consequence and treatment \\
+\midrule
+Q48 & paraphrase & Endpoints are shortened; primary analysis retained and wording printed below. \\
+Q57 & paraphrase & Binary semantics are preserved; wrapper differs from interviewer wording. \\
+Q106 & label mismatch & Stem uses the official incentive endpoint, but category 10 says
+“larger income differences.” Versioned primary analysis retained and discrepancy disclosed. \\
+Q108 & paraphrase & Endpoint meanings are preserved. \\
+Q121 & material conflict & Stem says category 1 is “Very bad”; list says “Rather bad.”
+We report the versioned result, a five-anchor exclusion, and 50\%/100\% relabeling bounds. \\
+Q159 & wrapper only & Official statement and endpoints are preserved. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Model queries and response format}
+The protocol identifier is
+\texttt{ethosgpt\_all\_country\_api\_wave1\_v1}; the 384 instantiated prompts have
+SHA-256
+\texttt{d8673796bd2bdb9e7259d1548287e988d010942c808aa8d5f555735ec4a0cc73}.
+Each prompt replaces \texttt{\{\{COUNTRY\}\}} with one roster name. It asks for a full
+probability distribution, not a simulated individual answer. A strict JSON schema
+requires every response category, nonnegative finite probabilities, and a sum of one.
+No human distribution, other-model output, tool, or external search was supplied.
+
+We queried \texttt{gpt-5.5-2026-04-23} and \texttt{gpt-5.6-sol} through the OpenAI
+Responses Batch API on 2 September 2026, with reasoning effort \texttt{low},
+\texttt{store=false}, and five independently requested generations per
+country--question--model cell. The five generations estimate within-cell response
+instability; they are averaged before country-level inference and are never counted as
+five independent countries. Seven GPT-5.5 and three GPT-5.6 initially malformed
+responses were rerun. The attempt ledger retains all 3,850 attempts; the analytic files
+contain the 3,840 final valid records. The released ledger records request and response
+identifiers, requested and returned model identifiers, timestamps, token counts, and
+content hashes without credentials.
+
+\begin{auditbox}{Interpreting model versions}
+GPT-5.5 has a dated API identifier. GPT-5.6 Sol was returned under the documented but
+undated identifier \texttt{gpt-5.6-sol}. Archived outputs therefore reproduce the
+reported analysis, while a future re-query is not guaranteed to recreate the same raw
+answers.
+\end{auditbox}
+
+\subsection{Exact questions, choices, and prompts}
+The following blocks reproduce the official English wording and choices used for the
+comparison, followed by the exact API template used for every country. Line wrapping is
+typographic only.
+
+\input{appendices/generated_questionnaire_prompts}
+\FloatBarrier

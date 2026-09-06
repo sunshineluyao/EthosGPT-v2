@@ -1,0 +1,69 @@
+\section{Worked metric tutorial}
+\label{app:tutorial}
+
+All five measures use the same survey distributions but summarize disagreement at
+different scales. The worked example follows the calculation from one item to a country
+profile and then to cross-country geometry; every value can be regenerated with
+\texttt{scripts/make\_wave1\_assets.py}.
+
+\subsection{Step 1: compare two response distributions}
+For ordered categories $r=1,\ldots,R$, let $q_r$ be the human probability and $p_r$ the
+model probability. Total variation ignores order,
+\[
+\mathrm{TVD}(p,q)=\frac12\sum_{r=1}^{R}|p_r-q_r|,
+\]
+whereas normalized one-dimensional Wasserstein distance measures how far probability
+mass moves,
+\[
+W1(p,q)=\frac{1}{R-1}\sum_{r=1}^{R-1}|F_p(r)-F_q(r)|.
+\]
+Table~\ref{tab:tutorial-q106} works through China Q106 using the human distribution and
+the mean of five model generations. For this item, GPT-5.6 has slightly lower TVD but
+higher W1: it moves less total mass, but some of that mass travels farther along the
+ordered scale.
+
+\input{tabs/appendix_tutorial_tables}
+
+\subsection{Step 2: turn each item into a directed country coordinate}
+If higher raw values already point toward the named construct, the directed expected
+score is
+\[
+s_{mcj}=\sum_r p_{mcjr}\frac{r-r_{\min}}{r_{\max}-r_{\min}}.
+\]
+For reverse-coded constructs, we use $1-s_{mcj}$. With one anchor per domain in the new
+experiment, the six directed scores form
+$A_{mc}=(A,T,D,M,I,S)$. The corresponding survey profile is $H_c$.
+
+\subsection{Step 3: standardize the country-profile gap}
+Let $\sigma_k$ be the across-country standard deviation of the human score for domain
+$k$. Then
+\[
+\CRG_{mc}=\sqrt{\frac{1}{6}\sum_{k=1}^{6}
+\left(\frac{A_{mck}-H_{ck}}{\sigma_k}\right)^2}.
+\]
+For example, each China row in Table~\ref{tab:tutorial-crg} first forms a standardized
+error; squaring, averaging the six values, and taking the square root yields the displayed
+CRG. CRG is zero only under exact agreement on all six coordinates.
+
+\subsection{Step 4: compare cross-country geometry}
+For every unordered pair $c<c'$, compute Euclidean distances
+$d^H_{cc'}=\lVert H_c-H_{c'}\rVert_2$ and
+$d^A_{m,cc'}=\lVert A_{mc}-A_{mc'}\rVert_2$. The dispersion ratio and structure
+retention are
+\[
+\VDR_m=\frac{\overline d^A_m}{\overline d^H},
+\qquad
+\CSR_m=\rho_S(\mathbf d^A_m,\mathbf d^H).
+\]
+VDR asks whether the \emph{amount} of separation is preserved; CSR asks whether the
+\emph{ordering} of which country pairs are near or far is preserved. The four-country
+subset in Table~\ref{tab:tutorial-geometry} illustrates six pair distances. The reported
+main estimates repeat exactly this calculation over all
+$\binom{64}{2}=2{,}016$ pairs. The subset is pedagogical and is not a second analysis.
+
+\begin{auditbox}{Reading the targets}
+W1, TVD, and CRG target 0. VDR targets 1: values below 1 mean compression and values
+above 1 mean expansion. CSR targets 1; 0 means no monotonic preservation of the human
+pairwise ordering, and negative values indicate reversal.
+\end{auditbox}
+\FloatBarrier

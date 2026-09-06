@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "set_id": "ethosgpt-figure1-vector-set-v070",
+  "title": "EthosGPT Figure 1 semantic vector set",
+  "purpose": "Supply coherent, editable scientific micro-scenes for the Figure 1 graphical abstract.",
+  "source": {
+    "kind": "paper",
+    "title": "EthosGPT v0.7.0",
+    "locator": "Sections 1-4"
+  },
+  "target_figure": {
+    "type": "graphical abstract",
+    "background": "light",
+    "placement": "Figure 1 at full manuscript width"
+  },
+  "evidence_boundary": "These vector assets identify concepts and operations. They do not encode measured values, causal effects, certification, or implementation status.",
+  "art_direction": {
+    "mode": "editorial-vector",
+    "viewpoint": "front",
+    "outline": "2 px equivalent, round caps and joins",
+    "lighting": "flat scientific vector",
+    "detail_level": "medium",
+    "palette": {
+      "ink": "#18324A",
+      "surface": "#F5F7FB",
+      "primary": "#315EFB",
+      "secondary": "#14877D",
+      "status_accent": "#D97745",
+      "divider": "#CBD5E1"
+    }
+  },
+  "hero_asset_id": "asset-measurement-lenses",
+  "contact_sheet": "contact-sheet.png",
+  "assets": [
+    {
+      "id": "asset-survey-globe",
+      "concept": "survey evidence across countries",
+      "semantic_role": "data",
+      "source_locator": "manuscript Sections 1-4",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-survey-globe.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "survey evidence across countries",
+      "alt_text": "Unlabeled vector micro-scene for survey evidence across countries.",
+      "visual_recipe": [
+        "recognizable scientific objects",
+        "one visible operation cue",
+        "matched outline and palette"
+      ],
+      "unsupported_implications": [
+        "causal effect",
+        "certification",
+        "measured magnitude"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 180,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-09-03",
+        "editable_master": "assets/asset-survey-globe.svg"
+      },
+      "checksum_sha256": "5651384a7f00a21adb562345e2dfd908ac11d36410a922135b6ad0df616458fa"
+    },
+    {
+      "id": "asset-paired-audit",
+      "concept": "paired model comparison",
+      "semantic_role": "instrument",
+      "source_locator": "manuscript Sections 1-4",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-paired-audit.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "paired model comparison",
+      "alt_text": "Unlabeled vector micro-scene for paired model comparison.",
+      "visual_recipe": [
+        "recognizable scientific objects",
+        "one visible operation cue",
+        "matched outline and palette"
+      ],
+      "unsupported_implications": [
+        "causal effect",
+        "certification",
+        "measured magnitude"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 180,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-09-03",
+        "editable_master": "assets/asset-paired-audit.svg"
+      },
+      "checksum_sha256": "b692f1e77e5b0c639fd4bfa14f3ed534f602d37e4788126c5db2c60539cef620"
+    },
+    {
+      "id": "asset-measurement-lenses",
+      "concept": "distribution, geometry, and persistence measurements",
+      "semantic_role": "hero",
+      "source_locator": "manuscript Sections 1-4",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-measurement-lenses.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "distribution, geometry, and persistence measurements",
+      "alt_text": "Unlabeled vector micro-scene for distribution, geometry, and persistence measurements.",
+      "visual_recipe": [
+        "recognizable scientific objects",
+        "one visible operation cue",
+        "matched outline and palette"
+      ],
+      "unsupported_implications": [
+        "causal effect",
+        "certification",
+        "measured magnitude"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 180,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-09-03",
+        "editable_master": "assets/asset-measurement-lenses.svg"
+      },
+      "checksum_sha256": "5b34e0bfd438d63ffbdf9f9c7784520a9d095bbb1d4f52582fef8351acd5ce1f"
+    },
+    {
+      "id": "asset-economic-margins",
+      "concept": "theory-indexed economic margins",
+      "semantic_role": "process",
+      "source_locator": "manuscript Sections 1-4",
+      "evidence_status": "conceptual-mechanism",
+      "file": "assets/asset-economic-margins.svg",
+      "format": "svg",
+      "source_type": "original-vector",
+      "description": "theory-indexed economic margins",
+      "alt_text": "Unlabeled vector micro-scene for theory-indexed economic margins.",
+      "visual_recipe": [
+        "recognizable scientific objects",
+        "one visible operation cue",
+        "matched outline and palette"
+      ],
+      "unsupported_implications": [
+        "causal effect",
+        "certification",
+        "measured magnitude"
+      ],
+      "palette_roles": [
+        "ink",
+        "surface",
+        "primary",
+        "secondary",
+        "status_accent"
+      ],
+      "viewpoint": "front",
+      "placement": {
+        "preferred_panel": "Figure 1",
+        "anchor": "center",
+        "min_width_px": 180,
+        "clear_space_percent": 12,
+        "background_compatibility": "light"
+      },
+      "provenance": {
+        "authoring_method": "Native SVG geometry",
+        "created_on": "2026-09-03",
+        "editable_master": "assets/asset-economic-margins.svg"
+      },
+      "checksum_sha256": "7a426d20c45742d961929bfe77e4b4bace540f2308f194231fb7c858bc44ed51"
+    }
+  ]
+}

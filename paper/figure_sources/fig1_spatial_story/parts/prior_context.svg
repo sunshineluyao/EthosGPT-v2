@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="111.6pt" height="77.76pt" viewBox="0 0 111.6 77.76" version="1.1">
+ <title>Published benchmark context</title><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-09-05T00:00:00+00:00</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>EthosGPT v1.0.0 Figure 1 child chart</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 77.76  L 111.6 77.76  L 111.6 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="patch_2">
+   <path d="M 2.9016 76.67136  L 108.6984 76.67136  Q 110.0376 76.67136 110.0376 75.73824  L 110.0376 2.02176  Q 110.0376 1.08864 108.6984 1.08864  L 2.9016 1.08864  Q 1.5624 1.08864 1.5624 2.02176  L 1.5624 75.73824  Q 1.5624 76.67136 2.9016 76.67136  z " style="fill: #f6f8fb; stroke: #3b5ccc; stroke-width: 0.75; stroke-linejoin: miter" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_3">
+    <path d="M 32.76576 53.80992  L 101.3328 53.80992  L 101.3328 26.562816  L 32.76576 26.562816  z " style="fill: #ffffff" />
+   </g>
+   <g id="matplotlib.axis_1" />
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1" />
+     <g id="text_1">
+      <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: end; fill: #4e5b68" x="31.76576" y="54.961806" transform="rotate(-0 31.76576 54.961806)">Alpaca</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2" />
+     <g id="text_2">
+      <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: end; fill: #4e5b68" x="31.76576" y="46.705108" transform="rotate(-0 31.76576 46.705108)">Vicuna</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3" />
+     <g id="text_3">
+      <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: end; fill: #4e5b68" x="31.76576" y="38.44841" transform="rotate(-0 31.76576 38.44841)">Mixtral</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_4" />
+     <g id="text_4">
+      <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: end; fill: #4e5b68" x="31.76576" y="30.191711" transform="rotate(-0 31.76576 30.191711)">GPT-3.5</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 32.76576 52.571415  L 39.684798 52.571415  " style="fill: none; stroke: #d6dee7; stroke-width: 1.15" />
+    <path d="M 32.76576 44.314717  L 48.349178 44.314717  " style="fill: none; stroke: #d6dee7; stroke-width: 1.15" />
+    <path d="M 32.76576 36.058019  L 77.770672 36.058019  " style="fill: none; stroke: #d6dee7; stroke-width: 1.15" />
+    <path d="M 32.76576 27.801321  L 79.516015 27.801321  " style="fill: none; stroke: #d6dee7; stroke-width: 1.15" />
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="md4c789985b" d="M 0 2.061553  C 0.54673 2.061553 1.071141 1.844335 1.457738 1.457738  C 1.844335 1.071141 2.061553 0.54673 2.061553 0  C 2.061553 -0.54673 1.844335 -1.071141 1.457738 -1.457738  C 1.071141 -1.844335 0.54673 -2.061553 0 -2.061553  C -0.54673 -2.061553 -1.071141 -1.844335 -1.457738 -1.457738  C -1.844335 -1.071141 -2.061553 -0.54673 -2.061553 0  C -2.061553 0.54673 -1.844335 1.071141 -1.457738 1.457738  C -1.071141 1.844335 -0.54673 2.061553 0 2.061553  z " style="stroke: #ffffff; stroke-width: 0.35" />
+    </defs>
+    <g>
+     <use ns4:href="#md4c789985b" x="39.684798" y="52.571415" style="fill: #3b5ccc; stroke: #ffffff; stroke-width: 0.35" />
+     <use ns4:href="#md4c789985b" x="48.349178" y="44.314717" style="fill: #3b5ccc; stroke: #ffffff; stroke-width: 0.35" />
+     <use ns4:href="#md4c789985b" x="77.770672" y="36.058019" style="fill: #3b5ccc; stroke: #ffffff; stroke-width: 0.35" />
+     <use ns4:href="#md4c789985b" x="79.516015" y="27.801321" style="fill: #3b5ccc; stroke: #ffffff; stroke-width: 0.35" />
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: start; fill: #18324a" x="44.671491" y="54.202197" transform="rotate(-0 44.671491 54.202197)">11%</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: start; fill: #18324a" x="53.335872" y="45.945498" transform="rotate(-0 53.335872 45.945498)">25%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: start; fill: #18324a" x="82.757366" y="37.6888" transform="rotate(-0 82.757366 37.6888)">72%</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: start; fill: #18324a" x="84.502708" y="29.432102" transform="rotate(-0 84.502708 29.432102)">75%</text>
+   </g>
+  </g>
+  <g id="line2d_5">
+   <path d="M 55.8 72.845568  L 55.8 59.781888  " style="fill: none; stroke: #d6dee7; stroke-width: 0.6; stroke-linecap: square" />
+  </g>
+  <g id="text_9">
+   <text style="font-weight: 700; font-size: 8.2px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: start; fill: #18324a" x="7.05312" y="12.696607" transform="rotate(-0 7.05312 12.696607)">A  Prior evidence</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: middle; fill: #4e5b68" x="55.8" y="22.221629" transform="rotate(-0 55.8 22.221629)">WorldValuesBench · W1 &lt; 0.2</text>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 7.1px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: middle; fill: #d88a24" x="29.55168" y="65.186196" transform="rotate(-0 29.55168 65.186196)">71–81%</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: middle; fill: #4e5b68" x="29.55168" y="73.353324" transform="rotate(-0 29.55168 73.353324)">prompt gain</text>
+  </g>
+  <g id="text_13">
+   <text style="font-weight: 700; font-size: 7.1px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: middle; fill: #078c82" x="82.04832" y="65.186196" transform="rotate(-0 82.04832 65.186196)">CRG 1.63–2.48</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 7px; font-family: 'Nimbus Roman', 'Times New Roman', 'Times', 'Liberation Serif', serif; text-anchor: middle; fill: #4e5b68" x="82.04832" y="73.356605" transform="rotate(-0 82.04832 73.356605)">N=50–51</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p26e85e2cf9">
+   <rect x="32.76576" y="26.562816" width="68.56704" height="27.247104" />
+  </clipPath>
+ </defs>
+</svg>

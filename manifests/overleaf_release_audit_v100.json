@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "root": "/workspace/scratch/74cbb174eecb/overleaf_stage.a25668",
+  "main": "main.tex",
+  "counts": {
+    "source_files": 121,
+    "tex_files": 28,
+    "displayed_graphics": 8,
+    "bibliographies": 1,
+    "errors": 0,
+    "warnings": 0
+  },
+  "findings": []
+}
+

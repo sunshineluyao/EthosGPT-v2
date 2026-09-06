@@ -1,0 +1,5 @@
+model,countries,mean_crg,median_crg,vdr,csr,csr_permutation_p,source_protocol,comparability
+Alpaca-7B,51,2.475153962884021,2.3235384901517864,1.1375298803915501,0.03170123414690207,0.686,WorldValuesBench archived outputs; complete six-domain profiles only,descriptive historical context; not pooled with the new API experiment
+GPT-3.5-Turbo,51,2.2155889906431967,2.277104698602566,1.2251741566337562,0.04120059598471654,0.634,WorldValuesBench archived outputs; complete six-domain profiles only,descriptive historical context; not pooled with the new API experiment
+Mixtral-8x7B,51,1.6286753387850321,1.6048041468427843,1.0898970035438602,0.01597291725950086,0.834,WorldValuesBench archived outputs; complete six-domain profiles only,descriptive historical context; not pooled with the new API experiment
+Vicuna-7B-v1.5,50,1.6701025434803458,1.6157632012753986,0.6250978564637195,-0.02893070441879851,0.69,WorldValuesBench archived outputs; complete six-domain profiles only,descriptive historical context; not pooled with the new API experiment

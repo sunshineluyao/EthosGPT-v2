@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "log": "/workspace/scratch/74cbb174eecb/overleaf_cleanroom_r4.pClPyD/main.log",
+  "pages": 33,
+  "counts": {
+    "errors": 0,
+    "warnings": 19
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1140,
+      "message": "Underfull \\hbox (badness 5446) in paragraph at lines 144--150"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1154,
+      "message": "Underfull \\hbox (badness 10000) in paragraph at lines 22--22"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1232,
+      "message": "Underfull \\vbox (badness 6188) has occurred while \\output is active []"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1235,
+      "message": "Underfull \\hbox (badness 10000) in paragraph at lines 19--19"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1240,
+      "message": "Underfull \\hbox (badness 1983) in paragraph at lines 22--22"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1245,
+      "message": "Underfull \\hbox (badness 10000) in paragraph at lines 22--22"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1256,
+      "message": "Underfull \\hbox (badness 10000) in paragraph at lines 25--26"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1261,
+      "message": "Underfull \\hbox (badness 10000) in paragraph at lines 25--26"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1266,
+      "message": "Underfull \\hbox (badness 4254) in paragraph at lines 26--26"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1271,
+      "message": "Underfull \\hbox (badness 3229) in paragraph at lines 26--26"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1276,
+      "message": "Underfull \\hbox (badness 4726) in paragraph at lines 26--28"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1281,
+      "message": "Underfull \\hbox (badness 2229) in paragraph at lines 26--28"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1286,
+      "message": "Underfull \\hbox (badness 1194) in paragraph at lines 28--30"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1292,
+      "message": "Underfull \\hbox (badness 10000) in paragraph at lines 35--35"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1303,
+      "message": "Underfull \\vbox (badness 10000) has occurred while \\output is active []"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1306,
+      "message": "Underfull \\vbox (badness 10000) has occurred while \\output is active []"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1309,
+      "message": "Underfull \\vbox (badness 10000) has occurred while \\output is active []"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1312,
+      "message": "Underfull \\vbox (badness 10000) has occurred while \\output is active []"
+    },
+    {
+      "severity": "warning",
+      "code": "underfull_box",
+      "line": 1315,
+      "message": "Underfull \\vbox (badness 10000) has occurred while \\output is active []"
+    }
+  ]
+}

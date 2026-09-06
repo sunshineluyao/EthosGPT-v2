@@ -1,0 +1,50 @@
+{
+  "analysis": "EthosGPT two-venue extension",
+  "analysis_seed": 20260902,
+  "countries": 64,
+  "questions": [
+    "Q48",
+    "Q57",
+    "Q106",
+    "Q108",
+    "Q121",
+    "Q159"
+  ],
+  "models": {
+    "GPT-5.5": "gpt-5.5-2026-04-23",
+    "GPT-5.6 Sol": "gpt-5.6-sol"
+  },
+  "bootstrap_draws": 20000,
+  "joint_signflip_permutations": 19999,
+  "joint_multiplicity_family": "12 W1/TVD item outcomes",
+  "composition_interpretation": "exact exhaustive subsets of five observed generations; countries are inferential units",
+  "economic_margin_map": {
+    "Opportunity and participation": [
+      "Agency",
+      "Science"
+    ],
+    "Distribution and adjustment": [
+      "Distribution",
+      "Market"
+    ],
+    "Coordination and legitimacy": [
+      "Trust",
+      "Inclusion"
+    ]
+  },
+  "economic_status": "exploratory theory-indexed sensitivity; no observed economic decisions or welfare outcomes",
+  "temporal_boundary": "one collection wave; no spatiotemporal panel inference",
+  "result_files": [
+    "composition_cell_curves.csv",
+    "composition_contrasts.csv",
+    "composition_estimates.csv",
+    "composition_summary.csv",
+    "economic_margin_results.csv",
+    "economic_scenarios.csv",
+    "economic_weight_surface.csv",
+    "economic_weight_surface_summary.csv",
+    "human_cell_count_quartile_sensitivity.csv",
+    "joint_item_inference.csv",
+    "leave_one_region_out.csv"
+  ]
+}

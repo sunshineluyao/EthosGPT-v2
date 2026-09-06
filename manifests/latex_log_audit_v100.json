@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "log": "/workspace/scratch/74cbb174eecb/source/work/github/paper/main.log",
+  "pages": 33,
+  "counts": {
+    "errors": 0,
+    "overfull_boxes": 0,
+    "undefined_references_or_citations": 0,
+    "underfull_boxes": 20
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "underfull_boxes",
+      "count": 20,
+      "message": "Benign underfull boxes occur in narrow appendix cells and checklist page breaks; rendered inspection confirms no clipping."
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+evidence_date: 2024-05-23
+outputs: archived_worldvaluesbench
+models:
+  - {display_name: Alpaca-7B, upstream_file: alpaca_with_demographics.tsv, current_model: false}
+  - {display_name: Vicuna-7B-v1.5, upstream_file: vicuna_with_demographics.tsv, current_model: false}
+  - {display_name: Mixtral-8x7B, upstream_file: mixtral_with_demographics.tsv, current_model: false}
+  - {display_name: GPT-3.5-Turbo, upstream_file: gpt-3.5_with_demographics.tsv, current_model: false}
+api_calls_made_by_this_project: 0
+work_demo:
+  protocol_id: ethosgpt_work_demo_20260829_v1
+  run_surface: ChatGPT Work
+  prompt_mode: population_distribution
+  models:
+    - {display_name: GPT-5.5, surface_label: gpt-5.5, immutable_snapshot_exposed: false, reasoning_effort: low}
+    - {display_name: GPT-5.6 Sol, surface_label: gpt-5.6-sol, immutable_snapshot_exposed: false, reasoning_effort: low}
+  records_per_model: 48
+  pooled_with_archived: false

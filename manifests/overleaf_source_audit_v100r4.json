@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "root": "/workspace/scratch/74cbb174eecb/overleaf_source_audit_r4.AaSsCa",
+  "main": "main.tex",
+  "counts": {
+    "tex_files": 28,
+    "graphics": 8,
+    "bibliographies": 1,
+    "errors": 0,
+    "warnings": 0
+  },
+  "findings": []
+}

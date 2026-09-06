@@ -1,0 +1,78 @@
+{
+  "api_key_written_to_disk": false,
+  "batch_submission_order": [
+    "gpt56",
+    "gpt55"
+  ],
+  "canary_requests": 2,
+  "claim_boundary": "This is a new API-snapshot extension of the eight-country ChatGPT Work pilot. It must not be described as a rerun of the Work surface. GPT-5.5 is pinned to a dated API snapshot; the official GPT-5.6 Sol model page currently exposes only the gpt-5.6-sol identifier, so request IDs, returned model identifiers, timestamps, and response hashes must be retained.",
+  "created_at_utc": "2026-09-02T15:59:53Z",
+  "models": [
+    {
+      "display_name": "GPT-5.5",
+      "model_id_type": "dated_snapshot",
+      "official_documentation": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "requested_model_id": "gpt-5.5-2026-04-23",
+      "standard_input_usd_per_million_tokens": 5.0,
+      "standard_output_usd_per_million_tokens": 30.0,
+      "tag": "gpt55"
+    },
+    {
+      "display_name": "GPT-5.6 Sol",
+      "model_id_type": "documented_identifier_without_dated_snapshot",
+      "official_documentation": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "requested_model_id": "gpt-5.6-sol",
+      "standard_input_usd_per_million_tokens": 4.0,
+      "standard_output_usd_per_million_tokens": 20.0,
+      "tag": "gpt56"
+    }
+  ],
+  "planned_model_responses": 3840,
+  "planning_cost": {
+    "max_token_setting_planning_cost_usd": 27.89,
+    "method": "character_count_divided_by_four_plus_schema",
+    "models": {
+      "gpt55": {
+        "estimated_input_tokens": 737180,
+        "max_output_tokens_per_response": 512,
+        "max_token_setting_planning_cost_usd": 16.59,
+        "requested_model_id": "gpt-5.5-2026-04-23",
+        "responses": 1920,
+        "typical_output_token_assumption_per_response": 160,
+        "typical_planning_cost_usd": 6.45
+      },
+      "gpt56": {
+        "estimated_input_tokens": 733850,
+        "max_output_tokens_per_response": 512,
+        "max_token_setting_planning_cost_usd": 11.3,
+        "requested_model_id": "gpt-5.6-sol",
+        "responses": 1920,
+        "typical_output_token_assumption_per_response": 160,
+        "typical_planning_cost_usd": 4.54
+      }
+    },
+    "typical_planning_cost_usd": 10.99,
+    "warning": "Planning estimate only. Billing, reasoning-token use, retries, pricing, and account-specific terms can change; the OpenAI project budget is the authoritative spending control."
+  },
+  "prepared_files": {
+    "gpt55": {
+      "batch_path": "prepared/gpt55_attempt0_batch.jsonl",
+      "batch_sha256": "178d729e1b937b7e51da1076366b7a46be56e5a236b988b432c33836c01b18f4",
+      "index_path": "prepared/gpt55_attempt0_index.jsonl",
+      "index_sha256": "c52bbee8f04fcec16fb3c01dc15c23301f13e2a6415cfdb638b56ea8a07d16b4",
+      "request_count": 1920
+    },
+    "gpt56": {
+      "batch_path": "prepared/gpt56_attempt0_batch.jsonl",
+      "batch_sha256": "83bf33d5382845255be455c0555b9873785aa51810b8e62ecb4d02d5df3675db",
+      "index_path": "prepared/gpt56_attempt0_index.jsonl",
+      "index_sha256": "19a7e1ff55c9a224eff5bf676e89ca4510c015a6885d32e50acafcd104e2a442",
+      "request_count": 1920
+    }
+  },
+  "prompt_sha256": "d8673796bd2bdb9e7259d1548287e988d010942c808aa8d5f555735ec4a0cc73",
+  "protocol_id": "ethosgpt_all_country_api_wave1_v1",
+  "protocol_sha256": "9841093345fcb80944f1e30e676a69aad131d9432f42903cde5dd3ed9cd31000",
+  "run_dir": "wave1_20260902T155953Z",
+  "status": "prepared_not_queried"
+}

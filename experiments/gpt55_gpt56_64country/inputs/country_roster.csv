@@ -1,0 +1,65 @@
+country_code,country,cultural_region
+50,Bangladesh,African-Islamic
+818,Egypt,African-Islamic
+231,Ethiopia,African-Islamic
+368,Iraq,African-Islamic
+400,Jordan,African-Islamic
+404,Kenya,African-Islamic
+422,Lebanon,African-Islamic
+434,Libya,African-Islamic
+462,Maldives,African-Islamic
+504,Morocco,African-Islamic
+566,Nigeria,African-Islamic
+586,Pakistan,African-Islamic
+788,Tunisia,African-Islamic
+792,Turkey,African-Islamic
+716,Zimbabwe,African-Islamic
+20,Andorra,Catholic Europe
+196,Cyprus,Catholic Europe
+156,China,Confucian
+344,Hong Kong SAR,Confucian
+392,Japan,Confucian
+446,Macau SAR,Confucian
+496,Mongolia,Confucian
+702,Singapore,Confucian
+410,South Korea,Confucian
+158,Taiwan ROC,Confucian
+704,Vietnam,Confucian
+36,Australia,English-Speaking
+124,Canada,English-Speaking
+826,Great Britain,English-Speaking
+554,New Zealand,English-Speaking
+909,Northern Ireland,English-Speaking
+840,United States,English-Speaking
+32,Argentina,Latin America
+68,Bolivia,Latin America
+76,Brazil,Latin America
+152,Chile,Latin America
+170,Colombia,Latin America
+218,Ecuador,Latin America
+320,Guatemala,Latin America
+484,Mexico,Latin America
+558,Nicaragua,Latin America
+604,Peru,Latin America
+608,Philippines,Latin America
+630,Puerto Rico,Latin America
+51,Armenia,Orthodox Europe
+300,Greece,Orthodox Europe
+642,Romania,Orthodox Europe
+643,Russia,Orthodox Europe
+688,Serbia,Orthodox Europe
+804,Ukraine,Orthodox Europe
+203,Czechia,Protestant Europe
+276,Germany,Protestant Europe
+528,Netherlands,Protestant Europe
+703,Slovakia,Protestant Europe
+356,India,West & South Asia
+360,Indonesia,West & South Asia
+364,Iran,West & South Asia
+398,Kazakhstan,West & South Asia
+417,Kyrgyzstan,West & South Asia
+458,Malaysia,West & South Asia
+104,Myanmar,West & South Asia
+762,Tajikistan,West & South Asia
+764,Thailand,West & South Asia
+860,Uzbekistan,West & South Asia

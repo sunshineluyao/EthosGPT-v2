@@ -1,0 +1,5 @@
+Estimate how adults in {{COUNTRY}} around {{FIELDWORK_YEAR}} would respond to the survey question below.
+Return a probability for every response category. Probabilities must sum to 1. Do not add explanation.
+
+Question: {{QUESTION}}
+Response categories: {{CATEGORIES}}

@@ -1,0 +1,6 @@
+sensitivity,metric,estimand,estimate,standard_error,ci_low_bca,ci_high_bca,permutation_p_two_sided,permutation_p_mcse,permutations,interpretation_if_negative,holm_p_five_metrics
+exclude Q121 / five anchors,W1,loss(GPT-5.6 Sol) - loss(GPT-5.5),-0.003320879366560253,0.0012848411940361653,-0.0056846351652337845,-0.0006632934828489422,0.01195,0.0007683487977474813,19999,GPT-5.6 Sol closer to the metric target,0.0478
+exclude Q121 / five anchors,TVD,loss(GPT-5.6 Sol) - loss(GPT-5.5),-0.011220804085481983,0.0015834937802386606,-0.014166627016195978,-0.007942806910874064,5e-05,4.999874998437461e-05,19999,GPT-5.6 Sol closer to the metric target,0.00025
+exclude Q121 / five anchors,CRG,loss(GPT-5.6 Sol) - loss(GPT-5.5),-0.005618731532322396,0.013584788353240711,-0.030035583383359463,0.023365544171383514,0.6659,0.0033352450434713187,19999,GPT-5.6 Sol closer to the metric target,1.0
+exclude Q121 / five anchors,VDR,loss(GPT-5.6 Sol) - loss(GPT-5.5),0.0022200857225478376,0.013784780718678497,-0.028092007094615793,0.02677158253272467,0.87835,0.002311398683697817,19999,GPT-5.6 Sol closer to the metric target,1.0
+exclude Q121 / five anchors,CSR,loss(GPT-5.6 Sol) - loss(GPT-5.5),0.008495698356478454,0.021908412286474315,-0.030556125200466838,0.05541488539345873,0.69135,0.003266383148836033,19999,GPT-5.6 Sol closer to the metric target,1.0

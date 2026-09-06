@@ -1,0 +1,88 @@
+\subsection{Joint item-level inference}
+\begin{longtable}{llrrrr}
+\caption{All 12 item-level contrasts in one max-$T$ family. Negative values favor GPT-5.6. SEs use countries; intervals are simultaneous 95\% bootstrap intervals.}\label{tab:joint-items}\\
+\toprule
+\rowcolor{tablehead} Metric & Item & $\Delta$ & SE & Simultaneous 95\% CI & max-$T$ $p$ \\
+\midrule\endfirsthead\toprule
+\rowcolor{tablehead} Metric & Item & $\Delta$ & SE & Simultaneous 95\% CI & max-$T$ $p$ \\\midrule\endhead
+W1 & Agency (Q48) & -0.0033 & 0.0021 & [-0.0094,0.0028] & 0.65550 \\
+W1 & Trust (Q57) & 0.0032 & 0.0038 & [-0.0077,0.0142] & 0.98840 \\
+W1 & Distribution (Q106) & -0.0087 & 0.0030 & [-0.0176,0.0002] & 0.05915 \\
+\rowcolor{improvebg}
+W1 & Responsibility (Q108) & -0.0082 & 0.0025 & [-0.0156,-0.0009] & 0.01735 \\
+W1 & Immigration (Q121) & 0.0049 & 0.0023 & [-0.0018,0.0116] & 0.28060 \\
+W1 & Science (Q159) & 0.0004 & 0.0016 & [-0.0042,0.0050] & 1.00000 \\
+TVD & Agency (Q48) & -0.0050 & 0.0024 & [-0.0119,0.0019] & 0.28545 \\
+TVD & Trust (Q57) & 0.0032 & 0.0038 & [-0.0077,0.0142] & 0.98840 \\
+\rowcolor{improvebg}
+TVD & Distribution (Q106) & -0.0266 & 0.0042 & [-0.0389,-0.0143] & 0.00005 \\
+\rowcolor{improvebg}
+TVD & Responsibility (Q108) & -0.0207 & 0.0032 & [-0.0301,-0.0113] & 0.00005 \\
+TVD & Immigration (Q121) & 0.0078 & 0.0037 & [-0.0030,0.0186] & 0.29595 \\
+TVD & Science (Q159) & -0.0070 & 0.0024 & [-0.0141,0.0001] & 0.05580 \\
+\bottomrule\end{longtable}
+\clearpage
+\subsection{Finite-five-generation composition diagnostic}
+\begin{table}[!htbp]\centering\small
+\caption{Squared probability error decomposed into the residual after averaging the observed five runs and their generation-varying component. This finite-pool identity is not an asymptotic bias estimate. Country-bootstrap SEs and 95\% BCa intervals are reported.}\label{tab:composition}
+\begin{tabular}{llrrr}\toprule
+\rowcolor{tablehead} Comparison & Component & Estimate & SE & 95\% BCa CI \\\midrule
+5.5 & single-generation error & 0.11121 & 0.00807 & [0.09768,0.13003] \\
+5.5 & five-run residual & 0.10990 & 0.00806 & [0.09638,0.12873] \\
+5.5 & generation-varying & 0.00131 & 0.00006 & [0.00121,0.00144] \\
+5.5 & share removed by mean & 1.180\% & 0.090\% & [1.018,1.371]\% \\
+5.6 & single-generation error & 0.10494 & 0.00763 & [0.09209,0.12284] \\
+5.6 & five-run residual & 0.10357 & 0.00761 & [0.09078,0.12140] \\
+5.6 & generation-varying & 0.00138 & 0.00006 & [0.00126,0.00151] \\
+5.6 & share removed by mean & 1.313\% & 0.092\% & [1.147,1.509]\% \\
+5.6 $-$ 5.5 & single-generation error & -0.00627 & 0.00097 & [-0.00826,-0.00447] \\
+5.6 $-$ 5.5 & five-run residual & -0.00633 & 0.00097 & [-0.00834,-0.00452] \\
+5.6 $-$ 5.5 & generation-varying & 0.00007 & 0.00006 & [-0.00004,0.00018] \\
+\bottomrule\end{tabular}\end{table}
+\subsection{Creative-destruction margins and weight sensitivity}
+\begin{table}[!htbp]\centering\small
+\caption{Exploratory theory-indexed margins, using mean squared TVD. Negative contrasts favor GPT-5.6. Holm correction spans three margins.}\label{tab:economic-margins}
+\begin{tabular}{lrrrrr}\toprule
+\rowcolor{tablehead} Margin & GPT-5.5 & GPT-5.6 & $\Delta$ (SE) & 95\% BCa CI & Holm $p$ \\\midrule
+\rowcolor{improvebg}
+Opportunity/participation & 0.15467 & 0.15000 & -0.00467 (0.00144) & [-0.00753,-0.00190] & 0.00350 \\
+\rowcolor{improvebg}
+Distribution/adjustment & 0.17839 & 0.15706 & -0.02133 (0.00260) & [-0.02638,-0.01614] & 0.00015 \\
+Coordination/legitimacy & 0.03588 & 0.03826 & 0.00238 (0.00127) & [-0.00005,0.00492] & 0.06710 \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[!htbp]\centering\small
+\caption{Selected nonnegative weighting scenarios. Weights sum to one. Intervals use the paired country bootstrap.}\label{tab:economic-scenarios}
+\begin{tabular}{lrrrr}\toprule
+\rowcolor{tablehead} Scenario & $\Delta$ weighted loss & SE & 95\% CI & $P(\Delta<0)$ \\\midrule
+\rowcolor{improvebg}
+Equal weights & -0.0079 & 0.0010 & [-0.0099,-0.0058] & 1.000 \\
+\rowcolor{improvebg}
+Opportunity only & -0.0047 & 0.0014 & [-0.0075,-0.0019] & 0.999 \\
+\rowcolor{improvebg}
+Distribution only & -0.0213 & 0.0026 & [-0.0264,-0.0162] & 1.000 \\
+Coordination only & 0.0024 & 0.0013 & [-0.0001,0.0049] & 0.030 \\
+\bottomrule\end{tabular}\end{table}
+Across the full 0.02 weight grid (1326 points), 88.76\% of 95\% intervals favor GPT-5.6, 11.24\% are uncertain, and none favor GPT-5.5. This is a sensitivity analysis over a declared index, not an observed welfare estimate.
+\subsection{Influence of regions and human-cell size}
+\begin{table}[!htbp]\centering\small
+\caption{Leave-one-cultural-region-out global TVD contrasts. Regions are descriptive WVS groupings; negative values favor GPT-5.6.}\label{tab:leave-region}
+\begin{tabular}{lrrr}\toprule
+\rowcolor{tablehead} Omitted region & Countries retained & $\Delta$ TVD & SE \\\midrule
+African-Islamic & 49 & -0.0080 & 0.0017 \\
+Catholic Europe & 62 & -0.0078 & 0.0015 \\
+Confucian & 55 & -0.0097 & 0.0013 \\
+English-Speaking & 58 & -0.0078 & 0.0016 \\
+Latin America & 52 & -0.0079 & 0.0017 \\
+Orthodox Europe & 58 & -0.0077 & 0.0015 \\
+Protestant Europe & 60 & -0.0086 & 0.0015 \\
+West \& South Asia & 54 & -0.0068 & 0.0016 \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[!htbp]\centering\small
+\caption{Global TVD contrast by quartile of average human-cell count. Ties produce unequal quartile sizes.}\label{tab:cell-quartiles}
+\begin{tabular}{lrrrr}\toprule
+\rowcolor{tablehead} Quartile & Countries & Mean cell $n$ & $\Delta$ TVD & 95\% BCa CI \\\midrule
+Q1 lowest & 17 & 19.5 & -0.0055 & [-0.0101,-0.0000] \\
+Q2 & 15 & 24.0 & -0.0110 & [-0.0149,-0.0035] \\
+Q3 & 16 & 28.1 & -0.0082 & [-0.0132,-0.0036] \\
+Q4 highest & 16 & 46.1 & -0.0078 & [-0.0140,-0.0003] \\
+\bottomrule\end{tabular}\end{table}\FloatBarrier

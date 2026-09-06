@@ -1,0 +1,50 @@
+{
+  "instrument": "World Values Survey Wave 7 master questionnaire",
+  "instrument_url": "https://access.gesis.org/dbk/69555?download_purpose=-99",
+  "joint_variable_report_url": "https://access.gesis.org/dbk/69548?download_purpose=-99",
+  "retrieved_utc": "2026-09-02",
+  "questions": [
+    {
+      "question_id": "Q48",
+      "domain": "Agency",
+      "official_wording": "Some people feel they have completely free choice and control over their lives, while other people feel that what they do has no real effect on what happens to them. Please use this scale where 1 means \"no choice at all\" and 10 means \"a great deal of choice\" to indicate how much freedom of choice and control you feel you have over the way your life turns out.",
+      "choices": {"1": "No choice at all", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "10": "A great deal of choice"},
+      "source_page": 5
+    },
+    {
+      "question_id": "Q57",
+      "domain": "Trust",
+      "official_wording": "Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?",
+      "choices": {"1": "Most people can be trusted", "2": "Need to be very careful"},
+      "source_page": 6
+    },
+    {
+      "question_id": "Q106",
+      "domain": "Distribution",
+      "official_wording": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between. Q106: Incomes should be made more equal [1] / There should be greater incentives for individual effort [10].",
+      "choices": {"1": "Incomes should be made more equal", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "10": "There should be greater incentives for individual effort"},
+      "source_page": 7
+    },
+    {
+      "question_id": "Q108",
+      "domain": "Market / social responsibility",
+      "official_wording": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between. Q108: Government should take more responsibility to ensure that everyone is provided for [1] / People should take more responsibility to provide for themselves [10].",
+      "choices": {"1": "Government should take more responsibility to ensure that everyone is provided for", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "10": "People should take more responsibility to provide for themselves"},
+      "source_page": 7
+    },
+    {
+      "question_id": "Q121",
+      "domain": "Inclusion / immigration",
+      "official_wording": "Now we would like to know your opinion about the people from other countries who come to live in [your country] - the immigrants. How would you evaluate the impact of these people on the development of [your country]?",
+      "choices": {"1": "Very bad", "2": "Quite bad", "3": "Neither good, nor bad", "4": "Quite good", "5": "Very good"},
+      "source_page": 9
+    },
+    {
+      "question_id": "Q159",
+      "domain": "Science and technology",
+      "official_wording": "Because of science and technology, there will be more opportunities for the next generation.",
+      "choices": {"1": "Completely disagree", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "10": "Completely agree"},
+      "source_page": 11
+    }
+  ]
+}
