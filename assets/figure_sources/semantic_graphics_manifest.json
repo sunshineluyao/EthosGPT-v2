@@ -158,8 +158,7 @@
   "authoritative_generators": [
     "scripts/make_wave1_assets.py",
     "scripts/make_v070_assets.py",
-    "scripts/make_visual_story_v100.py",
-    "scripts/polish_submission_tables.py"
+    "scripts/make_visual_story_v100.py"
   ],
   "style_contract": {
     "insertion_width_inches": 5.48,
@@ -209,11 +208,11 @@
         5.48,
         3.45
       ],
-      "master": "figs/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py",
+      "master": "results/figures/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/fig1_spatial_story.pdf",
-        "svg": "figs/fig1_spatial_story.svg",
-        "png": "figs/fig1_spatial_story.png"
+        "pdf": "results/figures/fig1_spatial_story.pdf",
+        "svg": "results/figures/fig1_spatial_story.svg",
+        "png": "results/figures/fig1_spatial_story.png"
       },
       "sha256": {
         "pdf": "5ca325e04f27e7dc56a0e4b182a5089dfdcd24de59209a1b85052e0a9d6b7b48",
@@ -241,9 +240,9 @@
       ],
       "master": "scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/fig2_multiview_results.pdf",
-        "svg": "figs/fig2_multiview_results.svg",
-        "png": "figs/fig2_multiview_results.png"
+        "pdf": "results/figures/fig2_multiview_results.pdf",
+        "svg": "results/figures/fig2_multiview_results.svg",
+        "png": "results/figures/fig2_multiview_results.png"
       },
       "sha256": {
         "pdf": "472a003a0990bfe129d944ce7d9c745d8b14f9c0ca3222e1902ffd3eacee6e46",
@@ -268,9 +267,9 @@
       ],
       "master": "scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/fig3_economic_story.pdf",
-        "svg": "figs/fig3_economic_story.svg",
-        "png": "figs/fig3_economic_story.png"
+        "pdf": "results/figures/fig3_economic_story.pdf",
+        "svg": "results/figures/fig3_economic_story.svg",
+        "png": "results/figures/fig3_economic_story.png"
       },
       "sha256": {
         "pdf": "d2153e88f9d300b117a252af406b9ae109c0f1d6fdb626a4713249aecb45119c",
@@ -294,9 +293,9 @@
       ],
       "master": "scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/figS1_uncertainty_sources.pdf",
-        "svg": "figs/figS1_uncertainty_sources.svg",
-        "png": "figs/figS1_uncertainty_sources.png"
+        "pdf": "results/figures/figS1_uncertainty_sources.pdf",
+        "svg": "results/figures/figS1_uncertainty_sources.svg",
+        "png": "results/figures/figS1_uncertainty_sources.png"
       },
       "sha256": {
         "pdf": "db21545e5d5aa8b843903263abd75e1894213aaf8a45d562d550027de2614433",
@@ -317,11 +316,11 @@
         5.48,
         2.1
       ],
-      "master": "figs/figS2_study_design.drawio",
+      "master": "results/figures/figS2_study_design.drawio",
       "exports": {
-        "pdf": "figs/figS2_study_design.pdf",
-        "svg": "figs/figS2_study_design.svg",
-        "png": "figs/figS2_study_design.png"
+        "pdf": "results/figures/figS2_study_design.pdf",
+        "svg": "results/figures/figS2_study_design.svg",
+        "png": "results/figures/figS2_study_design.png"
       },
       "sha256": {
         "pdf": "d0b449407870027a67ade7afec87896acaa75b9b08a273cb21eec5b86ff14c85",
@@ -344,9 +343,9 @@
       ],
       "master": "scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/figS3_economic_sensitivity.pdf",
-        "svg": "figs/figS3_economic_sensitivity.svg",
-        "png": "figs/figS3_economic_sensitivity.png"
+        "pdf": "results/figures/figS3_economic_sensitivity.pdf",
+        "svg": "results/figures/figS3_economic_sensitivity.svg",
+        "png": "results/figures/figS3_economic_sensitivity.png"
       },
       "sha256": {
         "pdf": "f05a03db91be3f6d11d57134c49d51080c06fab6b255e3b838c3f9c3817f2c21",
@@ -371,9 +370,9 @@
       ],
       "master": "scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/figS4_country_maps.pdf",
-        "svg": "figs/figS4_country_maps.svg",
-        "png": "figs/figS4_country_maps.png"
+        "pdf": "results/figures/figS4_country_maps.pdf",
+        "svg": "results/figures/figS4_country_maps.svg",
+        "png": "results/figures/figS4_country_maps.png"
       },
       "sha256": {
         "pdf": "44d85567ab1a5d20072ceb54f0484a85ca9aaba1424834d0580e3b1481356a3e",
@@ -398,9 +397,9 @@
       ],
       "master": "scripts/make_visual_story_v100.py",
       "exports": {
-        "pdf": "figs/figS5_country_profiles.pdf",
-        "svg": "figs/figS5_country_profiles.svg",
-        "png": "figs/figS5_country_profiles.png"
+        "pdf": "results/figures/figS5_country_profiles.pdf",
+        "svg": "results/figures/figS5_country_profiles.svg",
+        "png": "results/figures/figS5_country_profiles.png"
       },
       "sha256": {
         "pdf": "cf02d86c215d185d8ef16eecf12484c37a7a00652fe3bed429782414d4275b24",

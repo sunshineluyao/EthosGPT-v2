@@ -15,4 +15,4 @@ Source data:
 - `data/country_radar_case_selection.csv`
 - `data/country_radar_profiles.csv`
 
-Exports: live-text SVG, vector PDF, and preview PNG in `paper/figs/`.
+Exports: live-text SVG, vector PDF, and preview PNG in `results/figures/`.

@@ -12,4 +12,4 @@ Source data:
 - `economic_weight_surface.csv`
 - `economic_weight_surface_summary.csv`
 
-Exports: live-text SVG, vector PDF, and preview PNG in `paper/figs/`.
+Exports: live-text SVG, vector PDF, and preview PNG in `results/figures/`.

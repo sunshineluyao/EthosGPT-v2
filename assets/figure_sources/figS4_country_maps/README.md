@@ -12,4 +12,4 @@ Source data:
 - `figure1_error_type_examples.csv`
 - `Natural Earth 1:110m public-domain geometry`
 
-Exports: live-text SVG, vector PDF, and preview PNG in `paper/figs/`.
+Exports: live-text SVG, vector PDF, and preview PNG in `results/figures/`.

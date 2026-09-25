@@ -13,11 +13,11 @@ PDF and SVG are authoritative; PNG is preview-only. All quantitative marks map t
 
 | Figure | Reader task | Evidence class | Authoritative source |
 |---|---|---|---|
-| Figure 1 | framing/evidence | published context, descriptive reanalysis, current evidence, and theory-guided directions | `figs/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py` |
+| Figure 1 | framing/evidence | published context, descriptive reanalysis, current evidence, and theory-guided directions | `results/figures/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py` |
 | Figure 2 | evidence | inferential and descriptive panels | `scripts/make_visual_story_v100.py` |
 | Figure 3 | implication | exploratory theory-indexed inference | `scripts/make_visual_story_v100.py` |
 | Appendix Figure 4 | evidence | sensitivity analysis | `scripts/make_visual_story_v100.py` |
-| Appendix Figure 5 | mechanism | methodological/conceptual | `figs/figS2_study_design.drawio` |
+| Appendix Figure 5 | mechanism | methodological/conceptual | `results/figures/figS2_study_design.drawio` |
 | Appendix Figure 8 | implication | exploratory sensitivity analysis | `scripts/make_visual_story_v100.py` |
 | Appendix Figure 6 | heterogeneity | descriptive country-level sensitivity | `scripts/make_visual_story_v100.py` |
 | Appendix Figure 7 | heterogeneity | descriptive country-level profile cases | `scripts/make_visual_story_v100.py` |
