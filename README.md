@@ -29,6 +29,20 @@ generations, as the independent units.
   regions. Confucian is +0.0021 (95% exploratory BCa CI −0.0075 to +0.0125);
   Protestant Europe is nearly unchanged (−0.0001). Groups range from 2 to
   15 countries, so the small-group results are descriptive only.
+- The signed question scores locate the direction that unsigned error hides:
+  GPT-5.6 understates the survey's agency (−0.105) and science-opportunity
+  (−0.080) scores and overstates the recorded equality-oriented income
+  response (+0.088). These country-equal means are relative to the unweighted
+  survey derivative; the Q106 prompt mismatch restricts the income reading.
+  Country signs can differ from their eight-region average.
+- A declared **conditional quality-ladder simulation** translates the six
+  signed gaps into hypothetical entry support, transition assistance, and
+  coordination. With its specified illustrative coefficients, GPT-5.6-guided
+  choices have 0.73 percentage points less expected 20-step log frontier
+  quality growth and 1.00 fewer unassisted-transition index units per 100
+  activities per step than survey-guided choices. These are model quantities,
+  not observed policy effects, GDP forecasts, welfare, or environmental
+  sustainability; assumptions and sensitivity are documented below.
 - Spatial-error and spatial-HAC estimates retain the global TVD result across
   three neighbor graphs and four distance cutoffs.
 - Averaging all five observed runs removes only 1.18%--1.31% of single-run
@@ -75,6 +89,14 @@ The charts reveal that Confucian has a positive mean TVD contrast even though
 5 of 9 countries have lower TVD. African-Islamic has lower mean TVD while its
 mean W1 contrast is positive with an interval crossing zero. Regional intervals
 are exploratory and are not adjusted over regions or metrics.
+The [signed country and eight-region result index](results/signed_directions/README.md)
+provides all six question directions per country and region, the paired model
+differences, and editable PDF/SVG figures. Run `make signed-directions` to
+regenerate it from released scores; no model API calls or LaTeX are needed.
+The [conditional creative-destruction index](results/creative_destruction/README.md)
+provides its explicit six-question decision mapping, country and eight-region
+scenario CSVs, parameter checks, and editable figures. Run
+`make creative-destruction` from the released country-question scores.
 A [result index](docs/result_index.md) maps claims to frozen inputs and commands.
 
 No API key or network access is required. The package validates the two versioned
@@ -95,6 +117,11 @@ answers.
 - results/figures/: generated PDF, SVG, PNG, and draw.io figure files
 - results/region_figures/: eight-region PDF/SVG figures, PNG previews, and
   source mapping (no manuscript sources)
+- results/signed_directions/: six-question signed country and region results,
+  a conceptual evidence figure, and a region heatmap with source mapping
+- results/creative_destruction/: conditional six-question quality-ladder
+  simulation, five declared scenarios, full geographic results and vector
+  charts (no manuscript files)
 - scripts/make_wave1_assets.py, scripts/make_v070_assets.py, and
   scripts/make_visual_story_v100.py: country-coverage and tutorial CSVs,
   quantitative figure sources, and the publication-oriented visual narrative

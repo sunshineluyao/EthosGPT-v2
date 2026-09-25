@@ -35,9 +35,20 @@ def main() -> None:
     run("scripts/make_v070_assets.py")
     run("scripts/make_visual_story_v100.py")
     run("experiments/gpt55_gpt56_64country/plot_eight_regions.py")
+    run(
+        "experiments/gpt55_gpt56_64country/signed_directions.py",
+        "--scores", str(EXPERIMENT / "results/country_question_scores.csv"),
+        "--region-metrics", str(EXPERIMENT / "results/eight_region_sensitivity.csv"),
+        "--output-dir", str(ROOT / "results/signed_directions"),
+    )
+    run(
+        "experiments/gpt55_gpt56_64country/simulate_creative_destruction.py",
+        "--scores", str(EXPERIMENT / "results/country_question_scores.csv"),
+        "--output-dir", str(ROOT / "results/creative_destruction"),
+    )
     run("scripts/verify_results.py")
     run("scripts/audit_visual_assets.py")
-    print("PASS: archived outputs -> statistics -> eight regions -> reproducible figures; no manuscript sources")
+    print("PASS: archived outputs -> statistics -> signed results and conditional simulation -> figures; no manuscript sources")
 
 if __name__ == "__main__":
     main()

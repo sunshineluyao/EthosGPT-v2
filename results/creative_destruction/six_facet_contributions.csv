@@ -1,0 +1,13 @@
+model,item,named_position,mean_model_minus_survey_score,contribution_to_mean_arrival_pp,contribution_to_mean_assistance_pp
+GPT-5.5,Q48,agency,-0.10673804235,-0.640428254101,-0
+GPT-5.5,Q57,trust,0.0363487344501,0.10904620335,0
+GPT-5.5,Q106,income equality,0.100049434085,0,3.00148302255
+GPT-5.5,Q108,individual provision,-0.00186013885456,-0,0.0558041656367
+GPT-5.5,Q121,immigration contribution,0.0290392694328,0.0871178082984,0
+GPT-5.5,Q159,science opportunity,-0.0775480755034,-0.46528845302,-0
+GPT-5.6 Sol,Q48,agency,-0.104741514572,-0.628449087434,-0
+GPT-5.6 Sol,Q57,trust,0.0297768594501,0.0893305783504,0
+GPT-5.6 Sol,Q106,income equality,0.0880112396405,0,2.64033718922
+GPT-5.6 Sol,Q108,individual provision,0.00882180558989,0,-0.264654167697
+GPT-5.6 Sol,Q121,immigration contribution,0.0294377069328,0.0883131207984,0
+GPT-5.6 Sol,Q159,science opportunity,-0.0802845338367,-0.48170720302,-0

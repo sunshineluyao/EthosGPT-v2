@@ -2,7 +2,7 @@ PYTHON ?= python
 export PYTHONPATH := src
 export SOURCE_DATE_EPOCH ?= 1788566400
 
-.PHONY: setup analysis assets lint test negative-tests verify audit-visual release-contract reproduce-offline
+.PHONY: setup analysis assets signed-directions creative-destruction lint test negative-tests verify audit-visual release-contract reproduce-offline
 
 EXPERIMENT := experiments/gpt55_gpt56_64country
 
@@ -23,6 +23,14 @@ assets:
 	$(PYTHON) scripts/make_v070_assets.py
 	$(PYTHON) scripts/make_visual_story_v100.py
 	$(PYTHON) $(EXPERIMENT)/plot_eight_regions.py
+	$(MAKE) signed-directions
+	$(MAKE) creative-destruction
+
+signed-directions:
+	$(PYTHON) $(EXPERIMENT)/signed_directions.py --scores $(EXPERIMENT)/results/country_question_scores.csv --region-metrics $(EXPERIMENT)/results/eight_region_sensitivity.csv --output-dir results/signed_directions
+
+creative-destruction:
+	$(PYTHON) $(EXPERIMENT)/simulate_creative_destruction.py --scores $(EXPERIMENT)/results/country_question_scores.csv --output-dir results/creative_destruction
 
 lint:
 	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country tests

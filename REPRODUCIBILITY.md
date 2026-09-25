@@ -20,13 +20,31 @@ two archived model-output files. It performs these stages:
    leave-country/region-out checks, and human-cell-size strata;
 8. run Moran, Geary, spatial-error, and spatial-HAC diagnostics;
 9. regenerate machine-readable outputs and vector figures, including two
-   exploratory original-eight-region diagnostics with published BCa intervals; and
-10. verify the released results and the code-only repository boundary.
+   exploratory original-eight-region diagnostics with published BCa intervals
+   and the signed country-by-question and eight-region descriptive results; and
+10. compute a clearly conditional six-facet decision and creative-destruction
+    thought experiment with declared weak, illustrative, strong, two-item
+    neutralization, and no-decision-link scenarios; and
+11. verify the released results and the code-only repository boundary.
 
 Run:
 
     make reproduce-offline
     make release-contract
+
+For just the directional question analysis after the country scores and
+eight-region contrasts are available, run `make signed-directions`. It checks
+that the global signed means and region TVD changes match the already
+released analyses; its source and output guide are under
+`results/signed_directions/`. Regional signed cells are descriptive and have
+no interval or multiple-testing claim.
+
+For the declared, *uncalibrated* quality-ladder thought experiment, run
+`make creative-destruction`. Its code, complete country and eight-region
+outputs, equations, and parameter-sensitivity guide are under
+`results/creative_destruction/`. It reuses the directed model and unweighted
+survey profiles; it does not infer real innovation arrivals, employment,
+economic growth, welfare, or ecological sustainability.
 
 No API key or network request is used. Archived outputs reproduce the analysis;
 a later live request to an undated serving identifier is not promised to return

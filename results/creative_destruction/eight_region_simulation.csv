@@ -1,0 +1,81 @@
+scenario,model,cultural_region,countries,mean_delta_arrival_pp,mean_delta_20step_log_quality_pp,mean_delta_unassisted_transitions_per_100
+weak,GPT-5.5,Catholic Europe,2,-0.0169272824398,-0.00670409330584,0.200343955577
+weak,GPT-5.6 Sol,Catholic Europe,2,-0.0611231157731,-0.0242079656167,0.157072725646
+weak,GPT-5.5,Latin America,12,-0.226506087341,-0.0897083125587,-0.45635911815
+weak,GPT-5.6 Sol,Latin America,12,-0.221274142897,-0.0876361876413,-0.378751390164
+weak,GPT-5.5,Orthodox Europe,6,-0.380082651992,-0.150532701983,-0.57594729995
+weak,GPT-5.6 Sol,Orthodox Europe,6,-0.339656263103,-0.134521727741,-0.536727902635
+weak,GPT-5.5,English-Speaking,6,-0.213112843767,-0.084403884343,-0.146511119092
+weak,GPT-5.6 Sol,English-Speaking,6,-0.222825343767,-0.0882505446953,-0.148238710208
+weak,GPT-5.5,African-Islamic,15,-0.285927455093,-0.113242296539,-0.285465863222
+weak,GPT-5.6 Sol,African-Islamic,15,-0.322402455093,-0.127688313152,-0.198639931307
+weak,GPT-5.5,Confucian,9,-0.133069559212,-0.0527025377108,-0.198272210506
+weak,GPT-5.6 Sol,Confucian,9,-0.115737151804,-0.0458379936301,-0.218031792389
+weak,GPT-5.5,Protestant Europe,4,-0.185835229113,-0.0736005156124,-0.0571409424487
+weak,GPT-5.6 Sol,Protestant Europe,4,-0.224147729113,-0.0887742787781,-0.0996259742543
+weak,GPT-5.5,West & South Asia,10,-0.201186376427,-0.0796803765889,-0.428686766736
+weak,GPT-5.6 Sol,West & South Asia,10,-0.199351376427,-0.0789536201672,-0.371803861153
+illustrative,GPT-5.5,Catholic Europe,2,-0.0677091297591,-0.0531120071228,0.627316526952
+illustrative,GPT-5.6 Sol,Catholic Europe,2,-0.244492463092,-0.191783375262,0.470038354174
+illustrative,GPT-5.5,Latin America,12,-0.906024349365,-0.710698422327,-1.62011571626
+illustrative,GPT-5.6 Sol,Latin America,12,-0.885096571587,-0.694282374944,-1.36128444793
+illustrative,GPT-5.5,Orthodox Europe,6,-1.52033060797,-1.19256901347,-2.05602862834
+illustrative,GPT-5.6 Sol,Orthodox Europe,6,-1.35862505241,-1.06572486927,-1.91709289427
+illustrative,GPT-5.5,English-Speaking,6,-0.852451375069,-0.668675017174,-0.561194906874
+illustrative,GPT-5.6 Sol,English-Speaking,6,-0.891301375069,-0.699149511294,-0.5698906358
+illustrative,GPT-5.5,African-Islamic,15,-1.14370982037,-0.89714229591,-1.03273162638
+illustrative,GPT-5.6 Sol,African-Islamic,15,-1.28960982037,-1.01158833689,-0.760440837729
+illustrative,GPT-5.5,Confucian,9,-0.532278236847,-0.417526640903,-0.720008774546
+illustrative,GPT-5.6 Sol,Confucian,9,-0.462948607218,-0.363143490568,-0.779705799978
+illustrative,GPT-5.5,Protestant Europe,4,-0.743340916451,-0.583087217184,-0.237026078459
+illustrative,GPT-5.6 Sol,Protestant Europe,4,-0.896590916451,-0.703298702999,-0.389781332904
+illustrative,GPT-5.5,West & South Asia,10,-0.804745505707,-0.631253852814,-1.53230757062
+illustrative,GPT-5.6 Sol,West & South Asia,10,-0.797405505707,-0.625496252123,-1.34389432596
+strong,GPT-5.5,Catholic Europe,2,-0.152345541958,-0.234493430431,1.27215119173
+strong,GPT-5.6 Sol,Catholic Europe,2,-0.550108041958,-0.846737752929,0.928715483606
+strong,GPT-5.5,Latin America,12,-2.03855478607,-3.13778597498,-3.57772492339
+strong,GPT-5.6 Sol,Latin America,12,-1.99146728607,-3.06530791449,-3.02356210109
+strong,GPT-5.5,Orthodox Europe,6,-3.42074386793,-5.26528019072,-4.51644924481
+strong,GPT-5.6 Sol,Orthodox Europe,6,-3.05690636793,-4.70525393463,-4.22072135065
+strong,GPT-5.5,English-Speaking,6,-1.9180155939,-2.95224954044,-1.25294409868
+strong,GPT-5.6 Sol,English-Speaking,6,-2.0054280939,-3.08679668061,-1.27295155881
+strong,GPT-5.5,African-Islamic,15,-2.57334709584,-3.96094943401,-2.24788464202
+strong,GPT-5.6 Sol,African-Islamic,15,-2.90162209584,-4.46623714959,-1.68019281365
+strong,GPT-5.5,Confucian,9,-1.19762603291,-1.84341092768,-1.60559703867
+strong,GPT-5.6 Sol,Confucian,9,-1.04163436624,-1.60330530618,-1.72965852728
+strong,GPT-5.5,Protestant Europe,4,-1.67251706201,-2.57437308821,-0.514456621754
+strong,GPT-5.6 Sol,Protestant Europe,4,-2.01732956201,-3.10511566815,-0.847114980504
+strong,GPT-5.5,West & South Asia,10,-1.81067738784,-2.7870323386,-3.41090661978
+strong,GPT-5.6 Sol,West & South Asia,10,-1.79416238784,-2.76161210671,-3.00924816903
+omit_conflicting_Q106_Q121,GPT-5.5,Catholic Europe,2,0.132151981352,0.103661899065,0.867922727361
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,Catholic Europe,2,-0.0753813519814,-0.0591302076633,0.648730087361
+omit_conflicting_Q106_Q121,GPT-5.5,Latin America,12,-1.02590443458,-0.804734071027,-1.0166277856
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,Latin America,12,-1.0119766568,-0.793808923485,-0.860354381157
+omit_conflicting_Q106_Q121,GPT-5.5,Orthodox Europe,6,-1.52893178838,-1.19931590206,-0.713464067528
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,Orthodox Europe,6,-1.32697623282,-1.04089908377,-0.597271094194
+omit_conflicting_Q106_Q121,GPT-5.5,English-Speaking,6,-0.899747875215,-0.705775066481,-0.421605186623
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,English-Speaking,6,-0.955347875215,-0.749388499508,-0.387578149142
+omit_conflicting_Q106_Q121,GPT-5.5,African-Islamic,15,-1.35098777804,-1.05973408233,-0.620838812522
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,African-Islamic,15,-1.49698777804,-1.17425856473,-0.518189881559
+omit_conflicting_Q106_Q121,GPT-5.5,Confucian,9,-0.559998825316,-0.439271065878,0.0336490993894
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,Confucian,9,-0.539169195686,-0.422932007302,-0.0387844284131
+omit_conflicting_Q106_Q121,GPT-5.5,Protestant Europe,4,-0.663807065174,-0.520699729846,-0.191809198884
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,Protestant Europe,4,-0.793807065174,-0.622673584045,-0.290238903328
+omit_conflicting_Q106_Q121,GPT-5.5,West & South Asia,10,-0.920825064831,-0.722308314642,-0.433663555248
+omit_conflicting_Q106_Q121,GPT-5.6 Sol,West & South Asia,10,-0.886185064831,-0.695136204569,-0.363817581026
+no_decision_link,GPT-5.5,Catholic Europe,2,0,0,0
+no_decision_link,GPT-5.6 Sol,Catholic Europe,2,0,0,0
+no_decision_link,GPT-5.5,Latin America,12,0,0,0
+no_decision_link,GPT-5.6 Sol,Latin America,12,0,0,0
+no_decision_link,GPT-5.5,Orthodox Europe,6,0,0,0
+no_decision_link,GPT-5.6 Sol,Orthodox Europe,6,0,0,0
+no_decision_link,GPT-5.5,English-Speaking,6,0,0,0
+no_decision_link,GPT-5.6 Sol,English-Speaking,6,0,0,0
+no_decision_link,GPT-5.5,African-Islamic,15,0,0,0
+no_decision_link,GPT-5.6 Sol,African-Islamic,15,0,0,0
+no_decision_link,GPT-5.5,Confucian,9,0,0,0
+no_decision_link,GPT-5.6 Sol,Confucian,9,0,0,0
+no_decision_link,GPT-5.5,Protestant Europe,4,0,0,0
+no_decision_link,GPT-5.6 Sol,Protestant Europe,4,0,0,0
+no_decision_link,GPT-5.5,West & South Asia,10,0,0,0
+no_decision_link,GPT-5.6 Sol,West & South Asia,10,0,0,0
