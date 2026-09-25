@@ -12,3 +12,10 @@ jobs:
       - run: pip install -r requirements.lock.txt
       - run: make reproduce-offline
       - run: make verify
+      - name: Archive camera-ready workshop PDF
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: EthosGPT-GlobalSouthAI-camera-ready
+          path: paper/main.pdf
+          retention-days: 30

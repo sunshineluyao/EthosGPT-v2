@@ -1,13 +1,13 @@
 \documentclass{article}
 \PassOptionsToPackage{numbers,sort&compress}{natbib}
-\usepackage[dblblindworkshop]{neurips_2026}
-\workshoptitle{NeurIPS 2026 Workshop Submission}
+\usepackage[dblblindworkshop,final]{neurips_2026}
+\workshoptitle{GlobalSouthAI}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \renewcommand{\ttdefault}{lmtt}
 \usepackage{hyperref}
-\def\venuesubject{Anonymous NeurIPS 2026 workshop submission}
-\hypersetup{hidelinks,pdfauthor={Anonymous Authors},pdftitle={EthosGPT: Whose Values Guide Technological Change? Cultural Representation, Language-Model Updates, and Creative Destruction},pdfsubject={\venuesubject},pdfkeywords={survey representation, language model evaluation, model updates, agent systems, World Values Survey, creative destruction, responsible AI}}
+\def\venuesubject{Accepted GlobalSouthAI workshop paper at NeurIPS 2026}
+\hypersetup{hidelinks,pdfauthor={Luyao Zhang},pdftitle={EthosGPT: Whose Values Guide Technological Change? Cultural Representation, Language-Model Updates, and Creative Destruction},pdfsubject={\venuesubject},pdfkeywords={survey representation, language model evaluation, model updates, agent systems, World Values Survey, creative destruction, responsible AI}}
 \usepackage{url}
 \usepackage{booktabs}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -32,29 +32,32 @@
 \maketitle
 
 \begin{abstract}
-Model updates can change country-conditioned answers to survey questions. Prior
-benchmarks compared models and versions; here we compare GPT-5.5 and GPT-5.6 Sol
-under one fixed English elicitation on six World Values Survey items in 64
-countries, with five archived generations per cell. The comparison target is
-an unweighted public derivative of country responses, not a measure of culture,
-individual benefit, or welfare. GPT-5.6 lowers mean total-variation distance
-(TVD) by $0.0080$ (95\% BCa CI $[-0.0107,-0.0050]$); the other four corrected
-global metric contrasts are inconclusive. The reduction concentrates in income
-distribution (Q106) and responsibility (Q108). Excluding Q106 leaves a TVD
-contrast of $-0.00433$ (CI $[-0.00698,-0.00138]$), while excluding both Q106 and
-Q108 leaves $-0.00024$ (CI $[-0.00313,0.00286]$). Q106 and Q121 have disclosed
-prompt-label discrepancies; item omissions cannot recover results from corrected
-prompts. Averaging five observed outputs removes only 1.18--1.31\% of single-run
-squared probability error. An exploratory grouping by economic theme describes
-survey mismatch, not downstream decisions. Archived outputs and code permit
-offline recomputation; official survey weighting, translated prompts, and user
-outcomes require separate evidence.
+When language models are updated, the survey responses they assign to a named
+country may change. We compare two archived model releases, GPT-5.5 and GPT-5.6
+Sol, using one English elicitation of six World Values Survey items in 64
+countries, with five generations per item and country. Against an unweighted
+public derivative of survey responses, GPT-5.6 lowers mean total-variation
+distance (TVD) by $0.0080$ (95\% country-bootstrap BCa CI
+$[-0.0107,-0.0050]$); the other four globally corrected metric contrasts are
+inconclusive. Most of the signed TVD reduction comes from income distribution
+(Q106) and responsibility (Q108). Q106 and Q121 contain documented prompt-label
+discrepancies, which limit interpretation of item-specific changes. Five-run
+averaging removes only 1.18--1.31\% of single-run squared probability error
+among the observed outputs. An exploratory six-group geographic aggregation
+shows heterogeneous changes. These measurements describe agreement with a
+particular survey derivative, not individual benefit, cultural ground truth,
+or economic welfare. Archived model outputs enable offline replication.
 \end{abstract}
 
 \input{sections/01_introduction}
 \input{sections/02_data_methods}
 \input{sections/03_results}
 \input{sections/04_discussion}
+\begin{ack}
+We thank the reviewers of the NeurIPS 2026 GlobalSouthAI workshop for their
+constructive suggestions on survey provenance, prompt wording, scope, and
+interpretation.
+\end{ack}
 \clearpage
 
 \bibliographystyle{plainnat}

@@ -15,6 +15,7 @@ analysis:
 	$(PYTHON) $(EXPERIMENT)/uncertainty_sensitivity.py
 	$(PYTHON) $(EXPERIMENT)/protocol_sensitivity.py
 	$(PYTHON) $(EXPERIMENT)/wording_sensitivity.py
+	$(PYTHON) $(EXPERIMENT)/six_region_sensitivity.py
 	$(PYTHON) $(EXPERIMENT)/spatial_hac.py
 	$(PYTHON) $(EXPERIMENT)/extended_analysis.py
 

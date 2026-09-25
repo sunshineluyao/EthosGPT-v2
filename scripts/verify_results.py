@@ -55,6 +55,7 @@ def main() -> None:
         "five_anchor_metric_comparisons.csv",
         "q121_prompt_deviation_sensitivity.csv",
         "wording_omission_sensitivity.csv",
+        "six_region_sensitivity.csv",
         "leave_one_country_out.csv",
         "bootstrap_convergence.csv",
         "run_stability.csv",
@@ -199,6 +200,29 @@ def main() -> None:
     assert omission.loc[("exclude Q106", "TVD"), "delta_ci_high_bca"] < 0
     assert (omission.loc[("exclude Q106 and Q108", "TVD"), "delta_ci_low_bca"] < 0 <
             omission.loc[("exclude Q106 and Q108", "TVD"), "delta_ci_high_bca"])
+
+    six = pd.read_csv(RESULTS / "six_region_sensitivity.csv")
+    assert len(six) == 12 and set(six["metric"]) == {"W1", "TVD"}
+    assert six.groupby("metric").countries.sum().to_dict() == {"W1": 64, "TVD": 64}
+    assert set(six["six_region"]) == {
+        "African-Islamic", "Confucian", "English-Speaking",
+        "Europe", "Latin America", "West & South Asia",
+    }
+    six_tvd = six[six.metric == "TVD"].set_index("six_region")
+    assert (six_tvd.drop(index="Confucian").delta_56_minus_55 < 0).all()
+    assert six_tvd.loc["Confucian", "delta_ci_low_bca"] < 0 < six_tvd.loc["Confucian", "delta_ci_high_bca"]
+    close(six_tvd.loc["Confucian", "delta_56_minus_55"], .002095250216, 1e-9)
+    assert set(six_tvd.loc["Europe", "source_eight_regions"].split("; ")) == {
+        "Catholic Europe", "Orthodox Europe", "Protestant Europe",
+    }
+    for metric in ("W1", "TVD"):
+        grouped = six[six.metric == metric]
+        pooled = np.average(grouped.delta_56_minus_55, weights=grouped.countries)
+        global_score = pd.read_csv(RESULTS / "country_question_scores.csv")
+        by_country = global_score.pivot_table(
+            index="country", columns="model", values=metric.lower(), aggfunc="mean"
+        )
+        close(pooled, (by_country["GPT-5.6 Sol"] - by_country["GPT-5.5"]).mean(), 1e-12)
 
     conditional = pd.read_csv(RESULTS / "conditional_uncertainty_contrasts.csv")
     assert set(conditional["draws"]) == {5_000} and len(conditional) == 10
