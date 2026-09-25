@@ -1,0 +1,26 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Exploratory eight-region model-loss changes on six items for each
+country. Regions use the source cultural-map labels unchanged; $\Delta$ is
+GPT-5.6 minus GPT-5.5. TVD intervals are unadjusted 95\% country-bootstrap
+BCa intervals; a dash denotes fewer than five countries, for which no
+interval is reported. W1 intervals are available in the released CSV.}
+\label{tab:eight-regions}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l r r r p{.25\linewidth}}
+\toprule
+\rowcolor{tablehead}
+Source region & Countries & W1 $\Delta$ & TVD $\Delta$ & TVD 95\% CI \\
+\midrule
+African-Islamic & 15 & $0.0026$ & $-0.0080$ & $[-0.0136,-0.0026]$ \\
+Catholic Europe & 2 & $-0.0083$ & $-0.0149$ & -- \\
+Confucian & 9 & $0.0045$ & $0.0021$ & $[-0.0075,0.0125]$ \\
+English-Speaking & 6 & $-0.0055$ & $-0.0101$ & $[-0.0130,-0.0064]$ \\
+Latin America & 12 & $-0.0038$ & $-0.0089$ & $[-0.0139,-0.0036]$ \\
+Orthodox Europe & 6 & $-0.0062$ & $-0.0110$ & $[-0.0181,-0.0034]$ \\
+Protestant Europe & 4 & $0.0028$ & $-0.0001$ & -- \\
+West \& South Asia & 10 & $-0.0082$ & $-0.0149$ & $[-0.0204,-0.0097]$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

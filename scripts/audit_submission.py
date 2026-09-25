@@ -61,9 +61,12 @@ def audit_pdf(pdf_path: Path) -> dict[str, object]:
     assert "64 countries" in "\n".join(pages[:4])
     assert "3,840" in "\n".join(pages[:4])
     assert "eight-country" not in "\n".join(pages).lower()
-    assert "Anonymous Author" in pages[0]
-    assert (reader.metadata.author or "") == "Anonymous Authors"
-    assert (reader.metadata.subject or "") == "Anonymous NeurIPS 2026 workshop submission"
+    assert "Luyao Zhang" in pages[0]
+    assert "Anonymous Author" not in pages[0]
+    assert (reader.metadata.author or "") == "Luyao Zhang"
+    assert (reader.metadata.subject or "") == "Accepted GlobalSouthAI workshop paper at NeurIPS 2026"
+    assert "What changed between the two releases?" not in "\\n".join(pages[:4])
+    assert "We thank the reviewers" in "\\n".join(pages[:4])
     keywords = reader.metadata.get("/Keywords", "") or ""
     assert "agent systems" in keywords and "creative destruction" in keywords
     fonts = font_audit(pdf_path)
@@ -134,7 +137,7 @@ def main() -> None:
     report = {
         "status": "PASS",
         "body_pages": body_pages,
-        "template": "NeurIPS 2026 dblblindworkshop",
+        "template": "NeurIPS 2026 dblblindworkshop,final",
         "pdfs": results,
         "checks": [
             f"references begin on page {body_pages + 1}",
@@ -144,13 +147,13 @@ def main() -> None:
             "figure typography uses the same Times-compatible serif family as the manuscript",
             "prompt listings use a dedicated monospaced font and breakable boxes",
             "all 23 bibliography records print explicit URLs",
-            "venue-neutral PDF subject metadata and workshop-relevant keywords are correct",
+            "camera-ready author and workshop metadata are correct",
         ],
     }
     output = ROOT / "manifests/submission_audit_v100.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(f"PASS: venue-neutral PDF, exact {body_pages}-page body, bibliography, appendix, official checklist, and fonts")
+    print(f"PASS: camera-ready PDF, exact {body_pages}-page body, bibliography, appendix, official checklist, and fonts")
 
 
 if __name__ == "__main__":

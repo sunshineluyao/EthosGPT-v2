@@ -55,6 +55,7 @@ def main() -> None:
         "five_anchor_metric_comparisons.csv",
         "q121_prompt_deviation_sensitivity.csv",
         "wording_omission_sensitivity.csv",
+        "eight_region_sensitivity.csv",
         "leave_one_country_out.csv",
         "bootstrap_convergence.csv",
         "run_stability.csv",
@@ -199,6 +200,30 @@ def main() -> None:
     assert omission.loc[("exclude Q106", "TVD"), "delta_ci_high_bca"] < 0
     assert (omission.loc[("exclude Q106 and Q108", "TVD"), "delta_ci_low_bca"] < 0 <
             omission.loc[("exclude Q106 and Q108", "TVD"), "delta_ci_high_bca"])
+
+    regions = pd.read_csv(RESULTS / "eight_region_sensitivity.csv")
+    assert len(regions) == 16 and set(regions["metric"]) == {"W1", "TVD"}
+    assert regions.groupby("metric").countries.sum().to_dict() == {"W1": 64, "TVD": 64}
+    assert set(regions["cultural_region"]) == {
+        "African-Islamic", "Catholic Europe", "Confucian", "English-Speaking",
+        "Latin America", "Orthodox Europe", "Protestant Europe", "West & South Asia",
+    }
+    by_region = regions[regions.metric == "TVD"].set_index("cultural_region")
+    assert (by_region.drop(index="Confucian").delta_56_minus_55 < 0).all()
+    assert by_region.loc["Confucian", "delta_ci_low_bca"] < 0 < by_region.loc["Confucian", "delta_ci_high_bca"]
+    close(by_region.loc["Confucian", "delta_56_minus_55"], .002095250216, 1e-9)
+    assert by_region.loc["Catholic Europe", "countries"] == 2
+    assert by_region.loc["Protestant Europe", "countries"] == 4
+    assert regions[regions.countries < 5][["delta_ci_low_bca", "delta_ci_high_bca"]].isna().all().all()
+    assert regions[regions.countries >= 5][["delta_ci_low_bca", "delta_ci_high_bca"]].notna().all().all()
+    scores = pd.read_csv(RESULTS / "country_question_scores.csv")
+    for metric in ("W1", "TVD"):
+        grouped = regions[regions.metric == metric]
+        pooled = np.average(grouped.delta_56_minus_55, weights=grouped.countries)
+        by_country = scores.pivot_table(
+            index="country", columns="model", values=metric.lower(), aggfunc="mean"
+        )
+        close(pooled, (by_country["GPT-5.6 Sol"] - by_country["GPT-5.5"]).mean(), 1e-12)
 
     conditional = pd.read_csv(RESULTS / "conditional_uncertainty_contrasts.csv")
     assert set(conditional["draws"]) == {5_000} and len(conditional) == 10

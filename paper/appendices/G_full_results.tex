@@ -22,7 +22,7 @@ Table~\ref{tab:wording-omissions} recomputes the country-level mean W1 and TVD
 over the retained items. It uses 20,000 paired-country BCa draws and 19,999
 country-level sign flips per comparison. P-values in the released CSV receive
 Holm adjustment for the two metrics within each scenario, but the six
-post-review scenarios are exploratory and are not corrected as a family.
+item-omission scenarios are exploratory and are not corrected as a family.
 The full six-item point contrasts agree with the original global results;
 the Q121-omission point contrasts agree with the existing five-anchor run.
 
@@ -60,6 +60,21 @@ both Q106 and Q108 yields an interval containing zero. The Q106 item-level
 gain is conditional on the original inconsistent label and cannot be
 certified for a corrected instrument. No official-weighted WVS target or
 local-language prompt output was available for a numeric comparison.
+
+\subsection{Results across the original eight regions}
+We use the eight cultural-map region labels associated with the cited study
+\citep{tao2024cultural,wvs2023culturalmap}, as recorded in the released
+country crosswalk. All eight occur among the 64 complete-case countries.
+Within each region, the six item losses are first averaged per country and
+then equally averaged over the countries. A negative GPT-5.6 minus GPT-5.5
+contrast indicates lower loss against the unweighted survey derivative.
+Exploratory 95\% BCa intervals resample countries within regions (20,000
+draws; seed 20260925) without adjustment across regions or metrics.
+Catholic Europe has only two countries and Protestant Europe has four; no
+interval is reported for these small groups. Region labels describe neither
+individual identities nor within-group homogeneity.
+
+\input{tabs/appendix_eight_regions}
 
 \subsection{Signed bias and generational stability}
 Signed expected-score errors (Table~\ref{tab:signed-bias}) reveal what unsigned distances
