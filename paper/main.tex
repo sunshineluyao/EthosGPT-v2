@@ -32,28 +32,23 @@
 \maketitle
 
 \begin{abstract}
-Language models increasingly mediate advice about innovation, work, redistribution, and
-social coordination, yet an update can change which values appear typical of a country.
-WorldValuesBench and a five-version GPT study document large cross-model differences and
-gains from country prompting, but cannot isolate release changes under a fixed protocol.
-We ask whether an update improves agreement with observed survey responses, preserves
-cross-country structure, and reduces mismatch that survives repeated sampling. EthosGPT
-places this earlier evidence beside a paired comparison of GPT-5.5 and GPT-5.6 Sol on six
-World Values Survey items in 64 countries, with five generations per cell. The same survey
-distributions anchor item distances, country-profile error, and cross-country geometry.
-GPT-5.6 lowers mean category-mass error by $0.0080$ (95\% BCa CI
-$[-0.0107,-0.0050]$), driven by responsibility and income distribution; ordered
-displacement and three geometry diagnostics remain inconclusive. Averaging five outputs
-removes only about 1\% of single-run squared error, so most mismatch is shared before
-interaction. A creative-destruction analysis locates the clearest gains in distribution
-and adjustment, while coordination and legitimacy remain uncertain. We release data and
-code on GitHub. By joining survey measurement, model evaluation, and the economics of
-creative destruction, EthosGPT offers a common framework for studying whose values enter
-technological change and a practical diagnostic for identifying where model updates
-require local validation. Beginning from an English-language, country-level comparison,
-the framework opens a future research agenda for multilingual, within-country, and
-community-led studies of how model updates shape agent behavior, institutional adjustment,
-and locally legitimate innovation.
+Model updates can change country-conditioned answers to survey questions. Prior
+benchmarks compared models and versions; here we compare GPT-5.5 and GPT-5.6 Sol
+under one fixed English elicitation on six World Values Survey items in 64
+countries, with five archived generations per cell. The comparison target is
+an unweighted public derivative of country responses, not a measure of culture,
+individual benefit, or welfare. GPT-5.6 lowers mean total-variation distance
+(TVD) by $0.0080$ (95\% BCa CI $[-0.0107,-0.0050]$); the other four corrected
+global metric contrasts are inconclusive. The reduction concentrates in income
+distribution (Q106) and responsibility (Q108). Excluding Q106 leaves a TVD
+contrast of $-0.00433$ (CI $[-0.00698,-0.00138]$), while excluding both Q106 and
+Q108 leaves $-0.00024$ (CI $[-0.00313,0.00286]$). Q106 and Q121 have disclosed
+prompt-label discrepancies; item omissions cannot recover results from corrected
+prompts. Averaging five observed outputs removes only 1.18--1.31\% of single-run
+squared probability error. An exploratory grouping by economic theme describes
+survey mismatch, not downstream decisions. Archived outputs and code permit
+offline recomputation; official survey weighting, translated prompts, and user
+outcomes require separate evidence.
 \end{abstract}
 
 \input{sections/01_introduction}
