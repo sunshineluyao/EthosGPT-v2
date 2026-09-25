@@ -22,6 +22,7 @@ assets:
 	$(PYTHON) scripts/make_wave1_assets.py
 	$(PYTHON) scripts/make_v070_assets.py
 	$(PYTHON) scripts/make_visual_story_v100.py
+	$(PYTHON) $(EXPERIMENT)/plot_eight_regions.py
 
 lint:
 	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country tests

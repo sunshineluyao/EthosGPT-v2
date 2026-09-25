@@ -19,7 +19,8 @@ two archived model-output files. It performs these stages:
    pre-existing five-anchor analysis, post-review Q106/Q121/Q108 omission checks,
    leave-country/region-out checks, and human-cell-size strata;
 8. run Moran, Geary, spatial-error, and spatial-HAC diagnostics;
-9. regenerate machine-readable outputs and vector figures; and
+9. regenerate machine-readable outputs and vector figures, including two
+   exploratory original-eight-region diagnostics with published BCa intervals; and
 10. verify the released results and the code-only repository boundary.
 
 Run:

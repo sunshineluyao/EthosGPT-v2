@@ -34,6 +34,7 @@ def main() -> None:
     run("scripts/make_wave1_assets.py")
     run("scripts/make_v070_assets.py")
     run("scripts/make_visual_story_v100.py")
+    run("experiments/gpt55_gpt56_64country/plot_eight_regions.py")
     run("scripts/verify_results.py")
     run("scripts/audit_visual_assets.py")
     print("PASS: archived outputs -> statistics -> eight regions -> reproducible figures; no manuscript sources")
