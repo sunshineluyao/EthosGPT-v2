@@ -17,13 +17,49 @@ then report composition, creative-destruction margins, and influence analyses.
 
 \input{tabs/appendix_extended_results}
 
-\subsection{Five-anchor and Q121 conclusions}
-Excluding Q121 yields a five-anchor W1 target-loss contrast of $-0.0033$
-(SE $0.0013$, 95\% BCa CI $[-0.0057,-0.0007]$, five-metric Holm $p=0.048$) and TVD
-contrast $-0.0112$ (SE $0.0016$, CI $[-0.0142,-0.0079]$, Holm $p<0.001$). CRG, VDR,
-and CSR target-loss contrasts remain uncertain. Under the Q121 relabeling bounds, neither
-W1 nor TVD worsening survives correction. The wording defect therefore attenuates the
-average-fidelity result rather than generating the joint improvements on Q106 and Q108.
+\subsection{Disputed wording and item concentration}
+Table~\ref{tab:wording-omissions} recomputes the country-level mean W1 and TVD
+over the retained items. It uses 20,000 paired-country BCa draws and 19,999
+country-level sign flips per comparison. P-values in the released CSV receive
+Holm adjustment for the two metrics within each scenario, but the six
+post-review scenarios are exploratory and are not corrected as a family.
+The full six-item point contrasts agree with the original global results;
+the Q121-omission point contrasts agree with the existing five-anchor run.
+
+\begin{table*}[!t]
+\centering
+\caption{Post hoc item omissions: GPT-5.6 minus GPT-5.5 loss (95\% BCa CI).
+Negative differences favor GPT-5.6 on this unweighted derivative. Omissions
+change the item-averaging target and do not simulate repaired prompts.}
+\label{tab:wording-omissions}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{.30\linewidth}p{.31\linewidth}p{.31\linewidth}}
+\toprule
+\rowcolor{tablehead}
+Retained protocol & W1 $\Delta$ [CI] & TVD $\Delta$ [CI] \\
+\midrule
+All six & $-0.0020\;[-0.0040,0.0002]$ & $-0.0080\;[-0.0107,-0.0050]$ \\
+No Q106 & $-0.0006\;[-0.0027,0.0018]$ & $-0.0043\;[-0.0070,-0.0014]$ \\
+No Q121 & $-0.0033\;[-0.0056,-0.0007]$ & $-0.0112\;[-0.0141,-0.0079]$ \\
+No Q106/Q121 & $-0.0020\;[-0.0043,0.0006]$ & $-0.0074\;[-0.0102,-0.0044]$ \\
+No Q108 & $-0.0007\;[-0.0028,0.0017]$ & $-0.0055\;[-0.0082,-0.0024]$ \\
+No Q106/Q108 & $0.0013\;[-0.0010,0.0039]$ & $-0.0002\;[-0.0031,0.0029]$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The previously released full five-anchor (no Q121) analysis also recomputes
+CRG, VDR, and CSR: W1 $-0.0033$ (five-metric Holm $p=0.048$) and TVD
+$-0.0112$ (Holm $p<0.001$), with the geometry contrasts inconclusive.
+The Q121 relabeling bounds move 0\%, 50\%, or 100\% of recorded category-1
+probability to category 2; neither Q121 W1 nor TVD worsening survives the
+two-metric correction. They do not reconstruct an unambiguous re-query.
+Excluding Q106 still leaves a negative average TVD contrast, while excluding
+both Q106 and Q108 yields an interval containing zero. The Q106 item-level
+gain is conditional on the original inconsistent label and cannot be
+certified for a corrected instrument. No official-weighted WVS target or
+local-language prompt output was available for a numeric comparison.
 
 \subsection{Signed bias and generational stability}
 Signed expected-score errors (Table~\ref{tab:signed-bias}) reveal what unsigned distances

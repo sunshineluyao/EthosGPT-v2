@@ -1,16 +1,16 @@
 \section{Tracing survey disagreement across scales}
 
 From a versioned public derivative of WVS 2017--2022 responses
-\citep{oxfordllmswvs,haerpfer2022wvs}, 64 countries have usable, unweighted cells for six
-pre-specified anchors: agency (Q48), trust (Q57), income distribution (Q106), social
-responsibility (Q108), immigration (Q121), and science (Q159). The median cell has 30.5
-records (range 4--96), so this derivative, rather than an official population statistic,
-is the target. On 2 September 2026, the same English prompt elicited five distributions
-per country and item from \texttt{gpt-5.5-2026-04-23} and \texttt{gpt-5.6-sol}, yielding
-3,840 valid records. Ten malformed attempts were rerun and retained. Archived responses,
-metadata, and hashes support reproduction if the service changes
-\citep{openai2026models,openai2026changelog}. Five-anchor exclusion and relabeling
-sensitivities address a disclosed Q121 stem/label conflict.
+\citep{oxfordllmswvs,haerpfer2022wvs}, 64 countries have usable, unweighted
+cells for six anchors: agency (Q48), trust (Q57), income distribution (Q106),
+responsibility (Q108), immigration (Q121), and science (Q159). The median
+country--item cell has 30.5 records (range 4--96); this convenience derivative
+is not an officially weighted population estimate. On 2 September 2026,
+the same English prompt elicited five distributions per cell from
+\texttt{gpt-5.5-2026-04-23} and the undated \texttt{gpt-5.6-sol}, yielding
+3,840 final valid records after ten malformed attempts were rerun.
+Archived responses and hashes permit offline recomputation, not guaranteed
+live re-queries \citep{openai2026models,openai2026changelog}.
 
 Every measure begins with the same survey share $h_{cjr}$ and model mean probability
 $\bar p_{mcjr}$ for category $r$, country $c$, and item $j$. At the item level,
@@ -32,12 +32,18 @@ CRG target 0; VDR and CSR target 1, so the five contrasts are W1, TVD, CRG,
 $|\VDR-1|$, and $1-\CSR$, with negative change favoring GPT-5.6. Appendix~\ref{app:tutorial}
 derives each measure from survey shares with worked arithmetic.
 
-Countries are the independent units. After averaging generations within each cell, we
-use 20,000 country-cluster draws for BCa intervals, 19,999 paired sign flips, and Holm
-correction across the five global metrics. A shared-sign max-$T$ test and simultaneous
-bootstrap interval cover all 12 item-level W1/TVD contrasts. Human-cell and generation
-resampling, leave-region-out estimates, and spatial-error/HAC models provide sensitivity
-checks \citep{moran1950notes,geary1954contiguity,anselin1988spatial,conley1999gmm}.
+Countries are the independent units. After averaging generations within cells,
+we use 20,000 country-cluster BCa draws, 19,999 paired sign flips, and Holm
+correction across the five global metrics. Shared-sign max-$T$ inference covers
+all 12 item-level W1/TVD contrasts. Human-cell, leave-region-out, and spatial
+checks address other dependencies
+\citep{moran1950notes,geary1954contiguity,anselin1988spatial,conley1999gmm}.
+The Q106 stem says 'greater incentives for individual effort' but its category
+10 label says 'larger income differences'; Q121 calls category 1 both 'Very
+bad' and 'Rather bad.' We retain the recorded prompts and report post hoc
+item omissions and Q121 mass-shift bounds. Neither restores corrected-prompt
+responses. All prompts were English; questionnaire familiarity in model training
+and local-language effects are untested.
 
 For each country--item and subset of $K=1,\ldots,5$ outputs, squared error satisfies
 $E_K=E_5+(5-K)V/(4K)$; $V$ is run-varying error and $E_5$ the five-run residual. Because

@@ -54,6 +54,7 @@ def main() -> None:
         "conditional_uncertainty_draws.parquet",
         "five_anchor_metric_comparisons.csv",
         "q121_prompt_deviation_sensitivity.csv",
+        "wording_omission_sensitivity.csv",
         "leave_one_country_out.csv",
         "bootstrap_convergence.csv",
         "run_stability.csv",
@@ -183,6 +184,21 @@ def main() -> None:
     assert five.loc["TVD", "holm_p_five_metrics"] < .001 and five.loc["TVD", "ci_high_bca"] < 0
     q121 = pd.read_csv(RESULTS / "q121_prompt_deviation_sensitivity.csv")
     assert (q121["holm_p_two_metrics"] > .05).all()
+
+    wording = pd.read_csv(RESULTS / "wording_omission_sensitivity.csv")
+    assert len(wording) == 12 and set(wording.countries) == {64}
+    assert set(wording.country_bootstrap_draws) == {20_000}
+    assert set(wording.permutations) == {19_999}
+    omission = wording.set_index(["scenario", "metric"])
+    close(omission.loc[("all six anchors", "TVD"), "delta_56_minus_55"],
+          contrasts.loc["TVD", "estimate"], 1e-12)
+    close(omission.loc[("exclude Q121", "TVD"), "delta_56_minus_55"],
+          five.loc["TVD", "estimate"], 1e-12)
+    close(omission.loc[("exclude Q106", "TVD"), "delta_56_minus_55"], -0.004332, 5e-7)
+    close(omission.loc[("exclude Q106 and Q108", "TVD"), "delta_56_minus_55"], -0.000240, 5e-7)
+    assert omission.loc[("exclude Q106", "TVD"), "delta_ci_high_bca"] < 0
+    assert (omission.loc[("exclude Q106 and Q108", "TVD"), "delta_ci_low_bca"] < 0 <
+            omission.loc[("exclude Q106 and Q108", "TVD"), "delta_ci_high_bca"])
 
     conditional = pd.read_csv(RESULTS / "conditional_uncertainty_contrasts.csv")
     assert set(conditional["draws"]) == {5_000} and len(conditional) == 10

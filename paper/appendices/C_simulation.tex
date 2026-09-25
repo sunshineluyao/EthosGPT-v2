@@ -21,14 +21,22 @@ Item & Status & Consequence and treatment \\
 Q48 & paraphrase & Endpoints are shortened; primary analysis retained and wording printed below. \\
 Q57 & paraphrase & Binary semantics are preserved; wrapper differs from interviewer wording. \\
 Q106 & label mismatch & Stem uses the official incentive endpoint, but category 10 says
-“larger income differences.” Versioned primary analysis retained and discrepancy disclosed. \\
+“larger income differences.” Recorded outputs are retained; Q106 and combined Q106/Q108
+omissions are reported as post hoc sensitivity, not a corrected-prompt estimate. \\
 Q108 & paraphrase & Endpoint meanings are preserved. \\
 Q121 & material conflict & Stem says category 1 is “Very bad”; list says “Rather bad.”
-We report the versioned result, a five-anchor exclusion, and 50\%/100\% relabeling bounds. \\
+We retain the versioned result, a five-anchor exclusion, and 50\%/100\% relabeling
+bounds; no model was re-queried with repaired wording. \\
 Q159 & wrapper only & Official statement and endpoints are preserved. \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+A prompt-label mismatch changes the interpretation of exact response-mass
+comparisons. Removing one item also changes the estimand: it cannot reveal
+the response distribution that a repaired prompt would have elicited.
+The question and API templates below permit direct inspection of both
+discrepancies.
 
 \subsection{Model queries and response format}
 The protocol identifier is

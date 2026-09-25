@@ -14,6 +14,7 @@ analysis:
 	$(PYTHON) $(EXPERIMENT)/score_wave1.py
 	$(PYTHON) $(EXPERIMENT)/uncertainty_sensitivity.py
 	$(PYTHON) $(EXPERIMENT)/protocol_sensitivity.py
+	$(PYTHON) $(EXPERIMENT)/wording_sensitivity.py
 	$(PYTHON) $(EXPERIMENT)/spatial_hac.py
 	$(PYTHON) $(EXPERIMENT)/extended_analysis.py
 

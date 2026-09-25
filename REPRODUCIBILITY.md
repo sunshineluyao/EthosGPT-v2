@@ -16,6 +16,7 @@ two archived model-output files. It performs these stages:
 6. estimate three theory-indexed creative-destruction margins and a 0.02
    weight-simplex sensitivity;
 7. run 5,000-draw human-cell and generation sensitivities, Q121 bounds,
+   pre-existing five-anchor analysis, post-review Q106/Q121/Q108 omission checks,
    leave-country/region-out checks, and human-cell-size strata;
 8. run Moran, Geary, spatial-error, and spatial-HAC diagnostics;
 9. regenerate all tables, figures, and appendix tutorial assets; and
@@ -34,6 +35,7 @@ the same output.
 ## Random seeds and resampling settings
 
 - Analysis seed: 20260902
+- Post-review wording omission seed: 20260902 + 121106
 - Country-bootstrap draws: 20,000
 - Paired randomization draws: 19,999
 - Joint item family: 12 W1/TVD outcomes with shared country signs and max-$T$
@@ -47,6 +49,10 @@ the same output.
 
 CSV and Parquet files are the numeric authority. The manuscript rounds only for
 display. Monte Carlo standard errors are released for randomization tests.
+The exploratory omission file recomputes W1/TVD from the frozen country-question
+scores, using 20,000 paired-country BCa draws and 19,999 sign flips. Holm adjustment
+covers W1 and TVD within each omission scenario only; it does not protect the set
+of exploratory scenarios. Omission is not a rerun with corrected Q106/Q121 wording.
 
 ## What the package does and does not reproduce
 
