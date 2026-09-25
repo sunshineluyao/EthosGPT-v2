@@ -264,6 +264,10 @@ def main() -> None:
         ) for suffix in (".pdf", ".svg")],
         FIGS / "fig1_spatial_story.drawio",
         FIGS / "figS2_study_design.drawio",
+        *[ROOT / "results/region_figures" / f"{stem}{suffix}"
+          for stem in ("figS6_region_country_tvd", "figS7_region_metric_intervals")
+          for suffix in (".pdf", ".svg", ".png")],
+        ROOT / "results/region_figures/README.md",
         SOURCES / "semantic_graphics_manifest.json",
         SOURCES / "data/prior_study_benchmark.csv",
         SOURCES / "data/archived_geometry_benchmark.csv",
