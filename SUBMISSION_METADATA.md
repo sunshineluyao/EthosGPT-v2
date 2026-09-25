@@ -10,11 +10,18 @@ survey representation, language model evaluation, model updates, agent systems, 
 
 ## TL;DR
 
-For the archived unweighted survey derivative, GPT-5.6 reduces mean TVD chiefly on Q106/Q108; other corrected global metrics remain uncertain, and prompt wording limits interpretation.
+Across 64 countries, a paired model update lowers total-variation error against an unweighted survey derivative, while other corrected measures remain inconclusive; the audit separates average fidelity from representational structure.
+
+## Author
+
+Luyao Zhang
+Duke Kunshan University
+8 Duke Ave., Kunshan, Suzhou, China
+lz183@duke.edu
 
 ## Abstract
 
-When language models are updated, the survey responses they assign to a named country may change. We compare two archived model releases, GPT-5.5 and GPT-5.6 Sol, using one English elicitation of six World Values Survey items in 64 countries, with five generations per item and country. Against an unweighted public derivative of survey responses, GPT-5.6 lowers mean total-variation distance (TVD) by $0.0080$ (95% country-bootstrap BCa CI $[-0.0107,-0.0050]$); the other four globally corrected metric contrasts are inconclusive. Most of the signed TVD reduction comes from income distribution (Q106) and responsibility (Q108). Q106 and Q121 contain documented prompt-label discrepancies, which limit interpretation of item-specific changes. Five-run averaging removes only 1.18--1.31% of single-run squared probability error among the observed outputs. Exploratory contrasts across eight published cultural-map regions show heterogeneous changes. These measurements describe agreement with a particular survey derivative, not individual benefit, cultural ground truth, or economic welfare. Archived model outputs enable offline replication.
+Language models can frame discussions of technological change, yet updates may shift which survey responses their country-conditioned answers resemble. Prior benchmarks show that model choice and country prompting matter; whether a paired update improves average survey agreement while preserving cross-country differences under a fixed protocol remains unclear. We ask this question for AI assistants discussing innovation, distribution, and social adjustment across settings. We compare archived GPT-5.5 and GPT-5.6 Sol distributions for six World Values Survey items in 64 countries (five outputs per model–country–item) with an unweighted public survey derivative. GPT-5.6 reduces mean total-variation error by 0.0080 (95% country-bootstrap BCa CI [-0.0107,-0.0050]), while globally corrected changes in ordered error, country-profile error, and cross-country relational measures remain inconclusive. The reduction concentrates in income distribution and responsibility; prompt-label inconsistencies limit item-level interpretation, and exploratory region contrasts differ. Tracing disagreement from answer categories to country profiles and relations separates average fidelity from representational structure without equating survey fit with welfare. This audit identifies questions and settings that merit scrutiny before using country-conditioned outputs. Population-weighted survey targets, local-language prompts, and community validation can test how far these patterns generalize.
 
 ## Open science
 
