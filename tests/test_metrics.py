@@ -38,11 +38,11 @@ def test_frozen_output_roster_and_pairing():
     assert paired.eq(2).all()
 
 
-def test_new_figure_and_appendix_contract():
-    design = (ROOT / "paper/figs/figS2_study_design.svg").read_text()
-    results = (ROOT / "paper/figs/fig2_multiview_results.svg").read_text()
-    cases_figure = (ROOT / "paper/figs/figS5_country_profiles.svg").read_text()
-    prompts = (ROOT / "paper/appendices/generated_questionnaire_prompts.tex").read_text()
+def test_reproduced_figures_and_prompt_ledger():
+    design = (ROOT / "results/figures/figS2_study_design.svg").read_text()
+    results = (ROOT / "results/figures/fig2_multiview_results.svg").read_text()
+    cases_figure = (ROOT / "results/figures/figS5_country_profiles.svg").read_text()
+    prompts = json.loads((EXP / "inputs/questionnaire_and_prompts.json").read_text())
     assert "64 countries" in design
     assert "Paired model" in design and "5 responses per cell" in design
     assert "Three" in design and "Economic" in design
@@ -68,7 +68,7 @@ def test_new_figure_and_appendix_contract():
     assert all(label in cases_figure for label in (
         "Lower CRG: Greece", "Near-zero CRG: Indonesia", "Higher CRG: Argentina"
     ))
-    cases = pd.read_csv(ROOT / "paper/figure_sources/data/country_radar_case_selection.csv")
+    cases = pd.read_csv(ROOT / "assets/figure_sources/data/country_radar_case_selection.csv")
     assert cases.set_index("selection_role").country.to_dict() == {
         "main": "India",
         "appendix_lower": "Greece",
@@ -77,4 +77,8 @@ def test_new_figure_and_appendix_contract():
     }
     assert "model outcomes excluded from selection" in cases.iloc[0].selection_rule
     assert np.isclose(cases.crg_class_threshold.nunique(), 1)
-    assert prompts.count(r"\begin{promptlisting}") == 6
+    assert len(prompts["questions"]) == 6
+    assert {item["question_id"] for item in prompts["questions"]} == {
+        "Q48", "Q57", "Q106", "Q108", "Q121", "Q159"
+    }
+    assert all(item["prompt_template"].strip() for item in prompts["questions"])

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed checks for the 64-country analysis and manuscript sources."""
+"""Fail-closed checks for the 64-country data and code release."""
 
 from __future__ import annotations
 
@@ -16,7 +16,8 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "experiments/gpt55_gpt56_64country"
 RESULTS = EXP / "results"
-PAPER = ROOT / "paper"
+FIGS = ROOT / "results/figures"
+SOURCES = ROOT / "assets/figure_sources"
 OUTPUT_HASHES = {
     "gpt-5.5_scores.jsonl": "cb35dea83bdc08e50d8d79d2760acb3b79e130c5c22e69c80bd7c5568d8ce729",
     "gpt-5.6-sol_scores.jsonl": "3c94ddebb870ded526ac99780c845cd5788c333e5fd34444c1cd0a5cae4d6a28",
@@ -255,87 +256,29 @@ def main() -> None:
     assert len(tvd_hac) == 4 and (tvd_hac.ci_high_95 < 0).all()
 
     expected_assets = [
-        PAPER / "figs/fig1_spatial_story.pdf",
-        PAPER / "figs/fig1_spatial_story.svg",
-        PAPER / "figs/fig2_multiview_results.pdf",
-        PAPER / "figs/fig2_multiview_results.svg",
-        PAPER / "figs/fig3_economic_story.pdf",
-        PAPER / "figs/fig3_economic_story.svg",
-        PAPER / "figs/figS1_uncertainty_sources.pdf",
-        PAPER / "figs/figS1_uncertainty_sources.svg",
-        PAPER / "figs/figS2_study_design.pdf",
-        PAPER / "figs/figS2_study_design.svg",
-        PAPER / "figs/figS3_economic_sensitivity.pdf",
-        PAPER / "figs/figS3_economic_sensitivity.svg",
-        PAPER / "figs/figS4_country_maps.pdf",
-        PAPER / "figs/figS4_country_maps.svg",
-        PAPER / "figs/figS2_study_design.drawio",
-        PAPER / "figs/fig1_spatial_story.drawio",
-        PAPER / "figure_sources/data/prior_study_benchmark.csv",
-        PAPER / "figure_sources/data/archived_geometry_benchmark.csv",
-        PAPER / "figure_sources/data/figure1_error_type_examples.csv",
-        PAPER / "figure_sources/clip-art-set/clip-art-manifest.json",
-        PAPER / "tabs/table1_main.tex",
-        PAPER / "tabs/appendix_country_roster.tex",
-        PAPER / "tabs/appendix_tutorial_tables.tex",
-        PAPER / "tabs/appendix_full_results.tex",
-        PAPER / "tabs/appendix_spatial_tables.tex",
-        PAPER / "tabs/appendix_extended_results.tex",
-        PAPER / "appendices/generated_questionnaire_prompts.tex",
+        *[FIGS / f"{stem}{suffix}" for stem in (
+            "fig1_spatial_story", "fig2_multiview_results", "fig3_economic_story",
+            "figS1_uncertainty_sources", "figS2_study_design",
+            "figS3_economic_sensitivity", "figS4_country_maps",
+            "figS5_country_profiles",
+        ) for suffix in (".pdf", ".svg")],
+        FIGS / "fig1_spatial_story.drawio",
+        FIGS / "figS2_study_design.drawio",
+        SOURCES / "semantic_graphics_manifest.json",
+        SOURCES / "data/prior_study_benchmark.csv",
+        SOURCES / "data/archived_geometry_benchmark.csv",
+        SOURCES / "data/figure1_error_type_examples.csv",
+        SOURCES / "clip-art-set/clip-art-manifest.json",
         ROOT / "SUBMISSION_METADATA.md",
     ]
     assert all(path.exists() and path.stat().st_size > 0 for path in expected_assets)
-
-    sources = sorted(PAPER.rglob("*.tex"))
-    source_text = "\n".join(path.read_text(encoding="utf-8") for path in sources)
-    assert not re.search(r"\b(TODO|TBD|PLACEHOLDER|CITATION NEEDED)\b", source_text, re.I)
-    assert "eight-country" not in source_text.lower()
-    assert "48-prompt" not in source_text.lower()
-    assert "gpt55_gpt56_demo" not in source_text
-    assert source_text.count(r"\begin{promptlisting}") == 6
-    assert "Venezuela is the only derivative country excluded" in source_text
-    assert "Q121" in source_text and "label conflict" in source_text
-    assert "the generations do not interact" in source_text and "pre-interaction baseline" in source_text
-    assert re.search(r"not 1,326\s+separately\s+corrected", source_text)
-    assert "No community partner co-designed" in source_text
-    assert "88.76\\%" in source_text and "intervals favor GPT-5.6" in source_text
-    assert "fig3_spatial_compact" not in source_text and "fig4_economic_story" not in source_text
-    assert len(list(ROOT.rglob("table1_main.tex"))) == 1
-
-    citation_keys: set[str] = set()
-    for match in re.finditer(r"\\cite\w*(?:\[[^\]]*\])*\{([^}]+)\}", source_text):
-        citation_keys.update(key.strip() for key in match.group(1).split(","))
-    bib = (PAPER / "references.bib").read_text(encoding="utf-8")
-    bib_keys = set(re.findall(r"@\w+\{([^,]+),", bib))
-    assert citation_keys <= bib_keys, f"undefined citations: {sorted(citation_keys - bib_keys)}"
-    assert bib_keys == citation_keys, f"uncited bibliography records: {sorted(bib_keys - citation_keys)}"
-    assert len(bib_keys) == 23
-    assert len(re.findall(r"\n\s*url\s*=\s*\{https?://", bib, re.I)) == 23
-    assert "https://www.nobelprize.org/prizes/economic-sciences/2025/press-release/" in bib
-    assert "zhang2025ethosgpt" not in bib and "2504.09861" not in bib
-
-    checklist = (PAPER / "checklist.tex").read_text(encoding="utf-8")
-    question_lines = "\n".join(
-        line for line in checklist.splitlines() if re.match(r"\s*\\item\[\] Question:", line)
-    ) + "\n"
-    assert hashlib.sha256(question_lines.encode()).hexdigest() == "be94032da3b33c4f50d5896d16864f64fee3860506ca1de50399ddee7a4626bb"
-    assert len(re.findall(r"^\s*\\item \{\\bf", checklist, flags=re.MULTILINE)) == 16
-    assert len(re.findall(r"^\s*\\item\[\] Guidelines:", checklist, flags=re.MULTILINE)) == 16
-    assert len(re.findall(
-        r"^\s*\\item\[\] Answer: \\answer(?:Yes|No|NA)\{\}", checklist, flags=re.MULTILINE
-    )) == 16
-    assert "answerTODO" not in checklist and "justificationTODO" not in checklist
-    assert "BEGIN INSTRUCTIONS" not in checklist and "END INSTRUCTIONS" not in checklist
-    assert sha256(PAPER / "neurips_2026.sty") == "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a"
-    main_source = (PAPER / "main.tex").read_text(encoding="utf-8")
-    assert r"\input{checklist.tex}" in main_source
-    title = re.search(r"\\title\{([^{}]*)\}", main_source, flags=re.DOTALL)
-    assert title and r"\\" not in title.group(1)
-    assert "main_fast" not in main_source and "FASTBUILD" not in main_source
+    assert not (ROOT / "paper").exists(), "manuscript sources belong in the paper repository"
+    forbidden = [path for path in ROOT.rglob("*") if path.is_file() and
+                 (path.suffix.lower() in {".tex", ".sty", ".bib"} or path.name == "latexmkrc")]
+    assert not forbidden, f"manuscript source files found in code release: {forbidden}"
     metadata = (ROOT / "SUBMISSION_METADATA.md").read_text(encoding="utf-8")
     for heading in ("## Title", "## Keywords", "## TL;DR", "## Abstract"):
         assert heading in metadata
-    assert metadata == (PAPER / "SUBMISSION_METADATA.md").read_text(encoding="utf-8")
     assert (ROOT / "requirements.txt").read_text(encoding="utf-8").strip().endswith("requirements.lock.txt")
     citation_cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
     assert "version: 1.0.0" in citation_cff
@@ -344,15 +287,15 @@ def main() -> None:
         "Language-Model Updates, and Creative Destruction"
     ) in citation_cff
 
-    for path in [*EXP.rglob("*"), *PAPER.rglob("*")]:
+    for path in [*EXP.rglob("*"), *SOURCES.rglob("*")]:
         if path.is_file() and path.stat().st_size < 50_000_000:
             data = path.read_bytes()
             assert not re.search(rb"sk-(?:proj-)?[A-Za-z0-9_-]{20,}", data), f"possible secret: {path}"
 
     print(
         "PASS: 3,840 versioned outputs, 64-country pairing, prompt hashes, full "
-        "uncertainty, joint multiplicity, composition, economic margins, spatial diagnostics, appendix assets, "
-        "23 cited references with URLs, checklist, metadata, and secret scan"
+        "uncertainty, joint multiplicity, composition, economic margins, spatial diagnostics, "
+        "eight-region results, vector assets, code-only boundary, metadata, and secret scan"
     )
 
 

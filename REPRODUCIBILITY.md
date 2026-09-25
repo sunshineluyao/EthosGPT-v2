@@ -19,9 +19,8 @@ two archived model-output files. It performs these stages:
    pre-existing five-anchor analysis, post-review Q106/Q121/Q108 omission checks,
    leave-country/region-out checks, and human-cell-size strata;
 8. run Moran, Geary, spatial-error, and spatial-HAC diagnostics;
-9. regenerate all tables, figures, and appendix tutorial assets; and
-10. compile and audit the single venue-neutral NeurIPS workshop PDF, enforcing
-    an exact four-page body before references.
+9. regenerate machine-readable outputs and vector figures; and
+10. verify the released results and the code-only repository boundary.
 
 Run:
 
@@ -60,14 +59,15 @@ of exploratory scenarios. Omission is not a rerun with corrected Q106/Q121 wordi
 |---|---:|---|
 | Archived model outputs | Yes | Exact released JSONL and hashes |
 | Metrics and uncertainty | Yes | Recomputed from archived outputs |
-| Tables, figures, and PDF | Yes | Generated from released numeric files |
+| Numeric tables and figures | Yes | Generated from released numeric files |
+| Manuscript PDF and LaTeX | Separate paper repository | Not part of this code release |
 | Live proprietary inference | No guarantee | GPT-5.6 Sol has no dated public snapshot |
 | Official population-weighted WVS estimates | No | Comparison uses an unweighted public derivative |
 
 ## Environment
 
-Python dependencies are exposed through requirements.txt and pinned in
-requirements.lock.txt. The manuscript uses
-the supplied official NeurIPS 2026 style file and pdfLaTeX. Verification checks
-undefined references, page boundaries, fonts, anonymity, and the complete
-official `checklist.tex` included with the NeurIPS template.
+Python dependencies are exposed through `requirements.txt` and pinned in
+`requirements.lock.txt`. Run with Python 3.12 and `make`; the offline
+reproduction does not require a TeX distribution or PDF compiler. Manuscript
+sources and camera-ready PDF belong to the
+[paper repository](https://github.com/sunshineluyao/EthosGPT-NeurIPS).

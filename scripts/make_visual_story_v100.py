@@ -49,9 +49,9 @@ from scipy.stats import gaussian_kde
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "experiments/gpt55_gpt56_64country"
 RESULTS = EXP / "results"
-FIGURES = ROOT / "paper/figs"
+FIGURES = ROOT / "results/figures"
 RESULT_FIGURES = ROOT / "results/figures"
-SOURCES = ROOT / "paper/figure_sources"
+SOURCES = ROOT / "assets/figure_sources"
 SOURCE_DATA = SOURCES / "data"
 
 VERSION = "1.0.0"
@@ -134,8 +134,6 @@ def save(fig: plt.Figure, stem: str, title: str) -> None:
         fig.savefig(directory / f"{stem}.svg", metadata=metadata)
         fig.savefig(directory / f"{stem}.png", dpi=360, metadata=metadata)
         postprocess_svg(directory / f"{stem}.svg", title)
-    for suffix in (".pdf", ".svg", ".png"):
-        shutil.copy2(RESULT_FIGURES / f"{stem}{suffix}", FIGURES / f"{stem}{suffix}")
 
 
 def panel_title(ax: plt.Axes, label: str, title: str, pad: float = 3.0) -> None:
@@ -1133,7 +1131,6 @@ def _write_fig1_drawio() -> None:
 </mxfile>'''
     target = FIGURES / "fig1_spatial_story.drawio"
     target.write_text(drawio + "\n", encoding="utf-8")
-    shutil.copy2(target, RESULT_FIGURES / target.name)
 
 
 def figure1_spatial_story() -> None:
@@ -1757,7 +1754,7 @@ def write_source_contract() -> None:
                             "data/country_level_spatial_changes.csv", "data/figure1_error_type_examples.csv",
                             "economic_weight_surface.csv", "Natural Earth 1:110m public-domain geometry"],
             "final_size_inches": [5.48, 3.45],
-            "master": "figs/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py",
+            "master": "results/figures/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py",
         },
         {
             "stem": "fig2_multiview_results", "number_role": "Figure 2", "reader_task": "evidence",
@@ -1787,7 +1784,7 @@ def write_source_contract() -> None:
             "stem": "figS2_study_design", "number_role": "Appendix Figure 5", "reader_task": "mechanism",
             "evidence_class": "methodological/conceptual", "question": "How is the comparison constructed and interpreted?",
             "source_data": ["protocol metadata and manuscript Sections 1-4"],
-            "final_size_inches": [5.48, 2.10], "master": "figs/figS2_study_design.drawio",
+            "final_size_inches": [5.48, 2.10], "master": "results/figures/figS2_study_design.drawio",
         },
         {
             "stem": "figS3_economic_sensitivity", "number_role": "Appendix Figure 8", "reader_task": "implication",
@@ -1815,7 +1812,7 @@ def write_source_contract() -> None:
     ]
     for record in figures:
         stem = record["stem"]
-        record["exports"] = {suffix[1:]: f"figs/{stem}{suffix}" for suffix in (".pdf", ".svg", ".png")}
+        record["exports"] = {suffix[1:]: f"results/figures/{stem}{suffix}" for suffix in (".pdf", ".svg", ".png")}
         record["sha256"] = {
             suffix[1:]: hashlib.sha256((FIGURES / f"{stem}{suffix}").read_bytes()).hexdigest()
             for suffix in (".pdf", ".svg", ".png")
@@ -1920,7 +1917,7 @@ def write_source_contract() -> None:
         "composition_mechanism": "Figure 1 uses a protected top row for protocol-separated benchmarks, the paired survey-to-version comparison, and theory-guided implications; the comparison then points into a full-width country-evidence band whose definitions and examples remain outside the map viewport.",
         "grayscale_encoding": "Model and direction remain distinguishable through circle/diamond and up/down-triangle shapes, solid/dashed lines, fill status, and lightness contrast.",
         "authoritative_generators": ["scripts/make_wave1_assets.py", "scripts/make_v070_assets.py",
-                                     "scripts/make_visual_story_v100.py", "scripts/polish_submission_tables.py"],
+                                     "scripts/make_visual_story_v100.py"],
         "style_contract": {
             "insertion_width_inches": 5.48,
             "font_family": "Nimbus Roman (Times-compatible), matching the manuscript body",
@@ -1974,7 +1971,7 @@ def write_source_contract() -> None:
             "Source data:", "",
         ]
         lines.extend(f"- `{item}`" for item in record["source_data"])
-        lines += ["", "Exports: live-text SVG, vector PDF, and preview PNG in `paper/figs/`.", ""]
+        lines += ["", "Exports: live-text SVG, vector PDF, and preview PNG in `results/figures/`.", ""]
         (directory / "README.md").write_text("\n".join(lines), encoding="utf-8")
 
 

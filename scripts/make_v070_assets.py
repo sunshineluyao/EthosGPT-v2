@@ -32,10 +32,9 @@ from make_visual_story_v070 import postprocess_svg
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "experiments/gpt55_gpt56_64country"
 RESULTS = EXP / "results"
-FIGURES = ROOT / "paper/figs"
+FIGURES = ROOT / "results/figures"
 RESULT_FIGURES = ROOT / "results/figures"
-TABLES = ROOT / "paper/tabs"
-SOURCES = ROOT / "paper/figure_sources/data"
+SOURCES = ROOT / "assets/figure_sources/data"
 
 NAVY = "#17324D"
 BLUE = "#2869A6"
@@ -80,8 +79,6 @@ def save(fig: plt.Figure, stem: str) -> None:
     fig.savefig(RESULT_FIGURES / f"{stem}.pdf", metadata=metadata)
     fig.savefig(RESULT_FIGURES / f"{stem}.svg", metadata=metadata)
     postprocess_svg(RESULT_FIGURES / f"{stem}.svg", stem.replace("_", " "))
-    for suffix in (".pdf", ".svg"):
-        shutil.copy2(RESULT_FIGURES / f"{stem}{suffix}", FIGURES / f"{stem}{suffix}")
 
 
 def _rounded_box(ax: plt.Axes, xy: tuple[float, float], wh: tuple[float, float],
@@ -400,145 +397,6 @@ def fmt(value: float, digits: int = 3) -> str:
     return f"{float(value):.{digits}f}"
 
 
-def main_table() -> None:
-    estimates = pd.read_csv(RESULTS / "metric_estimates.csv")
-    contrasts = pd.read_csv(RESULTS / "metric_comparisons.csv").set_index("metric")
-    labels = {
-        "W1": r"W1 $\downarrow$", "TVD": r"TVD $\downarrow$", "CRG": r"CRG $\downarrow$",
-        "VDR": r"VDR $\to1$", "CSR": r"CSR $\uparrow$",
-    }
-    lines = [
-        r"\begin{table}[t]", r"\centering",
-        r"\caption{Global 64-country comparison. Parentheses are country-bootstrap SEs. The contrast is target loss for GPT-5.6 Sol minus GPT-5.5; negative values favor GPT-5.6.}",
-        r"\label{tab:main}", r"\small", r"\setlength{\tabcolsep}{3.6pt}",
-        r"\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr@{}}", r"\toprule",
-        r"Metric & GPT-5.5 & GPT-5.6 & $\Delta$ loss & SE & 95\% BCa CI / Holm $p$ \\", r"\midrule",
-    ]
-    for metric in ("W1", "TVD", "CRG", "VDR", "CSR"):
-        first = estimates[(estimates.model == "GPT-5.5") & (estimates.metric == metric)].iloc[0]
-        second = estimates[(estimates.model == "GPT-5.6 Sol") & (estimates.metric == metric)].iloc[0]
-        comp = contrasts.loc[metric]
-        p = "<0.001" if comp.holm_p_five_metrics < .001 else fmt(comp.holm_p_five_metrics)
-        last = f"[{fmt(comp.ci_low_bca,4)},{fmt(comp.ci_high_bca,4)}] / {p}"
-        cells = [labels[metric], f"{fmt(first.estimate)} ({fmt(first.standard_error)})",
-                 f"{fmt(second.estimate)} ({fmt(second.standard_error)})", fmt(comp.estimate,4),
-                 fmt(comp.standard_error,4), last]
-        if comp.holm_p_five_metrics <= .05:
-            cells[3] = r"\cellcolor{improvebg}\textbf{" + cells[3] + "}"
-            cells[5] = r"\cellcolor{improvebg}\textbf{" + cells[5] + "}"
-        lines.append(" & ".join(cells) + r" \\")
-    lines += [r"\bottomrule", r"\end{tabular*}",
-              r"\vspace{1pt}\parbox{.98\linewidth}{\small W1 respects ordinal distance; TVD measures category mass. CRG is country-profile error; VDR and CSR measure cross-country spread and relational ordering. Intervals use 20,000 country resamples; Holm correction spans five global metrics.}",
-              r"\end{table}"]
-    (TABLES / "table1_main.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def extended_tables() -> None:
-    joint = pd.read_csv(RESULTS / "joint_item_inference.csv")
-    composition = pd.read_csv(RESULTS / "composition_summary.csv")
-    margins = pd.read_csv(RESULTS / "economic_margin_results.csv")
-    scenarios = pd.read_csv(RESULTS / "economic_scenarios.csv")
-    region = pd.read_csv(RESULTS / "leave_one_region_out.csv")
-    counts = pd.read_csv(RESULTS / "human_cell_count_quartile_sensitivity.csv")
-    summary = pd.read_csv(RESULTS / "economic_weight_surface_summary.csv").iloc[0]
-    lines = [
-        r"\subsection{Joint item-level inference}",
-        r"\begin{longtable}{llrrrr}",
-        r"\caption{All 12 item-level contrasts in one max-$T$ family. Negative values favor GPT-5.6. SEs use countries; intervals are simultaneous 95\% bootstrap intervals.}\label{tab:joint-items}\\",
-        r"\toprule Metric & Item & $\Delta$ & SE & Simultaneous 95\% CI & max-$T$ $p$ \\",
-        r"\midrule\endfirsthead\toprule Metric & Item & $\Delta$ & SE & Simultaneous 95\% CI & max-$T$ $p$ \\\midrule\endhead",
-    ]
-    for row in joint.itertuples(index=False):
-        label = row.display_label.replace("Income distribution", "Distribution").replace("Science opportunity", "Science")
-        lines.append(f"{row.metric} & {label} & {fmt(row.delta_56_minus_55,4)} & {fmt(row.country_standard_error,4)} & [{fmt(row.simultaneous_ci_low_95,4)},{fmt(row.simultaneous_ci_high_95,4)}] & {fmt(row.joint_max_t_p_fwer,5)}" + r" \\")
-    lines += [r"\bottomrule\end{longtable}",
-              r"\subsection{Finite-five-generation composition diagnostic}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Squared probability error decomposed into the residual after averaging the observed five runs and their generation-varying component. This finite-pool identity is not an asymptotic bias estimate. Country-bootstrap SEs and 95\% BCa intervals are reported.}\label{tab:composition}",
-              r"\begin{tabular}{llrrr}\toprule Comparison & Component & Estimate & SE & 95\% BCa CI \\\midrule"]
-    component_names = {
-        "individual_error": "single-generation error", "five_run_residual": "five-run residual",
-        "reducible_generation_component": "generation-varying",
-        "share_of_individual_error_removed_by_five_generation_average": "share removed by mean",
-    }
-    comparison_names = {
-        "GPT-5.5": "5.5", "GPT-5.6 Sol": "5.6",
-        "GPT-5.6 Sol minus GPT-5.5": r"5.6 $-$ 5.5",
-    }
-    for row in composition.itertuples(index=False):
-        value = row.estimate * (100 if row.component.startswith("share_") else 1)
-        se = row.standard_error * (100 if row.component.startswith("share_") else 1)
-        lo = row.ci_low_bca * (100 if row.component.startswith("share_") else 1)
-        hi = row.ci_high_bca * (100 if row.component.startswith("share_") else 1)
-        is_share = row.component.startswith("share_")
-        suffix = r"\%" if is_share else ""
-        digits = 3 if is_share else 5
-        lines.append(f"{comparison_names[row.comparison]} & {component_names[row.component]} & {fmt(value,digits)}{suffix} & {fmt(se,digits)}{suffix} & [{fmt(lo,digits)},{fmt(hi,digits)}]{suffix}" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}",
-              r"\subsection{Creative-destruction margins and weight sensitivity}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Exploratory theory-indexed margins, using mean squared TVD. Negative contrasts favor GPT-5.6. Holm correction spans three margins.}\label{tab:economic-margins}",
-              r"\begin{tabular}{lrrrrr}\toprule Margin & GPT-5.5 & GPT-5.6 & $\Delta$ (SE) & 95\% BCa CI & Holm $p$ \\\midrule"]
-    short_margin = {"Opportunity and participation": "Opportunity/participation",
-                    "Distribution and adjustment": "Distribution/adjustment",
-                    "Coordination and legitimacy": "Coordination/legitimacy"}
-    for row in margins.itertuples(index=False):
-        lines.append(f"{short_margin[row.margin]} & {fmt(row.gpt55_estimate,5)} & {fmt(row.gpt56_estimate,5)} & {fmt(row.delta_estimate,5)} ({fmt(row.delta_standard_error,5)}) & [{fmt(row.delta_ci_low_bca,5)},{fmt(row.delta_ci_high_bca,5)}] & {fmt(row.holm_p_three_margins,5)}" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Selected nonnegative weighting scenarios. Weights sum to one. Intervals use the paired country bootstrap.}\label{tab:economic-scenarios}",
-              r"\begin{tabular}{lrrrr}\toprule Scenario & $\Delta$ weighted loss & SE & 95\% CI & $P(\Delta<0)$ \\\midrule"]
-    for row in scenarios.itertuples(index=False):
-        lines.append(f"{row.scenario} & {fmt(row.delta_weighted_loss_56_minus_55,4)} & {fmt(row.standard_error,4)} & [{fmt(row.ci_low_95,4)},{fmt(row.ci_high_95,4)}] & {fmt(row.bootstrap_probability_gpt56_lower_loss,3)}" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}",
-              rf"Across the full 0.02 weight grid ({int(summary.grid_points)} points), {100*summary.fraction_ci_favors_gpt56:.2f}\% of 95\% intervals favor GPT-5.6, {100*summary.fraction_uncertain:.2f}\% are uncertain, and none favor GPT-5.5. This is a sensitivity analysis over a declared index, not an observed welfare estimate.",
-              r"\subsection{Influence of regions and human-cell size}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Leave-one-cultural-region-out global TVD contrasts. Regions are descriptive WVS groupings; negative values favor GPT-5.6.}\label{tab:leave-region}",
-              r"\begin{tabular}{lrrr}\toprule Omitted region & Countries retained & $\Delta$ TVD & SE \\\midrule"]
-    for row in region[region.metric == "TVD"].itertuples(index=False):
-        region_label = str(row.omitted_cultural_region).replace("&", r"\&")
-        lines.append(f"{region_label} & {int(row.countries_retained)} & {fmt(row.estimate,4)} & {fmt(row.standard_error,4)}" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Global TVD contrast by quartile of average human-cell count. Ties produce unequal quartile sizes.}\label{tab:cell-quartiles}",
-              r"\begin{tabular}{lrrrr}\toprule Quartile & Countries & Mean cell $n$ & $\Delta$ TVD & 95\% BCa CI \\\midrule"]
-    for row in counts[counts.metric == "TVD"].itertuples(index=False):
-        lines.append(f"{row.human_cell_count_quartile} & {int(row.countries)} & {fmt(row.mean_country_average_human_n,1)} & {fmt(row.estimate,4)} & [{fmt(row.ci_low_bca,4)},{fmt(row.ci_high_bca,4)}]" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}\FloatBarrier"]
-    (TABLES / "appendix_extended_results.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def spatial_tables() -> None:
-    diagnostics = pd.read_csv(RESULTS / "spatial_diagnostics.csv")
-    sem = pd.read_csv(RESULTS / "spatial_error_models.csv")
-    hac = pd.read_csv(RESULTS / "spatial_hac_contrasts.csv")
-    primary = diagnostics[(diagnostics.knn_k == 4) & (diagnostics.model_or_contrast == "GPT-5.6 Sol minus GPT-5.5")]
-    lines = [
-        r"\begin{table}[h]\centering\small",
-        r"\caption{Primary $k=4$ spatial diagnostics for version contrasts. BH adjustment spans all 27 outcomes in the primary diagnostic family.}\label{tab:spatial-global}",
-        r"\begin{tabular}{llrrrr}\toprule Family & Outcome & Moran $I$ & BH $q$ & Geary $C$ & BH $q$ \\\midrule",
-    ]
-    for row in primary.itertuples(index=False):
-        lines.append(f"{row.outcome_family.replace('_',' ')} & {row.outcome} & {fmt(row.moran_i)} & {fmt(row.moran_bh_q_primary_family)} & {fmt(row.geary_c)} & {fmt(row.geary_bh_q_primary_family)}" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Spatial-error robustness for the global TVD contrast. Holm correction spans W1, TVD, and CRG outcomes within each graph.}\label{tab:sem-tvd}",
-              r"\begin{tabular}{rrrrrr}\toprule $k$ & Mean & SE & 95\% CI & Holm $p$ & $\lambda$ ($p$) \\\midrule"]
-    selected_sem = sem[(sem.metric == "TVD") & (sem.scope == "All six anchors")]
-    for row in selected_sem.itertuples(index=False):
-        lines.append(f"{int(row.knn_k)} & {fmt(row.mean_delta,4)} & {fmt(row.standard_error,4)} & [{fmt(row.ci_low_95,4)},{fmt(row.ci_high_95,4)}] & {fmt(row.holm_p_fourteen_scopes,5)} & {fmt(row.spatial_error_lambda,3)} ({fmt(row.lambda_p_value_two_sided,3)})" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}",
-              r"\begin{table}[h]\centering\small",
-              r"\caption{Spatial-HAC robustness for the global TVD contrast. Holm correction spans all 15 outcomes within each cutoff.}\label{tab:hac-tvd}",
-              r"\begin{tabular}{rrrrr}\toprule Cutoff (km) & Mean & HAC SE & 95\% CI & Holm $p$ \\\midrule"]
-    selected_hac = hac[(hac.metric == "TVD") & (hac.scope == "All six anchors")]
-    for row in selected_hac.itertuples(index=False):
-        lines.append(f"{int(row.cutoff_km)} & {fmt(row.estimate,4)} & {fmt(row.spatial_hac_standard_error,4)} & [{fmt(row.ci_low_95,4)},{fmt(row.ci_high_95,4)}] & {fmt(row.holm_p_fifteen_outcomes_within_cutoff,5)}" + r" \\")
-    lines += [r"\bottomrule\end{tabular}\end{table}"]
-    (TABLES / "appendix_spatial_tables.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
 def copy_sources() -> None:
     SOURCES.mkdir(parents=True, exist_ok=True)
     names = [
@@ -556,30 +414,9 @@ def copy_sources() -> None:
     _country_changes().to_csv(SOURCES / "country_level_spatial_changes.csv", index=False)
 
 
-def normalize_appendix_typography() -> None:
-    # Existing wide statistical tables were historically set at footnote size.
-    # The release now favors normal appendix body size and lets tables break.
-    target = TABLES / "appendix_full_results.tex"
-    text = target.read_text(encoding="utf-8")
-    text = text.replace(r"\footnotesize", r"\small")
-    target.write_text(text, encoding="utf-8")
-
-
 def main() -> None:
-    style()
-    FIGURES.mkdir(parents=True, exist_ok=True)
-    TABLES.mkdir(parents=True, exist_ok=True)
-    figure_evidence_boundary()
-    figure_main_results()
-    figure_spatial_maps()
-    figure_economic_surface()
-    main_table()
-    extended_tables()
-    spatial_tables()
     copy_sources()
-    normalize_appendix_typography()
-    print("PASS: v0.7 supporting tables and analysis assets generated; retired figure stems suppressed")
-
+    print("PASS: derived figure-source CSV inputs regenerated")
 
 if __name__ == "__main__":
     main()
