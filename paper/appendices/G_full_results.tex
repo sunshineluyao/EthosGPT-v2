@@ -61,20 +61,20 @@ gain is conditional on the original inconsistent label and cannot be
 certified for a corrected instrument. No official-weighted WVS target or
 local-language prompt output was available for a numeric comparison.
 
-\subsection{Exploratory six-group comparison}
-The cited cultural-map study uses eight region labels
-\citep{tao2024cultural,wvs2023culturalmap}. For this descriptive aggregation,
-we pool Catholic, Orthodox, and Protestant Europe into \emph{Europe}; the five
-other source labels remain unchanged. This produces six mutually exclusive
-groups covering all 64 countries. We average six item losses within each
-country and compare the two releases within each group. The 95\% BCa intervals
-resample countries within groups (20,000 draws, seed 20260925); they are
-unadjusted exploratory intervals, not six confirmatory discoveries.
-The W1/TVD loss contrast is GPT-5.6 minus GPT-5.5, with negative values
-indicating less error on the unweighted survey derivative. These region labels
-do not identify individuals or imply within-region homogeneity.
+\subsection{Results across the original eight regions}
+We use the eight cultural-map region labels associated with the cited study
+\citep{tao2024cultural,wvs2023culturalmap}, as recorded in the released
+country crosswalk. All eight occur among the 64 complete-case countries.
+Within each region, the six item losses are first averaged per country and
+then equally averaged over the countries. A negative GPT-5.6 minus GPT-5.5
+contrast indicates lower loss against the unweighted survey derivative.
+Exploratory 95\% BCa intervals resample countries within regions (20,000
+draws; seed 20260925) without adjustment across regions or metrics.
+Catholic Europe has only two countries and Protestant Europe has four; no
+interval is reported for these small groups. Region labels describe neither
+individual identities nor within-group homogeneity.
 
-\input{tabs/appendix_six_regions}
+\input{tabs/appendix_eight_regions}
 
 \subsection{Signed bias and generational stability}
 Signed expected-score errors (Table~\ref{tab:signed-bias}) reveal what unsigned distances

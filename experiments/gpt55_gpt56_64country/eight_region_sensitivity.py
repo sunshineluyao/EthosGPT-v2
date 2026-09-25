@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Exploratory six-group description of archived country-question losses.
+"""Original eight-region description of archived country-question losses.
 
-The published WVS/Tao crosswalk contains eight labels. This analysis merges
-its three European labels into one broad Europe group, retaining the other
-five unchanged. It does not claim that the source work used six regions.
-Country means are equally weighted, and inference resamples countries within
-each group; the resulting intervals are descriptive and exploratory.
+Keep the published WVS/Tao cultural-map labels and the released crosswalk
+unchanged. Country means are equally weighted. Exploratory bootstrap intervals
+resample countries within each region. The two regions with fewer than five
+countries receive point estimates only; do not treat subgroup intervals as
+multiplicity-adjusted confirmatory tests.
 """
 
 from __future__ import annotations
@@ -25,7 +25,6 @@ SOURCE_REGIONS = {
     "African-Islamic", "Catholic Europe", "Confucian", "English-Speaking",
     "Latin America", "Orthodox Europe", "Protestant Europe", "West & South Asia",
 }
-EUROPE = {"Catholic Europe", "Orthodox Europe", "Protestant Europe"}
 SEED = 20260925
 
 
@@ -65,15 +64,13 @@ def analyze(path: Path, bootstrap_draws: int = 20_000) -> pd.DataFrame:
     for metric in ("w1", "tvd"):
         if not scores[metric].between(0, 1).all():
             raise ValueError(f"Invalid {metric} score")
-    scores["six_region"] = scores.cultural_region.where(~scores.cultural_region.isin(EUROPE), "Europe")
-    regions = sorted(scores.six_region.unique())
-    if len(regions) != 6:
-        raise ValueError("Expected six broad groups")
+    regions = sorted(scores.cultural_region.unique())
+    if len(regions) != 8:
+        raise ValueError("Expected eight original cultural-map regions")
     rng = np.random.default_rng(SEED)
     rows = []
     for region in regions:
-        part = scores[scores.six_region == region]
-        sources = sorted(part.cultural_region.unique())
+        part = scores[scores.cultural_region == region]
         for metric in ("w1", "tvd"):
             country = part.pivot_table(index="country", columns="model", values=metric, aggfunc="mean")
             country = country.reindex(columns=MODELS).sort_index()
@@ -81,10 +78,11 @@ def analyze(path: Path, bootstrap_draws: int = 20_000) -> pd.DataFrame:
                 raise ValueError("Missing paired country score")
             first, second = (country[m].to_numpy(float) for m in MODELS)
             delta = second - first
-            lower, upper = bca_interval(delta, rng, bootstrap_draws)
+            # Two- and four-country BCa intervals are too unstable to report.
+            lower, upper = (bca_interval(delta, rng, bootstrap_draws)
+                            if len(delta) >= 5 else (float("nan"), float("nan")))
             rows.append({
-                "six_region": region,
-                "source_eight_regions": "; ".join(sources),
+                "cultural_region": region,
                 "metric": metric.upper(),
                 "countries": len(country),
                 "gpt55_estimate": first.mean(),
@@ -114,9 +112,9 @@ def main() -> None:
     if args.bootstrap_draws < 1_000:
         parser.error("Use at least 1,000 country bootstrap draws")
     result = analyze(args.results_dir / "country_question_scores.csv", args.bootstrap_draws)
-    destination = args.results_dir / "six_region_sensitivity.csv"
+    destination = args.results_dir / "eight_region_sensitivity.csv"
     result.to_csv(destination, index=False)
-    print(result[["six_region", "metric", "countries", "delta_56_minus_55", "delta_ci_low_bca", "delta_ci_high_bca"]].to_string(index=False))
+    print(result[["cultural_region", "metric", "countries", "delta_56_minus_55", "delta_ci_low_bca", "delta_ci_high_bca"]].to_string(index=False))
 
 
 if __name__ == "__main__":

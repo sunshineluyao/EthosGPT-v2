@@ -12,7 +12,7 @@ shown in `metadata.tex` is Luyao Zhang, taken from the public EthosGPT
 project record; confirm the final author order, affiliations, and funding
 disclosure against the accepted submission before delivery.
 
-Detailed changes to this manuscript and the exploratory six-group analysis
+Detailed changes to this manuscript and the original eight-region analysis
 are described in [CAMERA_READY_NOTES.md](CAMERA_READY_NOTES.md) and
 [REVIEW_RESPONSE.md](REVIEW_RESPONSE.md). The executable replication package
 is [EthosGPT-v1.0.0](https://github.com/sunshineluyao/EthosGPT-v1.0.0).

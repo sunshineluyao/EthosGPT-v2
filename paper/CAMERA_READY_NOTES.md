@@ -20,31 +20,31 @@ Averaging five recorded generations removes only 1.18% to 1.31% of observed
 single-run squared probability error. All comparisons use the unweighted
 public survey derivative, not official population weights or user outcomes.
 
-## Six broad groups
+## Original eight cultural-map regions
 
-The Tao et al. (2024) and WVS cultural-map annotations use eight labels, and
-all eight occur in the 64-country sample. This *exploratory six-group
-aggregation* combines the three European labels into one broad Europe group;
-it leaves African-Islamic, Confucian, English-Speaking, Latin America, and
-West & South Asia unchanged. It is our coarsening, not a six-region taxonomy
-claimed by Tao et al. The full crosswalk is in
-[`cultural_region_crosswalk.csv`](https://github.com/sunshineluyao/EthosGPT-v1.0.0/blob/main/data/metadata/cultural_region_crosswalk.csv).
+The cited Tao et al. (2024) study and the released crosswalk use eight
+cultural-map labels. The analysis below retains each original label. Results
+are paired country means across the same six items; negative changes indicate
+lower loss against the unweighted survey derivative.
 
-| Group | Countries | W1 Δ [95% BCa CI] | TVD Δ [95% BCa CI] |
-| --- | ---: | ---: | ---: |
-| African-Islamic | 15 | 0.0026 [-0.0015, 0.0068] | -0.0080 [-0.0136, -0.0026] |
-| Confucian | 9 | 0.0045 [-0.0011, 0.0111] | 0.0021 [-0.0075, 0.0125] |
-| English-Speaking | 6 | -0.0055 [-0.0113, -0.0010] | -0.0101 [-0.0130, -0.0064] |
-| Europe | 12 | -0.0036 [-0.0074, 0.0003] | -0.0081 [-0.0136, -0.0024] |
-| Latin America | 12 | -0.0038 [-0.0087, 0.0001] | -0.0089 [-0.0139, -0.0036] |
-| West & South Asia | 10 | -0.0082 [-0.0114, -0.0040] | -0.0149 [-0.0202, -0.0097] |
+| Original region | Countries | W1 Δ | TVD Δ | TVD 95% BCa CI |
+| --- | ---: | ---: | ---: | --- |
+| African-Islamic | 15 | 0.0026 | -0.0080 | [-0.0136, -0.0026] |
+| Catholic Europe | 2 | -0.0083 | -0.0149 | not reported (<5 countries) |
+| Confucian | 9 | 0.0045 | 0.0021 | [-0.0075, 0.0125] |
+| English-Speaking | 6 | -0.0055 | -0.0101 | [-0.0130, -0.0064] |
+| Latin America | 12 | -0.0038 | -0.0089 | [-0.0139, -0.0036] |
+| Orthodox Europe | 6 | -0.0062 | -0.0110 | [-0.0181, -0.0034] |
+| Protestant Europe | 4 | 0.0028 | -0.0001 | not reported (<5 countries) |
+| West & South Asia | 10 | -0.0082 | -0.0149 | [-0.0204, -0.0097] |
 
-Each country receives equal weight; changes are means across six items.
-Intervals resample countries *within each group* with 20,000 BCa draws.
-The six intervals are unadjusted, exploratory, and conditional on recorded
-prompt wording. See the code repository's
-[`six_region_sensitivity.py`](https://github.com/sunshineluyao/EthosGPT-v1.0.0/blob/main/experiments/gpt55_gpt56_64country/six_region_sensitivity.py)
-and [result table](https://github.com/sunshineluyao/EthosGPT-v1.0.0/blob/main/experiments/gpt55_gpt56_64country/results/six_region_sensitivity.csv).
+The eight groups partition all 64 countries (group sizes range 2--15).
+Within-group intervals use 20,000 paired-country BCa draws and are
+exploratory and unadjusted. Small-group estimates are descriptive only.
+W1 intervals for the remaining groups, original country mapping, and
+reproduction code are in the [eight-region CSV](https://github.com/sunshineluyao/EthosGPT-v1.0.0/blob/main/experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv),
+[crosswalk](https://github.com/sunshineluyao/EthosGPT-v1.0.0/blob/main/data/metadata/cultural_region_crosswalk.csv), and
+[analysis script](https://github.com/sunshineluyao/EthosGPT-v1.0.0/blob/main/experiments/gpt55_gpt56_64country/eight_region_sensitivity.py).
 
 ## Editorial decisions
 

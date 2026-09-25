@@ -98,10 +98,9 @@ cannot identify outcomes under repaired prompts.
 
 ## Camera-ready additions after this response draft
 
-- Appendix G reports the six broad-group comparison made by pooling the three
-  European labels in the source eight-region crosswalk; the complete analysis
-  and CSV are in the code repository. The grouping is exploratory and is not
-  described as Tao et al.'s six-region taxonomy.
+- Appendix G reports the original eight cultural-map regions without merging
+  labels. The country-group sizes, W1/TVD results, and reproducible CSV are in
+  the code repository; small groups receive descriptive point estimates only.
 - The four-page paper now presents empirical results without the review-style
   heading; detailed release contrasts and reviewer point-by-point notes remain
   on GitHub. The workshop reviewers are acknowledged in the PDF.

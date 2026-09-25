@@ -33,7 +33,7 @@ def main() -> None:
     run("experiments/gpt55_gpt56_64country/uncertainty_sensitivity.py")
     run("experiments/gpt55_gpt56_64country/protocol_sensitivity.py")
     run("experiments/gpt55_gpt56_64country/wording_sensitivity.py")
-    run("experiments/gpt55_gpt56_64country/six_region_sensitivity.py")
+    run("experiments/gpt55_gpt56_64country/eight_region_sensitivity.py")
     run("experiments/gpt55_gpt56_64country/spatial_hac.py")
     run("experiments/gpt55_gpt56_64country/extended_analysis.py")
     run("scripts/make_wave1_assets.py")
