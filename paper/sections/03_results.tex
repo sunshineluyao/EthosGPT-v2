@@ -2,27 +2,28 @@
 
 \input{tabs/table1_main}
 
-GPT-5.6 has lower global TVD error ($\Delta=-0.0080$, 95\% BCa CI
-$[-0.0107,-0.0050]$, Holm $p<0.001$; Table~\ref{tab:main}). The ordered W1 change is
-smaller and uncertain ($-0.0020$, CI $[-0.0040,0.0003]$), and CRG is nearly unchanged.
-VDR moves toward the human spread target ($0.587\rightarrow0.609$) while CSR falls
-($0.321\rightarrow0.288$); neither target-loss contrast is conclusive. Thus lower
-category-mass error does not imply uniformly better country representation.
+Table~\ref{tab:main} gives the five global comparisons. Only the six-item
+total-variation distance (TVD) improves after correction:
+$\Delta=-0.0080$ (95\% BCa CI $[-0.0107,-0.0050]$, Holm $p<0.001$).
+W1, CRG, and the target-loss contrasts for VDR and CSR remain inconclusive.
+Reduced category-mass error does not establish improved ordering or geometry.
 
-Within one 12-outcome family, responsibility improves under W1 ($-0.0082$,
-simultaneous CI $[-0.0156,-0.0009]$, max-$T$ $p=0.017$) and TVD ($-0.0207$,
-$[-0.0301,-0.0113]$, $p<0.001$). Income distribution improves under TVD
-($-0.0266$, $[-0.0389,-0.0143]$, $p<0.001$), whereas its W1 result remains borderline
-after joint correction ($p=0.059$). No other item passes this familywise test; the
-disclosed Q121 conflict is not a corrected worsening.
+The corrected 12-outcome item family finds Q108 responsibility improved under
+W1 and TVD and Q106 income distribution improved under TVD; no other item passes
+joint correction. These two items contribute 98.0\% of the signed six-item TVD
+point reduction. In exploratory omissions, TVD remains negative after excluding
+Q106 ($-0.00433$, CI $[-0.00698,-0.00138]$), but removing both Q106 and Q108
+leaves a near-zero contrast ($-0.00024$, CI $[-0.00313,0.00286]$). The Q106
+item-specific gain cannot be verified with corrected wording from these outputs;
+Appendix~\ref{app:results} reports all exclusions and the Q121 bounds.
 
-A five-run mean removes only 1.18\% of GPT-5.5 and 1.31\% of GPT-5.6 single-run squared
-probability error (Figure~\ref{fig:results}b). The GPT-5.6 five-run residual is lower by
-$0.0063$ (95\% CI $[-0.0083,-0.0045]$), while run-varying components do not differ
-reliably. Spatial-error estimates over $k=4,6,8$ graphs and spatial-HAC intervals over
-1,000--5,000 km keep the global TVD interval below zero. TVD changes are not spatially
-clustered after diagnostic correction; CRG retains a local Geary signal. These checks
-support the average contrast, not diffusion or spillover.
+The five-run mean removes 1.18\% of GPT-5.5 and 1.31\% of GPT-5.6 single-run
+squared probability error (Figure~\ref{fig:results}b). The GPT-5.6 residual
+falls by $0.0063$ (95\% CI $[-0.0083,-0.0045]$), whereas run-varying error
+does not reliably differ. Spatial-error and spatial-HAC intervals for the
+global TVD contrast remain below zero over the tested graphs and cutoffs.
+These checks support a mean contrast on the derivative, without measuring
+diffusion or causal effects.
 
 \begin{figure}[t]
   \centering
