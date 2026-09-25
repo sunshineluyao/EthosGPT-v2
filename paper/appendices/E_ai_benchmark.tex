@@ -51,8 +51,14 @@ country-cluster inference.}
 
 \subsection{Prompt, composition, and influence checks}
 The five-anchor analysis excludes Q121. Additional bounds move 50\% or 100\% of each
-model's category-1 mass to category 2 before rescoring; they bound the internal label
-conflict but cannot recreate a corrected generation.
+model's Q121 category-1 mass to category 2 before rescoring; they explore the
+internal label conflict but cannot recreate a corrected generation. For the
+Q106 incentive/label mismatch, exploratory exclusions recompute W1 and TVD
+without Q106, Q121, Q108, or indicated pairs. The released score CSV and
+\texttt{wording\_sensitivity.py} fix the input and seed. These omissions retain
+64 paired countries, 20,000 BCa draws, and 19,999 sign flips. The two metrics
+receive Holm correction within each scenario, but no correction across the
+post hoc scenarios is claimed. See Table~\ref{tab:wording-omissions}.
 
 For $K=1,\ldots,5$, the composition analysis exhaustively averages every subset of the
 five observed generations. It uses no synthetic agents and makes no independence claim
