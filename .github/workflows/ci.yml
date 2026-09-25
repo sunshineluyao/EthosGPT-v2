@@ -7,15 +7,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
-      - name: Install PDF and LaTeX tools
-        run: sudo apt-get update && sudo apt-get install -y latexmk poppler-utils texlive-latex-extra texlive-fonts-recommended
       - run: pip install -r requirements.lock.txt
       - run: make reproduce-offline
-      - run: make verify
-      - name: Archive camera-ready workshop PDF
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: EthosGPT-GlobalSouthAI-camera-ready
-          path: paper/main.pdf
-          retention-days: 30
+      - run: make release-contract

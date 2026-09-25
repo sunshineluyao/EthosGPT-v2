@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Generate the v0.4.0 manuscript tables, figures, and appendix assets."""
+"""Regenerate country coverage and worked examples from the archived scores."""
 
 from __future__ import annotations
 
 import json
 import os
 from pathlib import Path
-import shutil
 
 os.environ.setdefault("SOURCE_DATE_EPOCH", "1788566400")
 os.environ.setdefault("TZ", "UTC")
@@ -26,9 +25,7 @@ from scipy.stats import spearmanr
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "experiments/gpt55_gpt56_64country"
 RESULTS = EXP / "results"
-PAPER_FIGURES = ROOT / "paper/figs"
 RESULT_FIGURES = ROOT / "results/figures"
-PAPER_TABLES = ROOT / "paper/tabs"
 
 NAVY = "#17324D"
 TEAL = "#008F80"
@@ -67,14 +64,10 @@ def save_figure(fig: plt.Figure, stem: str) -> None:
     # tables/tutorial assets only and must not repopulate retired figure stems.
     if stem in {"fig1_wave1_design", "fig2_wave1_results"}:
         return
-    PAPER_FIGURES.mkdir(parents=True, exist_ok=True)
     RESULT_FIGURES.mkdir(parents=True, exist_ok=True)
     metadata = {"Creator": "EthosGPT v0.7.0 reproducible figure pipeline"}
     fig.savefig(RESULT_FIGURES / f"{stem}.pdf", metadata=metadata)
     fig.savefig(RESULT_FIGURES / f"{stem}.svg", metadata=metadata)
-    for suffix in (".pdf", ".svg"):
-        shutil.copy2(RESULT_FIGURES / f"{stem}{suffix}", PAPER_FIGURES / f"{stem}{suffix}")
-
 
 def card(ax: plt.Axes, x: float, title: str, subtitle: str, accent: str) -> None:
     patch = FancyBboxPatch(
@@ -302,46 +295,6 @@ def fmt(value: float, digits: int = 3) -> str:
     return text
 
 
-def main_table() -> None:
-    estimates = pd.read_csv(RESULTS / "metric_estimates.csv")
-    comparisons = pd.read_csv(RESULTS / "metric_comparisons.csv").set_index("metric")
-    labels = {"W1": "W1 $\\downarrow$", "TVD": "TVD $\\downarrow$", "CRG": "CRG $\\downarrow$", "VDR": "VDR $\\to 1$", "CSR": "CSR $\\uparrow$"}
-    lines = [
-        r"\begin{table}[t]",
-        r"\centering",
-        r"\caption{Sixty-four-country model comparison. Parentheses give country-bootstrap SEs; the contrast is target loss for GPT-5.6 Sol minus GPT-5.5, so negative values favor GPT-5.6.}",
-        r"\label{tab:main}",
-        r"\scriptsize",
-        r"\setlength{\tabcolsep}{3.0pt}",
-        r"\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrl@{}}",
-        r"\toprule",
-        r"Metric & GPT-5.5 & GPT-5.6 Sol & $\Delta$ loss [95\% BCa CI] & Holm $p$ \\",
-        r"\midrule",
-    ]
-    for metric in ("W1", "TVD", "CRG", "VDR", "CSR"):
-        first = estimates[(estimates.model == "GPT-5.5") & (estimates.metric == metric)].iloc[0]
-        second = estimates[(estimates.model == "GPT-5.6 Sol") & (estimates.metric == metric)].iloc[0]
-        comp = comparisons.loc[metric]
-        direction = r"\textcolor{improveink}{$\downarrow$}" if comp.estimate < 0 else r"\textcolor{worseink}{$\uparrow$}"
-        delta = f"{fmt(comp.estimate)} [{fmt(comp.ci_low_bca)},{fmt(comp.ci_high_bca)}] {direction}"
-        pvalue = "<.001" if comp.holm_p_five_metrics < .001 else fmt(comp.holm_p_five_metrics, 3)
-        if comp.holm_p_five_metrics <= .05:
-            delta = r"\cellcolor{improvebg}\textbf{" + delta + "}"
-            pvalue = r"\cellcolor{improvebg}\textbf{" + pvalue + "}"
-        lines.append(
-            f"{labels[metric]} & {fmt(first.estimate)} ({fmt(first.standard_error)}) & "
-            f"{fmt(second.estimate)} ({fmt(second.standard_error)}) & {delta} & {pvalue} \\\\" 
-        )
-    lines += [
-        r"\bottomrule",
-        r"\end{tabular*}",
-        r"\vspace{1pt}",
-        r"\begin{minipage}{.98\linewidth}\scriptsize W1 respects ordinal distance; TVD measures category mass. CRG is the standardized country-profile gap. VDR compares cross-country spread; CSR compares the rank order of country-pair distances. All intervals use 20,000 country resamples; $p$-values use 19,999 paired sign flips and Holm correction across five metrics.\end{minipage}",
-        r"\end{table}",
-    ]
-    (PAPER_TABLES / "table1_main.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
 def appendix_tables_and_data() -> None:
     roster = pd.read_csv(EXP / "inputs/country_roster.csv")
     human = pd.read_parquet(ROOT / "data/processed/human_item_distributions.parquet")
@@ -394,293 +347,11 @@ def appendix_tables_and_data() -> None:
             })
     pd.DataFrame(distance_rows).to_csv(RESULTS / "tutorial_four_country_distances.csv", index=False)
 
-    # Longtable source: every new-API country, its descriptive region, and six human cell counts.
-    lines = [
-        r"\begin{longtable}{p{0.18\linewidth}p{0.20\linewidth}rrrrrr}",
-        r"\caption{Complete new-API roster and human comparison-cell counts. Every listed country has all six anchors in both model versions; counts are unweighted records in the public derivative.}\label{tab:country-roster}\\",
-        r"\toprule Country / society & Descriptive region & Q48 & Q57 & Q106 & Q108 & Q121 & Q159 \\",
-        r"\midrule\endfirsthead",
-        r"\toprule Country / society & Descriptive region & Q48 & Q57 & Q106 & Q108 & Q121 & Q159 \\",
-        r"\midrule\endhead",
-    ]
-    escape = lambda value: str(value).replace("&", r"\&")
-    for row in coverage.sort_values(["cultural_region", "country"]).itertuples(index=False):
-        lines.append(f"{escape(row.country)} & {escape(row.cultural_region)} & " + " & ".join(str(int(getattr(row, qid))) for qid in questions) + r" \\")
-    lines += [r"\bottomrule", r"\end{longtable}"]
-    (PAPER_TABLES / "appendix_country_roster.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-    official = json.loads((EXP / "inputs/official_wvs_questions.json").read_text(encoding="utf-8"))
-    actual = json.loads((EXP / "inputs/questionnaire_and_prompts.json").read_text(encoding="utf-8"))
-    actual_by_q = {item["question_id"]: item for item in actual["questions"]}
-
-    def latex_escape(value: str) -> str:
-        replacements = {
-            "\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$",
-            "#": r"\#", "_": r"\_", "{": r"\{", "}": r"\}",
-            "~": r"\textasciitilde{}", "^": r"\textasciicircum{}",
-        }
-        return "".join(replacements.get(char, char) for char in value)
-
-    prompt_lines = []
-    for item in official["questions"]:
-        qid = item["question_id"]
-        prompt_lines += [
-            f"\\subsection{{{qid}: {latex_escape(item['domain'])}}}",
-            r"\paragraph{Official WVS7 wording.} " + latex_escape(item["official_wording"]) +
-            f" \\citep[p.~{item['source_page']}]{{wvs7masterquestionnaire}}",
-            r"\paragraph{Official choices.} " + "; ".join(
-                f"{latex_escape(str(key))} = {latex_escape(str(value))}" for key, value in sorted(item["choices"].items(), key=lambda pair: int(pair[0]))
-            ) + ".",
-            f"\\begin{{promptlisting}}{{Exact API prompt template for {qid}}}",
-            actual_by_q[qid]["prompt_template"],
-            r"\end{promptlisting}",
-        ]
-    (ROOT / "paper/appendices/generated_questionnaire_prompts.tex").write_text("\n\n".join(prompt_lines) + "\n", encoding="utf-8")
-
-
-def generated_tutorial_tables() -> None:
-    tutorial = pd.read_csv(RESULTS / "tutorial_china_q106.csv")
-    scores = pd.read_csv(RESULTS / "country_question_scores.csv")
-    china = scores[(scores.country == "China") & (scores.question_id == "Q106")].set_index("model")
-    lines = [
-        r"\begin{table}[h]", r"\centering", r"\caption{Worked item example: China, Q106. Model columns average the five generations.}",
-        r"\label{tab:tutorial-q106}", r"\small", r"\begin{tabular}{rrrr}",
-        r"\toprule Score & Human $q_r$ & GPT-5.5 $p_r$ & GPT-5.6 Sol $p_r$ \\", r"\midrule",
-    ]
-    for _, row in tutorial.iterrows():
-        lines.append(
-            f"{int(row['score'])} & {row['human_probability']:.3f} & "
-            f"{row['GPT-55_probability']:.3f} & {row['GPT-56_Sol_probability']:.3f}"
-            + r" \\"
-        )
-    lines += [
-        r"\midrule",
-        f"W1 & -- & {china.loc['GPT-5.5','w1']:.4f} & {china.loc['GPT-5.6 Sol','w1']:.4f}" + r" \\",
-        f"TVD & -- & {china.loc['GPT-5.5','tvd']:.4f} & {china.loc['GPT-5.6 Sol','tvd']:.4f}" + r" \\",
-        r"\bottomrule", r"\end{tabular}", r"\end{table}",
-    ]
-
-    profile = pd.read_csv(RESULTS / "tutorial_four_country_profiles.csv")
-    china_profile = profile[profile.country == "China"].set_index("source")
-    human_scores = scores.drop_duplicates(["country", "domain"])[["country", "domain", "human_directed"]].pivot(index="country", columns="domain", values="human_directed")
-    sigmas = human_scores.std(ddof=1)
-    lines += [
-        r"\begin{table}[h]", r"\centering", r"\caption{Worked country-profile example for China. Directed scores are on $[0,1]$; $\sigma_k$ is the 64-country human SD.}",
-        r"\label{tab:tutorial-crg}", r"\small", r"\begin{tabular}{lrrrrr}",
-        r"\toprule Domain & Human & GPT-5.5 & GPT-5.6 Sol & $\sigma_k$ & GPT-5.5 $z$ error \\", r"\midrule",
-    ]
-    for domain in ("Agency", "Trust", "Distribution", "Market", "Inclusion", "Science"):
-        h = china_profile.loc["Human", domain]
-        m55 = china_profile.loc["GPT-5.5", domain]
-        m56 = china_profile.loc["GPT-5.6 Sol", domain]
-        lines.append(
-            f"{domain} & {h:.3f} & {m55:.3f} & {m56:.3f} & "
-            f"{sigmas[domain]:.3f} & {(m55-h)/sigmas[domain]:.3f}" + r" \\"
-        )
-    z55 = (china_profile.loc["GPT-5.5", sigmas.index] - china_profile.loc["Human", sigmas.index]) / sigmas
-    z56 = (china_profile.loc["GPT-5.6 Sol", sigmas.index] - china_profile.loc["Human", sigmas.index]) / sigmas
-    lines += [
-        r"\midrule",
-        f"CRG & -- & {np.sqrt(np.square(z55).mean()):.3f} & {np.sqrt(np.square(z56).mean()):.3f} & -- & --" + r" \\",
-        r"\bottomrule", r"\end{tabular}", r"\end{table}",
-    ]
-
-    distances = pd.read_csv(RESULTS / "tutorial_four_country_distances.csv")
-    pair_rows = distances[distances.country_1 != "SUMMARY"].pivot(index=["country_1", "country_2"], columns="source", values="distance").reset_index()
-    summary = distances[distances.country_1 == "SUMMARY"].set_index("source")
-    lines += [
-        r"\begin{table}[h]", r"\centering", r"\caption{Four-country tutorial subset (China, Brazil, Nigeria, United States). This subset illustrates the arithmetic and is not a separate inferential result.}",
-        r"\label{tab:tutorial-geometry}", r"\small", r"\begin{tabular}{llrrr}",
-        r"\toprule Country 1 & Country 2 & Human distance & GPT-5.5 & GPT-5.6 Sol \\", r"\midrule",
-    ]
-    for _, row in pair_rows.iterrows():
-        lines.append(
-            f"{row['country_1']} & {row['country_2']} & {row['Human']:.3f} & "
-            f"{row['GPT-5.5']:.3f} & {row['GPT-5.6 Sol']:.3f}" + r" \\"
-        )
-    lines += [
-        r"\midrule",
-        f"VDR & -- & 1.000 & {summary.loc['GPT-5.5','vdr']:.3f} & {summary.loc['GPT-5.6 Sol','vdr']:.3f}" + r" \\",
-        f"CSR & -- & 1.000 & {summary.loc['GPT-5.5','csr']:.3f} & {summary.loc['GPT-5.6 Sol','csr']:.3f}" + r" \\",
-        r"\bottomrule", r"\end{tabular}", r"\end{table}",
-    ]
-    (PAPER_TABLES / "appendix_tutorial_tables.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def generated_full_results_tables() -> None:
-    def compact(value: float, digits: int = 4) -> str:
-        """TeX-friendly decimals for wide statistical tables."""
-        return f"{value:.{digits}f}".replace("-0.", "-.").replace("0.", ".")
-
-    estimates = pd.read_csv(RESULTS / "metric_estimates.csv")
-    comparisons = pd.read_csv(RESULTS / "metric_comparisons.csv")
-    domains = pd.read_csv(RESULTS / "domain_comparisons.csv")
-    q121 = pd.read_csv(RESULTS / "q121_prompt_deviation_sensitivity.csv")
-    conditional = pd.read_csv(RESULTS / "conditional_uncertainty_contrasts.csv")
-    stability = pd.read_csv(RESULTS / "run_stability.csv")
-    bias = pd.read_csv(RESULTS / "signed_bias_inference.csv")
-    convergence = pd.read_csv(RESULTS / "bootstrap_convergence.csv")
-    lines = [
-        r"\begin{table}[h]", r"\centering", r"\caption{Global model estimates. Standard errors and BCa intervals resample countries in 20,000 draws.}",
-        r"\label{tab:global-estimates}", r"\small", r"\begin{tabular}{llrrr}",
-        r"\toprule Model & Metric & Estimate & SE & 95\% BCa CI \\", r"\midrule",
-    ]
-    for row in estimates.itertuples(index=False):
-        lines.append(
-            f"{row.model} & {row.metric} & {row.estimate:.4f} & {row.standard_error:.4f} & "
-            f"[{row.ci_low_bca:.4f},{row.ci_high_bca:.4f}]" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}",
-              r"\begin{table}[h]", r"\centering", r"\caption{Global target-loss contrasts. Negative estimates favor GPT-5.6 Sol.}",
-              r"\label{tab:global-contrasts}", r"\small", r"\begin{tabular}{lrrrrr}",
-              r"\toprule Metric & $\Delta$ loss & SE & 95\% BCa CI & $p_{\rm perm}$ & Holm $p$ \\", r"\midrule"]
-    for row in comparisons.itertuples(index=False):
-        lines.append(
-            f"{row.metric} & {row.estimate:.4f} & {row.standard_error:.4f} & "
-            f"[{row.ci_low_bca:.4f},{row.ci_high_bca:.4f}] & "
-            f"{row.permutation_p_two_sided:.5f} & {row.holm_p_five_metrics:.5f}" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", r"\FloatBarrier"]
-    for metric in ("W1", "TVD"):
-        label = metric.lower()
-        lines += [
-            r"\begin{table}[htbp]", r"\centering", r"\footnotesize", r"\setlength{\tabcolsep}{1.8pt}",
-            rf"\caption{{Domain {metric} estimates and paired contrasts. Model cells report estimate (country-bootstrap SE); $\Delta$ is GPT-5.6 Sol minus GPT-5.5 and negative values favor GPT-5.6 Sol.}}\label{{tab:domain-{label}}}",
-            r"\begin{tabular}{@{}lrrrrrr@{}}",
-            r"\toprule Domain & 5.5 (SE) & 5.6 (SE) & $\Delta$ (SE) & 95\% BCa CI & $p_{\rm perm}$ & Holm $p$ \\",
-            r"\midrule",
-        ]
-        for row in domains[domains.metric == metric].itertuples(index=False):
-            lines.append(
-                f"{row.domain} & {compact(row.gpt55_estimate)} ({compact(row.gpt55_se)}) & "
-                f"{compact(row.gpt56_estimate)} ({compact(row.gpt56_se)}) & "
-                f"{compact(row.delta_56_minus_55)} ({compact(row.delta_se)}) & "
-                f"[{compact(row.ci_low_bca)},{compact(row.ci_high_bca)}] & "
-                f"{compact(row.permutation_p_two_sided, 5)} & {compact(row.holm_p_within_metric, 5)}" + r" \\"
-            )
-        lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
-    lines += [r"\FloatBarrier",
-              r"\begin{table}[h]", r"\centering", r"\caption{Q121 label-conflict sensitivity. The relabeling scenarios move the stated fraction of each model's category-1 mass to category 2; they bound scoring effects and do not recreate model generation.}",
-              r"\label{tab:q121-sensitivity}", r"\small", r"\begin{tabular}{llrrr}",
-              r"\toprule Scenario & Metric & $\Delta$ & 95\% BCa CI & Holm $p$ \\", r"\midrule"]
-    short_scenario = {0.0: "as collected", 0.5: r"50\% shift", 1.0: r"100\% shift"}
-    for row in q121.itertuples(index=False):
-        lines.append(
-            f"{short_scenario[row.shift_fraction]} & {row.metric} & {row.delta_56_minus_55:.4f} & "
-            f"[{row.delta_ci_low_bca:.4f},{row.delta_ci_high_bca:.4f}] & "
-            f"{row.holm_p_two_metrics:.4f}" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}",
-              r"\begin{table}[h]", r"\centering", r"\caption{Conditional uncertainty decomposition. These centered sensitivity intervals hold countries fixed; they complement, not replace, Table~\ref{tab:global-contrasts}.}",
-              r"\label{tab:conditional-uncertainty}", r"\small", r"\begin{tabular}{llrr}",
-              r"\toprule Source & Metric & Conditional SE & Centered 95\% interval \\", r"\midrule"]
-    source_short = {
-        "human multinomial cells, fixed countries and model means": "human cells",
-        "five-generation resampling, fixed countries and human cells": "five generations",
-    }
-    for row in conditional.itertuples(index=False):
-        lines.append(
-            f"{source_short[row.uncertainty_source]} & {row.metric} & "
-            f"{row.conditional_standard_error:.4f} & "
-            f"[{row.centered_sensitivity_interval_low_95:.4f},{row.centered_sensitivity_interval_high_95:.4f}]"
-            + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", r"\FloatBarrier",
-              r"\begin{table}[htbp]", r"\centering", r"\footnotesize", r"\setlength{\tabcolsep}{2.0pt}",
-              r"\caption{Signed expected-score bias by model and domain. Positive values indicate a higher expected directed response than the human derivative; these signs are descriptive, not normative.}\label{tab:signed-bias}",
-              r"\begin{tabular}{@{}llrrrrr@{}}",
-              r"\toprule Model & Domain & Bias & SE & 95\% BCa CI & $p_{\rm perm}$ & Holm $p$ \\", r"\midrule"]
-    for row in bias.itertuples(index=False):
-        lines.append(
-            f"{row.model} & {row.domain} & {compact(row.mean_signed_bias)} & {compact(row.standard_error)} & "
-            f"[{compact(row.ci_low_bca)},{compact(row.ci_high_bca)}] & "
-            f"{compact(row.permutation_p_two_sided, 5)} & {compact(row.holm_p_within_model, 5)}" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}",
-              r"\begin{table}[h]", r"\centering",
-              r"\caption{Bootstrap-draw convergence. Values are the maximum absolute movement, across the two models, of either percentile-interval endpoint between 10,000 and 20,000 country resamples.}\label{tab:bootstrap-convergence}",
-              r"\small", r"\begin{tabular}{lr}",
-              r"\toprule Metric & Maximum endpoint movement \\", r"\midrule"]
-    for metric in ("W1", "TVD", "CRG", "VDR", "CSR"):
-        subset = convergence[convergence.quantity.str.endswith("_" + metric)]
-        piv = subset.pivot(index="quantity", columns="draws_used", values=["percentile_ci_low", "percentile_ci_high"])
-        shifts = []
-        for _, row in piv.iterrows():
-            shifts.extend([
-                abs(row[("percentile_ci_low", 20000)] - row[("percentile_ci_low", 10000)]),
-                abs(row[("percentile_ci_high", 20000)] - row[("percentile_ci_high", 10000)]),
-            ])
-        lines.append(f"{metric} & {max(shifts):.5f}" + r" \\")
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}",
-              r"\begin{table}[h]", r"\centering", r"\caption{Within-cell run instability across five generations. Values summarize the SD across generations within each country--question cell.}",
-              r"\label{tab:run-stability}", r"\small", r"\begin{tabular}{llrrr}",
-              r"\toprule Model & Scope & Cells & Mean SD W1 & Mean SD TVD \\", r"\midrule"]
-    for row in stability.itertuples(index=False):
-        if row.scope == "All six anchors":
-            lines.append(
-                f"{row.model} & all anchors & {row.country_question_cells} & "
-                f"{row.mean_within_cell_sd_w1:.4f} & {row.mean_within_cell_sd_tvd:.4f}" + r" \\"
-            )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", r"\FloatBarrier"]
-    (PAPER_TABLES / "appendix_full_results.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def generated_spatial_tables() -> None:
-    diagnostics = pd.read_csv(RESULTS / "spatial_diagnostics.csv")
-    primary = diagnostics[(diagnostics.knn_k == 4) & (diagnostics.model_or_contrast == "GPT-5.6 Sol minus GPT-5.5")]
-    sem = pd.read_csv(RESULTS / "spatial_error_models.csv")
-    hac = pd.read_csv(RESULTS / "spatial_hac_contrasts.csv")
-    lines = [
-        r"\begin{table}[h]", r"\centering", r"\caption{Primary $k=4$ global spatial diagnostics for version contrasts. BH adjustment spans all 24 primary outcomes, including version-specific levels.}",
-        r"\label{tab:spatial-global}", r"\small", r"\begin{tabular}{llrrrr}",
-        r"\toprule Family & Outcome & Moran $I$ & BH $q$ & Geary $C$ & BH $q$ \\", r"\midrule",
-    ]
-    for row in primary.itertuples(index=False):
-        lines.append(
-            f"{row.outcome_family.replace('_',' ')} & {row.outcome} & {row.moran_i:.3f} & "
-            f"{row.moran_bh_q_primary_family:.3f} & {row.geary_c:.3f} & "
-            f"{row.geary_bh_q_primary_family:.3f}" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}",
-              r"\begin{longtable}{llrrrrr}", r"\caption{Maximum-likelihood spatial-error models of W1 version contrasts. The coefficient is an intercept/mean; $\lambda$ captures residual spatial dependence.}\label{tab:sem-full}\\",
-              r"\toprule $k$ & Scope & Mean & SE & 95\% CI & Holm $p$ & $\lambda$ ($p$) \\", r"\midrule\endfirsthead",
-              r"\toprule $k$ & Scope & Mean & SE & 95\% CI & Holm $p$ & $\lambda$ ($p$) \\", r"\midrule\endhead"]
-    for row in sem.itertuples(index=False):
-        lines.append(
-            f"{int(row.knn_k)} & {row.scope} & {row.mean_delta_w1:.4f} & {row.standard_error:.4f} & "
-            f"[{row.ci_low_95:.4f},{row.ci_high_95:.4f}] & {row.holm_p_seven_scopes:.4f} & "
-            f"{row.spatial_error_lambda:.3f} ({row.lambda_p_value_two_sided:.3f})" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{longtable}",
-              r"\begin{table}[h]", r"\centering", r"\caption{Spatial-HAC sensitivity for the overall and government-responsibility W1 contrasts. Holm correction spans eight outcomes within each cutoff.}",
-              r"\label{tab:hac-selected}", r"\small", r"\begin{tabular}{lrrrrr}",
-              r"\toprule Scope & Cutoff km & Mean & HAC SE & 95\% CI & Holm $p$ \\", r"\midrule"]
-    selected = hac[(hac.scope.isin(["All six anchors", "Market"])) & (hac.metric == "W1")]
-    for row in selected.itertuples(index=False):
-        lines.append(
-            f"{row.scope} & {int(row.cutoff_km)} & {row.estimate:.4f} & "
-            f"{row.spatial_hac_standard_error:.4f} & [{row.ci_low_95:.4f},{row.ci_high_95:.4f}] & "
-            f"{row.holm_p_eight_outcomes_within_cutoff:.4f}" + r" \\"
-        )
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
-    (PAPER_TABLES / "appendix_spatial_tables.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
-    style()
-    PAPER_FIGURES.mkdir(parents=True, exist_ok=True)
-    RESULT_FIGURES.mkdir(parents=True, exist_ok=True)
-    PAPER_TABLES.mkdir(parents=True, exist_ok=True)
-    figure_design_bridge()
-    figure_results()
-    figure_uncertainty()
-    main_table()
     appendix_tables_and_data()
-    generated_tutorial_tables()
-    generated_full_results_tables()
-    generated_spatial_tables()
-    print("PASS: legacy table and appendix tutorial/coverage assets generated; v1.0 owns displayed figures")
-
+    print("PASS: country coverage and worked numeric examples regenerated")
 
 if __name__ == "__main__":
     main()

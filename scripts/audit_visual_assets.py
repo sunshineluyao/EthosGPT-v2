@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail closed on stale, rasterized, undersized, or unmapped paper figures."""
+"""Fail closed on stale, rasterized, undersized, or unmapped released figures."""
 
 from __future__ import annotations
 
@@ -10,9 +10,8 @@ import xml.etree.ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PAPER = ROOT / "paper"
-FIGS = PAPER / "figs"
-MANIFEST = PAPER / "figure_sources/semantic_graphics_manifest.json"
+FIGS = ROOT / "results/figures"
+MANIFEST = ROOT / "assets/figure_sources/semantic_graphics_manifest.json"
 
 
 def local(tag: str) -> str:
@@ -60,16 +59,11 @@ def main() -> None:
         assert (FIGS / f"{stem}.pdf").stat().st_size > 0
         audit_svg(FIGS / f"{stem}.svg")
 
-    source_text = "\n".join(path.read_text(encoding="utf-8") for path in PAPER.rglob("*.tex"))
-    includes = set(re.findall(r"\\includegraphics(?:\[[^]]*\])?\{figs/([^}]+)\.pdf\}", source_text))
-    assert includes == set(stems), f"unmapped displayed figures: {sorted(includes ^ set(stems))}"
-    assert r"\captionof{figure}" not in source_text
-    assert "fig1_wave1_design" not in source_text and "fig2_wave1_results" not in source_text
-    assert "figS2_spatial_maps" not in source_text
+    assert not (ROOT / "paper").exists(), "manuscript sources belong in the paper repository"
     assert (FIGS / "figS2_study_design.drawio").stat().st_size > 0
     assert (FIGS / "fig1_spatial_story.drawio").stat().st_size > 0
     ET.parse(FIGS / "fig1_spatial_story.drawio")
-    print("PASS: eight source-mapped vector figures, two editable draw.io masters, live text >=7 px, no embedded raster or stale assets")
+    print("PASS: eight manifest-mapped vector figures, two editable draw.io masters, live text >=7 px, no embedded raster or stale assets")
 
 
 if __name__ == "__main__":

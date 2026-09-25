@@ -30,7 +30,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "experiments/gpt55_gpt56_64country"
 RESULTS = EXP / "results"
-FIGURES = ROOT / "paper/figs"
+FIGURES = ROOT / "results/figures"
 RESULT_FIGURES = ROOT / "results/figures"
 
 INK = "#18324A"
@@ -102,8 +102,6 @@ def save(fig: plt.Figure, stem: str, title: str) -> None:
     fig.savefig(RESULT_FIGURES / f"{stem}.svg", metadata=metadata)
     fig.savefig(RESULT_FIGURES / f"{stem}.png", dpi=360, metadata=metadata)
     postprocess_svg(RESULT_FIGURES / f"{stem}.svg", title)
-    for suffix in (".pdf", ".svg", ".png"):
-        shutil.copy2(RESULT_FIGURES / f"{stem}{suffix}", FIGURES / f"{stem}{suffix}")
 
 
 def box(ax, x, y, w, h, edge, fill="white", linestyle="-", lw=.9):
@@ -427,7 +425,7 @@ def write_drawio() -> None:
 
 
 def write_vector_assets() -> None:
-    root=ROOT/"paper/figure_sources/clip-art-set"; assets=root/"assets"
+    root=ROOT/"assets/figure_sources/clip-art-set"; assets=root/"assets"
     assets.mkdir(parents=True,exist_ok=True)
     svgs={
       "asset-survey-globe.svg":'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180"><g fill="none" stroke="#18324A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="80" cy="90" r="52" fill="#EAF0FF" stroke="#315EFB"/><path d="M29 90h102M80 38c-25 22-25 82 0 104M80 38c25 22 25 82 0 104M37 65h86M37 115h86" stroke="#315EFB" stroke-width="2"/><g fill="#14877D" stroke="white" stroke-width="2"><circle cx="50" cy="70" r="6"/><circle cx="71" cy="115" r="6"/><circle cx="96" cy="60" r="6"/><circle cx="112" cy="103" r="6"/></g><rect x="128" y="53" width="76" height="94" rx="4" fill="white"/><rect x="139" y="42" width="76" height="94" rx="4" fill="white"/><path d="M153 70h48M153 90h38M153 110h44"/></g></svg>',

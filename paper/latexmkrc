@@ -1,6 +1,0 @@
-$pdf_mode = 1;
-$ENV{'SOURCE_DATE_EPOCH'} = '1788566400';
-$ENV{'TZ'} = 'UTC';
-$interaction = 'nonstopmode';
-$halt_on_error = 1;
-$file_line_error = 1;

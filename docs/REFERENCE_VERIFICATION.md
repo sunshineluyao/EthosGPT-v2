@@ -4,7 +4,7 @@ Audit date: 2026-09-02
 Scope: all 23 works cited in the 64-country manuscript.  
 Evidence ceiling: authoritative publisher, repository, dataset, documentation, or official institutional records were inspected. The audit verifies bibliographic identity and whether each citation supports the sentence in which it appears; it does not independently reproduce the cited studies.
 
-The companion file `reference_audit/verified_references.bib` contains the exact, complete BibTeX for every row below. Every entry has an explicit `url` field so that a preprint compiled with the NeurIPS style still displays a reviewer-verifiable link. The superseded EthosGPT 2025 preprint is neither cited nor present in the bibliography.
+The manuscript bibliography is maintained in the [paper repository](https://github.com/sunshineluyao/EthosGPT-NeurIPS/blob/main/references.bib). This verification ledger records source URLs and claim boundaries; bibliographic LaTeX files are kept with the manuscript.
 
 ## Reference-by-reference verification
 
@@ -47,7 +47,7 @@ The companion file `reference_audit/verified_references.bib` contains the exact,
 1. Added the official WVS7 questionnaire, Moran, Geary, Conley, Anselin, and Natural Earth records required by the expanded appendix and spatial analysis.
 2. Replaced the Nobel popular-information URL with the official 2025 press-release URL requested by the author.
 3. Removed five unused bibliography records so the release contains only works cited in the paper.
-4. Kept an explicit URL in every BibTeX record and checked that all 23 appear in the compiled bibliography.
+4. The manuscript bibliography records a URL for each of the 23 cited works; compilation is checked in the paper repository.
 5. Retained a fail-closed check that rejects the removed EthosGPT 2025 citation key and arXiv identifier.
 
 ## Author sign-off checklist
