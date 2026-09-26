@@ -4,7 +4,9 @@ Audit date: 2026-09-02
 Scope: all 23 works cited in the 64-country manuscript.  
 Evidence ceiling: authoritative publisher, repository, dataset, documentation, or official institutional records were inspected. The audit verifies bibliographic identity and whether each citation supports the sentence in which it appears; it does not independently reproduce the cited studies.
 
-The manuscript bibliography is maintained in the [paper repository](https://github.com/sunshineluyao/EthosGPT-NeurIPS/blob/main/references.bib). This verification ledger records source URLs and claim boundaries; bibliographic LaTeX files are kept with the manuscript.
+The bibliography is maintained with the manuscript. This code release keeps
+source URLs and claim boundaries in this ledger without a BibTeX or LaTeX
+file.
 
 ## Reference-by-reference verification
 

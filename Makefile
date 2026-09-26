@@ -2,7 +2,7 @@ PYTHON ?= python
 export PYTHONPATH := src
 export SOURCE_DATE_EPOCH ?= 1788566400
 
-.PHONY: setup analysis assets signed-directions creative-destruction lint test negative-tests verify audit-visual release-contract reproduce-offline
+.PHONY: setup analysis assets signed-directions creative-destruction featured-figures release-smoke lint test negative-tests verify audit-visual release-contract reproduce-offline
 
 EXPERIMENT := experiments/gpt55_gpt56_64country
 
@@ -25,12 +25,20 @@ assets:
 	$(PYTHON) $(EXPERIMENT)/plot_eight_regions.py
 	$(MAKE) signed-directions
 	$(MAKE) creative-destruction
+	$(MAKE) featured-figures
 
 signed-directions:
 	$(PYTHON) $(EXPERIMENT)/signed_directions.py --scores $(EXPERIMENT)/results/country_question_scores.csv --region-metrics $(EXPERIMENT)/results/eight_region_sensitivity.csv --output-dir results/signed_directions
 
 creative-destruction:
 	$(PYTHON) $(EXPERIMENT)/simulate_creative_destruction.py --scores $(EXPERIMENT)/results/country_question_scores.csv --output-dir results/creative_destruction
+
+featured-figures:
+	$(PYTHON) assets/figure_sources/make_fig1_ethos_gallery.py
+	$(PYTHON) assets/figure_sources/make_fig2_value_bridge.py
+
+release-smoke:
+	$(PYTHON) scripts/release_smoke.py
 
 lint:
 	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country tests
@@ -48,7 +56,7 @@ verify:
 audit-visual:
 	$(PYTHON) scripts/audit_visual_assets.py
 
-release-contract: lint verify audit-visual negative-tests
+release-contract: lint release-smoke verify audit-visual negative-tests
 
 reproduce-offline:
 	$(PYTHON) scripts/reproduce_offline.py

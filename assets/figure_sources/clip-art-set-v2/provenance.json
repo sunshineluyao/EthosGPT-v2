@@ -1,0 +1,37 @@
+{
+  "style": "original editable front-view editorial vectors; 2 px navy stroke; no baked text or data",
+  "palette": {
+    "ink": "#18324A",
+    "blue": "#3B5CCC",
+    "teal": "#078C82",
+    "amber": "#D88A24",
+    "surface": [
+      "#EAF0FF",
+      "#E5F4F1",
+      "#F0F3F7"
+    ]
+  },
+  "assets": [
+    {
+      "id": "survey-stack",
+      "role": "survey questions",
+      "source": "original geometry for this paper",
+      "status": "verified-object",
+      "prohibited_implication": "no measured performance or causal effect"
+    },
+    {
+      "id": "paired-models",
+      "role": "paired archived outputs",
+      "source": "original geometry for this paper",
+      "status": "verified-object",
+      "prohibited_implication": "no measured performance or causal effect"
+    },
+    {
+      "id": "replacement",
+      "role": "innovation replacing incumbent",
+      "source": "original geometry for this paper",
+      "status": "conceptual-mechanism",
+      "prohibited_implication": "no measured performance or causal effect"
+    }
+  ]
+}
