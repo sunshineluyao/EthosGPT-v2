@@ -56,7 +56,7 @@ def esc(s: object) -> str:
     return html.escape(str(s), quote=True)
 
 def text(x, y, content, size=16, color=INK, weight="normal", anchor="start", extra=""):
-    # At the paper's 394.56 pt insertion width, 16 SVG px become 7.04 pt.
+    # At a 394.56 pt display width, 16 SVG px become 7.04 pt.
     size=max(size,16)
     return (f'<text x="{x}" y="{y}" font-family="Nimbus Roman,Times New Roman,serif" '
             f'font-size="{size}" font-weight="{weight}" fill="{color}" '
@@ -111,7 +111,7 @@ def save_icons():
     (ASSETS/"contact-sheet.svg").write_text(''.join(sheet),encoding='utf-8')
     manifest={"style":"original editable front-view editorial vectors; 2 px navy stroke; no baked text or data",
               "palette":{"ink":INK,"blue":BLUE,"teal":TEAL,"amber":AMBER,"surface":[PALE_BLUE,PALE_GREEN,LIGHT]},
-              "assets":[{"id":name,"role":role,"source":"original geometry for this paper",
+              "assets":[{"id":name,"role":role,"source":"original repository vector geometry",
                          "status":status,"prohibited_implication":"no measured performance or causal effect"}
                         for name,role,status in [("survey-stack","survey questions","verified-object"),
                                                  ("paired-models","paired archived outputs","verified-object"),

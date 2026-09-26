@@ -1,4 +1,4 @@
-# Appendix Figure 6: figS4_country_maps
+# Country maps: figS4_country_maps
 
 - Reader task: heterogeneity
 - Evidence class: descriptive country-level sensitivity

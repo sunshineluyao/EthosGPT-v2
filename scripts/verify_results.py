@@ -282,22 +282,17 @@ def main() -> None:
         SOURCES / "data/archived_geometry_benchmark.csv",
         SOURCES / "data/figure1_error_type_examples.csv",
         SOURCES / "clip-art-set/clip-art-manifest.json",
-        ROOT / "SUBMISSION_METADATA.md",
     ]
     assert all(path.exists() and path.stat().st_size > 0 for path in expected_assets)
-    assert not (ROOT / "paper").exists(), "manuscript sources belong in the paper repository"
+    assert not (ROOT / "paper").exists(), "document source directory found in code release"
     forbidden = [path for path in ROOT.rglob("*") if path.is_file() and
                  (path.suffix.lower() in {".tex", ".sty", ".bib"} or path.name == "latexmkrc")]
-    assert not forbidden, f"manuscript source files found in code release: {forbidden}"
-    metadata = (ROOT / "SUBMISSION_METADATA.md").read_text(encoding="utf-8")
-    for heading in ("## Title", "## Keywords", "## TL;DR", "## Abstract"):
-        assert heading in metadata
+    assert not forbidden, f"document source files found in code release: {forbidden}"
     assert (ROOT / "requirements.txt").read_text(encoding="utf-8").strip().endswith("requirements.lock.txt")
     citation_cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    assert "version: 1.1.0" in citation_cff
+    assert "version: 1.1.1" in citation_cff
     assert (
-        "Whose Values Guide Technological Change? Cultural Representation, "
-        "Language-Model Updates, and Creative Destruction"
+        "EthosGPT: Reproducible Cross-Country Survey Representation Audit"
     ) in citation_cff
 
     for path in [*EXP.rglob("*"), *SOURCES.rglob("*")]:
@@ -308,7 +303,7 @@ def main() -> None:
     print(
         "PASS: 3,840 versioned outputs, 64-country pairing, prompt hashes, full "
         "uncertainty, joint multiplicity, composition, economic margins, spatial diagnostics, "
-        "eight-region results, vector assets, code-only boundary, metadata, and secret scan"
+        "eight-region results, vector assets, code-only boundary, citation, and secret scan"
     )
 
 

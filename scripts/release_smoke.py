@@ -72,9 +72,9 @@ def validate(root: Path) -> dict[str, object]:
         raise ValueError("country scenario grid is incomplete")
     if any(p.suffix.lower() in {".tex", ".sty", ".bib"} or p.name == "latexmkrc"
            for p in root.rglob("*") if p.is_file()):
-        raise ValueError("manuscript source found in code release")
+        raise ValueError("document source found in code release")
     if (root / "paper").exists():
-        raise ValueError("paper directory found in code release")
+        raise ValueError("document source directory found in code release")
     return {
         "models": list(expected),
         "validated_model_records": sum(v[1] for v in expected.values()),

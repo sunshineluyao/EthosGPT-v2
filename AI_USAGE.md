@@ -7,16 +7,12 @@ reasoning, no tools, a strict JSON schema, five generations per
 country–question cell, and store=false.
 
 ChatGPT Work assisted with source retrieval, code authoring, statistical
-analysis, visualization, manuscript drafting, and a final evidence-preserving
-interdisciplinary writing and open-science review. The final prose pass used the
-public `blader/humanizer` editorial checklist to remove report-like shorthand
-while preserving all claims, citations, and numerical results. ChatGPT Work did
-not supply empirical
-observations or determine the research question, interpretation, authorship, or
-submission decision. Every reported number is computed from machine-readable
-evidence and checked by executable tests. Human authors remain responsible for
-instrument selection, interpretation, citation verification, ethics,
-disclosure, and release decisions.
+analysis, visualization, and review of the released documentation and
+reproducibility checks. It did not supply empirical observations or determine
+the research question, interpretation, or authorship. Every reported number
+is computed from machine-readable evidence and checked by executable tests.
+Human researchers remain responsible for instrument selection, interpretation,
+source verification, ethics, disclosure, and release decisions.
 
 Model outputs are research observations, not normative targets. Cultural
 agreement does not make a system or a society morally superior. Country

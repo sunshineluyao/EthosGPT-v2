@@ -12,10 +12,9 @@
 
 </div>
 
-EthosGPT is the **code, archived data, and editable figure release** for the
-NeurIPS 2026 GlobalSouthAI workshop study *EthosGPT: Whose Values Guide
-Technological Change? Cultural Representation, Language-Model Updates, and
-Creative Destruction*. It compares two archived model versions with an
+EthosGPT is a **reproducible code, archived data, and editable figure package**
+for studying whose values an AI adviser represents across model updates. It
+compares two archived model versions with an
 unweighted public World Values Survey derivative in **64 countries, eight
 descriptive cultural regions, and six questions**. Five responses per
 country–question–model cell yield **3,840 validated model records**.
@@ -55,7 +54,7 @@ spatial analyses. It needs no model API key. A later live call to the undated
 | Which views shifted, and in which direction? | [Six signed questions by country](results/signed_directions/signed_country_items.csv) and [region](results/signed_directions/signed_eight_regions.csv) | A positive model-minus-survey score means more of the named endpoint. It is a comparison of response distributions, not a judgment about a population. |
 | How uneven are the geographic patterns? | [Eight-region W1/TVD table](experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv) and [figure guide](results/region_figures/README.md) | The original region labels group 2–15 countries; intervals are exploratory and omitted when fewer than five countries enter. |
 | Could a misrepresented profile matter for creative destruction? | [Declared scenario equations and sensitivities](results/creative_destruction/README.md) and [all country scenarios](results/creative_destruction/country_simulation.csv) | These are conditional calculations under chosen adviser and innovation rules, not measured growth, jobs or policy impacts. |
-| What could change the interpretation? | [Wording omissions](experiments/gpt55_gpt56_64country/results/wording_omission_sensitivity.csv), [spatial checks](experiments/gpt55_gpt56_64country/results/spatial_hac_contrasts.csv) and [reference verification](docs/REFERENCE_VERIFICATION.md) | Q106 and Q121 have archived prompt-label conflicts; item omission is not a corrected re-query. |
+| What could change the interpretation? | [Wording omissions](experiments/gpt55_gpt56_64country/results/wording_omission_sensitivity.csv), [spatial checks](experiments/gpt55_gpt56_64country/results/spatial_hac_contrasts.csv) and [analysis report](docs/STATISTICAL_ANALYSIS_REPORT.md) | Q106 and Q121 have archived prompt-label conflicts; item omission is not a corrected re-query. |
 
 TVD, or *total-variation distance*, measures how far apart two distributions
 over the answer choices are, from zero (same shares) to one (no overlap).
@@ -67,8 +66,7 @@ distribution on this measure.
 ## Featured visuals
 
 The [visual guide](assets/featured/README.md) explains evidence classes and
-links editable SVGs, publication PDF exports, input CSVs and provenance.
-These are repository graphics, with no manuscript source files.
+links editable SVGs, vector PDF exports, input CSVs and provenance.
 
 | Visual | What it helps a reader see |
 |---|---|
@@ -136,6 +134,5 @@ spell out these boundaries.
 
 Code and original vector assets use the [MIT License](LICENSE); source-data
 rights are recorded separately in [DATA_LICENSE.md](DATA_LICENSE.md). Use
-[`CITATION.cff`](CITATION.cff) for software citation. The repository contains
-no LaTeX, bibliography source or manuscript PDF. Reported result tables,
+[`CITATION.cff`](CITATION.cff) for software citation. Result tables,
 archived outputs and figure masters remain directly inspectable here.

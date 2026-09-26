@@ -1,4 +1,4 @@
-# Appendix Figure 4: figS1_uncertainty_sources
+# Uncertainty sources: figS1_uncertainty_sources
 
 - Reader task: evidence
 - Evidence class: sensitivity analysis

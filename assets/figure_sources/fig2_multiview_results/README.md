@@ -1,4 +1,4 @@
-# Figure 2: fig2_multiview_results
+# Multiview results: fig2_multiview_results
 
 - Reader task: evidence
 - Evidence class: inferential and descriptive panels

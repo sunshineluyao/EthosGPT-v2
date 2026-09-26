@@ -32,6 +32,4 @@ parameters or observed growth, employment, welfare, or environmental outcome.
 
 Offline replication starts with frozen proprietary-model outputs and an
 unweighted survey derivative. It cannot reproduce the provider-side
-snapshot or a population-weighted WVS estimate. Manuscript sources and the
-compiled workshop PDF are maintained in the
-[paper repository](https://github.com/sunshineluyao/EthosGPT-NeurIPS).
+snapshot or a population-weighted WVS estimate.

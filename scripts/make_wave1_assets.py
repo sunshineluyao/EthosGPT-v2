@@ -295,7 +295,7 @@ def fmt(value: float, digits: int = 3) -> str:
     return text
 
 
-def appendix_tables_and_data() -> None:
+def country_coverage_and_examples() -> None:
     roster = pd.read_csv(EXP / "inputs/country_roster.csv")
     human = pd.read_parquet(ROOT / "data/processed/human_item_distributions.parquet")
     questions = ["Q48", "Q57", "Q106", "Q108", "Q121", "Q159"]
@@ -350,7 +350,7 @@ def appendix_tables_and_data() -> None:
 
 
 def main() -> None:
-    appendix_tables_and_data()
+    country_coverage_and_examples()
     print("PASS: country coverage and worked numeric examples regenerated")
 
 if __name__ == "__main__":

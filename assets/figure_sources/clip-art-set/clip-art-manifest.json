@@ -4,14 +4,14 @@
   "title": "EthosGPT Figure 1 semantic vector set",
   "purpose": "Supply coherent, editable scientific micro-scenes for the Figure 1 graphical abstract.",
   "source": {
-    "kind": "paper",
+    "kind": "repository",
     "title": "EthosGPT v0.7.0",
-    "locator": "Sections 1-4"
+    "locator": "survey-to-model audit"
   },
   "target_figure": {
     "type": "graphical abstract",
     "background": "light",
-    "placement": "Figure 1 at full manuscript width"
+    "placement": "conceptual overview at full display width"
   },
   "evidence_boundary": "These vector assets identify concepts and operations. They do not encode measured values, causal effects, certification, or implementation status.",
   "art_direction": {
@@ -36,7 +36,7 @@
       "id": "asset-survey-globe",
       "concept": "survey evidence across countries",
       "semantic_role": "data",
-      "source_locator": "manuscript Sections 1-4",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-survey-globe.svg",
       "format": "svg",
@@ -79,7 +79,7 @@
       "id": "asset-paired-audit",
       "concept": "paired model comparison",
       "semantic_role": "instrument",
-      "source_locator": "manuscript Sections 1-4",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-paired-audit.svg",
       "format": "svg",
@@ -122,7 +122,7 @@
       "id": "asset-measurement-lenses",
       "concept": "distribution, geometry, and persistence measurements",
       "semantic_role": "hero",
-      "source_locator": "manuscript Sections 1-4",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-measurement-lenses.svg",
       "format": "svg",
@@ -165,7 +165,7 @@
       "id": "asset-economic-margins",
       "concept": "theory-indexed economic margins",
       "semantic_role": "process",
-      "source_locator": "manuscript Sections 1-4",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-economic-margins.svg",
       "format": "svg",

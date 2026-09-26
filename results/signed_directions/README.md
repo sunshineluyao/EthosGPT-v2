@@ -53,5 +53,4 @@ Regional signs and changes are descriptive. No uncertainty interval for a
 signed region-by-item cell and no familywise regional test is claimed;
 Catholic Europe has two countries and Protestant Europe four. Every region
 contains diverse country results and should not be read as an individual
-identity, cultural essence, welfare outcome, or growth rate. The manuscript
-and its LaTeX source remain in the separate paper repository.
+identity, cultural essence, welfare outcome, or growth rate.

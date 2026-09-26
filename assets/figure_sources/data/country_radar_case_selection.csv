@@ -1,5 +1,5 @@
 selection_role,country,display_class,selection_rule,crg_gpt55,crg_gpt56,delta_crg,crg_class_threshold
 main,India,lower,medoid of the six standardized human-survey coordinates; model outcomes excluded from selection,0.7558988169260502,0.7315041512494357,-0.024394665676614524,0.022516610788070813
-appendix_lower,Greece,lower,medoid of the two standardized model-minus-human residual profiles within the threshold-defined lower CRG-change class,0.7254140492391846,0.6484025790438239,-0.0770114701953607,0.022516610788070813
-appendix_near_zero,Indonesia,near zero,medoid of the two standardized model-minus-human residual profiles within the threshold-defined near zero CRG-change class,0.6427006311347943,0.623381425579033,-0.019319205555761276,0.022516610788070813
-appendix_higher,Argentina,higher,medoid of the two standardized model-minus-human residual profiles within the threshold-defined higher CRG-change class,0.7584711750366794,0.8402304205938383,0.08175924555715897,0.022516610788070813
+profile_lower,Greece,lower,medoid of the two standardized model-minus-human residual profiles within the threshold-defined lower CRG-change class,0.7254140492391846,0.6484025790438239,-0.0770114701953607,0.022516610788070813
+profile_near_zero,Indonesia,near zero,medoid of the two standardized model-minus-human residual profiles within the threshold-defined near zero CRG-change class,0.6427006311347943,0.623381425579033,-0.019319205555761276,0.022516610788070813
+profile_higher,Argentina,higher,medoid of the two standardized model-minus-human residual profiles within the threshold-defined higher CRG-change class,0.7584711750366794,0.8402304205938383,0.08175924555715897,0.022516610788070813

@@ -71,9 +71,9 @@ def test_reproduced_figures_and_prompt_ledger():
     cases = pd.read_csv(ROOT / "assets/figure_sources/data/country_radar_case_selection.csv")
     assert cases.set_index("selection_role").country.to_dict() == {
         "main": "India",
-        "appendix_lower": "Greece",
-        "appendix_near_zero": "Indonesia",
-        "appendix_higher": "Argentina",
+        "profile_lower": "Greece",
+        "profile_near_zero": "Indonesia",
+        "profile_higher": "Argentina",
     }
     assert "model outcomes excluded from selection" in cases.iloc[0].selection_rule
     assert np.isclose(cases.crg_class_threshold.nunique(), 1)

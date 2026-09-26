@@ -4,14 +4,14 @@
   "title": "EthosGPT regime-geometry technical clip art",
   "purpose": "Provide coherent semantic micro-scenes for Figure 1 without carrying quantitative evidence.",
   "source": {
-    "kind": "paper",
+    "kind": "repository",
     "title": "EthosGPT",
-    "locator": "Abstract; Sections 1\u20132; Figure 1"
+    "locator": "survey-to-model audit"
   },
   "target_figure": {
     "type": "conceptual framework",
     "background": "light",
-    "placement": "Figure 1 regime inputs, model operator, and policy bridge"
+    "placement": "conceptual guide to regime inputs, model operator, and policy bridge"
   },
   "evidence_boundary": "These original vector assets are conceptual illustrations. They do not encode measured values, causal effects, significance, certification, or implementation status.",
   "art_direction": {
@@ -36,7 +36,7 @@
       "id": "asset-data-stack",
       "concept": "Harmonized value records",
       "semantic_role": "data",
-      "source_locator": "Figure 1 and Sections 1\u20132",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-data-stack.svg",
       "format": "svg",
@@ -79,7 +79,7 @@
       "id": "asset-model-chip",
       "concept": "Model regime bundle",
       "semantic_role": "hero",
-      "source_locator": "Figure 1 and Sections 1\u20132",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-model-chip.svg",
       "format": "svg",
@@ -122,7 +122,7 @@
       "id": "asset-tuning-sliders",
       "concept": "Instruction tuning controls",
       "semantic_role": "process",
-      "source_locator": "Figure 1 and Sections 1\u20132",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-tuning-sliders.svg",
       "format": "svg",
@@ -165,7 +165,7 @@
       "id": "asset-preference-compare",
       "concept": "Preference comparison",
       "semantic_role": "process",
-      "source_locator": "Figure 1 and Sections 1\u20132",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-preference-compare.svg",
       "format": "svg",
@@ -208,7 +208,7 @@
       "id": "asset-runtime-branch",
       "concept": "Runtime decoding alternatives",
       "semantic_role": "process",
-      "source_locator": "Figure 1 and Sections 1\u20132",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-runtime-branch.svg",
       "format": "svg",
@@ -251,7 +251,7 @@
       "id": "asset-policy-levers",
       "concept": "Illustrative policy mapping",
       "semantic_role": "output",
-      "source_locator": "Figure 1 and Sections 1\u20132",
+      "source_locator": "EthosGPT survey-to-model audit",
       "evidence_status": "conceptual-mechanism",
       "file": "assets/asset-policy-levers.svg",
       "format": "svg",
