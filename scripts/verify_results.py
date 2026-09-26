@@ -294,7 +294,7 @@ def main() -> None:
         assert heading in metadata
     assert (ROOT / "requirements.txt").read_text(encoding="utf-8").strip().endswith("requirements.lock.txt")
     citation_cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    assert "version: 1.0.0" in citation_cff
+    assert "version: 1.1.0" in citation_cff
     assert (
         "Whose Values Guide Technological Change? Cultural Representation, "
         "Language-Model Updates, and Creative Destruction"
