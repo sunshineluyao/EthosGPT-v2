@@ -15,14 +15,18 @@
 `make reproduce-offline` validates archived records and prompt hashes,
 recomputes W1/TVD/CRG/VDR/CSR, 20,000-country-draw bootstrap intervals,
 paired randomization and joint inference, Q106/Q121/Q108 omission checks,
-the original eight cultural-map region contrasts, spatial and economic
-sensitivities, and the released vector figures. `make release-contract`
+the original eight cultural-map region contrasts, signed item positions by
+country and region, spatial and economic sensitivities, the explicitly assumed
+quality-ladder scenarios, and the released vector figures. `make release-contract`
 runs the code, numerical, negative-path, and visual checks.
 
 The authoritative regional output is
 [`eight_region_sensitivity.csv`](../experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv).
 Its original labels are retained; intervals are exploratory and omitted when
-a group has fewer than five countries.
+a group has fewer than five countries. The [result index](result_index.md)
+points to all six signed country and region item results and the separate,
+synthetic quality-ladder calculations. The latter have no estimated causal
+parameters or observed growth, employment, welfare, or environmental outcome.
 
 ## Scope
 
