@@ -52,18 +52,25 @@ def main() -> None:
     assert len(stems) == len(set(stems)) == 8
     assert manifest["format_contract"]["embedded_raster_images"] is False
 
-    expected = {f"{stem}{suffix}" for stem in stems for suffix in (".pdf", ".svg")}
+    featured = {"fig1_ethos_gallery", "fig2_value_bridge"}
+    expected = {f"{stem}{suffix}" for stem in [*stems, *featured] for suffix in (".pdf", ".svg")}
     actual_core = {path.name for path in FIGS.iterdir() if path.suffix in {".pdf", ".svg"}}
     assert actual_core == expected, f"stale or missing figure assets: {sorted(actual_core ^ expected)}"
-    for stem in stems:
+    for stem in [*stems, *featured]:
         assert (FIGS / f"{stem}.pdf").stat().st_size > 0
         audit_svg(FIGS / f"{stem}.svg")
+
+    teaser = ROOT / "assets/featured/ethosgpt_release_arc.svg"
+    audit_svg(teaser)
+    teaser_manifest = json.loads((ROOT / "assets/featured/ethosgpt_release_arc_manifest.json").read_text())
+    assert len(teaser_manifest["semantic_graphics"]) == 6
+    assert teaser_manifest["raster_layers"] == []
 
     assert not (ROOT / "paper").exists(), "manuscript sources belong in the paper repository"
     assert (FIGS / "figS2_study_design.drawio").stat().st_size > 0
     assert (FIGS / "fig1_spatial_story.drawio").stat().st_size > 0
     ET.parse(FIGS / "fig1_spatial_story.drawio")
-    print("PASS: eight manifest-mapped vector figures, two editable draw.io masters, live text >=7 px, no embedded raster or stale assets")
+    print("PASS: eight legacy vectors, two featured vectors, editable teaser and draw.io masters, live text >=7 px, no embedded raster or stale assets")
 
 
 if __name__ == "__main__":
