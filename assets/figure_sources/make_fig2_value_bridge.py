@@ -134,8 +134,7 @@ def build():
         p += [text(476, y+4, label, 17, INK),
               line(quality_x(a), y-3, quality_x(b), y-3, AMBER, 2),
               mark(quality_x(a), y-5, AMBER, 'circle', 4.2, True),
-              mark(quality_x(b), y+1, AMBER, 'circle', 4.5),
-              f'<title>{label}: GPT-5.5 {a:+.3f}; GPT-5.6 Sol {b:+.3f} percentage points</title>']
+              mark(quality_x(b), y+1, AMBER, 'circle', 4.5)]
     p += [mark(483, 464, AMBER, 'circle', 4.2, True),text(495, 470, 'GPT-5.5', 16, SLATE),
           mark(601, 464, AMBER, 'circle', 4.5),text(614, 470, 'GPT-5.6 Sol', 16, SLATE),
           text(748, 470, 'assumed', 16, SLATE),
