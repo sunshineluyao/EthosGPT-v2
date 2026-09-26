@@ -51,17 +51,17 @@
     {
       "result_id": "R4-quality-ladder-scenarios",
       "reported_result_or_boundary": "Nigeria, Kenya and eight-region 20-round quality-ladder gaps under declared adviser coefficients",
-      "original_sources": ["Signed country profiles derived in R3", "Aghion-Howitt quality-ladder mechanism used only as an illustrative model"],
-      "query_code": ["NOT_APPLICABLE: the scenario uses archived R3 scores and no additional data query"],
-      "queried_data": ["results/signed_directions/signed_country_items.csv"],
-      "process_code": ["experiments/gpt55_gpt56_64country/signed_directions.py"],
+      "original_sources": ["Archived model outputs and unweighted survey derivative from R1", "Aghion-Howitt quality-ladder mechanism used only as an illustrative model"],
+      "query_code": ["NOT_APPLICABLE: the scenario uses archived country-question scores and makes no additional data query"],
+      "queried_data": ["experiments/gpt55_gpt56_64country/outputs/gpt-5.5_scores.jsonl", "experiments/gpt55_gpt56_64country/outputs/gpt-5.6-sol_scores.jsonl", "data/processed/human_item_distributions.parquet"],
+      "process_code": ["experiments/gpt55_gpt56_64country/score_wave1.py"],
       "processed_data": ["experiments/gpt55_gpt56_64country/results/country_question_scores.csv"],
       "analysis_code": ["experiments/gpt55_gpt56_64country/simulate_creative_destruction.py"],
       "result_outputs": ["results/creative_destruction/country_simulation.csv", "results/creative_destruction/eight_region_simulation.csv", "results/creative_destruction/global_scenarios.csv", "results/creative_destruction/six_facet_contributions.csv"],
       "commands": ["make creative-destruction"],
       "evidence_status": "SYNTHETIC",
       "interpretation_boundary": "Assumed decision and innovation parameters. Percent-point gaps are simulated log-quality proxies, not measured GDP, jobs, inequality, welfare, or environmental outcomes.",
-      "data_revision": "R3 scores plus declared scenario coefficients in simulate_creative_destruction.py"
+      "data_revision": "R1 country-question scores plus declared scenario coefficients in simulate_creative_destruction.py"
     },
     {
       "result_id": "R5-featured-figures",
