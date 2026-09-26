@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extended two-venue analyses for the 64-country EthosGPT experiment.
+"""Extended analyses for the 64-country EthosGPT experiment.
 
 This module adds four analyses without making new model calls:
 
@@ -544,7 +544,7 @@ def main() -> None:
         frame.to_csv(core.RESULTS / filename, index=False)
 
     manifest = {
-        "analysis": "EthosGPT two-venue extension",
+        "analysis": "EthosGPT extended analysis",
         "analysis_seed": core.SEED,
         "countries": core.EXPECTED_COUNTRIES,
         "questions": list(core.QUESTION_ORDER),

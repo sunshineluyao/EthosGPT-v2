@@ -3,7 +3,7 @@
 
 Observed signed answers come from the archived country-item result CSV.
 The right-hand contrasts apply the declared adviser and quality-ladder rule
-from Appendix H; they are not observed economic outcomes.
+from the declared simulation rule; they are not observed economic outcomes.
 """
 from __future__ import annotations
 

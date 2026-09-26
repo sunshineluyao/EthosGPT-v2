@@ -138,7 +138,7 @@
       "fig2-item-intervals",
       "fig2-profile-radar"
     ],
-    "appendix_country_profiles": [
+    "country_profiles": [
       "fig8-lower-profile",
       "fig8-near-zero-profile",
       "fig8-higher-profile"

@@ -42,7 +42,7 @@ Three of 12 contrasts cross the familywise 5% threshold:
 
 Q106 W1 (p=0.05915) and Q159 TVD (p=0.05580) narrowly miss the joint
 threshold and are not reported as confirmed gains. The complete 12-row table
-is `joint_item_inference.csv` and Appendix Table 22.
+is `joint_item_inference.csv`.
 
 ## Repeated-generation composition
 
@@ -95,7 +95,6 @@ economic decisions, policy effects, growth, or welfare.
 
 ## Reproducibility boundary
 
-All statistics, tables, figures, and the PDF rebuild offline from frozen
+All statistics, result tables, and figures rebuild offline from frozen
 outputs. A later live request to the undated GPT-5.6 Sol serving identifier is
 not guaranteed to return the same answers.
-

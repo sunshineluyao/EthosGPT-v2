@@ -214,7 +214,7 @@ def _country_profile_cases() -> tuple[
     """Select reproducible country-profile cases without calling them populations.
 
     The main case is the medoid of standardized *human-only* survey coordinates,
-    so model outcomes cannot influence its selection. Appendix cases first use
+    so model outcomes cannot influence its selection. The other cases first use
     the declared CRG-change classes and then select the medoid of the two models'
     standardized residual profiles within each class. All 64 countries remain in
     every estimate; these cases are descriptive views, not inferential subsamples.
@@ -268,7 +268,7 @@ def _country_profile_cases() -> tuple[
         eligible = crg.index[crg.display_class == display_class]
         country = _medoid(residual_features.loc[eligible])
         records.append({
-            "selection_role": f"appendix_{display_class.replace(' ', '_')}",
+            "selection_role": f"profile_{display_class.replace(' ', '_')}",
             "country": country,
             "display_class": display_class,
             "selection_rule": (
@@ -284,9 +284,9 @@ def _country_profile_cases() -> tuple[
     assert cases.country.is_unique and len(cases) == 4
     assert cases.set_index("selection_role").country.to_dict() == {
         "main": "India",
-        "appendix_lower": "Greece",
-        "appendix_near_zero": "Indonesia",
-        "appendix_higher": "Argentina",
+        "profile_lower": "Greece",
+        "profile_near_zero": "Indonesia",
+        "profile_higher": "Argentina",
     }
     cases.to_csv(SOURCE_DATA / "country_radar_case_selection.csv", index=False)
 
@@ -1187,12 +1187,12 @@ def figure1_spatial_story() -> None:
 
     # Full two-metric map remains available for detailed inspection.
     maps_fig = plt.figure(figsize=(5.48, 2.12))
-    t_tvd, appendix_tvd = _draw_map_and_examples(
+    t_tvd, detailed_tvd = _draw_map_and_examples(
         maps_fig, world, points, "delta_tvd", "a", "TVD change · mean −0.0080",
         [.015, .46, .470, .41], [.018, .080, .465, .30],
         ("Ecuador", "Kenya", "Vietnam"),
     )
-    t_crg, appendix_crg = _draw_map_and_examples(
+    t_crg, detailed_crg = _draw_map_and_examples(
         maps_fig, world, points, "delta_crg", "b", "CRG change · mean −0.0022",
         [.515, .46, .470, .41], [.518, .080, .465, .30],
         ("Colombia", "Vietnam", "Kenya"),
@@ -1202,7 +1202,7 @@ def figure1_spatial_story() -> None:
                   ha="center", va="bottom", fontsize=7.0, color=GRAY_DARK)
     save(maps_fig, "figS4_country_maps", "Country-level TVD and CRG update maps with external examples")
     plt.close(maps_fig)
-    pd.DataFrame(rows_tvd + appendix_crg).to_csv(
+    pd.DataFrame(rows_tvd + detailed_crg).to_csv(
         SOURCE_DATA / "figure1_error_type_examples.csv", index=False,
     )
 
@@ -1364,10 +1364,10 @@ def figure2_multiview() -> None:
 
 
 def figure7_country_profiles() -> None:
-    """Appendix profile cases spanning lower, near-zero, and higher CRG change."""
+    """Profile cases spanning lower, near-zero, and higher CRG change."""
     human, model_profiles, crg, cases, threshold = _country_profile_cases()
     selected = cases.set_index("selection_role")
-    roles = ["appendix_lower", "appendix_near_zero", "appendix_higher"]
+    roles = ["profile_lower", "profile_near_zero", "profile_higher"]
     labels = ["Lower CRG", "Near-zero CRG", "Higher CRG"]
     panel_letters = ["a", "b", "c"]
 
@@ -1903,7 +1903,7 @@ def write_source_contract() -> None:
             "figure1_country_evidence": ["fig1-country-marks", "fig1-country-labels"],
             "figure1_frontiers": ["fig1-economic-margins", "fig1-prospective-tests"],
             "figure2_results": ["fig2-country-density", "fig2-item-intervals", "fig2-profile-radar"],
-            "appendix_country_profiles": ["fig8-lower-profile", "fig8-near-zero-profile", "fig8-higher-profile"],
+            "country_profiles": ["fig8-lower-profile", "fig8-near-zero-profile", "fig8-higher-profile"],
         },
         "palette": {
             "ink": INK,

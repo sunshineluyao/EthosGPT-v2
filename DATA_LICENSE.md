@@ -13,4 +13,4 @@
 The public derivative's license label does not independently resolve rights in
 all upstream survey content. The release therefore excludes raw narratives and
 official microdata, and includes only the minimum aggregate evidence needed to
-verify the paper. No API key or identifiable respondent data is present.
+verify the released results. No API key or identifiable respondent data is present.
