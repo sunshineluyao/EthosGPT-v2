@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Build the EthosGPT v1.0.0 acceptance-oriented visual system.
+"""Build the EthosGPT reproducible visual system.
 
-The visual sequence follows the paper's evidence path:
+The visual sequence follows the analysis path:
 
 1. a nested benchmark-to-audit-to-frontier argument with an editable draw.io master,
 2. a four-view statistical synthesis using decision-tree-selected idioms,
 3. the theory-indexed economic sensitivity summary,
 4. conditional-versus-country uncertainty diagnostics,
-5. an appendix methods overview, and
+5. a methods overview, and
 6. the continuous economic-weight surface.
 
 Every quantitative mark is regenerated from released CSV files.  PDF and SVG
@@ -125,7 +125,7 @@ def postprocess_svg(path: Path, title: str) -> None:
 
 
 def save(fig: plt.Figure, stem: str, title: str) -> None:
-    """Write synchronized publication and preview formats."""
+    """Write synchronized vector and preview formats."""
     metadata = {"Creator": f"EthosGPT v{VERSION} reproducible visual pipeline"}
     FIGURES.mkdir(parents=True, exist_ok=True)
     RESULT_FIGURES.mkdir(parents=True, exist_ok=True)
@@ -1185,7 +1185,7 @@ def figure1_spatial_story() -> None:
         plt.close(child)
     _write_fig1_drawio()
 
-    # Full two-metric map remains available for appendix inspection.
+    # Full two-metric map remains available for detailed inspection.
     maps_fig = plt.figure(figsize=(5.48, 2.12))
     t_tvd, appendix_tvd = _draw_map_and_examples(
         maps_fig, world, points, "delta_tvd", "a", "TVD change · mean −0.0080",
@@ -1598,7 +1598,7 @@ def _chip(ax: plt.Axes, x: float, y: float, color: str) -> None:
 
 
 def figure5_study_design() -> None:
-    """Move a simplified, more natural methods overview to the appendix."""
+    """Build a simplified methods overview."""
     fig = plt.figure(figsize=(5.48, 2.10))
     ax = fig.add_axes([0, 0, 1, 1])
     ax.set_axis_off()
@@ -1744,10 +1744,10 @@ def cleanup_obsolete_assets() -> None:
 
 
 def write_source_contract() -> None:
-    """Write the manuscript-level style, evidence, and source manifest."""
+    """Write the figure style, evidence, and source manifest."""
     figures = [
         {
-            "stem": "fig1_spatial_story", "number_role": "Figure 1", "reader_task": "framing/evidence",
+            "stem": "fig1_spatial_story", "number_role": "Spatial story", "reader_task": "framing/evidence",
             "evidence_class": "published context, descriptive reanalysis, current evidence, and theory-guided directions",
             "question": "How do prior benchmarks connect to a paired country-conditioned survey comparison and its economic, agent, and deployment implications?",
             "source_data": ["data/prior_study_benchmark.csv", "data/archived_geometry_benchmark.csv",
@@ -1757,7 +1757,7 @@ def write_source_contract() -> None:
             "master": "results/figures/fig1_spatial_story.drawio; Python child charts: scripts/make_visual_story_v100.py",
         },
         {
-            "stem": "fig2_multiview_results", "number_role": "Figure 2", "reader_task": "evidence",
+            "stem": "fig2_multiview_results", "number_role": "Multiview results", "reader_task": "evidence",
             "evidence_class": "inferential and descriptive panels",
             "question": "How does the update change country heterogeneity, simultaneous item inference, one outcome-independent country profile, and repeated-output error before interaction?",
             "source_data": ["joint_item_inference.csv", "composition_estimates.csv",
@@ -1766,7 +1766,7 @@ def write_source_contract() -> None:
             "final_size_inches": [5.48, 3.36], "master": "scripts/make_visual_story_v100.py",
         },
         {
-            "stem": "fig3_economic_story", "number_role": "Figure 3", "reader_task": "implication",
+            "stem": "fig3_economic_story", "number_role": "Economic margins", "reader_task": "implication",
             "evidence_class": "exploratory theory-indexed inference",
             "question": "Which declared economic margins change and how robust is the sign across weights?",
             "source_data": ["economic_margin_results.csv", "economic_weight_surface.csv",
@@ -1774,27 +1774,27 @@ def write_source_contract() -> None:
             "final_size_inches": [5.48, 2.68], "master": "scripts/make_visual_story_v100.py",
         },
         {
-            "stem": "figS1_uncertainty_sources", "number_role": "Appendix Figure 4", "reader_task": "evidence",
+            "stem": "figS1_uncertainty_sources", "number_role": "Uncertainty sources", "reader_task": "evidence",
             "evidence_class": "sensitivity analysis",
             "question": "How narrow are conditional sources relative to country-level uncertainty?",
             "source_data": ["conditional_uncertainty_contrasts.csv", "metric_comparisons.csv"],
             "final_size_inches": [5.48, 2.18], "master": "scripts/make_visual_story_v100.py",
         },
         {
-            "stem": "figS2_study_design", "number_role": "Appendix Figure 5", "reader_task": "mechanism",
+            "stem": "figS2_study_design", "number_role": "Study design", "reader_task": "mechanism",
             "evidence_class": "methodological/conceptual", "question": "How is the comparison constructed and interpreted?",
-            "source_data": ["protocol metadata and manuscript Sections 1-4"],
+            "source_data": ["archived prompt and country sampling protocol"],
             "final_size_inches": [5.48, 2.10], "master": "results/figures/figS2_study_design.drawio",
         },
         {
-            "stem": "figS3_economic_sensitivity", "number_role": "Appendix Figure 8", "reader_task": "implication",
+            "stem": "figS3_economic_sensitivity", "number_role": "Economic sensitivity", "reader_task": "implication",
             "evidence_class": "exploratory sensitivity analysis",
             "question": "How does the point estimate and interval conclusion vary continuously over declared weights?",
             "source_data": ["economic_weight_surface.csv"],
             "final_size_inches": [5.48, 3.42], "master": "scripts/make_visual_story_v100.py",
         },
         {
-            "stem": "figS4_country_maps", "number_role": "Appendix Figure 6", "reader_task": "heterogeneity",
+            "stem": "figS4_country_maps", "number_role": "Country maps", "reader_task": "heterogeneity",
             "evidence_class": "descriptive country-level sensitivity",
             "question": "Where do TVD and CRG version changes fall across the three predeclared display classes?",
             "source_data": ["country_level_spatial_changes.csv", "figure1_error_type_examples.csv",
@@ -1802,7 +1802,7 @@ def write_source_contract() -> None:
             "final_size_inches": [5.48, 2.12], "master": "scripts/make_visual_story_v100.py",
         },
         {
-            "stem": "figS5_country_profiles", "number_role": "Appendix Figure 7", "reader_task": "heterogeneity",
+            "stem": "figS5_country_profiles", "number_role": "Country profiles", "reader_task": "heterogeneity",
             "evidence_class": "descriptive country-level profile cases",
             "question": "What signed six-item residual profiles characterize the lower, near-zero, and higher CRG-change classes without cross-country cancellation?",
             "source_data": ["country_question_scores.csv", "data/country_radar_case_selection.csv",
@@ -1865,7 +1865,7 @@ def write_source_contract() -> None:
             },
             {
                 "concept": "threshold-class country profile cases",
-                "visual_encoding": "three appendix radars use one shared symmetric residual scale; lower, near-zero, and higher labels follow the declared CRG-change threshold and each country is the residual-profile medoid within its class",
+                "visual_encoding": "three country-profile radars use one shared symmetric residual scale; lower, near-zero, and higher labels follow the declared CRG-change threshold and each country is the residual-profile medoid within its class",
                 "shape_ids": ["fig8-lower-profile", "fig8-near-zero-profile", "fig8-higher-profile"],
                 "origin": "released country-question profiles and threshold-class medoid selection ledger",
                 "evidence_implication": "the three cases expose heterogeneous signed profiles without replacing the all-country estimand or implying cultural representativeness",
@@ -1920,7 +1920,7 @@ def write_source_contract() -> None:
                                      "scripts/make_visual_story_v100.py"],
         "style_contract": {
             "insertion_width_inches": 5.48,
-            "font_family": "Nimbus Roman (Times-compatible), matching the manuscript body",
+            "font_family": "Nimbus Roman (Times-compatible)",
             "effective_type_target_pt": 8.0,
             "effective_type_floor_pt": 7.0,
             "background": "white",
@@ -1940,23 +1940,6 @@ def write_source_contract() -> None:
         "figures": figures,
     }
     (SOURCES / "semantic_graphics_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-
-    readme = [
-        f"# Figure-source contract (v{VERSION})", "",
-        "Run `python scripts/make_visual_story_v100.py` after the analysis and supporting table-generation stages.",
-        "PDF and SVG are authoritative; PNG is preview-only. All quantitative marks map to released CSV files.", "",
-        "## House style", "",
-        f"- Ink `{INK}`; GPT-5.5 `{PRIMARY}`; GPT-5.6/lower error `{TEAL}`; higher error `{MAGENTA}`; status `{AMBER}`.",
-        "- Nimbus Roman (Times-compatible), 8 pt target and 7 pt fail-closed floor at 5.48-inch insertion width.",
-        "- White background, restrained grid, no rainbow scale, and redundant shape/line encoding.", "",
-        "## Figure map", "",
-        "| Figure | Reader task | Evidence class | Authoritative source |",
-        "|---|---|---|---|",
-    ]
-    for record in figures:
-        readme.append(f"| {record['number_role']} | {record['reader_task']} | {record['evidence_class']} | `{record['master']}` |")
-    readme += ["", "See `semantic_graphics_manifest.json` for per-export hashes, data lineage, final dimensions, and scientific questions.", ""]
-    (SOURCES / "README.md").write_text("\n".join(readme), encoding="utf-8")
 
     for record in figures:
         directory = SOURCES / record["stem"]

@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Build the v0.7 visual story from released source data.
 
-The main paper uses three figures: an editable evidence-boundary diagram, a
-dependence-aware results figure, and a theory-indexed economic sensitivity
-figure.  The country maps remain a full-width appendix figure so that their
-labels are legible and their descriptive status is not mistaken for a causal
-result.
+The visual set includes an editable evidence-boundary diagram, a
+dependence-aware results figure, a theory-indexed economic sensitivity
+figure, and full-width country maps. Map labels remain legible and their
+descriptive status is distinct from a causal result.
 """
 
 from __future__ import annotations
@@ -446,7 +445,7 @@ def write_vector_assets() -> None:
         postprocess_svg(path, concept)
         records.append({
             "id":name[:-4],"concept":concept,"semantic_role":role,
-            "source_locator":"manuscript Sections 1-4","evidence_status":"conceptual-mechanism",
+            "source_locator":"EthosGPT survey-to-model audit","evidence_status":"conceptual-mechanism",
             "file":f"assets/{name}","format":"svg","source_type":"original-vector",
             "description":concept,"alt_text":f"Unlabeled vector micro-scene for {concept}.",
             "visual_recipe":["recognizable scientific objects","one visible operation cue","matched outline and palette"],
@@ -471,9 +470,9 @@ def write_vector_assets() -> None:
         "schema_version":"1.0","set_id":"ethosgpt-figure1-vector-set-v070",
         "title":"EthosGPT Figure 1 semantic vector set",
         "purpose":"Supply coherent, editable scientific micro-scenes for the Figure 1 graphical abstract.",
-        "source":{"kind":"paper","title":"EthosGPT v0.7.0","locator":"Sections 1-4"},
+        "source":{"kind":"repository","title":"EthosGPT v0.7.0","locator":"survey-to-model audit"},
         "target_figure":{"type":"graphical abstract","background":"light",
-                         "placement":"Figure 1 at full manuscript width"},
+                         "placement":"conceptual overview at full display width"},
         "evidence_boundary":"These vector assets identify concepts and operations. They do not encode measured values, causal effects, certification, or implementation status.",
         "art_direction":{"mode":"editorial-vector","viewpoint":"front",
             "outline":"2 px equivalent, round caps and joins","lighting":"flat scientific vector",

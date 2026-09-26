@@ -1,4 +1,4 @@
-# Appendix Figure 5: figS2_study_design
+# Study design: figS2_study_design
 
 - Reader task: mechanism
 - Evidence class: methodological/conceptual
@@ -8,6 +8,6 @@
 
 Source data:
 
-- `protocol metadata and manuscript Sections 1-4`
+- `archived prompt and country sampling protocol`
 
 Exports: live-text SVG, vector PDF, and preview PNG in `results/figures/`.

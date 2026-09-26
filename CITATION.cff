@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-title: "EthosGPT: Whose Values Guide Technological Change? Cultural Representation, Language-Model Updates, and Creative Destruction"
-message: "Please cite the GlobalSouthAI workshop study and the upstream datasets."
+title: "EthosGPT: Reproducible Cross-Country Survey Representation Audit"
+message: "Please cite this software package and the upstream datasets."
 type: software
-version: 1.1.0
-date-released: 2026-09-26
+version: 1.1.1
+date-released: 2026-09-27
 license: MIT
 authors:
   - family-names: Zhang

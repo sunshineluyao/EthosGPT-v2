@@ -66,7 +66,7 @@ def main() -> None:
     assert len(teaser_manifest["semantic_graphics"]) == 6
     assert teaser_manifest["raster_layers"] == []
 
-    assert not (ROOT / "paper").exists(), "manuscript sources belong in the paper repository"
+    assert not (ROOT / "paper").exists(), "document source directory found in code release"
     assert (FIGS / "figS2_study_design.drawio").stat().st_size > 0
     assert (FIGS / "fig1_spatial_story.drawio").stat().st_size > 0
     ET.parse(FIGS / "fig1_spatial_story.drawio")

@@ -12,10 +12,9 @@
 
 </div>
 
-EthosGPT is the **code, archived data, and editable figure release** for the
-NeurIPS 2026 GlobalSouthAI workshop study *EthosGPT: Whose Values Guide
-Technological Change? Cultural Representation, Language-Model Updates, and
-Creative Destruction*. It compares two archived model versions with an
+EthosGPT is a **reproducible code, archived data, and editable figure package**
+for studying whose values an AI adviser represents across model updates. It
+compares two archived model versions with an
 unweighted public World Values Survey derivative in **64 countries, eight
 descriptive cultural regions, and six questions**. Five responses per
 country–question–model cell yield **3,840 validated model records**.
@@ -67,8 +66,7 @@ distribution on this measure.
 ## Featured visuals
 
 The [visual guide](assets/featured/README.md) explains evidence classes and
-links editable SVGs, publication PDF exports, input CSVs and provenance.
-These are repository graphics, with no manuscript source files.
+links editable SVGs, vector PDF exports, input CSVs and provenance.
 
 | Visual | What it helps a reader see |
 |---|---|
@@ -136,6 +134,5 @@ spell out these boundaries.
 
 Code and original vector assets use the [MIT License](LICENSE); source-data
 rights are recorded separately in [DATA_LICENSE.md](DATA_LICENSE.md). Use
-[`CITATION.cff`](CITATION.cff) for software citation. The repository contains
-no LaTeX, bibliography source or manuscript PDF. Reported result tables,
+[`CITATION.cff`](CITATION.cff) for software citation. Result tables,
 archived outputs and figure masters remain directly inspectable here.

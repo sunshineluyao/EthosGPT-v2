@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate v0.7.0 figures and tables for the shared workshop submission.
+"""Generate v0.7.0 figures and tables from released source data.
 
 This script runs after ``make_wave1_assets.py`` and deliberately replaces the
-main narrative assets and spatial appendix table with versions that reflect
+visual assets and spatial summary table with versions that reflect
 the joint 12-outcome inference, finite-five-generation composition diagnostic,
 and exploratory creative-destruction margins.
 """

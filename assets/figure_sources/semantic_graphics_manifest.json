@@ -66,7 +66,7 @@
     },
     {
       "concept": "threshold-class country profile cases",
-      "visual_encoding": "three appendix radars use one shared symmetric residual scale; lower, near-zero, and higher labels follow the declared CRG-change threshold and each country is the residual-profile medoid within its class",
+      "visual_encoding": "three country-profile radars use one shared symmetric residual scale; lower, near-zero, and higher labels follow the declared CRG-change threshold and each country is the residual-profile medoid within its class",
       "shape_ids": [
         "fig8-lower-profile",
         "fig8-near-zero-profile",
@@ -162,7 +162,7 @@
   ],
   "style_contract": {
     "insertion_width_inches": 5.48,
-    "font_family": "Nimbus Roman (Times-compatible), matching the manuscript body",
+    "font_family": "Nimbus Roman (Times-compatible)",
     "effective_type_target_pt": 8.0,
     "effective_type_floor_pt": 7.0,
     "background": "white",
@@ -192,7 +192,7 @@
   "figures": [
     {
       "stem": "fig1_spatial_story",
-      "number_role": "Figure 1",
+      "number_role": "Spatial story",
       "reader_task": "framing/evidence",
       "evidence_class": "published context, descriptive reanalysis, current evidence, and theory-guided directions",
       "question": "How do prior benchmarks connect to a paired country-conditioned survey comparison and its economic, agent, and deployment implications?",
@@ -222,7 +222,7 @@
     },
     {
       "stem": "fig2_multiview_results",
-      "number_role": "Figure 2",
+      "number_role": "Multiview results",
       "reader_task": "evidence",
       "evidence_class": "inferential and descriptive panels",
       "question": "How does the update change country heterogeneity, simultaneous item inference, one outcome-independent country profile, and repeated-output error before interaction?",
@@ -252,7 +252,7 @@
     },
     {
       "stem": "fig3_economic_story",
-      "number_role": "Figure 3",
+      "number_role": "Economic margins",
       "reader_task": "implication",
       "evidence_class": "exploratory theory-indexed inference",
       "question": "Which declared economic margins change and how robust is the sign across weights?",
@@ -279,7 +279,7 @@
     },
     {
       "stem": "figS1_uncertainty_sources",
-      "number_role": "Appendix Figure 4",
+      "number_role": "Uncertainty sources",
       "reader_task": "evidence",
       "evidence_class": "sensitivity analysis",
       "question": "How narrow are conditional sources relative to country-level uncertainty?",
@@ -305,12 +305,12 @@
     },
     {
       "stem": "figS2_study_design",
-      "number_role": "Appendix Figure 5",
+      "number_role": "Study design",
       "reader_task": "mechanism",
       "evidence_class": "methodological/conceptual",
       "question": "How is the comparison constructed and interpreted?",
       "source_data": [
-        "protocol metadata and manuscript Sections 1-4"
+        "archived prompt and country sampling protocol"
       ],
       "final_size_inches": [
         5.48,
@@ -330,7 +330,7 @@
     },
     {
       "stem": "figS3_economic_sensitivity",
-      "number_role": "Appendix Figure 8",
+      "number_role": "Economic sensitivity",
       "reader_task": "implication",
       "evidence_class": "exploratory sensitivity analysis",
       "question": "How does the point estimate and interval conclusion vary continuously over declared weights?",
@@ -355,7 +355,7 @@
     },
     {
       "stem": "figS4_country_maps",
-      "number_role": "Appendix Figure 6",
+      "number_role": "Country maps",
       "reader_task": "heterogeneity",
       "evidence_class": "descriptive country-level sensitivity",
       "question": "Where do TVD and CRG version changes fall across the three predeclared display classes?",
@@ -382,7 +382,7 @@
     },
     {
       "stem": "figS5_country_profiles",
-      "number_role": "Appendix Figure 7",
+      "number_role": "Country profiles",
       "reader_task": "heterogeneity",
       "evidence_class": "descriptive country-level profile cases",
       "question": "What signed six-item residual profiles characterize the lower, near-zero, and higher CRG-change classes without cross-country cancellation?",

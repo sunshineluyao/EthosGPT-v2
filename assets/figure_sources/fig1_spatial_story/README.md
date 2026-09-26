@@ -1,4 +1,4 @@
-# Figure 1: fig1_spatial_story
+# Spatial story: fig1_spatial_story
 
 - Reader task: framing/evidence
 - Evidence class: published context, descriptive reanalysis, current evidence, and theory-guided directions

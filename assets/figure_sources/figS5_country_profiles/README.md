@@ -1,4 +1,4 @@
-# Appendix Figure 7: figS5_country_profiles
+# Country profiles: figS5_country_profiles
 
 - Reader task: heterogeneity
 - Evidence class: descriptive country-level profile cases

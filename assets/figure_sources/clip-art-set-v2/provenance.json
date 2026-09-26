@@ -15,21 +15,21 @@
     {
       "id": "survey-stack",
       "role": "survey questions",
-      "source": "original geometry for this paper",
+      "source": "original repository vector geometry",
       "status": "verified-object",
       "prohibited_implication": "no measured performance or causal effect"
     },
     {
       "id": "paired-models",
       "role": "paired archived outputs",
-      "source": "original geometry for this paper",
+      "source": "original repository vector geometry",
       "status": "verified-object",
       "prohibited_implication": "no measured performance or causal effect"
     },
     {
       "id": "replacement",
       "role": "innovation replacing incumbent",
-      "source": "original geometry for this paper",
+      "source": "original repository vector geometry",
       "status": "conceptual-mechanism",
       "prohibited_implication": "no measured performance or causal effect"
     }

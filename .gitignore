@@ -5,8 +5,6 @@ __pycache__/
 data/raw/*
 !data/raw/README.md
 build/
-/paper/
 *.tex
 *.sty
 *.bib
-latexmkrc

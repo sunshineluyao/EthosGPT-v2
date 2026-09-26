@@ -1,6 +1,6 @@
 # Featured figure sources
 
-The two publication figure masters are editable SVGs under
+The two featured figure masters are editable SVGs under
 [`results/figures/`](../../results/figures/); their PDF exports are supplied
 for printing. Run `make featured-figures` to regenerate the SVGs from these
 scripts and archived inputs:

@@ -1,4 +1,4 @@
-# Figure 3: fig3_economic_story
+# Economic margins: fig3_economic_story
 
 - Reader task: implication
 - Evidence class: exploratory theory-indexed inference

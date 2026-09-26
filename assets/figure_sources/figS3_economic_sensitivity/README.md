@@ -1,4 +1,4 @@
-# Appendix Figure 8: figS3_economic_sensitivity
+# Economic sensitivity: figS3_economic_sensitivity
 
 - Reader task: implication
 - Evidence class: exploratory sensitivity analysis

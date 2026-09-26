@@ -1,9 +1,8 @@
 # EthosGPT code and data package
 
-This repository contains the archived model outputs, survey derivative,
-analysis code, numeric results and editable visual assets for the NeurIPS 2026
-GlobalSouthAI study. It does not contain manuscript source files or the paper
-PDF.
+This repository contains archived model outputs, the survey derivative,
+analysis code, numeric results, and editable visual assets for the
+64-country EthosGPT audit.
 
 | Entry | Contents |
 |---|---|

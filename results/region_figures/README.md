@@ -1,9 +1,6 @@
 # Eight-region descriptive figures
 
-The camera-ready paper maintains its LaTeX and compiled manuscript in
-[`EthosGPT-NeurIPS`](https://github.com/sunshineluyao/EthosGPT-NeurIPS).
-This folder contains only the figure exports and their provenance; this code
-repository has no manuscript source.
+This folder contains the regional figure exports and their provenance.
 
 ## Rebuild
 
@@ -63,13 +60,9 @@ that would otherwise overlap; their horizontal values are never jittered.
 
 - **Country TVD strip:** evidence = descriptive; vector PDF/SVG with live
   embedded text; no raster images; 64 country dots and eight means reconcile
-  with published inputs; small-group symbols are hollow; compiled page 25
-  checked at paper size. Release blockers: none.
+  with released inputs; small-group symbols are hollow. Release blockers: none.
 - **Two-metric intervals:** evidence = descriptive; the BCa bars and small-n
-  omissions mirror the published CSV; the African-Islamic and Confucian rows
-  remain distinguishable in grayscale and at paper size; compiled page 26
-  checked. Release blockers: none.
-- The compiled manuscript's captioned-figure geometry check passed on both
-  pages. Matplotlib SVGs use standard axes clip paths; rendered PDF and SVG
-  edges were inspected for clipping. The main paper occupies four pages,
-  followed by references and appendices.
+  omissions mirror the released CSV; the African-Islamic and Confucian rows
+  remain distinguishable in grayscale. Release blockers: none.
+- Matplotlib SVGs use standard axes clip paths; rendered PDF and SVG edges
+  were inspected for clipping.
