@@ -46,6 +46,9 @@ def main() -> None:
         "--scores", str(EXPERIMENT / "results/country_question_scores.csv"),
         "--output-dir", str(ROOT / "results/creative_destruction"),
     )
+    run("assets/figure_sources/make_fig1_ethos_gallery.py")
+    run("assets/figure_sources/make_fig2_value_bridge.py")
+    run("scripts/release_smoke.py")
     run("scripts/verify_results.py")
     run("scripts/audit_visual_assets.py")
     print("PASS: archived outputs -> statistics -> signed results and conditional simulation -> figures; no manuscript sources")

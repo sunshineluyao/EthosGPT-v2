@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.1.0 — 2026-09-26
+
+- Made the repository a standalone code, data, and vector-asset release for
+  interdisciplinary readers, with a featured evidence arc, a result guide,
+  a declared economic scenario, and links to the frozen inputs.
+- Added a machine-readable six-stage result map and a fast integrity check
+  covering archived model hashes, 64-country paired coverage, the primary TVD
+  contrast, result paths, and the absence of manuscript sources.
+- Released editable Figure 1 and Figure 2 SVG masters, their PDF exports,
+  input tables, generator scripts, provenance, and semantic visual manifest.
+- Documented the original authenticated collection-client boundary and
+  kept the conditional quality-ladder calculations separate from observed
+  survey-response differences.
+- Added a checksum failure test and pinned the renderer dependency needed
+  to regenerate the vector figures offline.
+
 ## 1.0.0 — 2026-09-05
 
 - Reduced the main paper to exactly four pages before references under the

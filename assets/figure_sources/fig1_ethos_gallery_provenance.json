@@ -1,0 +1,35 @@
+{
+  "figure": "fig1_ethos_gallery",
+  "evidence_classes": {
+    "A": "country locations from archived descriptive sample",
+    "B": "exploratory paired country-level losses; within-region bootstrap intervals where n>=5",
+    "C": "equal-country signed model-minus-survey scores, recorded prompts",
+    "D": "African-Islamic 15-country equal-country mean under an assumed adviser decision rule, both versions minus same-country survey-guided choices; not observed behavior, growth, welfare, or sustainability"
+  },
+  "inputs": [
+    "results/figures/fig1_spatial_story.svg (Natural Earth map paths and archived marker positions)",
+    "assets/figure_sources/data/country_level_spatial_changes.csv",
+    "assets/figure_sources/data/signed_global_items.csv",
+    "assets/figure_sources/data/creative_eight_region_simulation.csv",
+    "assets/figure_sources/data/eight_region_sensitivity.csv (copied from validated experiment result)"
+  ],
+  "palette": {
+    "ink": "#18324A",
+    "model": "#3B5CCC",
+    "lower": "#078C82",
+    "higher": "#B33B72",
+    "assumed": "#D88A24",
+    "surface": [
+      "#EAF0FF",
+      "#E5F4F1",
+      "#FFF3E8"
+    ]
+  },
+  "map_caveat": "Markers locate sampled countries; cultural-region labels are published descriptive tags, not geographic polygons or individual identity.",
+  "idioms": {
+    "A": "point-symbol locator map",
+    "B": "paired miniature interval/forest plots",
+    "C": "paired lollipop/dumbbell dots",
+    "D": "semantic process with numerical scenario annotations"
+  }
+}

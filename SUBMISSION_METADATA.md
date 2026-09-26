@@ -10,18 +10,18 @@ survey representation, language model evaluation, model updates, agent systems, 
 
 ## TL;DR
 
-The paired 64-country, eight-region survey audit reveals persistent signed gaps after a model update; a declared quality-ladder simulation illustrates how all six discrepancies could change innovation and unassisted replacement under explicit assumptions, without claiming observed economic effects.
+An update lowers average survey-category error across 64 countries, while the direction of represented views differs; an assumed quality-ladder decision rule gives Nigeria and Kenya contrasting growth scenarios.
 
 ## Author
 
-Luyao Zhang
-Duke Kunshan University
-8 Duke Ave., Kunshan, Suzhou, China
+Luyao Zhang  
+Duke Kunshan University  
+8 Duke Ave., Kunshan, Suzhou, Jiangsu, 215316, China  
 lz183@duke.edu
 
 ## Abstract
 
-Creative destruction can sustain economic growth as successive innovations replace incumbents, yet its benefits and adjustment burdens depend on whose judgments guide decisions. We ask whose views an updating, country-conditioned language model represents, and how discrepancies could enter decisions about innovation and social adjustment. For six World Values Survey questions in 64 countries and eight descriptive cultural regions, we compare five archived responses per model–country–question from GPT-5.5 and GPT-5.6 Sol with an unweighted survey derivative. GPT-5.6 lowers mean total-variation distance by 0.0080 (95% country-bootstrap interval [-0.0107,-0.0050]), but other corrected global improvements remain inconclusive. Both models understate reported agency and science opportunity while overstating equality-oriented answers on the recorded income item; country positions can reverse their regional average. In a conditional simulation inspired by the innovation and displacement mechanism of Aghion and Howitt, all six signed gaps change assumed choices about entry, assistance, and coordination. Under one declared scenario, GPT-5.6-guided rather than survey-guided choices imply 0.73 percentage points less expected 20-step log frontier-quality growth and 1.00 fewer unassisted-transition index units per 100 activities per step. These illustrative quantities are neither observed policy effects nor forecasts. Locally validated decisions, distributional outcomes, and environmental evidence are needed before drawing conclusions about inclusive, sustainable growth.
+Creative destruction can sustain growth when improved methods replace older ones, but the resulting gains and adjustment burdens need not be shared. An AI adviser that misstates local views on agency, science, trust, mobility, equality, and responsibility could alter support for innovation and for people whose work is displaced. We audit this representational link using archived GPT-5.5 and GPT-5.6 Sol distributions for six World Values Survey questions against unweighted survey shares in 64 countries. The update lowers mean category disagreement by 0.0080 in total-variation distance (95% country-bootstrap interval [-0.0107,-0.0050]), while directed gaps and regional patterns do not move uniformly. In a declared adviser and quality-ladder simulation, Nigeria's 20-round product-quality gap against a survey-guided baseline changes from -1.57 to -1.69 percentage points; Kenya's changes from +0.68 to +0.70. Thus a smaller average response error can coexist with different conditional consequences for Global South settings. We end by identifying the local decision and longitudinal evidence needed to test whether these representation differences matter for inclusive, environmentally durable growth.
 
 ## Open science
 

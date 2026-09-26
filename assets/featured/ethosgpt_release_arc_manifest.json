@@ -1,0 +1,67 @@
+{
+  "figure": "ethosgpt_release_arc.svg",
+  "reader_task": "mechanism and reproducibility",
+  "caption_evidence_class": "methodological with a separated synthetic scenario",
+  "iconography_mode": "minimal-scientific",
+  "palette": {
+    "ink": "#F8FAFC",
+    "surface": "#0B1226",
+    "primary": "#A78BFA",
+    "secondary": "#50D6E7",
+    "status_accent": "#FBBF72",
+    "divider": "#30405E"
+  },
+  "semantic_graphics": [
+    {
+      "concept": "survey source and exact prompt record",
+      "visual_encoding": "annotated survey sheets joined to a row-wise prompt ledger",
+      "shape_ids": ["source-pages", "prompt-ledger", "source-label"],
+      "origin": "original vector",
+      "evidence_implication": "The public derivative and archived prompt ledger are recorded; the original live API collector is not released."
+    },
+    {
+      "concept": "validated archived model answers",
+      "visual_encoding": "structured table with complete probability-record rows",
+      "shape_ids": ["archived-answers", "archive-label"],
+      "origin": "original vector",
+      "evidence_implication": "3,840 validated archived outputs are in the repository."
+    },
+    {
+      "concept": "deterministic analysis code",
+      "visual_encoding": "code module feeding paired inference",
+      "shape_ids": ["analysis-code", "analysis-label"],
+      "origin": "original vector",
+      "evidence_implication": "Released scripts recompute scores and uncertainty from archived data."
+    },
+    {
+      "concept": "country-paired measurements",
+      "visual_encoding": "connected paired points for country-question scores",
+      "shape_ids": ["country-scores", "scores-label"],
+      "origin": "original vector",
+      "evidence_implication": "Dots are a schematic of paired comparisons, not plotted country values."
+    },
+    {
+      "concept": "observed error comparison",
+      "visual_encoding": "measured-result trajectory with direct signed TVD label",
+      "shape_ids": ["paired-result", "result-label"],
+      "origin": "original vector",
+      "evidence_implication": "The -0.0080 TVD contrast and its interval come from country-level resampling."
+    },
+    {
+      "concept": "declared conditional economic scenario",
+      "visual_encoding": "separate dashed amber interpretation band",
+      "shape_ids": ["conditional-band", "assumed-label"],
+      "origin": "original vector",
+      "evidence_implication": "The quality-ladder bridge is an uncalibrated thought experiment, not measured growth or policy impact."
+    }
+  ],
+  "composition_mechanism": "A connected data-to-analysis path ends at an observed comparison; a detached amber band marks the assumed economic extension.",
+  "grayscale_encoding": "Stage labels, solid pipeline arrows, and the separate dashed scenario boundary retain the evidence distinction without color.",
+  "alt_text": "Six-stage research pipeline from an unweighted survey derivative and exact prompt ledger to archived model answers, analysis code, 64-country scores, and the observed paired error result. Below, a dashed separate band labels the assumed quality-ladder scenario.",
+  "source_data": [
+    "experiments/gpt55_gpt56_64country/manifests/analysis_manifest.json",
+    "experiments/gpt55_gpt56_64country/results/metric_comparisons.csv"
+  ],
+  "raster_layers": [],
+  "license": "MIT"
+}

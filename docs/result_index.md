@@ -1,5 +1,16 @@
 # Result index (archived-output replication)
 
+This table is the short reader-facing map. The
+[machine-readable release index](../manifests/result_replication_index.json)
+adds every required stage, command, evidence status, data revision and
+interpretation boundary. A path labeled `NOT_RELEASED` records an explicit
+acquisition gap; it is not silently replaced by a processed table.
+
+The measured question is whether archived model response distributions
+represent six survey answer distributions across 64 countries. The economic
+question is a separately assumed decision rule applied to the signed gaps.
+The latter is a sensitivity exercise, not a measured outcome.
+
 | Claim | Frozen source | Reproducer | Numeric result |
 |---|---|---|---|
 | Six-item W1/TVD, CRG, VDR, CSR | `outputs/*scores.jsonl`; `data/processed/human_item_distributions.parquet` | `make reproduce-offline` | [global contrasts](../experiments/gpt55_gpt56_64country/results/metric_comparisons.csv) |
@@ -12,6 +23,7 @@
 | Exploratory economics grouping | six item losses | `extended_analysis.py` | [margin results](../experiments/gpt55_gpt56_64country/results/economic_margin_results.csv) |
 | Six directed item gaps by country and original cultural region (descriptive) | [country-question scores](../experiments/gpt55_gpt56_64country/results/country_question_scores.csv), derived from the frozen outputs and unweighted survey target | [`signed_directions.py`](../experiments/gpt55_gpt56_64country/signed_directions.py); `make signed-directions` | [global means](../results/signed_directions/signed_global_items.csv), [all countries](../results/signed_directions/signed_country_items.csv), [eight regions](../results/signed_directions/signed_eight_regions.csv), and [figure guide](../results/signed_directions/README.md) |
 | Conditional creative-destruction illustration (synthetic, uncalibrated) | the same [country-question scores](../experiments/gpt55_gpt56_64country/results/country_question_scores.csv) and explicitly assumed decisions and innovation parameters | [`simulate_creative_destruction.py`](../experiments/gpt55_gpt56_64country/simulate_creative_destruction.py); `make creative-destruction` | [five global scenarios](../results/creative_destruction/global_scenarios.csv), [all countries](../results/creative_destruction/country_simulation.csv), [eight regions](../results/creative_destruction/eight_region_simulation.csv), [six-facet decomposition](../results/creative_destruction/six_facet_contributions.csv), and [assumptions and figure guide](../results/creative_destruction/README.md) |
+| Featured evidence and mechanism visuals | the country, signed-item and scenario CSVs above | `make featured-figures` | [Figure 1 SVG](../results/figures/fig1_ethos_gallery.svg), [Figure 2 SVG](../results/figures/fig2_value_bridge.svg), [provenance](../assets/featured/README.md) |
 
 The signed gaps are derived descriptions of archived outputs against the unweighted survey derivative. The creative-destruction scenarios are synthetic calculations conditional on declared, unestimated decision rules; neither their signs nor magnitudes are observed economic effects. All rows start from the same released score file or its frozen inputs.
 The returned `gpt-5.6-sol` identifier is undated, so a later live call need

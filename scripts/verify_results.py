@@ -268,6 +268,15 @@ def main() -> None:
           for stem in ("figS6_region_country_tvd", "figS7_region_metric_intervals")
           for suffix in (".pdf", ".svg", ".png")],
         ROOT / "results/region_figures/README.md",
+        *[FIGS / f"{stem}{suffix}" for stem in ("fig1_ethos_gallery", "fig2_value_bridge")
+          for suffix in (".pdf", ".svg")],
+        SOURCES / "make_fig1_ethos_gallery.py",
+        SOURCES / "make_fig2_value_bridge.py",
+        SOURCES / "fig1_ethos_gallery_provenance.json",
+        SOURCES / "fig2_value_bridge_provenance.json",
+        ROOT / "assets/featured/ethosgpt_release_arc.svg",
+        ROOT / "assets/featured/ethosgpt_release_arc_manifest.json",
+        ROOT / "manifests/result_replication_index.json",
         SOURCES / "semantic_graphics_manifest.json",
         SOURCES / "data/prior_study_benchmark.csv",
         SOURCES / "data/archived_geometry_benchmark.csv",
@@ -285,7 +294,7 @@ def main() -> None:
         assert heading in metadata
     assert (ROOT / "requirements.txt").read_text(encoding="utf-8").strip().endswith("requirements.lock.txt")
     citation_cff = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    assert "version: 1.0.0" in citation_cff
+    assert "version: 1.1.0" in citation_cff
     assert (
         "Whose Values Guide Technological Change? Cultural Representation, "
         "Language-Model Updates, and Creative Destruction"

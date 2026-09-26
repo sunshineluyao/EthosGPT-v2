@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="120" viewBox="0 0 450 120"><rect x="1" y="1" width="448" height="118" rx="12" fill="#FFFFFF" stroke="#D6DEE7" stroke-width="1.4"/><g transform="translate(45 24)"><g fill="none" stroke="#18324A" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round">
+       <path d="M14 7h24v34H14z" fill="#EAF0FF"/><path d="M20 0h24v34h-6M20 10h14M20 17h12M20 24h9"/>
+       <circle cx="33" cy="25" r="3" fill="#078C82" stroke="none"/></g></g><text x="70" y="95" font-family="Nimbus Roman,Times New Roman,serif" font-size="16" font-weight="normal" fill="#18324A" text-anchor="middle" >survey stack</text><g transform="translate(195 24)"><g stroke="#18324A" stroke-width="2" stroke-linejoin="round" fill="none">
+       <rect x="2" y="5" width="22" height="28" rx="3" fill="#EAF0FF" stroke="#3B5CCC"/>
+       <rect x="26" y="10" width="22" height="28" rx="3" fill="#E5F4F1" stroke="#078C82"/>
+       <path d="M7 20h12M31 25h12"/><circle cx="13" cy="13" r="2" fill="#3B5CCC" stroke="none"/>
+       <circle cx="37" cy="18" r="2" fill="#078C82" stroke="none"/></g></g><text x="220" y="95" font-family="Nimbus Roman,Times New Roman,serif" font-size="16" font-weight="normal" fill="#18324A" text-anchor="middle" >paired models</text><g transform="translate(345 24)"><g stroke="#18324A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+       <path d="M2 31h18V14H2z" fill="#F0F3F7"/><path d="M5 19h12M5 25h12" fill="none"/>
+       <path d="M30 35h20V9H30z" fill="#E5F4F1"/><path d="M34 14h12M34 21h12M34 28h12" fill="none"/>
+       <path d="M19 8h15" stroke="#D88A24" stroke-dasharray="3 3" fill="none"/></g></g><text x="370" y="95" font-family="Nimbus Roman,Times New Roman,serif" font-size="16" font-weight="normal" fill="#18324A" text-anchor="middle" >replacement</text></svg>

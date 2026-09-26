@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">EthosGPT: from archived cultural survey comparisons to transparent, conditional economic scenarios</title>
+  <desc id="desc">An editable six-stage research pipeline. Public survey derivative and model prompts lead to archived responses, analysis code, country scores and paired results. A separate amber band shows an assumed adviser and quality-ladder illustration, explicitly not an observed economic effect.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1L9 5 1 9" fill="none" stroke="#50D6E7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="720" rx="24" fill="#0B1226"/>
+  <path d="M28 148H1412M28 492H1412" stroke="#30405E" stroke-width="1"/>
+  <text x="62" y="68" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="43" font-weight="700">Whose values guide technological change?</text>
+  <text x="63" y="111" fill="#B9C7DF" font-family="DejaVu Sans,Arial,sans-serif" font-size="21">EthosGPT · six-stage open-science path · archived evidence and a declared economic thought experiment</text>
+  <text x="62" y="182" fill="#52D7E9" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2">REPRODUCIBLE EVIDENCE PATH</text>
+
+  <!-- Stages 1–2: a survey page and a prompt ledger share one provenance scene. -->
+  <g id="source-protocol" stroke-linejoin="round" stroke-linecap="round">
+    <g id="source-pages" fill="none" stroke="#A78BFA" stroke-width="2.5">
+      <path d="M82 229h74v93H82zM92 219h74v93" fill="#16213B"/>
+      <path d="M105 246h46M105 259h38M105 272h44M105 285h31" stroke="#DAD1FF" stroke-width="2.3"/>
+      <circle cx="112" cy="299" r="4" fill="#A78BFA" stroke="none"/>
+      <circle cx="128" cy="299" r="4" fill="#A78BFA" stroke="none"/>
+    </g>
+    <g id="prompt-ledger" fill="none" stroke="#50D6E7" stroke-width="2.5">
+      <path d="M174 240h93v75h-93z" fill="#102D40"/>
+      <path d="M185 254h18M211 254h45M185 269h18M211 269h35M185 284h18M211 284h45M185 299h18M211 299h29" stroke="#B7EFF6" stroke-width="2"/>
+    </g>
+    <text id="source-label" x="80" y="360" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700">Source + prompt record</text>
+    <text x="80" y="388" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">01 survey derivative</text>
+    <text x="80" y="411" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">02 six-item prompt ledger</text>
+  </g>
+  <path d="M283 285H336" stroke="#50D6E7" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: archived model output records. -->
+  <g id="archived-answers" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M361 223h118v103H361z" fill="#102D40" stroke="#50D6E7" stroke-width="2.5"/>
+    <path d="M376 244h88M376 262h88M376 280h88M376 298h88" stroke="#4C8195" stroke-width="1.6"/>
+    <path d="M410 244v54M438 244v54" stroke="#4C8195" stroke-width="1.6"/>
+    <circle cx="387" cy="253" r="4" fill="#50D6E7"/>
+    <circle cx="387" cy="271" r="4" fill="#50D6E7"/>
+    <circle cx="387" cy="289" r="4" fill="#50D6E7"/>
+    <text id="archive-label" x="349" y="360" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700">Frozen responses</text>
+    <text x="349" y="388" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">03 validated JSONL</text>
+    <text x="349" y="411" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">3,840 model records</text>
+  </g>
+  <path d="M496 285H549" stroke="#50D6E7" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4: a code module transforms the frozen records. -->
+  <g id="analysis-code" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M570 225h132v98H570z" fill="#1D1A3E" stroke="#A78BFA" stroke-width="2.5"/>
+    <circle cx="584" cy="239" r="3.5" fill="#A78BFA"/>
+    <circle cx="597" cy="239" r="3.5" fill="#6A5B9B"/>
+    <path d="M587 268l-16 14 16 14M686 268l16 14-16 14M652 259l-31 48" fill="none" stroke="#E4DBFF" stroke-width="3"/>
+    <text id="analysis-label" x="565" y="360" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700">Scoring + inference</text>
+    <text x="565" y="388" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">04 code, seeds, checks</text>
+    <text x="565" y="411" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">paired countries</text>
+  </g>
+  <path d="M719 285H772" stroke="#50D6E7" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 5: paired scores use connected marks, rather than a decorative badge. -->
+  <g id="country-scores" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M793 235v84M793 319h136" fill="none" stroke="#6B829F" stroke-width="2"/>
+    <path d="M822 257h70M835 281h44M811 305h91" fill="none" stroke="#7A91AE" stroke-width="2.2"/>
+    <circle cx="822" cy="257" r="6" fill="#A78BFA"/><circle cx="892" cy="257" r="6" fill="#50D6E7"/>
+    <circle cx="835" cy="281" r="6" fill="#A78BFA"/><circle cx="879" cy="281" r="6" fill="#50D6E7"/>
+    <circle cx="811" cy="305" r="6" fill="#A78BFA"/><circle cx="902" cy="305" r="6" fill="#50D6E7"/>
+    <text id="scores-label" x="783" y="360" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700">Country evidence</text>
+    <text x="783" y="388" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">05 six-item signed gaps</text>
+    <text x="783" y="411" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">64 country pairs</text>
+  </g>
+  <path d="M945 285H998" stroke="#50D6E7" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 6: the observed paired result; the scenario below is separate. -->
+  <g id="paired-result" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M1021 320V238H1338" fill="none" stroke="#6B829F" stroke-width="2"/>
+    <path d="M1055 300l53-19 53-17 52-14 53-12" fill="none" stroke="#54D4A1" stroke-width="4"/>
+    <circle cx="1055" cy="300" r="5" fill="#54D4A1"/><circle cx="1266" cy="238" r="5" fill="#54D4A1"/>
+    <path d="M1266 238l23 2" fill="none" stroke="#54D4A1" stroke-width="2"/>
+    <text id="result-label" x="1021" y="360" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="700">Observed comparison</text>
+    <text x="1021" y="388" fill="#AFC0DC" font-family="DejaVu Sans,Arial,sans-serif" font-size="16">06 paired error + regions</text>
+    <text x="1021" y="411" fill="#54D4A1" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="700">ΔTVD −0.0080</text>
+  </g>
+
+  <g id="observed-band">
+    <rect x="60" y="514" width="582" height="141" rx="13" fill="#102B34" stroke="#337E76" stroke-width="1.5"/>
+    <text x="86" y="548" fill="#54D4A1" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1">OBSERVED · ARCHIVED COMPARISON</text>
+    <text x="86" y="586" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21">Lower average category mismatch in GPT-5.6</text>
+    <text x="86" y="619" fill="#B8D7D0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17">Country bootstrap 95% interval: −0.0107 to −0.0050</text>
+  </g>
+  <g id="conditional-band">
+    <rect x="663" y="514" width="716" height="141" rx="13" fill="#2A2430" stroke="#B98845" stroke-width="1.5" stroke-dasharray="7 5"/>
+    <text id="assumed-label" x="689" y="548" fill="#FBBF72" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1">ASSUMED · QUALITY-LADDER ILLUSTRATION</text>
+    <text x="689" y="586" fill="#F8FAFC" font-family="DejaVu Sans,Arial,sans-serif" font-size="21">Signed gaps → adviser choices → innovation and adjustment</text>
+    <text x="689" y="619" fill="#E4C7A5" font-family="DejaVu Sans,Arial,sans-serif" font-size="17">Scenario outputs are not measured growth, jobs, welfare or policy effects.</text>
+  </g>
+  <text x="62" y="686" fill="#8FA3C2" font-family="DejaVu Sans,Arial,sans-serif" font-size="15">The survey comparison uses an unweighted public derivative; Q106 and Q121 wording conflicts and the undated GPT-5.6 identifier are documented in the result index.</text>
+</svg>

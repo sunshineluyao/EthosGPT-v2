@@ -1,0 +1,91 @@
+{
+  "figure": "fig2_value_bridge",
+  "reader_task": "Show how a six-item profile enters a declared adviser rule, then how simulated effects differ within a descriptive region.",
+  "topology": {
+    "six items": "observed question-specific responses",
+    "adviser links": "assumed, not behavioral estimates",
+    "quality ladder": "Aghion\u2013Howitt-inspired mechanism, not their complete equilibrium model"
+  },
+  "evidence_classes": {
+    "bottom_left": "archived model minus unweighted survey derivative, Nigeria",
+    "bottom_right": "deterministic assumed scenario, each model minus survey-guided baseline"
+  },
+  "inputs": [
+    "assets/figure_sources/data/signed_country_items.csv",
+    "assets/figure_sources/data/creative_eight_region_simulation.csv",
+    "experiments/gpt55_gpt56_64country/simulate_creative_destruction.py (declared coefficients)"
+  ],
+  "values": {
+    "Nigeria": {
+      "55": {
+        "bias": {
+          "Q48": -0.109333333,
+          "Q57": -0.096,
+          "Q106": 0.263461279,
+          "Q108": 0.202358974,
+          "Q121": -0.171285714,
+          "Q159": -0.090944444
+        },
+        "quality_pp": -1.5715926482490978,
+        "unassisted_per_100": -1.4785020813942094
+      },
+      "56": {
+        "bias": {
+          "Q48": -0.119,
+          "Q57": -0.092,
+          "Q106": 0.244572391,
+          "Q108": 0.252358974,
+          "Q121": -0.196285714,
+          "Q159": -0.094944444
+        },
+        "quality_pp": -1.6853327179624458,
+        "unassisted_per_100": -1.1136804213630445
+      }
+    },
+    "Kenya": {
+      "55": {
+        "bias": {
+          "Q48": -0.016010101,
+          "Q57": 0.018888889,
+          "Q106": 0.08240613,
+          "Q108": 0.093655914,
+          "Q121": 0.183421053,
+          "Q159": 0.059047619
+        },
+        "quality_pp": 0.6786398699912048,
+        "unassisted_per_100": 0.5066826224891177
+      },
+      "56": {
+        "bias": {
+          "Q48": -0.015787879,
+          "Q57": -0.009111111,
+          "Q106": 0.035517241,
+          "Q108": 0.163655914,
+          "Q121": 0.224921053,
+          "Q159": 0.056714286
+        },
+        "quality_pp": 0.7004727341694732,
+        "unassisted_per_100": 1.2687189014572908
+      }
+    },
+    "African-Islamic_quality_pp": {
+      "GPT-5.5": -0.89714229591,
+      "GPT-5.6 Sol": -1.01158833689
+    }
+  },
+  "palette": {
+    "ink": "#18324A",
+    "observed": "#078C82",
+    "model_pair": "#3B5CCC",
+    "assumed": "#D88A24",
+    "surface": [
+      "#FFFFFF",
+      "#FFF3E8"
+    ]
+  },
+  "cautions": [
+    "Q106 and Q121 recorded prompts have label conflicts",
+    "The cultural-region label is descriptive, not an identity or causal variable",
+    "The scenario does not observe growth, welfare, or emissions"
+  ]
+}

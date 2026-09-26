@@ -1,138 +1,141 @@
+<div align="center">
+
 # EthosGPT
 
-This repository contains the archived outputs and offline reproduction code for
-**EthosGPT: Whose Values Guide Technological Change? Cultural Representation,
-Language-Model Updates, and Creative Destruction**, accepted at the NeurIPS 2026
-GlobalSouthAI workshop. The source manuscript is maintained separately.
+**Whose values does an AI adviser represent when technological change affects different places?**
 
-The [camera-ready manuscript](https://github.com/sunshineluyao/EthosGPT-NeurIPS)
-acknowledges the GlobalSouthAI workshop reviewers and distinguishes observed
-results from proposed follow-up studies. Its [camera-ready change
-record](https://github.com/sunshineluyao/EthosGPT-NeurIPS/blob/main/CAMERA_READY_NOTES.md)
-holds the detailed release comparison outside the four-page main paper.
+[![MIT code license](https://img.shields.io/badge/code-MIT-7C3AED)](LICENSE)
+[![Archived inputs](https://img.shields.io/badge/inputs-checksummed-087F8C)](REPRODUCIBILITY.md)
+[![Result index](https://img.shields.io/badge/results-traceable-15803D)](docs/result_index.md)
 
-The main experiment compares GPT-5.5 and GPT-5.6 Sol with unweighted
-survey-derived response distributions for 64 countries on six World Values
-Survey anchors. Five model generations for every country–question cell produce
-3,840 validated final responses. All inference treats countries, not repeated
-generations, as the independent units.
+<img src="assets/featured/ethosgpt_release_arc.svg" width="100%" alt="Six-stage open-science path from the survey derivative and prompt ledger through frozen model responses, analysis code and country scores to observed paired error. A separate dashed band labels the assumed quality-ladder illustration." />
 
-## Main findings
+</div>
 
-- GPT-5.6 lowers global total-variation error by 0.0080 (95% country-bootstrap
-  BCa CI −0.0107 to −0.0050; Holm-adjusted p < .001).
-- In one joint 12-outcome family, responsibility improves under W1 and TVD;
-  income distribution improves under TVD. Other item changes remain uncertain.
-- Global W1, CRG, VDR, and CSR target-loss changes remain uncertain after
-  country resampling and multiplicity correction.
-- Keeping the original eight cultural-map labels, mean TVD decreases in seven
-  regions. Confucian is +0.0021 (95% exploratory BCa CI −0.0075 to +0.0125);
-  Protestant Europe is nearly unchanged (−0.0001). Groups range from 2 to
-  15 countries, so the small-group results are descriptive only.
-- The signed question scores locate the direction that unsigned error hides:
-  GPT-5.6 understates the survey's agency (−0.105) and science-opportunity
-  (−0.080) scores and overstates the recorded equality-oriented income
-  response (+0.088). These country-equal means are relative to the unweighted
-  survey derivative; the Q106 prompt mismatch restricts the income reading.
-  Country signs can differ from their eight-region average.
-- A declared **conditional quality-ladder simulation** translates the six
-  signed gaps into hypothetical entry support, transition assistance, and
-  coordination. With its specified illustrative coefficients, GPT-5.6-guided
-  choices have 0.73 percentage points less expected 20-step log frontier
-  quality growth and 1.00 fewer unassisted-transition index units per 100
-  activities per step than survey-guided choices. These are model quantities,
-  not observed policy effects, GDP forecasts, welfare, or environmental
-  sustainability; assumptions and sensitivity are documented below.
-- Spatial-error and spatial-HAC estimates retain the global TVD result across
-  three neighbor graphs and four distance cutoffs.
-- Averaging all five observed runs removes only 1.18%--1.31% of single-run
-  squared probability error. This is an exact diagnostic for the observed
-  finite pool, not an asymptotic bias estimate or an interactive-agent test.
-- An exploratory creative-destruction index finds the largest improvement on
-  distribution and adjustment, with coordination and legitimacy uncertain;
-  88.76% of the declared-weight grid has a 95% interval entirely favoring
-  GPT-5.6, while 11.24% remains uncertain.
-- Q106 has an incentive-versus-income-differences endpoint-label mismatch, and
-  Q121 has a conflicting category-1 label. Excluding Q106 leaves a negative TVD
-  contrast (−0.00433, 95% BCa CI [−0.00698, −0.00138]); excluding both Q106
-  and Q108 leaves a contrast near zero (−0.00024, [−0.00313, 0.00286]).
-  These post hoc omissions cannot estimate the results from corrected prompts.
-  The Q121 five-anchor and relabeling checks are also released.
-- The six country-level survey cells use an unweighted public WVS derivative
-  (median 30.5 records, range 4–96). The study uses English prompts, two
-  proprietary model releases, and no official population-weighted or translated
-  comparator. Survey agreement does not establish welfare, local legitimacy,
-  or agreement with individuals within countries.
+EthosGPT is the **code, archived data, and editable figure release** for the
+NeurIPS 2026 GlobalSouthAI workshop study *EthosGPT: Whose Values Guide
+Technological Change? Cultural Representation, Language-Model Updates, and
+Creative Destruction*. It compares two archived model versions with an
+unweighted public World Values Survey derivative in **64 countries, eight
+descriptive cultural regions, and six questions**. Five responses per
+country–question–model cell yield **3,840 validated model records**.
 
-## Reproduce offline
+The observed average category mismatch is smaller for GPT-5.6 Sol:
+**ΔTVD = −0.0080** relative to GPT-5.5 (95% country-bootstrap interval
+**−0.0107 to −0.0050**). That aggregate improvement does not tell us whether
+every country or question is represented better. The released signed
+country scores and regional views show the differences.
 
-Python 3.12 is recommended.
+<a id="start"></a>
+## Start here
 
-    python3 -m venv .venv
-    source .venv/bin/activate
-    python -m pip install -r requirements.txt
-    make reproduce-offline
+Use Python 3.12 and `make`. Installation may need a package index; the
+commands after installation use only the files in this repository.
 
-For the full developer verification suite, run `make release-contract` after reproduction.
-The new reviewer sensitivity is in
-[`wording_omission_sensitivity.csv`](experiments/gpt55_gpt56_64country/results/wording_omission_sensitivity.csv)
-and is regenerated by
-[`wording_sensitivity.py`](experiments/gpt55_gpt56_64country/wording_sensitivity.py).
-The [eight-region CSV](experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv)
-is regenerated by
-[`eight_region_sensitivity.py`](experiments/gpt55_gpt56_64country/eight_region_sensitivity.py).
-The [eight-region figures](results/region_figures/README.md) show all 64 country TVD
-changes and paired region-level W1/TVD intervals. Regenerate their vector PDFs,
-SVGs, and PNG previews with
-[`plot_eight_regions.py`](experiments/gpt55_gpt56_64country/plot_eight_regions.py).
-The charts reveal that Confucian has a positive mean TVD contrast even though
-5 of 9 countries have lower TVD. African-Islamic has lower mean TVD while its
-mean W1 contrast is positive with an interval crossing zero. Regional intervals
-are exploratory and are not adjusted over regions or metrics.
-The [signed country and eight-region result index](results/signed_directions/README.md)
-provides all six question directions per country and region, the paired model
-differences, and editable PDF/SVG figures. Run `make signed-directions` to
-regenerate it from released scores; no model API calls or LaTeX are needed.
-The [conditional creative-destruction index](results/creative_destruction/README.md)
-provides its explicit six-question decision mapping, country and eight-region
-scenario CSVs, parameter checks, and editable figures. Run
-`make creative-destruction` from the released country-question scores.
-A [result index](docs/result_index.md) maps claims to frozen inputs and commands.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.lock.txt
+make release-smoke          # fast checks of frozen hashes, coverage and result paths
+make reproduce-offline      # rebuild analyses and editable SVG figures
+make release-contract       # tests, reference checks and visual-asset audit
+```
 
-No API key or network access is required. The package validates the two versioned
-output files, recomputes every estimate and spatial diagnostic, and regenerates
-machine-readable results and vector figures. The camera-ready manuscript and
-its LaTeX source are maintained in the separate paper repository.
+The full run includes 20,000 country-bootstrap draws, 19,999 sign flips and
+spatial analyses. It needs no model API key. A later live call to the undated
+`gpt-5.6-sol` identifier is outside the exact-reproduction claim. See
+[the complete command and environment guide](REPRODUCIBILITY.md).
 
-This is a **reproducible analysis package with versioned proprietary-model
-outputs**. It can verify every reported result. It cannot guarantee that a new
-query to the undated GPT-5.6 Sol serving identifier will reproduce the same raw
-answers.
+<a id="findings"></a>
+## What the evidence says
 
-## Main files
+| Reader question | Released evidence | How to read it |
+|---|---|---|
+| Did the update reduce category disagreement? | [Global paired results](experiments/gpt55_gpt56_64country/results/metric_comparisons.csv) | TVD falls by 0.0080 on average across countries. W1 and the other global targets have intervals crossing zero after the stated corrections. |
+| Which views shifted, and in which direction? | [Six signed questions by country](results/signed_directions/signed_country_items.csv) and [region](results/signed_directions/signed_eight_regions.csv) | A positive model-minus-survey score means more of the named endpoint. It is a comparison of response distributions, not a judgment about a population. |
+| How uneven are the geographic patterns? | [Eight-region W1/TVD table](experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv) and [figure guide](results/region_figures/README.md) | The original region labels group 2–15 countries; intervals are exploratory and omitted when fewer than five countries enter. |
+| Could a misrepresented profile matter for creative destruction? | [Declared scenario equations and sensitivities](results/creative_destruction/README.md) and [all country scenarios](results/creative_destruction/country_simulation.csv) | These are conditional calculations under chosen adviser and innovation rules, not measured growth, jobs or policy impacts. |
+| What could change the interpretation? | [Wording omissions](experiments/gpt55_gpt56_64country/results/wording_omission_sensitivity.csv), [spatial checks](experiments/gpt55_gpt56_64country/results/spatial_hac_contrasts.csv) and [reference verification](docs/REFERENCE_VERIFICATION.md) | Q106 and Q121 have archived prompt-label conflicts; item omission is not a corrected re-query. |
 
-- experiments/gpt55_gpt56_64country/: prompts, versioned model outputs, scoring,
-  sensitivity, spatial analysis, and machine-readable results
-- assets/figure_sources/: editable figure inputs and data lineage
-- results/figures/: generated PDF, SVG, PNG, and draw.io figure files
-- results/region_figures/: eight-region PDF/SVG figures, PNG previews, and
-  source mapping (no manuscript sources)
-- results/signed_directions/: six-question signed country and region results,
-  a conceptual evidence figure, and a region heatmap with source mapping
-- results/creative_destruction/: conditional six-question quality-ladder
-  simulation, five declared scenarios, full geographic results and vector
-  charts (no manuscript files)
-- scripts/make_wave1_assets.py, scripts/make_v070_assets.py, and
-  scripts/make_visual_story_v100.py: country-coverage and tutorial CSVs,
-  quantitative figure sources, and the publication-oriented visual narrative
-- SUBMISSION_METADATA.md: title, keywords, TL;DR, and abstract
-- REPRODUCIBILITY.md: complete execution and verification instructions
-- DATA_LICENSE.md and AI_USAGE.md: provenance, redistribution, and responsible
-  use
+TVD, or *total-variation distance*, measures how far apart two distributions
+over the answer choices are, from zero (same shares) to one (no overlap).
+The reported ΔTVD subtracts GPT-5.5 error from GPT-5.6 Sol error, so a
+negative value means the newer archived output is closer to the survey
+distribution on this measure.
 
-The published WorldValuesBench and PNAS Nexus results, plus the archived
-WorldValuesBench geometry reanalysis, are retained only as protocol-separated
-context; they are never pooled with the new 64-country experiment.
-Country profiles are ecological summaries and must not be used for individual
-eligibility, surveillance, stereotyping, political targeting, or culture
-ranking.
+<a id="figures"></a>
+## Featured visuals
+
+The [visual guide](assets/featured/README.md) explains evidence classes and
+links editable SVGs, publication PDF exports, input CSVs and provenance.
+These are repository graphics, with no manuscript source files.
+
+| Visual | What it helps a reader see |
+|---|---|
+| [Figure 1 · country, region and direction](results/figures/fig1_ethos_gallery.svg) | Sampled countries, eight descriptive regional contrasts, six signed question gaps, and an explicitly assumed African–Islamic scenario. |
+| [Figure 2 · values to technological change](results/figures/fig2_value_bridge.svg) | Measured Nigerian answer gaps, assumed adviser choices, the quality-ladder mechanism, and contrasting Nigeria/Kenya scenario values. |
+
+Regenerate the two editable figure masters with `make featured-figures`.
+The SVGs retain live text; source scripts and figure data are under
+[`assets/figure_sources/`](assets/figure_sources/README.md).
+
+<a id="mechanism"></a>
+## From representation to a testable economic question
+
+The six questions concern agency (Q48), trust (Q57), income equality (Q106),
+individual responsibility (Q108), immigration (Q121), and science (Q159).
+In the **illustrative** rule, their zero-to-one scores map to innovation
+support `i`, transition assistance `a`, and coordination `s`:
+
+```text
+i = 0.5 + 0.30 × (agency + science − 1)
+a = 0.5 + 0.30 × (equality − individual provision)
+s = 0.5 + 0.30 × (trust + immigration − 1)
+arrival = 0.05 + 0.20i + 0.10s
+20-round expected log-quality = 20 × arrival × log(1.04)
+unassisted-transition index per 100 = 100 × arrival × (1 − a)
+```
+
+Under those declared coefficients, the GPT-5.6 Sol profile implies a
+**−1.69 percentage-point** 20-round quality gap relative to survey-guided
+choices for Nigeria and **+0.70** for Kenya. The African–Islamic average
+contains both and should not stand in for either country. These quantities
+are synthetic proxies. The code also evaluates weak, strong, two-item
+neutralization and no-decision-link scenarios; none identifies an actual
+economic or environmental effect.
+
+<a id="replication"></a>
+## Trace each result
+
+The [human-readable result index](docs/result_index.md) and
+[machine-readable six-stage map](manifests/result_replication_index.json)
+connect each headline result to its source, collection boundary, frozen
+outputs, processing code, analysis code, command and interpretation limit.
+The original authenticated API collector is **not** bundled. Exact prompt
+templates, response choices, prompt hashes, collection receipts and the
+validated output records are archived. The offline reproduction begins
+with these frozen files.
+
+| Stage | Where to look |
+|---|---|
+| Original survey derivative | [Pinned Oxford WVS derivative](https://huggingface.co/datasets/oxford-llms/world_values_survey_2017_2022_sft/tree/026d11792ba88decb0b1198116a57745a8132433) and [data rights notes](DATA_LICENSE.md) |
+| Exact prompts and collection record | [Questionnaire and prompts](experiments/gpt55_gpt56_64country/inputs/questionnaire_and_prompts.json), [prompt ledger](experiments/gpt55_gpt56_64country/inputs/prompt_ledger.csv), [collection manifest](experiments/gpt55_gpt56_64country/manifests/collection_manifest.json) |
+| Archived model answers | [GPT-5.5](experiments/gpt55_gpt56_64country/outputs/gpt-5.5_scores.jsonl), [GPT-5.6 Sol](experiments/gpt55_gpt56_64country/outputs/gpt-5.6-sol_scores.jsonl), and [hash manifest](experiments/gpt55_gpt56_64country/manifests/analysis_manifest.json) |
+| Process and analyze | [Scoring code](experiments/gpt55_gpt56_64country/score_wave1.py), [signed directions](experiments/gpt55_gpt56_64country/signed_directions.py), [conditional scenario](experiments/gpt55_gpt56_64country/simulate_creative_destruction.py) |
+| Processed tables and figures | [Country scores](experiments/gpt55_gpt56_64country/results/country_question_scores.csv), [result catalog](docs/result_index.md), [editable visuals](assets/featured/README.md) |
+
+The derivative does not provide official population weights or full upstream
+respondent provenance. No raw respondent narratives or official joint
+EVS/WVS microdata are bundled. Country averages cannot describe every
+individual, and survey agreement alone does not establish local legitimacy.
+The [responsible-use note](AI_USAGE.md) and [data audit](DATA_LICENSE.md)
+spell out these boundaries.
+
+<a id="cite"></a>
+## Cite and reuse
+
+Code and original vector assets use the [MIT License](LICENSE); source-data
+rights are recorded separately in [DATA_LICENSE.md](DATA_LICENSE.md). Use
+[`CITATION.cff`](CITATION.cff) for software citation. The repository contains
+no LaTeX, bibliography source or manuscript PDF. Reported result tables,
+archived outputs and figure masters remain directly inspectable here.
