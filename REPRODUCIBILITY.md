@@ -31,7 +31,7 @@ two archived model-output files. It performs these stages:
 6. estimate three theory-indexed creative-destruction margins and a 0.02
    weight-simplex sensitivity;
 7. run 5,000-draw human-cell and generation sensitivities, Q121 bounds,
-   pre-existing five-anchor analysis, post-review Q106/Q121/Q108 omission checks,
+   five-anchor analysis, Q106/Q121/Q108 omission checks,
    leave-country/region-out checks, and human-cell-size strata;
 8. run Moran, Geary, spatial-error, and spatial-HAC diagnostics;
 9. regenerate machine-readable outputs and vector figures, including two
