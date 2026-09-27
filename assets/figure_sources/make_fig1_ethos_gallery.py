@@ -11,6 +11,7 @@ from __future__ import annotations
 import csv
 import html
 import json
+import math
 import re
 from collections import Counter
 from pathlib import Path
@@ -167,7 +168,7 @@ def region_panel():
     # Each mini forest has its own symmetric axis, labeled in the caption.
     for cx in (784,850): parts.append(line(cx,164,cx,337,DIVIDER,1))
     for i,(name,color,shape) in enumerate(REGIONS):
-        y=180+i*22.0
+        y=180+i*21.5
         n=int(est[(name,'TVD')]['countries'])
         parts += [mark(547,y-4,color,shape,4.3),text(560,y,name,15.1,INK),text(706,y,str(n),15,SLATE,anchor='middle')]
         for metric,cx,domain in [('TVD',784,.022),('W1',850,.012)]:
@@ -183,8 +184,8 @@ def region_panel():
               text(545,356,'Δ = 5.6 Sol − 5.5',16,SLATE),
               mark(695,350,TEAL,'circle',3.1),text(704,356,'lower',16,SLATE),
               mark(761,350,MAGENTA,'circle',3.1),text(770,356,'higher',16,SLATE),
-              line(550,373,566,373,SLATE,1.2),mark(558,373,TEAL,'circle',3.0,True),
-              text(572,378,'bar = 95% CI; open = spans 0 or n < 5',16,SLATE)]
+              line(550,371,566,371,SLATE,1.2),mark(558,371,TEAL,'circle',3.0,True),
+              text(572,376,'bar = 95% CI; open = spans 0 or n < 5',16,SLATE)]
     return parts
 
 def signed_panel():
@@ -204,13 +205,13 @@ def signed_panel():
         parts.append(line(xa,y-2,xb,y-2,BLUE,1.3))
         parts.append(mark(xa,y-5,BLUE,'circle',3.3,True))
         parts.append(mark(xb,y+2,INK,'circle',3.6))
-    parts += [text(36,608,'Zero = survey; left less, right more of named view',16,SLATE),
-              mark(43,622,BLUE,'circle',3.3,True),text(55,627,'GPT-5.5',16,SLATE),
-              mark(163,622,INK,'circle',3.6),text(175,627,'GPT-5.6 Sol',16,SLATE),
-              text(307,627,'* wording',16,SLATE)]
+    parts += [text(36,612,'Zero = survey; left less, right more of named view',16,SLATE),
+              mark(43,627,BLUE,'circle',3.3,True),text(55,632,'GPT-5.5',16,SLATE),
+              mark(163,627,INK,'circle',3.6),text(175,632,'GPT-5.6 Sol',16,SLATE),
+              text(307,632,'* wording',16,SLATE)]
     return parts
 
-def scenario_panel():
+def scenario_panel(label='D  '):
     data={r['model']:r for r in rows(DATA/"creative_eight_region_simulation.csv")
           if r['scenario']=='illustrative' and r['cultural_region']=='African-Islamic'}
     assert set(data)=={'GPT-5.5','GPT-5.6 Sol'}
@@ -224,7 +225,7 @@ def scenario_panel():
     assert abs(arrival[1]+1.2896098)<.0001 and abs(quality[1]+1.0115883)<.0001
     assert abs(transition[1]+.7604408)<.0001
     parts=[rect(458,363,424,283,PALE_WARM,AMBER,dash='7 5'),
-           text(477,395,'D  African–Islamic: what shifts?',21,INK,'bold'),
+           text(477,395,label+'African–Islamic: what shifts?',21,INK,'bold'),
            text(477,415,'15-country mean · model-guided − survey-guided',16,SLATE)]
     parts += [f'<g transform="translate(483 429) scale(.70)">{ICONS["survey-stack"]}</g>',
               f'<g transform="translate(606 429) scale(.70)">{ICONS["paired-models"]}</g>',
@@ -242,37 +243,176 @@ def scenario_panel():
               text(478,626,'Dashed amber = assumed, not observed.',16,SLATE)]
     return parts
 
+def weight_sensitivity_panel():
+    """A compact ternary view of the archived weighted-error sensitivity.
+
+    The three weights sum to one. This visualizes a descriptive loss
+    comparison, not the illustrative G/U mechanism shown in Figure 2.
+    """
+    surface = rows(DATA / "economic_weight_surface.csv")
+    grid = {(round(float(r['weight_distribution_adjustment'])*50),
+             round(float(r['weight_coordination_legitimacy'])*50)): r
+            for r in surface}
+    assert len(grid) == 1326 and all(d+c <= 50 for d,c in grid)
+    bound = max(abs(float(r['delta_weighted_loss_56_minus_55'])) for r in surface)
+    assert abs(bound - .0213311855) < .000001
+
+    left, right, apex, base_y, apex_y = 558., 793., 675.5, 586., 471.
+    def xy(key):
+        d,c = key
+        return (left + (right-left)*(d+.5*c)/50,
+                base_y - (base_y-apex_y)*c/50)
+    def rgb(code):
+        return tuple(int(code[i:i+2],16) for i in (1,3,5))
+    def blend(first, second, t):
+        a,b = rgb(first),rgb(second)
+        return '#' + ''.join(f'{round(x+(y-x)*t):02X}' for x,y in zip(a,b))
+    def fill(value):
+        t = min(1.,max(0.,(value+bound)/(2*bound)))
+        return blend(TEAL,"#F7F8FA",2*t) if t <= .5 else blend("#F7F8FA",MAGENTA,2*t-1)
+
+    triangles = []
+    for d in range(50):
+        for c in range(50-d):
+            triangles.append(((d,c),(d+1,c),(d,c+1)))
+            if d+c < 49:
+                triangles.append(((d+1,c),(d+1,c+1),(d,c+1)))
+    assert len(triangles) == 2500
+    parts = [rect(458,363,424,283,WHITE,BLUE),
+             text(477,395,'D  Does emphasis change the audit?',21,INK,'bold'),
+             text(477,416,'Three two-question bundles · weights sum to one',16,SLATE),
+             text(apex,438,'Coordination (Q57, Q121)',16,INK,'bold',anchor='middle'),
+             text(apex,458,'trust · immigration',16,SLATE,anchor='middle'),
+             '<g id="weight-sensitivity-surface">']
+    for triangle in triangles:
+        points = [xy(key) for key in triangle]
+        value = sum(float(grid[key]['delta_weighted_loss_56_minus_55'])
+                    for key in triangle)/3
+        color = fill(value)
+        path = ' '.join((('M' if i == 0 else 'L') + f'{x:.3f},{y:.3f}')
+                        for i,(x,y) in enumerate(points))+' Z'
+        parts.append(f'<path d="{path}" fill="{color}" stroke="{color}" stroke-width=".5"/>')
+    parts.append('</g>')
+
+    # Interpolate level-zero crossings on the released 0.02-weight grid.
+    # Join adjacent segments before applying the dashed point-loss style.
+    def contour_paths(field):
+        segments = []
+        for triangle in triangles:
+            crossing = []
+            for a,b in ((0,1),(1,2),(2,0)):
+                va = float(grid[triangle[a]][field]); vb = float(grid[triangle[b]][field])
+                if va*vb < 0:
+                    t = va/(va-vb)
+                    xa,ya = xy(triangle[a]); xb,yb = xy(triangle[b])
+                    crossing.append((round(xa+t*(xb-xa),3),round(ya+t*(yb-ya),3)))
+            if len(crossing) == 2 and crossing[0] != crossing[1]:
+                segments.append(tuple(crossing))
+        neighbors = {}
+        for a,b in segments:
+            neighbors.setdefault(a,[]).append(b)
+            neighbors.setdefault(b,[]).append(a)
+        remaining = {frozenset((a,b)) for a,b in segments}
+        paths = []
+        while remaining:
+            endpoints = [p for p, links in neighbors.items()
+                         if sum(frozenset((p,q)) in remaining for q in links) == 1]
+            current = endpoints[0] if endpoints else next(iter(next(iter(remaining))))
+            run = [current]
+            while True:
+                nxt = next((q for q in neighbors[current]
+                            if frozenset((current,q)) in remaining),None)
+                if nxt is None: break
+                remaining.remove(frozenset((current,nxt)))
+                current = nxt;run.append(current)
+            if len(run)>1: paths.append('M'+' L'.join(f'{x:.3f},{y:.3f}' for x,y in run))
+        return paths
+
+    for field,color,width,dash in (
+        ('ci_high_95',INK,2.1,''),
+        ('delta_weighted_loss_56_minus_55',AMBER,2.,'6 4')):
+        for path in contour_paths(field):
+            style = f' stroke-dasharray="{dash}"' if dash else ''
+            parts.append(f'<path d="{path}" fill="none" stroke="{color}" '
+                         f'stroke-width="{width}" stroke-linejoin="round"{style}/>')
+    parts += [f'<path d="M{left},{base_y} L{right},{base_y} L{apex},{apex_y}Z" '
+              f'fill="none" stroke="{INK}" stroke-width="1.5"/>']
+    parts += [line(464,501,480,501,INK,2.1),
+              text(487,506,'95% CI',16,INK),
+              line(464,533,480,533,AMBER,2.,'6 4'),
+              text(487,538,'equal loss',16,INK)]
+    cx,cy = xy((50/3,50/3))
+    star = [(cx+8*math.cos(-math.pi/2+k*math.pi/5)
+             *(1 if k%2==0 else .45),
+             cy+8*math.sin(-math.pi/2+k*math.pi/5)
+             *(1 if k%2==0 else .45)) for k in range(10)]
+    parts += [f'<path d="M'+' L'.join(f'{x:.2f},{y:.2f}' for x,y in star)+
+              f'Z" fill="{WHITE}" stroke="{INK}" stroke-width="1.4"/>',
+              f'<path d="M480,450 l2.2,4.8 5.2,0.7 -3.8,3.8 0.9,5.1 -4.5,-2.5 -4.5,2.5 0.9,-5.1 -3.8,-3.8 5.2,-0.7Z" fill="{WHITE}" stroke="{INK}" stroke-width="1.4"/>',
+              text(499,462,'equal weights',16,INK),
+              text(481,608,'Opportunity (Q48, Q159)',16,INK,'bold'),
+              text(481,630,'agency · science',16,SLATE),
+              text(861,608,'Distribution (Q106, Q108)',16,INK,'bold',anchor='end'),
+              text(861,630,'equality · responsibility',16,SLATE,anchor='end')]
+    for k in range(24):
+        parts.append(rect(754+k*4.0,479,4.1,8,fill(-bound+2*bound*(k+.5)/24),
+                          WHITE,r=0,sw=0))
+    parts += [text(754,462,'lower',16,SLATE),
+              text(850,462,'higher',16,SLATE,anchor='end'),
+              text(802,507,'0',16,SLATE,anchor='middle')]
+    return parts
+
 def build():
     OUT.mkdir(parents=True,exist_ok=True);save_icons()
     paths,points=old_map_geometry()
     region_counts={r['cultural_region']:int(r['countries']) for r in rows(DATA/"eight_region_sensitivity.csv") if r['metric']=='TVD'}
     assert Counter(r for _,_,r in points.values())==Counter(region_counts)
     parts=[f'<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">',
-           '<title>EthosGPT: mapped sample, model update, signed survey gaps, and conditional creative destruction</title>',
+           '<title>EthosGPT: mapped sample, model update, signed survey gaps, and theory-weight sensitivity</title>',
            f'<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1L9 5 1 9" fill="none" stroke="{AMBER}" stroke-width="1.7"/></marker></defs>',
            rect(0,0,900,700,WHITE,WHITE,r=0,sw=0),
            text(20,34,'EthosGPT | Whose values guide technological change?',27,INK,'bold'),
            text(20,62,'Survey representation → language-model update → possible innovation and adjustment',18,SLATE)]
     parts += map_panel(paths,points)+region_panel()
-    parts += ['<g transform="translate(0 40)">']+signed_panel()+scenario_panel()+['</g>']
-    parts += [line(448,469,448,630,AMBER,1.4,'4 5'),'</svg>']
+    parts += ['<g transform="translate(0 40)">']+signed_panel()+weight_sensitivity_panel()+['</g>']
+    parts += ['</svg>']
     svg=''.join(parts)
     outfile=OUT/"fig1_ethos_gallery.svg";outfile.write_text(svg,encoding='utf-8')
+    case_svg = [
+        '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" viewBox="0 0 900 580">',
+        '<title>A conditional African-Islamic regional case under the declared adviser rule</title>',
+        f'<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1L9 5 1 9" fill="none" stroke="{AMBER}" stroke-width="1.7"/></marker></defs>',
+        rect(0,0,900,580,WHITE,WHITE,r=0,sw=0),
+        '<g transform="translate(-693.6 -549.1) scale(1.7)">',
+        *scenario_panel(label=''),
+        '</g></svg>',
+    ]
+    (OUT/"figS10_regional_scenario.svg").write_text(''.join(case_svg),encoding='utf-8')
     provenance={"figure":"fig1_ethos_gallery","evidence_classes":{"A":"country locations from archived descriptive sample",
                  "B":"exploratory paired country-level losses; within-region bootstrap intervals where n>=5",
                  "C":"equal-country signed model-minus-survey scores, recorded prompts",
-                 "D":"African-Islamic 15-country equal-country mean under an assumed adviser decision rule, both versions minus same-country survey-guided choices; not observed behavior, growth, welfare, or sustainability"},
+                 "D":"archived 1,326-weight sensitivity of measured squared-TVD loss. The three corners each weight two WVS questions: opportunity Q48/Q159, distribution Q106/Q108, coordination Q57/Q121. Teal favors GPT-5.6 Sol, navy is the exploratory 95% interval boundary, and amber is equal point loss; not G/U, observed welfare, or a policy effect"},
          "inputs":["results/figures/fig1_spatial_story.svg (Natural Earth map paths and archived marker positions)",
                    "assets/figure_sources/data/country_level_spatial_changes.csv",
                    "assets/figure_sources/data/signed_global_items.csv",
-                   "assets/figure_sources/data/creative_eight_region_simulation.csv",
+                   "assets/figure_sources/data/economic_weight_surface.csv",
                    "assets/figure_sources/data/eight_region_sensitivity.csv (copied from validated experiment result)"],
          "palette":{"ink":INK,"model":BLUE,"lower":TEAL,"higher":MAGENTA,"assumed":AMBER,
                     "surface":[PALE_BLUE,PALE_GREEN,PALE_WARM]},
          "map_caveat":"Markers locate sampled countries; cultural-region labels are published descriptive tags, not geographic polygons or individual identity.",
          "idioms":{"A":"point-symbol locator map", "B":"paired miniature interval/forest plots",
-                   "C":"paired lollipop/dumbbell dots", "D":"semantic process with numerical scenario annotations"}}
+                   "C":"paired lollipop/dumbbell dots", "D":"ternary weight sensitivity with interval and point-loss contours"}}
     (HERE/"fig1_ethos_gallery_provenance.json").write_text(json.dumps(provenance,indent=2),encoding='utf-8')
+    case_provenance = {
+        "figure":"figS10_regional_scenario",
+        "origin":"previous Figure 1 regional case panel, preserved in the appendix",
+        "evidence_class":"illustrative deterministic adviser scenario, not observed choices or outcomes",
+        "inputs":["assets/figure_sources/data/creative_eight_region_simulation.csv"],
+        "comparison":"GPT-5.5 to GPT-5.6 Sol; each is model-guided minus survey-guided for the same 15 countries",
+        "units":"arrival and 20-round quality in percentage points; U per 100 abstract activities per round"
+    }
+    (HERE/"figS10_regional_scenario_provenance.json").write_text(
+        json.dumps(case_provenance,indent=2),encoding='utf-8')
     print(outfile)
 
 if __name__=='__main__': build()

@@ -106,10 +106,11 @@ links editable SVGs, vector PDF exports, input CSVs and provenance.
 
 | Visual | What it helps a reader see |
 |---|---|
-| [Figure 1 · country, region and direction](results/figures/fig1_ethos_gallery.svg) | Sampled countries, eight descriptive regional contrasts, six signed question gaps, and an explicitly assumed African–Islamic scenario. |
+| [Figure 1 · country, region and priorities](results/figures/fig1_ethos_gallery.svg) | Sampled countries, eight descriptive regional contrasts, six signed question gaps, and a ternary sensitivity of measured error to three declared two-question priorities. Its corners are opportunity (Q48/Q159), distribution (Q106/Q108), and coordination (Q57/Q121); positions between them mix the weights. |
 | [Figure 2 · values to technological change](results/figures/fig2_value_bridge.svg) | Measured Nigerian answer gaps, assumed adviser choices, the quality-ladder mechanism, and contrasting Nigeria/Kenya scenario values. |
+| [Regional adviser scenario](results/figures/figS10_regional_scenario.svg) | The African–Islamic 15-country illustrative arrival, quality and unassisted-exposure contrasts, preserved as a separate vector panel. |
 
-Regenerate the two editable figure masters with `make featured-figures`.
+Regenerate these editable figure masters with `make featured-figures`.
 The SVGs retain live text; source scripts and figure data are under
 [`assets/figure_sources/`](assets/figure_sources/README.md).
 

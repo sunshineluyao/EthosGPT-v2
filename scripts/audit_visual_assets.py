@@ -53,10 +53,12 @@ def main() -> None:
     assert manifest["format_contract"]["embedded_raster_images"] is False
 
     featured = {"fig1_ethos_gallery", "fig2_value_bridge"}
-    expected = {f"{stem}{suffix}" for stem in [*stems, *featured] for suffix in (".pdf", ".svg")}
+    companion = {"figS10_regional_scenario"}
+    released = [*stems, *featured, *companion]
+    expected = {f"{stem}{suffix}" for stem in released for suffix in (".pdf", ".svg")}
     actual_core = {path.name for path in FIGS.iterdir() if path.suffix in {".pdf", ".svg"}}
     assert actual_core == expected, f"stale or missing figure assets: {sorted(actual_core ^ expected)}"
-    for stem in [*stems, *featured]:
+    for stem in released:
         assert (FIGS / f"{stem}.pdf").stat().st_size > 0
         audit_svg(FIGS / f"{stem}.svg")
 
@@ -70,7 +72,7 @@ def main() -> None:
     assert (FIGS / "figS2_study_design.drawio").stat().st_size > 0
     assert (FIGS / "fig1_spatial_story.drawio").stat().st_size > 0
     ET.parse(FIGS / "fig1_spatial_story.drawio")
-    print("PASS: eight legacy vectors, two featured vectors, editable teaser and draw.io masters, live text >=7 px, no embedded raster or stale assets")
+    print("PASS: eight legacy vectors, two featured vectors, one regional case, editable teaser and draw.io masters, live text >=7 px, no embedded raster or stale assets")
 
 
 if __name__ == "__main__":
