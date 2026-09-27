@@ -145,8 +145,9 @@ The [human-readable result index](docs/result_index.md) and
 [machine-readable result map](manifests/result_replication_index.json)
 connect each headline finding to its source, collection boundary, frozen
 inputs, processing code, analysis code, output, and interpretation limit.
-The seven stages below show the survey and model streams separately before
-they meet in the country-level analysis.
+The featured visual above summarizes this path in six broad steps. The
+table below uses seven labels to distinguish analysis code from analyzed
+outputs and shows the survey and model streams before they meet.
 
 | Stage | Concrete source, code, or data | Reproduction boundary |
 |---|---|---|
