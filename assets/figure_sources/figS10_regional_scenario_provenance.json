@@ -1,0 +1,10 @@
+{
+  "figure": "figS10_regional_scenario",
+  "origin": "previous Figure 1 regional case panel, preserved in the appendix",
+  "evidence_class": "illustrative deterministic adviser scenario, not observed choices or outcomes",
+  "inputs": [
+    "assets/figure_sources/data/creative_eight_region_simulation.csv"
+  ],
+  "comparison": "GPT-5.5 to GPT-5.6 Sol; each is model-guided minus survey-guided for the same 15 countries",
+  "units": "arrival and 20-round quality in percentage points; U per 100 abstract activities per round"
+}

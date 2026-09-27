@@ -4,13 +4,13 @@
     "A": "country locations from archived descriptive sample",
     "B": "exploratory paired country-level losses; within-region bootstrap intervals where n>=5",
     "C": "equal-country signed model-minus-survey scores, recorded prompts",
-    "D": "African-Islamic 15-country equal-country mean under an assumed adviser decision rule, both versions minus same-country survey-guided choices; not observed behavior, growth, welfare, or sustainability"
+    "D": "archived 1,326-weight theory-indexed sensitivity of measured squared-TVD loss; teal favors GPT-5.6 Sol, navy is the exploratory 95% interval boundary, and amber is equal point loss; not G/U, observed welfare, or a policy effect"
   },
   "inputs": [
     "results/figures/fig1_spatial_story.svg (Natural Earth map paths and archived marker positions)",
     "assets/figure_sources/data/country_level_spatial_changes.csv",
     "assets/figure_sources/data/signed_global_items.csv",
-    "assets/figure_sources/data/creative_eight_region_simulation.csv",
+    "assets/figure_sources/data/economic_weight_surface.csv",
     "assets/figure_sources/data/eight_region_sensitivity.csv (copied from validated experiment result)"
   ],
   "palette": {
@@ -30,6 +30,6 @@
     "A": "point-symbol locator map",
     "B": "paired miniature interval/forest plots",
     "C": "paired lollipop/dumbbell dots",
-    "D": "semantic process with numerical scenario annotations"
+    "D": "ternary weight sensitivity with interval and point-loss contours"
   }
 }

@@ -2,16 +2,20 @@
 
 The two featured figure masters are editable SVGs under
 [`results/figures/`](../../results/figures/); their PDF exports are supplied
-for printing. Run `make featured-figures` to regenerate the SVGs from these
+for printing. A companion regional case preserves the original Figure 1
+scenario panel. Run `make featured-figures` to regenerate the SVGs from these
 scripts and archived inputs:
 
 | Figure | Source | Inputs | Provenance |
 |---|---|---|---|
-| [Cultural and regional audit](../../results/figures/fig1_ethos_gallery.svg) | [`make_fig1_ethos_gallery.py`](make_fig1_ethos_gallery.py) | [`data/`](data/), including country changes, eight-region summaries, signed item gaps and scenario values; [archived vector map](../../results/figures/fig1_spatial_story.svg) | [`fig1_ethos_gallery_provenance.json`](fig1_ethos_gallery_provenance.json) |
+| [Cultural and regional audit](../../results/figures/fig1_ethos_gallery.svg) | [`make_fig1_ethos_gallery.py`](make_fig1_ethos_gallery.py) | [`data/`](data/), including country changes, eight-region summaries, signed item gaps, and the [weight surface](data/economic_weight_surface.csv); [archived vector map](../../results/figures/fig1_spatial_story.svg) | [`fig1_ethos_gallery_provenance.json`](fig1_ethos_gallery_provenance.json) |
 | [Values and quality-ladder mechanism](../../results/figures/fig2_value_bridge.svg) | [`make_fig2_value_bridge.py`](make_fig2_value_bridge.py) | [`data/signed_country_items.csv`](data/signed_country_items.csv), [`data/creative_eight_region_simulation.csv`](data/creative_eight_region_simulation.csv) and the [declared simulator](../../experiments/gpt55_gpt56_64country/simulate_creative_destruction.py) | [`fig2_value_bridge_provenance.json`](fig2_value_bridge_provenance.json) |
+| [Regional adviser scenario](../../results/figures/figS10_regional_scenario.svg) | [`make_fig1_ethos_gallery.py`](make_fig1_ethos_gallery.py) | [`data/creative_eight_region_simulation.csv`](data/creative_eight_region_simulation.csv) | [`figS10_regional_scenario_provenance.json`](figS10_regional_scenario_provenance.json) |
 
 The generated [clip-art contact sheet](clip-art-set-v2/contact-sheet.svg)
-and its component SVGs are editable illustrations used in Figure 1. Figure 2
+and its component SVGs are editable illustrations used in the regional case.
+Figure 1's triangle varies declared weights on three groups of measured
+representation errors; it does not visualize modeled growth or fairness. Figure 2
 explicitly distinguishes observed signed survey comparisons from uncalibrated
 decision rules and simulated quality-ladder outcomes. Do not read those
 simulated values as estimates of actual growth, welfare or environmental
