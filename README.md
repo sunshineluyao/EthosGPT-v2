@@ -60,7 +60,7 @@ This table covers every top-level folder and file. Follow the linked directories
 | [`experiments/`](experiments/) | The archived [64-country GPT-5.5/GPT-5.6 Sol comparison](experiments/gpt55_gpt56_64country/): inputs, frozen outputs, manifests, scoring and sensitivity scripts, and result tables. |
 | [`manifests/`](manifests/) | [Machine-readable result replication index](manifests/result_replication_index.json) tracing headline outputs through source, collection boundary, processing, and analysis. |
 | [`prompts/`](prompts/) | English prompt template, response schema, prompt manifest, and multilingual guidance; exact study prompts and ledger are also under `experiments/`. |
-| [`results/`](results/) | Released scenario tables, signed country and regional differences, and editable SVG/PDF figures. See [`results/figures/`](results/figures/). |
+| [`results/`](results/) | Released scenario tables, signed country and regional differences, and generated SVG/PDF figure exports. For editable inputs, see [`assets/figure_sources/`](assets/figure_sources/). |
 | [`scripts/`](scripts/) | Offline reproduction driver, release and visual checks, and figure generators. |
 | [`src/`](src/) | Python package namespace and pipeline module; the comparison's executable analysis is primarily under `experiments/` and `scripts/`. |
 | [`tests/`](tests/) | Tests for metrics, small-sample inference, extended analysis, and negative release checks. |
