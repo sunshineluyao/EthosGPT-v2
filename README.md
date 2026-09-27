@@ -7,6 +7,7 @@
 [![MIT code license](https://img.shields.io/badge/code-MIT-7C3AED)](LICENSE)
 [![Archived inputs](https://img.shields.io/badge/inputs-checksummed-087F8C)](REPRODUCIBILITY.md)
 [![Result index](https://img.shields.io/badge/results-traceable-15803D)](docs/result_index.md)
+[![Zenodo DOI: 10.5281/zenodo.22994500](https://zenodo.org/badge/DOI/10.5281/zenodo.22994500.svg)](https://zenodo.org/records/22994500)
 
 <img src="assets/featured/ethosgpt_release_arc.svg" width="100%" alt="Six-stage open-science path from the survey derivative and prompt ledger through frozen model responses, analysis code and country scores to observed paired error. A separate dashed band labels the assumed quality-ladder illustration." />
 
