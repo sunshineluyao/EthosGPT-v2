@@ -19,8 +19,13 @@ same-named PDFs (for example, with `inkscape FILE.svg
 
 The generated [clip-art contact sheet](clip-art-set-v2/contact-sheet.svg)
 and its component SVGs are editable illustrations used in the regional case.
-Figure 1's triangle varies declared weights on three groups of measured
-representation errors; it does not visualize modeled growth or fairness. Figure 2
+Figure 1's triangle varies declared weights on three two-question groups of
+measured representation errors: opportunity (Q48 agency, Q159 science),
+distribution (Q106 equality, Q108 responsibility), and coordination (Q57
+trust, Q121 immigration). At each vertex one group receives weight one; along
+an edge two groups share the weight; the star assigns one third to each.
+These are sensitivity choices, not separate measured cultural indices or a
+visualization of modeled growth or fairness. Figure 2
 explicitly distinguishes observed signed survey comparisons from uncalibrated
 decision rules and simulated quality-ladder outcomes. Do not read those
 simulated values as estimates of actual growth, welfare or environmental

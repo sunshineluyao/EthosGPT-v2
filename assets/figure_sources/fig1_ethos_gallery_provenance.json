@@ -4,7 +4,7 @@
     "A": "country locations from archived descriptive sample",
     "B": "exploratory paired country-level losses; within-region bootstrap intervals where n>=5",
     "C": "equal-country signed model-minus-survey scores, recorded prompts",
-    "D": "archived 1,326-weight theory-indexed sensitivity of measured squared-TVD loss; teal favors GPT-5.6 Sol, navy is the exploratory 95% interval boundary, and amber is equal point loss; not G/U, observed welfare, or a policy effect"
+    "D": "archived 1,326-weight sensitivity of measured squared-TVD loss. The three corners each weight two WVS questions: opportunity Q48/Q159, distribution Q106/Q108, coordination Q57/Q121. Teal favors GPT-5.6 Sol, navy is the exploratory 95% interval boundary, and amber is equal point loss; not G/U, observed welfare, or a policy effect"
   },
   "inputs": [
     "results/figures/fig1_spatial_story.svg (Natural Earth map paths and archived marker positions)",

@@ -168,7 +168,7 @@ def region_panel():
     # Each mini forest has its own symmetric axis, labeled in the caption.
     for cx in (784,850): parts.append(line(cx,164,cx,337,DIVIDER,1))
     for i,(name,color,shape) in enumerate(REGIONS):
-        y=180+i*22.0
+        y=180+i*21.5
         n=int(est[(name,'TVD')]['countries'])
         parts += [mark(547,y-4,color,shape,4.3),text(560,y,name,15.1,INK),text(706,y,str(n),15,SLATE,anchor='middle')]
         for metric,cx,domain in [('TVD',784,.022),('W1',850,.012)]:
@@ -184,8 +184,8 @@ def region_panel():
               text(545,356,'Δ = 5.6 Sol − 5.5',16,SLATE),
               mark(695,350,TEAL,'circle',3.1),text(704,356,'lower',16,SLATE),
               mark(761,350,MAGENTA,'circle',3.1),text(770,356,'higher',16,SLATE),
-              line(550,373,566,373,SLATE,1.2),mark(558,373,TEAL,'circle',3.0,True),
-              text(572,378,'bar = 95% CI; open = spans 0 or n < 5',16,SLATE)]
+              line(550,371,566,371,SLATE,1.2),mark(558,371,TEAL,'circle',3.0,True),
+              text(572,376,'bar = 95% CI; open = spans 0 or n < 5',16,SLATE)]
     return parts
 
 def signed_panel():
@@ -205,10 +205,10 @@ def signed_panel():
         parts.append(line(xa,y-2,xb,y-2,BLUE,1.3))
         parts.append(mark(xa,y-5,BLUE,'circle',3.3,True))
         parts.append(mark(xb,y+2,INK,'circle',3.6))
-    parts += [text(36,608,'Zero = survey; left less, right more of named view',16,SLATE),
-              mark(43,622,BLUE,'circle',3.3,True),text(55,627,'GPT-5.5',16,SLATE),
-              mark(163,622,INK,'circle',3.6),text(175,627,'GPT-5.6 Sol',16,SLATE),
-              text(307,627,'* wording',16,SLATE)]
+    parts += [text(36,612,'Zero = survey; left less, right more of named view',16,SLATE),
+              mark(43,627,BLUE,'circle',3.3,True),text(55,632,'GPT-5.5',16,SLATE),
+              mark(163,627,INK,'circle',3.6),text(175,632,'GPT-5.6 Sol',16,SLATE),
+              text(307,632,'* wording',16,SLATE)]
     return parts
 
 def scenario_panel(label='D  '):
@@ -257,7 +257,7 @@ def weight_sensitivity_panel():
     bound = max(abs(float(r['delta_weighted_loss_56_minus_55'])) for r in surface)
     assert abs(bound - .0213311855) < .000001
 
-    left, right, apex, base_y, apex_y = 558., 793., 675.5, 602., 451.
+    left, right, apex, base_y, apex_y = 558., 793., 675.5, 586., 471.
     def xy(key):
         d,c = key
         return (left + (right-left)*(d+.5*c)/50,
@@ -280,8 +280,9 @@ def weight_sensitivity_panel():
     assert len(triangles) == 2500
     parts = [rect(458,363,424,283,WHITE,BLUE),
              text(477,395,'D  Does emphasis change the audit?',21,INK,'bold'),
-             text(477,416,'Weighted error: teal = lower for 5.6 Sol',16,SLATE),
-             text(apex,441,'Coordination + legitimacy',16,INK,'bold',anchor='middle'),
+             text(477,416,'Three two-question bundles · weights sum to one',16,SLATE),
+             text(apex,438,'Coordination (Q57, Q121)',16,INK,'bold',anchor='middle'),
+             text(apex,458,'trust · immigration',16,SLATE,anchor='middle'),
              '<g id="weight-sensitivity-surface">']
     for triangle in triangles:
         points = [xy(key) for key in triangle]
@@ -336,10 +337,10 @@ def weight_sensitivity_panel():
                          f'stroke-width="{width}" stroke-linejoin="round"{style}/>')
     parts += [f'<path d="M{left},{base_y} L{right},{base_y} L{apex},{apex_y}Z" '
               f'fill="none" stroke="{INK}" stroke-width="1.5"/>']
-    parts += [line(480,501,505,501,INK,2.1),
-              text(512,506,'95% CI',16,INK),
-              line(480,533,505,533,AMBER,2.,'6 4'),
-              text(512,538,'equal loss',16,INK)]
+    parts += [line(464,501,480,501,INK,2.1),
+              text(487,506,'95% CI',16,INK),
+              line(464,533,480,533,AMBER,2.,'6 4'),
+              text(487,538,'equal loss',16,INK)]
     cx,cy = xy((50/3,50/3))
     star = [(cx+8*math.cos(-math.pi/2+k*math.pi/5)
              *(1 if k%2==0 else .45),
@@ -347,17 +348,18 @@ def weight_sensitivity_panel():
              *(1 if k%2==0 else .45)) for k in range(10)]
     parts += [f'<path d="M'+' L'.join(f'{x:.2f},{y:.2f}' for x,y in star)+
               f'Z" fill="{WHITE}" stroke="{INK}" stroke-width="1.4"/>',
-              text(cx,cy+25,'equal weights',16,INK,anchor='middle'),
-              text(481,617,'Opportunity',16,INK,'bold'),
-              text(481,635,'+ participation',16,INK),
-              text(861,617,'Distribution',16,INK,'bold',anchor='end'),
-              text(861,635,'+ adjustment',16,INK,anchor='end')]
+              f'<path d="M480,450 l2.2,4.8 5.2,0.7 -3.8,3.8 0.9,5.1 -4.5,-2.5 -4.5,2.5 0.9,-5.1 -3.8,-3.8 5.2,-0.7Z" fill="{WHITE}" stroke="{INK}" stroke-width="1.4"/>',
+              text(499,462,'equal weights',16,INK),
+              text(481,608,'Opportunity (Q48, Q159)',16,INK,'bold'),
+              text(481,630,'agency · science',16,SLATE),
+              text(861,608,'Distribution (Q106, Q108)',16,INK,'bold',anchor='end'),
+              text(861,630,'equality · responsibility',16,SLATE,anchor='end')]
     for k in range(24):
-        parts.append(rect(625+k*4.5,610,4.6,8,fill(-bound+2*bound*(k+.5)/24),
+        parts.append(rect(754+k*4.0,479,4.1,8,fill(-bound+2*bound*(k+.5)/24),
                           WHITE,r=0,sw=0))
-    parts += [text(625,635,'−',16,SLATE,anchor='middle'),
-              text(679,635,'0',16,SLATE,anchor='middle'),
-              text(732,635,'+',16,SLATE,anchor='middle')]
+    parts += [text(754,462,'lower',16,SLATE),
+              text(850,462,'higher',16,SLATE,anchor='end'),
+              text(802,507,'0',16,SLATE,anchor='middle')]
     return parts
 
 def build():
@@ -389,7 +391,7 @@ def build():
     provenance={"figure":"fig1_ethos_gallery","evidence_classes":{"A":"country locations from archived descriptive sample",
                  "B":"exploratory paired country-level losses; within-region bootstrap intervals where n>=5",
                  "C":"equal-country signed model-minus-survey scores, recorded prompts",
-                 "D":"archived 1,326-weight theory-indexed sensitivity of measured squared-TVD loss; teal favors GPT-5.6 Sol, navy is the exploratory 95% interval boundary, and amber is equal point loss; not G/U, observed welfare, or a policy effect"},
+                 "D":"archived 1,326-weight sensitivity of measured squared-TVD loss. The three corners each weight two WVS questions: opportunity Q48/Q159, distribution Q106/Q108, coordination Q57/Q121. Teal favors GPT-5.6 Sol, navy is the exploratory 95% interval boundary, and amber is equal point loss; not G/U, observed welfare, or a policy effect"},
          "inputs":["results/figures/fig1_spatial_story.svg (Natural Earth map paths and archived marker positions)",
                    "assets/figure_sources/data/country_level_spatial_changes.csv",
                    "assets/figure_sources/data/signed_global_items.csv",
