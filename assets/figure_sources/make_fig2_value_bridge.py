@@ -112,10 +112,10 @@ def build():
         text(341, 222, "a · transition assistance", 18, INK, "bold"),
         text(618, 103, "Two outcome channels", 20, INK, "bold"),
         text(618, 125, "Same choices, different stakes", 17, SLATE),
-        text(633, 156, "G · growth efficiency", 18, INK, "bold"),
-        text(633, 175, "20-round quality gain", 17, SLATE),
-        text(633, 213, "U · equity exposure", 18, INK, "bold"),
-        text(633, 232, "replacement with less help", 17, SLATE),
+        text(633, 156, "G · efficiency channel", 18, INK, "bold"),
+        text(633, 175, "Higher = more quality gain", 17, SLATE),
+        text(633, 213, "U · equity risk", 18, INK, "bold"),
+        text(633, 232, "Higher = more exposure", 17, SLATE),
         text(35, 281, "Observed | Nigeria vs survey", 20, INK, "bold"),
         text(35, 301, "Signed score: left = less of that view", 17, SLATE),
         text(476, 281, "Conditional | G and U", 20, INK, "bold"),
@@ -150,8 +150,8 @@ def build():
           text(321, 470, "* wording", 17, SLATE)]
     # G and U have different units: show their signed values side by side.
     p += [text(476, 331, "Place", 17, INK, "bold"),
-          text(607, 331, "G: efficiency", 17, INK, "bold"),
-          text(744, 331, "U: equity risk", 17, INK, "bold"),
+          text(607, 331, "G ↑: more gain", 17, INK, "bold"),
+          text(744, 331, "U ↑: more risk", 17, INK, "bold"),
           line(476, 340, 864, 340, DIVIDER, 1),
           line(596, 313, 596, 447, DIVIDER, 1),
           line(733, 313, 733, 447, DIVIDER, 1)]
@@ -185,8 +185,8 @@ def build():
             "questions": "observed survey and archived model descriptions",
             "lambda": "assumed chance of innovation; appendix intermediates i and s are substituted in main Equation (1)",
             "a": "assumed assistance intensity, distinct from fixed Greek alpha in appendix",
-            "G": "expected 20-round log-quality gain, not observed GDP",
-            "U": "replacement weighted by lack of assumed assistance, not unemployment or a validated fairness score"
+            "G": "higher is greater expected 20-round log-quality gain, not observed GDP",
+            "U": "higher is greater replacement exposure weighted by lack of assumed assistance, not improved fairness or observed unemployment"
         },
         "evidence_classes": {
             "bottom_left": "archived model minus survey derivative, Nigeria",

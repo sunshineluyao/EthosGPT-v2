@@ -6,8 +6,8 @@
     "questions": "observed survey and archived model descriptions",
     "lambda": "assumed chance of innovation; appendix intermediates i and s are substituted in main Equation (1)",
     "a": "assumed assistance intensity, distinct from fixed Greek alpha in appendix",
-    "G": "expected 20-round log-quality gain, not observed GDP",
-    "U": "replacement weighted by lack of assumed assistance, not unemployment or a validated fairness score"
+    "G": "higher is greater expected 20-round log-quality gain, not observed GDP",
+    "U": "higher is greater replacement exposure weighted by lack of assumed assistance, not improved fairness or observed unemployment"
   },
   "evidence_classes": {
     "bottom_left": "archived model minus survey derivative, Nigeria",
