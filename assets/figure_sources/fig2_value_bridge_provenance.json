@@ -1,19 +1,22 @@
 {
   "figure": "fig2_value_bridge",
-  "reader_task": "Show how a six-item profile enters a declared adviser rule, then how simulated effects differ within a descriptive region.",
+  "reader_task": "Trace six value questions through the declared lambda/a rule to efficiency G and equity-relevant exposure U.",
+  "iconography_mode": "minimal-scientific",
   "topology": {
-    "six items": "observed question-specific responses",
-    "adviser links": "assumed, not behavioral estimates",
-    "quality ladder": "Aghion\u2013Howitt-inspired mechanism, not their complete equilibrium model"
+    "questions": "observed survey and archived model descriptions",
+    "lambda": "assumed chance of innovation; appendix intermediates i and s are substituted in main Equation (1)",
+    "a": "assumed assistance intensity, distinct from fixed Greek alpha in appendix",
+    "G": "expected 20-round log-quality gain, not observed GDP",
+    "U": "replacement weighted by lack of assumed assistance, not unemployment or a validated fairness score"
   },
   "evidence_classes": {
-    "bottom_left": "archived model minus unweighted survey derivative, Nigeria",
-    "bottom_right": "deterministic assumed scenario, each model minus survey-guided baseline"
+    "bottom_left": "archived model minus survey derivative, Nigeria",
+    "bottom_right": "deterministic scenario, model minus corresponding survey-guided baseline"
   },
   "inputs": [
     "assets/figure_sources/data/signed_country_items.csv",
     "assets/figure_sources/data/creative_eight_region_simulation.csv",
-    "experiments/gpt55_gpt56_64country/simulate_creative_destruction.py (declared coefficients)"
+    "experiments/gpt55_gpt56_64country/simulate_creative_destruction.py"
   ],
   "values": {
     "Nigeria": {
@@ -68,24 +71,63 @@
         "unassisted_per_100": 1.2687189014572908
       }
     },
-    "African-Islamic_quality_pp": {
-      "GPT-5.5": -0.89714229591,
-      "GPT-5.6 Sol": -1.01158833689
+    "African-Islamic": {
+      "GPT-5.5": {
+        "quality_pp": -0.89714229591,
+        "unassisted_per_100": -1.03273162638
+      },
+      "GPT-5.6 Sol": {
+        "quality_pp": -1.01158833689,
+        "unassisted_per_100": -0.760440837729
+      }
     }
   },
   "palette": {
     "ink": "#18324A",
-    "observed": "#078C82",
-    "model_pair": "#3B5CCC",
-    "assumed": "#D88A24",
-    "surface": [
-      "#FFFFFF",
-      "#FFF3E8"
-    ]
+    "surface": "#FFFFFF",
+    "primary": "#3B5CCC",
+    "secondary": "#078C82",
+    "status_accent": "#D88A24",
+    "divider": "#D6DEE7"
   },
+  "semantic_graphics": [
+    {
+      "concept": "quality-ladder replacement",
+      "visual_encoding": "short incumbent and taller new method with a replacement direction",
+      "shape_ids": [
+        "replacement-old",
+        "replacement-new",
+        "lambda-label"
+      ],
+      "origin": "original vector",
+      "evidence_implication": "illustrative quality increment only"
+    },
+    {
+      "concept": "observed Nigeria score errors",
+      "visual_encoding": "paired signed marks against a survey-zero axis",
+      "shape_ids": [
+        "nigeria-paired-marks",
+        "nigeria-axis"
+      ],
+      "origin": "archived signed-country-item CSV",
+      "evidence_implication": "descriptive model-minus-survey gaps"
+    },
+    {
+      "concept": "conditional efficiency and equity paths",
+      "visual_encoding": "paired version values for each of three places under two different outcome units",
+      "shape_ids": [
+        "scenario-paired-rows",
+        "lambda-label"
+      ],
+      "origin": "declared simulation code and archived inputs",
+      "evidence_implication": "hypothetical contrasts, not economic outcomes"
+    }
+  ],
+  "composition_mechanism": "Three branches of six question scores converge into lambda or assistance a; lambda feeds G and U while a feeds U. Descriptive gaps and conditional outcomes remain in separate lower panels.",
+  "grayscale_encoding": "Solid teal boundary and hollow/filled version marks identify descriptive data; dashed boundaries and dashed arrows identify assumptions, with text labels on all paths.",
   "cautions": [
-    "Q106 and Q121 recorded prompts have label conflicts",
-    "The cultural-region label is descriptive, not an identity or causal variable",
-    "The scenario does not observe growth, welfare, or emissions"
+    "Q106 and Q121 recorded prompts have conflicting labels",
+    "Region name is descriptive, not causal",
+    "G and U are conditional outputs, not measured growth, employment, or fairness"
   ]
 }
