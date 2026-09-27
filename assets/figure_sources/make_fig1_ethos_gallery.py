@@ -336,6 +336,10 @@ def weight_sensitivity_panel():
                          f'stroke-width="{width}" stroke-linejoin="round"{style}/>')
     parts += [f'<path d="M{left},{base_y} L{right},{base_y} L{apex},{apex_y}Z" '
               f'fill="none" stroke="{INK}" stroke-width="1.5"/>']
+    parts += [line(480,501,505,501,INK,2.1),
+              text(512,506,'95% CI',16,INK),
+              line(480,533,505,533,AMBER,2.,'6 4'),
+              text(512,538,'equal loss',16,INK)]
     cx,cy = xy((50/3,50/3))
     star = [(cx+8*math.cos(-math.pi/2+k*math.pi/5)
              *(1 if k%2==0 else .45),
@@ -343,6 +347,7 @@ def weight_sensitivity_panel():
              *(1 if k%2==0 else .45)) for k in range(10)]
     parts += [f'<path d="M'+' L'.join(f'{x:.2f},{y:.2f}' for x,y in star)+
               f'Z" fill="{WHITE}" stroke="{INK}" stroke-width="1.4"/>',
+              text(cx,cy+25,'equal weights',16,INK,anchor='middle'),
               text(481,617,'Opportunity',16,INK,'bold'),
               text(481,635,'+ participation',16,INK),
               text(861,617,'Distribution',16,INK,'bold',anchor='end'),
