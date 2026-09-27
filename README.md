@@ -54,7 +54,7 @@ spatial analyses. It needs no model API key. A later live call to the undated
 | Which views shifted, and in which direction? | [Six signed questions by country](results/signed_directions/signed_country_items.csv) and [region](results/signed_directions/signed_eight_regions.csv) | A positive model-minus-survey score means more of the named endpoint. It is a comparison of response distributions, not a judgment about a population. |
 | How uneven are the geographic patterns? | [Eight-region W1/TVD table](experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv) and [figure guide](results/region_figures/README.md) | The original region labels group 2–15 countries; intervals are exploratory and omitted when fewer than five countries enter. |
 | Could a misrepresented profile matter for creative destruction? | [Declared scenario equations and sensitivities](results/creative_destruction/README.md) and [all country scenarios](results/creative_destruction/country_simulation.csv) | These are conditional calculations under chosen adviser and innovation rules, not measured growth, jobs or policy impacts. |
-| What could change the interpretation? | [Wording omissions](experiments/gpt55_gpt56_64country/results/wording_omission_sensitivity.csv), [spatial checks](experiments/gpt55_gpt56_64country/results/spatial_hac_contrasts.csv) and [analysis report](docs/STATISTICAL_ANALYSIS_REPORT.md) | Q106 and Q121 have archived prompt-label conflicts; item omission is not a corrected re-query. |
+| What could change the interpretation? | [Wording omissions](experiments/gpt55_gpt56_64country/results/wording_omission_sensitivity.csv), [spatial checks](experiments/gpt55_gpt56_64country/results/spatial_hac_contrasts.csv) and [statistical appendix](docs/STATISTICAL_ANALYSIS_REPORT.md) | Q106 and Q121 have archived prompt-label conflicts; item omission is not a corrected re-query. |
 
 TVD, or *total-variation distance*, measures how far apart two distributions
 over the answer choices are, from zero (same shares) to one (no overlap).
@@ -126,7 +126,7 @@ The derivative does not provide official population weights or full upstream
 respondent provenance. No raw respondent narratives or official joint
 EVS/WVS microdata are bundled. Country averages cannot describe every
 individual, and survey agreement alone does not establish local legitimacy.
-The [responsible-use note](AI_USAGE.md) and [data audit](DATA_LICENSE.md)
+The [data rights and use note](DATA_LICENSE.md) and [reproducibility guide](REPRODUCIBILITY.md)
 spell out these boundaries.
 
 <a id="cite"></a>

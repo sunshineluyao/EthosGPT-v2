@@ -1,4 +1,4 @@
-# EthosGPT 64-country statistical analysis report — v0.5.0
+# Statistical analysis appendix: 64-country paired comparison
 
 ## Design
 
