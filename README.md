@@ -142,21 +142,45 @@ economic or environmental effect.
 ## Trace each result
 
 The [human-readable result index](docs/result_index.md) and
-[machine-readable six-stage map](manifests/result_replication_index.json)
-connect each headline result to its source, collection boundary, frozen
-outputs, processing code, analysis code, command and interpretation limit.
-The original authenticated API collector is **not** bundled. Exact prompt
-templates, response choices, prompt hashes, collection receipts and the
-validated output records are archived. The offline reproduction begins
-with these frozen files.
+[machine-readable result map](manifests/result_replication_index.json)
+connect each headline finding to its source, collection boundary, frozen
+inputs, processing code, analysis code, output, and interpretation limit.
+The seven stages below show the survey and model streams separately before
+they meet in the country-level analysis.
 
-| Stage | Where to look |
-|---|---|
-| Original survey derivative | [Pinned Oxford WVS derivative](https://huggingface.co/datasets/oxford-llms/world_values_survey_2017_2022_sft/tree/026d11792ba88decb0b1198116a57745a8132433) and [data rights notes](DATA_LICENSE.md) |
-| Exact prompts and collection record | [Questionnaire and prompts](experiments/gpt55_gpt56_64country/inputs/questionnaire_and_prompts.json), [prompt ledger](experiments/gpt55_gpt56_64country/inputs/prompt_ledger.csv), [collection manifest](experiments/gpt55_gpt56_64country/manifests/collection_manifest.json) |
-| Archived model answers | [GPT-5.5](experiments/gpt55_gpt56_64country/outputs/gpt-5.5_scores.jsonl), [GPT-5.6 Sol](experiments/gpt55_gpt56_64country/outputs/gpt-5.6-sol_scores.jsonl), and [hash manifest](experiments/gpt55_gpt56_64country/manifests/analysis_manifest.json) |
-| Process and analyze | [Scoring code](experiments/gpt55_gpt56_64country/score_wave1.py), [signed directions](experiments/gpt55_gpt56_64country/signed_directions.py), [conditional scenario](experiments/gpt55_gpt56_64country/simulate_creative_destruction.py) |
-| Processed tables and figures | [Country scores](experiments/gpt55_gpt56_64country/results/country_question_scores.csv), [result catalog](docs/result_index.md), [editable visuals](assets/featured/README.md) |
+| Stage | Concrete source, code, or data | Reproduction boundary |
+|---|---|---|
+| **1. Data source** | [Pinned Oxford WVS 2017–2022 derivative](https://huggingface.co/datasets/oxford-llms/world_values_survey_2017_2022_sft/tree/026d11792ba88decb0b1198116a57745a8132433) for survey answers; GPT-5.5 and GPT-5.6 Sol Responses API collection recorded in the [collection manifest](experiments/gpt55_gpt56_64country/manifests/collection_manifest.json). | The survey comparison uses an **unweighted public derivative**, not official WVS microdata. |
+| **2. Query data code** | The [questionnaire and prompt templates](experiments/gpt55_gpt56_64country/inputs/questionnaire_and_prompts.json), [prompt ledger](experiments/gpt55_gpt56_64country/inputs/prompt_ledger.csv), and [collection manifest](experiments/gpt55_gpt56_64country/manifests/collection_manifest.json) document the model requests. | The original authenticated API collector and acquisition script for the upstream survey derivative are **not released**. The archived contract cannot replay provider-side collection. |
+| **3. Queried data** | [GPT-5.5 JSONL](experiments/gpt55_gpt56_64country/outputs/gpt-5.5_scores.jsonl) and [GPT-5.6 Sol JSONL](experiments/gpt55_gpt56_64country/outputs/gpt-5.6-sol_scores.jsonl), with [attempt ledger](experiments/gpt55_gpt56_64country/outputs/attempt_ledger.jsonl) and [hash/coverage manifest](experiments/gpt55_gpt56_64country/manifests/analysis_manifest.json). | **3,840 validated model records** are frozen. Raw survey respondent records are excluded; the released human comparison begins at stage 5. |
+| **4. Process data code** | [Survey parser and aggregator](src/ethosgpt/pipeline.py) for separately acquired inputs; [scoring code](experiments/gpt55_gpt56_64country/score_wave1.py) validates model records, aligns answer scales, and averages five generations per country–question cell. See the [data pipeline note](docs/data_pipeline.md). | The broader survey transform requires upstream files absent from this package. The default offline command starts from the released human aggregate and frozen model JSONL. |
+| **5. Processed data** | [Human country–item distributions](data/processed/human_item_distributions.parquet), [item dictionary](data/metadata/item_dictionary.csv), and [matched country–question scores](experiments/gpt55_gpt56_64country/results/country_question_scores.csv). | These are the released inputs and intermediate table for the 64-country, six-question comparison. |
+| **6. Analyze data code** | [Paired metrics](experiments/gpt55_gpt56_64country/score_wave1.py), [eight-region sensitivity](experiments/gpt55_gpt56_64country/eight_region_sensitivity.py), [signed directions](experiments/gpt55_gpt56_64country/signed_directions.py), and [wording sensitivity](experiments/gpt55_gpt56_64country/wording_sensitivity.py) examine heterogeneity and robustness. The [creative-destruction simulator](experiments/gpt55_gpt56_64country/simulate_creative_destruction.py) runs a separate assumed scenario. | `make reproduce-offline` runs the released analysis without API keys; the scenario is a declared calculation, not an observed economic outcome. |
+| **7. Analyzed data** | [Global paired comparisons](experiments/gpt55_gpt56_64country/results/metric_comparisons.csv), [eight-region contrasts](experiments/gpt55_gpt56_64country/results/eight_region_sensitivity.csv), [signed country items](results/signed_directions/signed_country_items.csv), and [vector figures](results/figures/). The [country scenario table](results/creative_destruction/country_simulation.csv) is labeled separately. | Metrics, regions, and signed answers are **derived from archived observations**; quality-ladder outputs are **synthetic and conditional**. |
+
+```mermaid
+flowchart TB
+  S["1 Survey source"] --> SQ["2 Acquisition code not released"]
+  M["1 Model API source"] --> MQ["2 Collector not released"]
+  SQ -.-> SD["3 Raw survey rows excluded"]
+  MQ -.-> MD["3 Frozen model JSONL"]
+  SD -.-> SP["4 Survey parse and aggregate"]
+  MD --> MP["4 Validate and score"]
+  SP -.-> HP["5 Human distributions"]
+  HP --> MP
+  MP --> CP["5 Country-question scores"]
+  CP --> OA["6 Observed analyses"]
+  CP --> SA["6 Assumed scenario"]
+  OA --> OR["7 Paired, regional, signed tables"]
+  SA --> SR["7 Conditional scenario tables"]
+```
+
+Dashed arrows mark acquisition or survey-preprocessing handoffs that cannot
+be rerun from bundled raw inputs. Solid arrows from the released human
+aggregate and frozen model JSONL mark the supported offline route:
+`make reproduce-offline` followed by `make release-contract`.
+The [result index](docs/result_index.md) names the exact command and evidence
+status for each finding.
 
 The derivative does not provide official population weights or full upstream
 respondent provenance. No raw respondent narratives or official joint
