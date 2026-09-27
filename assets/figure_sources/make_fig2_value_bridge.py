@@ -50,6 +50,10 @@ def signed(value: float) -> str:
     return f"{value:+.2f}".replace("-", "−")
 
 
+def change_arrow(before: float, after: float) -> str:
+    return "↑" if after > before else "↓" if after < before else "="
+
+
 def build():
     nigeria, kenya = country_values("Nigeria"), country_values("Kenya")
     assert abs(nigeria["56"]["quality_pp"] + 1.68533272) < .0001
@@ -112,14 +116,14 @@ def build():
         text(341, 222, "a · transition assistance", 18, INK, "bold"),
         text(618, 103, "Two outcome channels", 20, INK, "bold"),
         text(618, 125, "Same choices, different stakes", 17, SLATE),
-        text(633, 156, "G · growth efficiency", 18, INK, "bold"),
-        text(633, 175, "20-round quality gain", 17, SLATE),
-        text(633, 213, "U · equity exposure", 18, INK, "bold"),
-        text(633, 232, "replacement with less help", 17, SLATE),
+        text(633, 156, "G · efficiency channel", 18, INK, "bold"),
+        text(633, 175, "Higher = more quality gain", 17, SLATE),
+        text(633, 213, "U · transition equity risk", 18, INK, "bold"),
+        text(633, 232, "Higher = more exposure", 17, SLATE),
         text(35, 281, "Observed | Nigeria vs survey", 20, INK, "bold"),
         text(35, 301, "Signed score: left = less of that view", 17, SLATE),
         text(476, 281, "Conditional | G and U", 20, INK, "bold"),
-        text(476, 301, "Model-guided minus survey-guided", 17, SLATE),
+        text(476, 301, "Assumed investment + aid; gaps vs survey", 17, SLATE),
     ]
 
     names = [("Q48", "Agency"), ("Q57", "Trust"),
@@ -150,8 +154,8 @@ def build():
           text(321, 470, "* wording", 17, SLATE)]
     # G and U have different units: show their signed values side by side.
     p += [text(476, 331, "Place", 17, INK, "bold"),
-          text(607, 331, "G: efficiency", 17, INK, "bold"),
-          text(744, 331, "U: equity risk", 17, INK, "bold"),
+          text(607, 331, "G ↑: more gain", 17, INK, "bold"),
+          text(744, 331, "U ↑: more risk", 17, INK, "bold"),
           line(476, 340, 864, 340, DIVIDER, 1),
           line(596, 313, 596, 447, DIVIDER, 1),
           line(733, 313, 733, 447, DIVIDER, 1)]
@@ -163,15 +167,20 @@ def build():
     p.append('<g id="scenario-paired-rows">')
     for k, (label, first, second) in enumerate(cases):
         y = 366 + 37*k
+        g_before, g_after = first["quality_pp"], second["quality_pp"]
+        u_before = first["unassisted_per_100"]
+        u_after = second["unassisted_per_100"]
         p += [text(476, y, label, 18, INK),
-              text(607, y, signed(first["quality_pp"])+" → "+
-                   signed(second["quality_pp"]), 18, "#9C5F0C"),
-              text(744, y, signed(first["unassisted_per_100"])+" → "+
-                   signed(second["unassisted_per_100"]), 18, "#9C5F0C")]
+              text(607, y, signed(g_before), 17, "#9C5F0C"),
+              text(659, y, change_arrow(g_before, g_after), 21, "#9C5F0C", "bold"),
+              text(681, y, signed(g_after), 17, "#9C5F0C"),
+              text(744, y, signed(u_before), 17, "#9C5F0C"),
+              text(798, y, change_arrow(u_before, u_after), 21, "#9C5F0C", "bold"),
+              text(820, y, signed(u_after), 17, "#9C5F0C")]
         if k < 2:
             p.append(line(476, y+12, 864, y+12, DIVIDER, .8))
     p.append('</g>')
-    p += [text(476, 471, "5.5 → 5.6 Sol; G in pp, U in index units.", 17, SLATE),
+    p += [text(476, 471, "↑/↓: 5.5 to 5.6 Sol; G pp, U per 100 activities.", 17, SLATE),
           "</svg>"]
 
     OUT.mkdir(parents=True, exist_ok=True)
@@ -185,12 +194,12 @@ def build():
             "questions": "observed survey and archived model descriptions",
             "lambda": "assumed chance of innovation; appendix intermediates i and s are substituted in main Equation (1)",
             "a": "assumed assistance intensity, distinct from fixed Greek alpha in appendix",
-            "G": "expected 20-round log-quality gain, not observed GDP",
-            "U": "replacement weighted by lack of assumed assistance, not unemployment or a validated fairness score"
+            "G": "higher is greater expected 20-round log-quality gain, not observed GDP",
+            "U": "higher is greater replacement exposure weighted by lack of assumed assistance, not improved fairness or observed unemployment"
         },
         "evidence_classes": {
             "bottom_left": "archived model minus survey derivative, Nigeria",
-            "bottom_right": "deterministic scenario, model minus corresponding survey-guided baseline"
+            "bottom_right": "deterministic scenario, model minus corresponding survey-guided baseline; up/down arrows compare GPT-5.5 with GPT-5.6 Sol under the same assumed investment and assistance rule"
         },
         "inputs": [
             "assets/figure_sources/data/signed_country_items.csv",
@@ -204,7 +213,7 @@ def build():
         "semantic_graphics": [
             {"concept": "quality-ladder replacement", "visual_encoding": "short incumbent and taller new method with a replacement direction", "shape_ids": ["replacement-old", "replacement-new", "lambda-label"], "origin": "original vector", "evidence_implication": "illustrative quality increment only"},
             {"concept": "observed Nigeria score errors", "visual_encoding": "paired signed marks against a survey-zero axis", "shape_ids": ["nigeria-paired-marks", "nigeria-axis"], "origin": "archived signed-country-item CSV", "evidence_implication": "descriptive model-minus-survey gaps"},
-            {"concept": "conditional efficiency and equity paths", "visual_encoding": "paired version values for each of three places under two different outcome units", "shape_ids": ["scenario-paired-rows", "lambda-label"], "origin": "declared simulation code and archived inputs", "evidence_implication": "hypothetical contrasts, not economic outcomes"}
+            {"concept": "conditional efficiency and equity paths", "visual_encoding": "paired version values for each of three places under two different outcome units; up/down arrows encode the change in each signed gap after the model update", "shape_ids": ["scenario-paired-rows", "lambda-label"], "origin": "declared simulation code and archived inputs", "evidence_implication": "hypothetical contrasts, not economic outcomes"}
         ],
         "composition_mechanism": "Three branches of six question scores converge into lambda or assistance a; lambda feeds G and U while a feeds U. Descriptive gaps and conditional outcomes remain in separate lower panels.",
         "grayscale_encoding": "Solid teal boundary and hollow/filled version marks identify descriptive data; dashed boundaries and dashed arrows identify assumptions, with text labels on all paths.",
