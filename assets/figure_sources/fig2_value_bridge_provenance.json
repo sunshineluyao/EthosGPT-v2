@@ -11,7 +11,7 @@
   },
   "evidence_classes": {
     "bottom_left": "archived model minus survey derivative, Nigeria",
-    "bottom_right": "deterministic scenario, model minus corresponding survey-guided baseline"
+    "bottom_right": "deterministic scenario, model minus corresponding survey-guided baseline; up/down arrows compare GPT-5.5 with GPT-5.6 Sol under the same assumed investment and assistance rule"
   },
   "inputs": [
     "assets/figure_sources/data/signed_country_items.csv",
@@ -114,7 +114,7 @@
     },
     {
       "concept": "conditional efficiency and equity paths",
-      "visual_encoding": "paired version values for each of three places under two different outcome units",
+      "visual_encoding": "paired version values for each of three places under two different outcome units; up/down arrows encode the change in each signed gap after the model update",
       "shape_ids": [
         "scenario-paired-rows",
         "lambda-label"
