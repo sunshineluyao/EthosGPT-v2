@@ -12,6 +12,11 @@ scripts and archived inputs:
 | [Values and quality-ladder mechanism](../../results/figures/fig2_value_bridge.svg) | [`make_fig2_value_bridge.py`](make_fig2_value_bridge.py) | [`data/signed_country_items.csv`](data/signed_country_items.csv), [`data/creative_eight_region_simulation.csv`](data/creative_eight_region_simulation.csv) and the [declared simulator](../../experiments/gpt55_gpt56_64country/simulate_creative_destruction.py) | [`fig2_value_bridge_provenance.json`](fig2_value_bridge_provenance.json) |
 | [Regional adviser scenario](../../results/figures/figS10_regional_scenario.svg) | [`make_fig1_ethos_gallery.py`](make_fig1_ethos_gallery.py) | [`data/creative_eight_region_simulation.csv`](data/creative_eight_region_simulation.csv) | [`figS10_regional_scenario_provenance.json`](figS10_regional_scenario_provenance.json) |
 
+The first script regenerates both Figure 1 and the regional case SVG.
+If either source or its inputs change, export the two updated SVGs to
+same-named PDFs (for example, with `inkscape FILE.svg
+--export-filename=FILE.pdf`) before using the print assets.
+
 The generated [clip-art contact sheet](clip-art-set-v2/contact-sheet.svg)
 and its component SVGs are editable illustrations used in the regional case.
 Figure 1's triangle varies declared weights on three groups of measured
