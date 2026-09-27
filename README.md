@@ -45,6 +45,42 @@ spatial analyses. It needs no model API key. A later live call to the undated
 `gpt-5.6-sol` identifier is outside the exact-reproduction claim. See
 [the complete command and environment guide](REPRODUCIBILITY.md).
 
+<a id="repository-map"></a>
+## Repository map
+
+This table covers every top-level folder and file. Follow the linked directories for their contents; the [result index](docs/result_index.md) maps individual findings to exact inputs, code, and outputs.
+
+| Folder | What it contains |
+|---|---|
+| [`.github/`](.github/) | GitHub Actions workflows for offline reproduction and release checks. |
+| [`assets/`](assets/) | Featured overview, editable figure source scripts and data, provenance manifests, and technical clip art. Start with [`assets/featured/README.md`](assets/featured/README.md). |
+| [`config/`](config/) | YAML definitions for constructs, countries, languages, models, prompts, dataset, and the illustrative simulation. |
+| [`data/`](data/) | Country/item/language crosswalks and processed or analysis-ready Parquet data. The `raw/`, `external/`, and `interim/` folders contain boundary notes; raw WVS respondent data are not bundled. |
+| [`docs/`](docs/) | Data and model pipeline guides, result index, replication report, and statistical appendix. |
+| [`experiments/`](experiments/) | The archived [64-country GPT-5.5/GPT-5.6 Sol comparison](experiments/gpt55_gpt56_64country/): inputs, frozen outputs, manifests, scoring and sensitivity scripts, and result tables. |
+| [`manifests/`](manifests/) | [Machine-readable result replication index](manifests/result_replication_index.json) tracing headline outputs through source, collection boundary, processing, and analysis. |
+| [`prompts/`](prompts/) | English prompt template, response schema, prompt manifest, and multilingual guidance; exact study prompts and ledger are also under `experiments/`. |
+| [`results/`](results/) | Released scenario tables, signed country and regional differences, and editable SVG/PDF figures. See [`results/figures/`](results/figures/). |
+| [`scripts/`](scripts/) | Offline reproduction driver, release and visual checks, and figure generators. |
+| [`src/`](src/) | Python package namespace and pipeline module; the comparison's executable analysis is primarily under `experiments/` and `scripts/`. |
+| [`tests/`](tests/) | Tests for metrics, small-sample inference, extended analysis, and negative release checks. |
+
+| Root file | What it does |
+|---|---|
+| [`.env.example`](.env.example) | Optional live-call environment-variable template. Offline reproduction does not require API keys. |
+| [`.gitignore`](.gitignore) | Excludes local secrets, environments, caches, raw-data drop-ins, build output, and document-source files. |
+| [`CITATION.cff`](CITATION.cff) | Machine-readable software citation metadata for GitHub's citation panel. |
+| [`DATA_LICENSE.md`](DATA_LICENSE.md) | Data provenance, source rights, derivative limits, and reuse guidance. |
+| [`Dockerfile`](Dockerfile) | Python 3.12 container recipe that installs pinned dependencies and runs offline reproduction. |
+| [`LICENSE`](LICENSE) | MIT license for repository code and original vector assets; data rights are described separately. |
+| [`Makefile`](Makefile) | Entry points for analysis, figures, smoke checks, tests, verification, and offline reproduction. |
+| [`README.md`](README.md) | This landing page: research scope, key findings, quick start, figure guide, and repository map. |
+| [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Detailed environment, commands, archived inputs, validation, and evidence boundaries. |
+| [`environment.yml`](environment.yml) | Conda environment specifying Python 3.12 and the pinned pip requirements. |
+| [`pyproject.toml`](pyproject.toml) | Python package metadata, declared dependencies, build settings, and pytest configuration. |
+| [`requirements.lock.txt`](requirements.lock.txt) | Exact pip versions used by the documented reproduction environment. |
+| [`requirements.txt`](requirements.txt) | Convenience pip entry point that includes `requirements.lock.txt`. |
+
 <a id="findings"></a>
 ## What the evidence says
 
