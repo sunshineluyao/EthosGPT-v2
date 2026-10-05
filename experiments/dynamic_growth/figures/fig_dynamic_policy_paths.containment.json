@@ -1,0 +1,278 @@
+{
+  "files": [
+    "figures/fig_dynamic_policy_paths.svg"
+  ],
+  "record_count": 38,
+  "contained_text": 0,
+  "free_text": 38,
+  "passed": 38,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-29",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-30",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-31",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-32",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-33",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-34",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-35",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-36",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_policy_paths.svg",
+      "text_id": "fig_dynamic_policy_paths-label-37",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

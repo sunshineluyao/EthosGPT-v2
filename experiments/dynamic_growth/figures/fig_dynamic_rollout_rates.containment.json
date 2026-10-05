@@ -1,0 +1,215 @@
+{
+  "files": [
+    "figures/fig_dynamic_rollout_rates.svg"
+  ],
+  "record_count": 29,
+  "contained_text": 0,
+  "free_text": 29,
+  "passed": 29,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_rollout_rates.svg",
+      "text_id": "fig_dynamic_rollout_rates-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

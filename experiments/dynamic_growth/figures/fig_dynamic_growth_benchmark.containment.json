@@ -1,0 +1,215 @@
+{
+  "files": [
+    "figures/fig_dynamic_growth_benchmark.svg"
+  ],
+  "record_count": 29,
+  "contained_text": 0,
+  "free_text": 29,
+  "passed": 29,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_growth_benchmark.svg",
+      "text_id": "fig_dynamic_growth_benchmark-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "representation_source_commit": "4ce0359ef6b9b6045b1a7f439a407f8429837fd9",
+  "empirical_inputs_unchanged": true,
+  "input_verification": [
+    {
+      "path": "data/processed/human_item_distributions.parquet",
+      "local_git_blob": "a38a4a3a1c1bfa9657a854c18eeff70b48dc87cd",
+      "github_git_blob": "a38a4a3a1c1bfa9657a854c18eeff70b48dc87cd",
+      "matches": true,
+      "sha256": "57a3e811d2868c98f5bb49e40940bf433f95cf406abfe55e0913390e3510f3aa"
+    },
+    {
+      "path": "data/metadata/item_dictionary.csv",
+      "local_git_blob": "fd211551fe9249e5244622f0390b331b79382aea",
+      "github_git_blob": "fd211551fe9249e5244622f0390b331b79382aea",
+      "matches": true,
+      "sha256": "172a24a6c934945b5ed72c3e321335cd8241ba7da92909d3957d1aface08a14d"
+    },
+    {
+      "path": "experiments/gpt55_gpt56_64country/outputs/gpt-5.5_scores.jsonl",
+      "local_git_blob": "d5ce334295eebeb40cf19c53e54b494e472d68b1",
+      "github_git_blob": "d5ce334295eebeb40cf19c53e54b494e472d68b1",
+      "matches": true,
+      "sha256": "cb35dea83bdc08e50d8d79d2760acb3b79e130c5c22e69c80bd7c5568d8ce729"
+    },
+    {
+      "path": "experiments/gpt55_gpt56_64country/outputs/gpt-5.6-sol_scores.jsonl",
+      "local_git_blob": "335c0b98a228301e706c166b5aeabea9f2533f87",
+      "github_git_blob": "335c0b98a228301e706c166b5aeabea9f2533f87",
+      "matches": true,
+      "sha256": "3c94ddebb870ded526ac99780c845cd5788c333e5fd34444c1cd0a5cae4d6a28"
+    },
+    {
+      "path": "experiments/gpt55_gpt56_64country/results/country_question_scores.csv",
+      "local_git_blob": "89629174b97d2a7d4f8b5c6cf2e6077c9bb5c4ab",
+      "github_git_blob": "89629174b97d2a7d4f8b5c6cf2e6077c9bb5c4ab",
+      "matches": true,
+      "sha256": "02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf"
+    },
+    {
+      "path": "experiments/gpt55_gpt56_64country/results/metric_estimates.csv",
+      "local_git_blob": "285eb7a8e72c48ecac9358b27d8263ce013f07d6",
+      "github_git_blob": "285eb7a8e72c48ecac9358b27d8263ce013f07d6",
+      "matches": true,
+      "sha256": "054922fda8c86cbedd90e8a9c8419caf4bc2da8b35da7b4bdcca3a428c67ff80"
+    },
+    {
+      "path": "experiments/gpt55_gpt56_64country/results/metric_comparisons.csv",
+      "local_git_blob": "3003081204ef8c304b8a85b02f6aec6fbc0599fb",
+      "github_git_blob": "3003081204ef8c304b8a85b02f6aec6fbc0599fb",
+      "matches": true,
+      "sha256": "394363ed426342146f97f53c999cb3aa8f6a6eaf7d332bd188ade5a6d2268afe"
+    }
+  ],
+  "files": {
+    "inputs/country_question_scores.csv": "02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf",
+    "inputs/culture_distributions.csv": "7d4ecf6f214b15dbee154c294ab8f13e939a18fc899d8ec76d8ae7bc068d0b38",
+    "inputs/domain_comparisons.csv": "0f1804f7926b7a3676ca39a9872d7a3892218f07a9673cf5a650894d80d56fed",
+    "inputs/item_dictionary.csv": "9bf0f0fa6118d1e1e0e688e0bb8778a42bbe11d5ec6aeadc6ce7e47b157dfc11",
+    "inputs/metric_comparisons.csv": "394363ed426342146f97f53c999cb3aa8f6a6eaf7d332bd188ade5a6d2268afe",
+    "inputs/metric_estimates.csv": "054922fda8c86cbedd90e8a9c8419caf4bc2da8b35da7b4bdcca3a428c67ff80"
+  },
+  "sample_reproduction": [
+    {
+      "file": "phase_basins.csv",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "policy_metrics.json",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "rate_tipping.csv",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "bifurcation.csv",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "pareto_grid.csv",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "policy_trajectories.csv",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "cusp_surface.csv",
+      "reproduced_exactly": true
+    },
+    {
+      "file": "boundary.csv",
+      "reproduced_exactly": true
+    }
+  ],
+  "status": "Measured inputs kept separate from assumed parameters in parameters.json; no new provider or participant data.",
+  "sample_generator": {
+    "path": "sample_reproduction/make_figures.py",
+    "sha256": "5966ed4ed59dbaa900b8f4c07cbde67df9d03c81a270de63d7497fb56c71236e",
+    "origin": "Companion research-design sample archive; numerical generator preserved unchanged."
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "files": [
+    "figures/fig_dynamic_results_gallery.svg"
+  ],
+  "record_count": 56,
+  "contained_text": 0,
+  "free_text": 56,
+  "passed": 56,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-29",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-30",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-31",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-32",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-33",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-34",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-35",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-36",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-37",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-38",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-39",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-40",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-41",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-42",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-43",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-44",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-45",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-46",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-47",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-48",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-49",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-50",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-51",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-52",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-53",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-54",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_results_gallery.svg",
+      "text_id": "fig_dynamic_results_gallery-label-55",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

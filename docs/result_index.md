@@ -9,7 +9,7 @@ acquisition gap; it is not silently replaced by a processed table.
 The measured question is whether archived model response distributions
 represent six survey answer distributions across 64 countries. The economic
 question is a separately assumed decision rule applied to the signed gaps.
-The latter is a sensitivity exercise, not a measured outcome.
+The static and dynamic economic calculations are sensitivity exercises under declared mechanisms; their outputs are synthetic.
 
 | Claim | Frozen source | Reproducer | Numeric result |
 |---|---|---|---|
@@ -23,6 +23,7 @@ The latter is a sensitivity exercise, not a measured outcome.
 | Exploratory economics grouping | six item losses | `extended_analysis.py` | [margin results](../experiments/gpt55_gpt56_64country/results/economic_margin_results.csv) |
 | Six directed item gaps by country and original cultural region (descriptive) | [country-question scores](../experiments/gpt55_gpt56_64country/results/country_question_scores.csv), derived from the frozen outputs and unweighted survey target | [`signed_directions.py`](../experiments/gpt55_gpt56_64country/signed_directions.py); `make signed-directions` | [global means](../results/signed_directions/signed_global_items.csv), [all countries](../results/signed_directions/signed_country_items.csv), [eight regions](../results/signed_directions/signed_eight_regions.csv), and [figure guide](../results/signed_directions/README.md) |
 | Conditional creative-destruction illustration (synthetic, uncalibrated) | the same [country-question scores](../experiments/gpt55_gpt56_64country/results/country_question_scores.csv) and explicitly assumed decisions and innovation parameters | [`simulate_creative_destruction.py`](../experiments/gpt55_gpt56_64country/simulate_creative_destruction.py); `make creative-destruction` | [five global scenarios](../results/creative_destruction/global_scenarios.csv), [all countries](../results/creative_destruction/country_simulation.csv), [eight regions](../results/creative_destruction/eight_region_simulation.csv), [six-facet decomposition](../results/creative_destruction/six_facet_contributions.csv), and [assumptions and figure guide](../results/creative_destruction/README.md) |
+| Dynamic innovation, adjustment, changing values, and advice delay (synthetic) | Portable aggregate [distributions](../experiments/dynamic_growth/inputs/culture_distributions.csv), frozen scores, and [declared parameters](../experiments/dynamic_growth/parameters.json) | `make reproduce-dynamics`; `make mechanisms` | [24 result CSVs](../experiments/dynamic_growth/results/), [14 editable figures](../experiments/dynamic_growth/figures/), [model guide](../experiments/dynamic_growth/MODEL_GUIDE.md) |
 | Featured evidence and mechanism visuals | the country, signed-item and scenario CSVs above | `make featured-figures` | [Figure 1 SVG](../results/figures/fig1_ethos_gallery.svg), [Figure 2 SVG](../results/figures/fig2_value_bridge.svg), [provenance](../assets/featured/README.md) |
 
 The signed gaps are derived descriptions of archived outputs against the unweighted survey derivative. The creative-destruction scenarios are synthetic calculations conditional on declared, unestimated decision rules; neither their signs nor magnitudes are observed economic effects. All rows start from the same released score file or its frozen inputs.

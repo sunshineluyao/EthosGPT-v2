@@ -72,6 +72,36 @@ No API key or network request is used. Archived outputs reproduce the analysis;
 a later live request to an undated serving identifier is not promised to return
 the same output.
 
+## Dynamic mechanism reproduction
+
+`make reproduce-dynamics` verifies the companion's SHA-256 manifest, copies
+it to a new `build/dynamic-growth-*` directory, reruns all scenarios, runs
+13 mechanism tests, redraws the 14 figures and offline explorer, and compares
+24 CSV files with the released numerical references. Float comparisons use
+absolute tolerance 1e-10 and relative tolerance 1e-9; schemas, counts, integer
+values and categorical values must agree. Numerical-check JSON verifies
+configuration, scenario coverage, resource closure, probability mass, folds,
+and solver tolerance. Runtime and rendering metadata are not result targets.
+The reference results stay unchanged.
+
+`make mechanisms` runs only the 13 mechanism tests. `make dynamic-figures`
+redraws figures from the released tables in an isolated directory without
+rerunning the economic experiments. The full `make reproduce-offline` also
+runs the dynamic reproduction. `make release-contract` includes dynamic
+integrity, negative integrity tests, and the 13 mechanism tests.
+
+For a previously completed dynamic run, compare it without repeating the
+experiments:
+
+    python scripts/reproduce_dynamics.py --compare-only --output-dir PATH_TO_COMPLETED_RUN
+
+The dynamic companion needs only the four pinned versions in
+`experiments/dynamic_growth/requirements.txt`; the root lock file includes
+those versions. Typical dynamic runtime is about three minutes, plus figure
+rendering. No model API call or additional participant data is required.
+Its hypotheses and policy objectives are specified in
+[the model guide](experiments/dynamic_growth/MODEL_GUIDE.md).
+
 ## Random seeds and resampling settings
 
 - Analysis seed: 20260902

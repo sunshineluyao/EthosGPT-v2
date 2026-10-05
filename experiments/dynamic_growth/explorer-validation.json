@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "Actual script with DOM fixture; JS syntax and precomputed numeric controls verified. Browser rendering unavailable because no browser binary is installed.",
+  "tests": [
+    "unique scenario keys",
+    "initial state",
+    "reference zero response",
+    "rollout at zero/2.5%/5%",
+    "fast culture with lag 0/6",
+    "tab state"
+  ],
+  "scenario_count": 3072
+}

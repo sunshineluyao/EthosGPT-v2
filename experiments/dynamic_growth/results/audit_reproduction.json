@@ -1,0 +1,11 @@
+{
+  "countries": 64,
+  "questions": 6,
+  "paired_model_cells": 768,
+  "generations_per_cell": 5,
+  "mean_TVD_delta": -0.008045670029611731,
+  "ci_low": -0.010687117899063093,
+  "ci_high": -0.005036991989294835,
+  "max_point_difference_from_archive": 3.885780586188048e-16,
+  "scope": "All 768 cell-level TVD/W1 comparisons and primary paired-country TVD interval; other archived analyses retained unchanged."
+}

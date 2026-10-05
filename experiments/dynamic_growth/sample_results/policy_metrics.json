@@ -1,0 +1,38 @@
+[
+  {
+    "policy": "Benchmark guidance",
+    "aid": 0.49375703110218444,
+    "nu": 1.2149831253547574,
+    "budget_used": 1.0,
+    "growth": 0.11347097600527446,
+    "mean_burden": 0.41184964702539295,
+    "worst_burden": 0.5083658034019627,
+    "burden_gap": 0.19303231275313942,
+    "peak_worst": 0.5135811692322307,
+    "adoption_final": 0.8222529848041913
+  },
+  {
+    "policy": "Biased guidance",
+    "aid": 0.43432388914760744,
+    "nu": 1.357622666045742,
+    "budget_used": 1.0,
+    "growth": 0.025242920612516873,
+    "mean_burden": 0.13467251144893924,
+    "worst_burden": 0.1773702570979399,
+    "burden_gap": 0.08539549129800132,
+    "peak_worst": 0.5495107026591207,
+    "adoption_final": 0.09179023510070475
+  },
+  {
+    "policy": "Adjusted policy",
+    "aid": 0.56,
+    "nu": 1.0559999999999998,
+    "budget_used": 1.0,
+    "growth": 0.10357625365179214,
+    "mean_burden": 0.3699615987983156,
+    "worst_burden": 0.45967743896847735,
+    "burden_gap": 0.17943168034032347,
+    "peak_worst": 0.46374851644715626,
+    "adoption_final": 0.8647963654355656
+  }
+]

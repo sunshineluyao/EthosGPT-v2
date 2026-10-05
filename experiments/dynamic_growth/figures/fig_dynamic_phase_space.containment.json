@@ -1,0 +1,131 @@
+{
+  "files": [
+    "figures/fig_dynamic_phase_space.svg"
+  ],
+  "record_count": 17,
+  "contained_text": 0,
+  "free_text": 17,
+  "passed": 17,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_phase_space.svg",
+      "text_id": "fig_dynamic_phase_space-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "files": [
+    "figures/fig_dynamic_culture_families.svg"
+  ],
+  "record_count": 75,
+  "contained_text": 0,
+  "free_text": 75,
+  "passed": 75,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-29",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-30",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-31",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-32",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-33",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-34",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-35",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-36",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-37",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-38",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-39",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-40",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-41",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-42",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-43",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-44",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-45",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-46",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-47",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-48",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-49",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-50",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-51",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-52",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-53",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-54",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-55",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-56",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-57",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-58",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-59",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-60",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-61",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-62",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-63",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-64",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-65",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-66",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-67",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-68",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-69",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-70",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-71",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-72",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-73",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_culture_families.svg",
+      "text_id": "fig_dynamic_culture_families-label-74",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

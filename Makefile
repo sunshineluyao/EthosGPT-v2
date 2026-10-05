@@ -2,7 +2,7 @@ PYTHON ?= python
 export PYTHONPATH := src
 export SOURCE_DATE_EPOCH ?= 1788566400
 
-.PHONY: setup analysis assets signed-directions creative-destruction featured-figures release-smoke lint test negative-tests verify audit-visual release-contract reproduce-offline
+.PHONY: setup analysis assets signed-directions creative-destruction featured-figures release-smoke lint test negative-tests verify audit-visual release-contract reproduce-offline mechanisms reproduce-dynamics dynamic-figures
 
 EXPERIMENT := experiments/gpt55_gpt56_64country
 
@@ -39,9 +39,10 @@ featured-figures:
 
 release-smoke:
 	$(PYTHON) scripts/release_smoke.py
+	$(PYTHON) scripts/reproduce_dynamics.py --check
 
 lint:
-	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country tests
+	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country experiments/dynamic_growth tests
 
 test:
 	$(PYTHON) -m pytest -q tests
@@ -56,7 +57,16 @@ verify:
 audit-visual:
 	$(PYTHON) scripts/audit_visual_assets.py
 
-release-contract: lint release-smoke verify audit-visual negative-tests
+release-contract: lint release-smoke verify audit-visual negative-tests mechanisms
 
 reproduce-offline:
 	$(PYTHON) scripts/reproduce_offline.py
+
+mechanisms:
+	cd experiments/dynamic_growth && $(PYTHON) -m unittest test_dynamics -v
+
+reproduce-dynamics:
+	$(PYTHON) scripts/reproduce_dynamics.py
+
+dynamic-figures:
+	$(PYTHON) scripts/reproduce_dynamics.py --figures-only

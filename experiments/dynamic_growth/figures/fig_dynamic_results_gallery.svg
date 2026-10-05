@@ -1,0 +1,966 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="496.8pt" height="374.4pt" viewBox="0 0 496.8 374.4" version="1.1">
+ <ns0:title>fig dynamic results gallery</ns0:title><ns0:metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-02T04:58:06.429011</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 374.4  L 496.8 374.4  L 496.8 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 49.68 126.226286  L 230.613333 126.226286  L 230.613333 29.952  L 49.68 29.952  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_1">
+    <ns0:g id="xtick_1">
+     <ns0:g id="line2d_1">
+      <ns0:path d="M 56.381235 126.226286  L 56.381235 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_2">
+      <ns0:defs>
+       <ns0:path id="mbcce2cc7f0" d="M 0 0  L 0 3  " style="stroke: #17293f; stroke-width: 0.6" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="56.381235" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_1">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="56.381235" y="140.03152" transform="rotate(-0 56.381235 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-0">0.4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_2">
+     <ns0:g id="line2d_3">
+      <ns0:path d="M 83.186173 126.226286  L 83.186173 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_4">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="83.186173" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_2">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="83.186173" y="140.03152" transform="rotate(-0 83.186173 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-1">0.6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_3">
+     <ns0:g id="line2d_5">
+      <ns0:path d="M 109.991111 126.226286  L 109.991111 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_6">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="109.991111" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_3">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="109.991111" y="140.03152" transform="rotate(-0 109.991111 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-2">0.8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_4">
+     <ns0:g id="line2d_7">
+      <ns0:path d="M 136.796049 126.226286  L 136.796049 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_8">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="136.796049" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_4">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="136.796049" y="140.03152" transform="rotate(-0 136.796049 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-3">1.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_5">
+     <ns0:g id="line2d_9">
+      <ns0:path d="M 163.600988 126.226286  L 163.600988 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_10">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="163.600988" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_5">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="163.600988" y="140.03152" transform="rotate(-0 163.600988 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-4">1.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_6">
+     <ns0:g id="line2d_11">
+      <ns0:path d="M 190.405926 126.226286  L 190.405926 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_12">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="190.405926" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_6">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="190.405926" y="140.03152" transform="rotate(-0 190.405926 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-5">1.4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_7">
+     <ns0:g id="line2d_13">
+      <ns0:path d="M 217.210864 126.226286  L 217.210864 29.952  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_14">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="217.210864" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_7">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="217.210864" y="140.03152" transform="rotate(-0 217.210864 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-6">1.6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_8">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="140.146667" y="155.023004" transform="rotate(-0 140.146667 155.023004)" data-containment="free" id="fig_dynamic_results_gallery-label-7">Launch intensity</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_2">
+    <ns0:g id="ytick_1">
+     <ns0:g id="line2d_15">
+      <ns0:path d="M 49.68 109.90861  L 230.613333 109.90861  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_16">
+      <ns0:defs>
+       <ns0:path id="m66726d3cfe" d="M 0 0  L -3 0  " style="stroke: #17293f; stroke-width: 0.6" />
+      </ns0:defs>
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="109.90861" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_9">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="112.811227" transform="rotate(-0 41.68 112.811227)" data-containment="free" id="fig_dynamic_results_gallery-label-8">−1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_2">
+     <ns0:g id="line2d_17">
+      <ns0:path d="M 49.68 77.273259  L 230.613333 77.273259  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_18">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="77.273259" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_10">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="80.175876" transform="rotate(-0 41.68 80.175876)" data-containment="free" id="fig_dynamic_results_gallery-label-9">0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_3">
+     <ns0:g id="line2d_19">
+      <ns0:path d="M 49.68 44.637908  L 230.613333 44.637908  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_20">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="44.637908" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_11">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="47.540525" transform="rotate(-0 41.68 47.540525)" data-containment="free" id="fig_dynamic_results_gallery-label-10">1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_12">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="22.654219" y="78.089143" transform="rotate(-90 22.654219 78.089143)" data-containment="free" id="fig_dynamic_results_gallery-label-11">Coordination</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_21">
+    <ns0:path d="M 75.439841 41.374373  L 94.483253 43.311298  L 109.707479 45.089483  L 121.197257 46.638163  L 130.669034 48.118998  L 138.164594 49.492055  L 143.782718 50.703327  L 148.921918 52.034415  L 152.347416 53.121714  L 155.287253 54.290126  L 156.915871 55.113374  L 158.23565 55.968785  L 159.214105 56.850965  L 159.829034 57.752403  L 160.072769 58.664264  M 64.280453 95.727381  L 64.498613 96.639623  L 65.091178 97.541949  L 66.053566 98.42518  L 67.365625 99.2813  L 68.995553 100.104401  L 71.953028 101.270148  L 75.411082 102.351302  L 80.60878 103.668805  L 86.294852 104.861099  L 93.880871 106.204329  L 103.463087 107.642364  L 115.080706 109.133357  L 128.738672 110.648834  L 144.425508 112.170543  L 163.905544 113.830533  L 187.216933 115.578191  L 214.373413 117.377747  L 228.938086 118.26211  L 228.938086 118.26211  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #007f86; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_22">
+    <ns0:path d="M 160.057428 59.121276  L 159.764288 60.032277  L 159.145082 60.933545  L 158.23394 61.819994  L 157.067103 62.688492  L 154.913141 63.954614  L 152.365927 65.176765  L 148.50119 66.743079  L 143.121657 68.614257  L 136.121264 70.760829  L 126.225823 73.50898  L 108.279613 78.179961  L 93.091293 82.227037  L 84.684525 84.683962  L 79.063825 86.512776  L 73.933255 88.424843  L 70.334209 90.028159  L 68.038142 91.279422  L 66.191381 92.573936  L 65.26543 93.459469  L 64.62607 94.359896  L 64.30872 95.270409  L 64.30872 95.270409  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #007f86; stroke-width: 1.5" />
+   </ns0:g>
+   <ns0:g id="line2d_23">
+    <ns0:path d="M 99.028832 41.374373  L 118.139888 43.271383  L 133.429451 45.016048  L 144.983475 46.536167  L 154.527344 47.989353  L 162.103057 49.33613  L 167.805815 50.52376  L 173.056483 51.828862  L 176.589225 52.895647  L 179.660899 54.043803  L 181.391726 54.85459  L 182.82394 55.699209  L 183.922144 56.572992  L 184.659622 57.468962  L 185.023329 58.37845  M 89.221486 95.8619  L 89.548653 96.772209  L 90.249637 97.669915  L 91.31488 98.546118  L 92.72033 99.393405  L 94.432005 100.206607  L 97.4895 101.356987  L 101.023301 102.423548  L 106.292898 103.724072  L 112.02769 104.902489  L 119.653991 106.23218  L 129.266513 107.658224  L 140.905604 109.139299  L 154.578242 110.646945  L 172.034521 112.321298  L 191.545891 113.959397  L 214.881002 115.688247  L 229.346798 116.664044  L 229.346798 116.664044  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke: #b93678; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_24">
+    <ns0:path d="M 185.065381 58.835369  L 184.87927 59.748037  L 184.354613 60.652856  L 183.524541 61.544014  L 182.425677 62.417754  L 180.351852 63.691759  L 177.863267 64.921035  L 174.051694 66.495022  L 169.820067 68.004199  L 164.111246 69.81677  L 155.602273 72.252779  L 142.883487 75.61164  L 118.586447 81.963601  L 110.124323 84.409249  L 103.371786 86.602227  L 99.26225 88.131249  L 95.60077 89.72618  L 93.24688 90.971066  L 91.329897 92.259526  L 90.348971 93.141543  L 89.647607 94.039229  L 89.261475 94.948165  L 89.196607 95.404912  L 89.196607 95.404912  " clip-path="url(#pa0d35b62d5)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #b93678; stroke-width: 1.5" />
+   </ns0:g>
+   <ns0:g id="patch_3">
+    <ns0:path d="M 49.68 126.226286  L 49.68 29.952  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_4">
+    <ns0:path d="M 49.68 126.226286  L 230.613333 126.226286  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_13">
+    <ns0:text style="font-size: 10px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="49.68" y="18.952" transform="rotate(-0 49.68 18.952)" data-containment="free" id="fig_dynamic_results_gallery-label-12">A  Reinforcing feedback creates a threshold</ns0:text>
+   </ns0:g>
+   <ns0:g id="PathCollection_1">
+    <ns0:defs>
+     <ns0:path id="m9e7b7e6b9a" d="M -0 3.391165  L 3.391165 0  L 0 -3.391165  L -3.391165 -0  z " style="stroke: #007f86" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#pa0d35b62d5)">
+     <ns0:use ns4:href="#m9e7b7e6b9a" x="160.077661" y="58.814475" style="fill: #007f86; stroke: #007f86" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_2">
+    <ns0:defs>
+     <ns0:path id="m34fad5c9b1" d="M -0 3.391165  L 3.391165 0  L 0 -3.391165  L -3.391165 -0  z " style="stroke: #b93678" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#pa0d35b62d5)">
+     <ns0:use ns4:href="#m34fad5c9b1" x="185.065462" y="58.816127" style="fill: #b93678; stroke: #b93678" />
+    </ns0:g>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_2">
+   <ns0:g id="patch_5">
+    <ns0:path d="M 308.414667 126.226286  L 489.348 126.226286  L 489.348 29.952  L 308.414667 29.952  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_3">
+    <ns0:g id="xtick_8">
+     <ns0:g id="line2d_25">
+      <ns0:path d="M 316.638909 126.226286  L 316.638909 29.952  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_26">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="316.638909" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_14">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="316.638909" y="140.03152" transform="rotate(-0 316.638909 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-13">−0.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_9">
+     <ns0:g id="line2d_27">
+      <ns0:path d="M 357.760121 126.226286  L 357.760121 29.952  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_28">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="357.760121" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_15">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="357.760121" y="140.03152" transform="rotate(-0 357.760121 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-14">−0.1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_10">
+     <ns0:g id="line2d_29">
+      <ns0:path d="M 398.881333 126.226286  L 398.881333 29.952  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_30">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="398.881333" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_16">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="398.881333" y="140.03152" transform="rotate(-0 398.881333 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-15">0.0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_11">
+     <ns0:g id="line2d_31">
+      <ns0:path d="M 440.002545 126.226286  L 440.002545 29.952  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_32">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="440.002545" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_17">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="440.002545" y="140.03152" transform="rotate(-0 440.002545 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-16">0.1</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_12">
+     <ns0:g id="line2d_33">
+      <ns0:path d="M 481.123758 126.226286  L 481.123758 29.952  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_34">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="481.123758" y="126.226286" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_18">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="481.123758" y="140.03152" transform="rotate(-0 481.123758 140.03152)" data-containment="free" id="fig_dynamic_results_gallery-label-17">0.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_19">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="398.881333" y="155.023004" transform="rotate(-0 398.881333 155.023004)" data-containment="free" id="fig_dynamic_results_gallery-label-18">Assumed adviser-channel error</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_4">
+    <ns0:g id="ytick_4">
+     <ns0:g id="line2d_35">
+      <ns0:path d="M 308.414667 126.007736  L 489.348 126.007736  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_36">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="126.007736" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_20">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="128.910353" transform="rotate(-0 300.414667 128.910353)" data-containment="free" id="fig_dynamic_results_gallery-label-19">2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_5">
+     <ns0:g id="line2d_37">
+      <ns0:path d="M 308.414667 106.516897  L 489.348 106.516897  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_38">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="106.516897" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_21">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="109.419515" transform="rotate(-0 300.414667 109.419515)" data-containment="free" id="fig_dynamic_results_gallery-label-20">4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_6">
+     <ns0:g id="line2d_39">
+      <ns0:path d="M 308.414667 87.026059  L 489.348 87.026059  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_40">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="87.026059" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_22">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="89.928677" transform="rotate(-0 300.414667 89.928677)" data-containment="free" id="fig_dynamic_results_gallery-label-21">6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_7">
+     <ns0:g id="line2d_41">
+      <ns0:path d="M 308.414667 67.535221  L 489.348 67.535221  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_42">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="67.535221" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_23">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="70.437838" transform="rotate(-0 300.414667 70.437838)" data-containment="free" id="fig_dynamic_results_gallery-label-22">8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_8">
+     <ns0:g id="line2d_43">
+      <ns0:path d="M 308.414667 48.044383  L 489.348 48.044383  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_44">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="48.044383" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_24">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="50.947" transform="rotate(-0 300.414667 50.947)" data-containment="free" id="fig_dynamic_results_gallery-label-23">10</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_25">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="282.952948" y="78.089143" transform="rotate(-90 282.952948 78.089143)" data-containment="free" id="fig_dynamic_results_gallery-label-24">Quality growth (log points)</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_45">
+    <ns0:path d="M 316.638909 44.521625  L 338.227545 41.491779  L 356.732091 39.102545  L 373.180576 37.20224  L 386.54497 35.878275  L 397.853303 34.983957  L 407.105576 34.485784  L 414.301788 34.328104  L 419.441939 34.416605  L 423.554061 34.693336  L 426.638152 35.119109  L 428.694212 35.610178  L 429.722242 35.984088  L 430.750273 36.560349  L 431.778303 39.258293  L 432.806333 74.522009  L 433.834364 86.993856  L 434.862394 93.838356  L 435.890424 98.312033  L 436.918455 101.526539  L 437.946485 103.978624  L 438.974515 105.927997  L 440.002545 107.525357  L 441.030576 108.864942  L 443.086636 111.000919  L 445.142697 112.643014  L 447.198758 113.9554  L 449.254818 115.03483  L 452.338909 116.345241  L 455.423 117.393541  L 459.535121 118.511322  L 463.647242 119.405375  L 468.787394 120.304946  L 474.955576 121.162139  L 481.123758 121.850182  L 481.123758 121.850182  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke: #007f86; stroke-width: 1.6; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_46">
+    <ns0:path d="M 316.638909 91.155096  L 348.507848 91.902548  L 395.797242 93.26562  L 481.123758 95.819743  L 481.123758 95.819743  " clip-path="url(#pf7b3ee9098)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #728091; stroke-width: 1.6" />
+   </ns0:g>
+   <ns0:g id="patch_6">
+    <ns0:path d="M 308.414667 126.226286  L 308.414667 29.952  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_7">
+    <ns0:path d="M 308.414667 126.226286  L 489.348 126.226286  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_26">
+    <ns0:text style="font-size: 10px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="308.414667" y="18.952" transform="rotate(-0 308.414667 18.952)" data-containment="free" id="fig_dynamic_results_gallery-label-25">B  A threshold is not inevitable</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_3">
+   <ns0:g id="patch_8">
+    <ns0:path d="M 49.68 299.52  L 230.613333 299.52  L 230.613333 203.245714  L 49.68 203.245714  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_5">
+    <ns0:g id="xtick_13">
+     <ns0:g id="line2d_47">
+      <ns0:path d="M 68.372017 299.52  L 68.372017 203.245714  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_48">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="68.372017" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_27">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="68.372017" y="313.325234" transform="rotate(-0 68.372017 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-26">0.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_14">
+     <ns0:g id="line2d_49">
+      <ns0:path d="M 117.199698 299.52  L 117.199698 203.245714  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_50">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="117.199698" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_28">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="117.199698" y="313.325234" transform="rotate(-0 117.199698 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-27">0.3</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_15">
+     <ns0:g id="line2d_51">
+      <ns0:path d="M 166.027379 299.52  L 166.027379 203.245714  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_52">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="166.027379" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_29">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="166.027379" y="313.325234" transform="rotate(-0 166.027379 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-28">0.4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_16">
+     <ns0:g id="line2d_53">
+      <ns0:path d="M 214.855061 299.52  L 214.855061 203.245714  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_54">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="214.855061" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_30">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="214.855061" y="313.325234" transform="rotate(-0 214.855061 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-29">0.5</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_31">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="140.146667" y="328.316719" transform="rotate(-0 140.146667 328.316719)" data-containment="free" id="fig_dynamic_results_gallery-label-30">Mean category-share error</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_6">
+    <ns0:g id="ytick_9">
+     <ns0:g id="line2d_55">
+      <ns0:path d="M 49.68 286.904161  L 230.613333 286.904161  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_56">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="286.904161" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_32">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="289.806778" transform="rotate(-0 41.68 289.806778)" data-containment="free" id="fig_dynamic_results_gallery-label-31">−8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_10">
+     <ns0:g id="line2d_57">
+      <ns0:path d="M 49.68 267.232094  L 230.613333 267.232094  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_58">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="267.232094" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_33">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="270.134712" transform="rotate(-0 41.68 270.134712)" data-containment="free" id="fig_dynamic_results_gallery-label-32">−6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_11">
+     <ns0:g id="line2d_59">
+      <ns0:path d="M 49.68 247.560028  L 230.613333 247.560028  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_60">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="247.560028" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_34">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="250.462645" transform="rotate(-0 41.68 250.462645)" data-containment="free" id="fig_dynamic_results_gallery-label-33">−4</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_12">
+     <ns0:g id="line2d_61">
+      <ns0:path d="M 49.68 227.887962  L 230.613333 227.887962  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_62">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="227.887962" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_35">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="230.790579" transform="rotate(-0 41.68 230.790579)" data-containment="free" id="fig_dynamic_results_gallery-label-34">−2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_13">
+     <ns0:g id="line2d_63">
+      <ns0:path d="M 49.68 208.215895  L 230.613333 208.215895  " clip-path="url(#p407260d972)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_64">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="49.68" y="208.215895" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_36">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="41.68" y="211.118512" transform="rotate(-0 41.68 211.118512)" data-containment="free" id="fig_dynamic_results_gallery-label-35">0</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_37">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="22.645781" y="251.382857" transform="rotate(-90 22.645781 251.382857)" data-containment="free" id="fig_dynamic_results_gallery-label-36">Quality-growth change (log points)</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_3">
+    <ns0:defs>
+     <ns0:path id="m371f8b190f" d="M 0 1.732051  C 0.459345 1.732051 0.899939 1.549551 1.224745 1.224745  C 1.549551 0.899939 1.732051 0.459345 1.732051 0  C 1.732051 -0.459345 1.549551 -0.899939 1.224745 -1.224745  C 0.899939 -1.549551 0.459345 -1.732051 0 -1.732051  C -0.459345 -1.732051 -0.899939 -1.549551 -1.224745 -1.224745  C -1.549551 -0.899939 -1.732051 -0.459345 -1.732051 0  C -1.732051 0.459345 -1.549551 0.899939 -1.224745 1.224745  C -0.899939 1.549551 -0.459345 1.732051 0 1.732051  z " />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p407260d972)">
+     <ns0:use ns4:href="#m371f8b190f" x="160.190794" y="207.675061" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="91.713539" y="210.40232" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="218.135998" y="211.700632" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="86.060013" y="209.321002" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="122.887858" y="214.310768" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="92.873576" y="207.757169" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="122.623252" y="209.826095" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="65.042682" y="207.902999" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="123.539486" y="209.590824" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="85.077021" y="212.924742" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="165.804457" y="207.635299" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="142.243907" y="209.134335" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="110.689341" y="212.571005" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="123.412476" y="207.864443" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="129.934356" y="209.32507" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="190.707318" y="209.348392" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="100.374112" y="210.992193" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="117.640247" y="220.394405" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="99.298279" y="207.873465" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="170.551193" y="211.68047" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="80.248946" y="207.938852" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="115.440442" y="207.697751" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="115.186003" y="208.619532" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="162.894004" y="215.752085" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="132.920981" y="208.089501" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="112.468267" y="214.462596" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="155.345013" y="210.163701" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="101.222348" y="207.75998" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="119.807135" y="207.916947" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="222.389091" y="207.624064" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="83.962941" y="207.763069" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="146.335857" y="210.250767" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="97.853422" y="207.805881" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="62.959023" y="208.495129" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="127.954216" y="215.576384" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="127.00029" y="209.375338" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="72.83565" y="209.423253" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="124.654705" y="208.622781" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="147.981286" y="214.550068" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="77.976956" y="211.846062" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="92.837694" y="207.621818" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="122.520464" y="207.761448" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="154.401795" y="214.129616" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="164.768029" y="208.910539" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="149.317202" y="210.724139" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="95.976655" y="208.110884" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="104.579566" y="208.334614" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="183.970402" y="207.733821" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="134.446771" y="208.574043" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="116.792991" y="209.537986" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="165.266781" y="207.730672" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="79.574351" y="208.042561" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="89.969185" y="207.65185" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="87.326916" y="208.284358" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="116.335526" y="212.096639" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="125.325419" y="207.673714" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="130.392256" y="294.832924" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="118.779821" y="207.851561" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="63.419506" y="213.5068" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="101.471276" y="211.048621" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="84.271126" y="212.621544" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="174.103215" y="208.267439" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="142.365761" y="265.749516" style="fill: #17293f; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#m371f8b190f" x="182.715889" y="211.438908" style="fill: #17293f; fill-opacity: 0.6" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_4">
+    <ns0:defs>
+     <ns0:path id="md87065600b" d="M 0 -1.732051  L -1.732051 1.732051  L 1.732051 1.732051  z " />
+    </ns0:defs>
+    <ns0:g clip-path="url(#p407260d972)">
+     <ns0:use ns4:href="#md87065600b" x="149.966574" y="207.744919" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="95.464229" y="211.569388" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="212.113918" y="210.892707" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="84.35021" y="209.570581" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="124.916725" y="215.786873" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="93.879723" y="207.964995" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="116.151875" y="209.369476" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="57.904242" y="207.711694" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="123.098557" y="209.722739" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="80.834931" y="213.375175" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="156.671298" y="207.978135" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="137.930795" y="209.140877" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="113.334173" y="213.841098" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="112.012982" y="207.651058" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="127.454729" y="210.050169" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="184.696863" y="211.131369" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="100.408686" y="211.321271" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="112.073891" y="220.766189" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="101.495525" y="207.829824" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="168.124673" y="212.736404" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="92.88989" y="209.720871" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="100.746167" y="207.763429" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="103.841705" y="208.514985" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="161.769159" y="217.602936" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="137.438293" y="209.93561" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="107.428097" y="215.421641" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="151.682937" y="211.203691" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="95.249095" y="207.704531" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="119.45687" y="207.793166" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="219.581499" y="207.643368" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="85.048" y="208.577803" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="138.170784" y="211.934761" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="106.414542" y="207.967986" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="61.231274" y="208.656412" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="124.536278" y="216.417083" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="122.005916" y="209.933379" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="67.464605" y="209.90605" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="119.488878" y="209.919303" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="138.449466" y="216.156185" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="81.653473" y="212.600562" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="89.662643" y="207.698549" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="114.703752" y="207.714162" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="146.924322" y="215.787088" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="157.622912" y="208.060524" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="134.84456" y="210.984926" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="95.83685" y="208.978397" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="100.008999" y="208.220997" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="174.639307" y="207.625392" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="121.786743" y="208.499663" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="110.790145" y="209.511845" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="159.822029" y="207.62669" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="79.104351" y="207.973798" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="83.346868" y="207.708535" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="97.321301" y="208.705679" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="106.249122" y="210.144069" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="115.478503" y="207.801867" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="122.547275" y="295.143896" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="109.442281" y="207.762957" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="67.061689" y="214.361543" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="97.031288" y="210.306071" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="79.44458" y="212.298408" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="166.01642" y="207.819099" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="145.586579" y="289.603876" style="fill: #007f86; fill-opacity: 0.6" />
+     <ns0:use ns4:href="#md87065600b" x="173.036131" y="212.395911" style="fill: #007f86; fill-opacity: 0.6" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_65">
+    <ns0:path d="M 49.68 208.215895  L 230.613333 208.215895  " clip-path="url(#p407260d972)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #728091; stroke-width: 0.7" />
+   </ns0:g>
+   <ns0:g id="patch_9">
+    <ns0:path d="M 49.68 299.52  L 49.68 203.245714  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_10">
+    <ns0:path d="M 49.68 299.52  L 230.613333 299.52  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_38">
+    <ns0:text style="font-size: 10px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="49.68" y="192.245714" transform="rotate(-0 49.68 192.245714)" data-containment="free" id="fig_dynamic_results_gallery-label-37">C  Measured errors, conditional outcomes</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="axes_4">
+   <ns0:g id="patch_11">
+    <ns0:path d="M 308.414667 299.52  L 489.348 299.52  L 489.348 203.245714  L 308.414667 203.245714  z " style="fill: #ffffff" />
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_7">
+    <ns0:g id="xtick_17">
+     <ns0:g id="line2d_66">
+      <ns0:path d="M 316.638909 299.52  L 316.638909 203.245714  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_67">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="316.638909" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_39">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="316.638909" y="313.325234" transform="rotate(-0 316.638909 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-38">.05</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_18">
+     <ns0:g id="line2d_68">
+      <ns0:path d="M 371.467192 299.52  L 371.467192 203.245714  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_69">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="371.467192" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_40">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="371.467192" y="313.325234" transform="rotate(-0 371.467192 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-39">.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_19">
+     <ns0:g id="line2d_70">
+      <ns0:path d="M 426.295475 299.52  L 426.295475 203.245714  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_71">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="426.295475" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_41">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="426.295475" y="313.325234" transform="rotate(-0 426.295475 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-40">.8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="xtick_20">
+     <ns0:g id="line2d_72">
+      <ns0:path d="M 481.123758 299.52  L 481.123758 203.245714  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_73">
+      <ns0:g>
+       <ns0:use ns4:href="#mbcce2cc7f0" x="481.123758" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_42">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="481.123758" y="313.325234" transform="rotate(-0 481.123758 313.325234)" data-containment="free" id="fig_dynamic_results_gallery-label-41">3.2</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_43">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="398.881333" y="328.316719" transform="rotate(-0 398.881333 328.316719)" data-containment="free" id="fig_dynamic_results_gallery-label-42">Technology-rollout rate</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="matplotlib.axis_8">
+    <ns0:g id="ytick_14">
+     <ns0:g id="line2d_74">
+      <ns0:path d="M 308.414667 299.52  L 489.348 299.52  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_75">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="299.52" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_44">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="302.422617" transform="rotate(-0 300.414667 302.422617)" data-containment="free" id="fig_dynamic_results_gallery-label-43">6</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_15">
+     <ns0:g id="line2d_76">
+      <ns0:path d="M 308.414667 263.190081  L 489.348 263.190081  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_77">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="263.190081" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_45">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="266.092698" transform="rotate(-0 300.414667 266.092698)" data-containment="free" id="fig_dynamic_results_gallery-label-44">8</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="ytick_16">
+     <ns0:g id="line2d_78">
+      <ns0:path d="M 308.414667 226.860162  L 489.348 226.860162  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.14; stroke-width: 0.5; stroke-linecap: square" />
+     </ns0:g>
+     <ns0:g id="line2d_79">
+      <ns0:g>
+       <ns0:use ns4:href="#m66726d3cfe" x="308.414667" y="226.860162" style="fill: #17293f; stroke: #17293f; stroke-width: 0.6" />
+      </ns0:g>
+     </ns0:g>
+     <ns0:g id="text_46">
+      <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: end; fill: #17293f" x="300.414667" y="229.762779" transform="rotate(-0 300.414667 229.762779)" data-containment="free" id="fig_dynamic_results_gallery-label-45">10</ns0:text>
+     </ns0:g>
+    </ns0:g>
+    <ns0:g id="text_47">
+     <ns0:text style="font-size: 9px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #17293f" x="282.952948" y="251.382857" transform="rotate(-90 282.952948 251.382857)" data-containment="free" id="fig_dynamic_results_gallery-label-46">Quality growth (log points)</ns0:text>
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="line2d_80">
+    <ns0:path d="M 316.638909 222.311956  L 344.053051 247.579409  L 371.467192 268.667567  L 398.881333 279.595004  L 426.295475 284.492717  L 453.709616 286.331638  L 481.123758 286.918245  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #17293f; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_81">
+    <ns0:path d="M 316.638909 223.787506  L 344.053051 225.184418  L 371.467192 226.470202  L 398.881333 227.140669  L 426.295475 227.446701  L 453.709616 227.572181  L 481.123758 227.617214  " clip-path="url(#peba6accb55)" style="fill: none; stroke: #a97512; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="line2d_82">
+    <ns0:path d="M 316.638909 231.696444  L 344.053051 232.467652  L 371.467192 233.129442  L 398.881333 233.473489  L 426.295475 233.635641  L 453.709616 233.705582  L 481.123758 233.732114  " clip-path="url(#peba6accb55)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #a97512; stroke-width: 1.5" />
+   </ns0:g>
+   <ns0:g id="line2d_83">
+    <ns0:path d="M 308.414667 226.860162  L 489.348 226.860162  " clip-path="url(#peba6accb55)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #728091; stroke-width: 0.7" />
+   </ns0:g>
+   <ns0:g id="patch_12">
+    <ns0:path d="M 308.414667 299.52  L 308.414667 203.245714  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="patch_13">
+    <ns0:path d="M 308.414667 299.52  L 489.348 299.52  " style="fill: none; stroke: #8994a2; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_48">
+    <ns0:text style="font-size: 10px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="308.414667" y="192.245714" transform="rotate(-0 308.414667 192.245714)" data-containment="free" id="fig_dynamic_results_gallery-label-47">D  Adjustment widens tested viable rates</ns0:text>
+   </ns0:g>
+   <ns0:g id="PathCollection_5">
+    <ns0:defs>
+     <ns0:path id="mbdb2e10ec7" d="M 0 2.345208  C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312  C 2.098102 1.218523 2.345208 0.621956 2.345208 0  C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312  C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208  C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312  C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0  C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312  C -1.218523 2.098102 -0.621956 2.345208 0 2.345208  z " style="stroke: #17293f; stroke-width: 0.8" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="316.638909" y="222.311956" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_6">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="344.053051" y="247.579409" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_7">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="371.467192" y="268.667567" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_8">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="398.881333" y="279.595004" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_9">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="426.295475" y="284.492717" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_10">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="453.709616" y="286.331638" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_11">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mbdb2e10ec7" x="481.123758" y="286.918245" style="fill: #ffffff; stroke: #17293f; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_12">
+    <ns0:defs>
+     <ns0:path id="mfac5577c7f" d="M 0 2.345208  C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312  C 2.098102 1.218523 2.345208 0.621956 2.345208 0  C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312  C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208  C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312  C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0  C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312  C -1.218523 2.098102 -0.621956 2.345208 0 2.345208  z " style="stroke: #a97512; stroke-width: 0.8" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mfac5577c7f" x="316.638909" y="223.787506" style="fill: #a97512; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_13">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mfac5577c7f" x="344.053051" y="225.184418" style="fill: #a97512; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_14">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#mfac5577c7f" x="371.467192" y="226.470202" style="fill: #a97512; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_15">
+    <ns0:defs>
+     <ns0:path id="m1256ddb379" d="M 0 2.345208  C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312  C 2.098102 1.218523 2.345208 0.621956 2.345208 0  C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312  C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208  C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312  C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0  C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312  C -1.218523 2.098102 -0.621956 2.345208 0 2.345208  z " style="stroke: #a97512; stroke-width: 0.8" />
+    </ns0:defs>
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="398.881333" y="227.140669" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_16">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="426.295475" y="227.446701" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_17">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="453.709616" y="227.572181" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_18">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="481.123758" y="227.617214" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_19">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="316.638909" y="231.696444" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_20">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="344.053051" y="232.467652" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_21">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="371.467192" y="233.129442" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_22">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="398.881333" y="233.473489" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_23">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="426.295475" y="233.635641" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_24">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="453.709616" y="233.705582" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="PathCollection_25">
+    <ns0:g clip-path="url(#peba6accb55)">
+     <ns0:use ns4:href="#m1256ddb379" x="481.123758" y="233.732114" style="fill: #ffffff; stroke: #a97512; stroke-width: 0.8" />
+    </ns0:g>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="legend_1">
+   <ns0:g id="line2d_84">
+    <ns0:path d="M 327.903281 171.301617  L 333.853281 171.301617  L 339.803281 171.301617  " style="fill: none; stroke: #007f86; stroke-width: 1.6; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_49">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="346.603281" y="174.276617" transform="rotate(-0 346.603281 174.276617)" data-containment="free" id="fig_dynamic_results_gallery-label-48">Fold</ns0:text>
+   </ns0:g>
+   <ns0:g id="line2d_85">
+    <ns0:path d="M 372.391484 171.301617  L 378.341484 171.301617  L 384.291484 171.301617  " style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #728091; stroke-width: 1.6" />
+   </ns0:g>
+   <ns0:g id="text_50">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="391.091484" y="174.276617" transform="rotate(-0 391.091484 174.276617)" data-containment="free" id="fig_dynamic_results_gallery-label-49">No fold</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="legend_2">
+   <ns0:g id="PathCollection_26">
+    <ns0:g>
+     <ns0:use ns4:href="#m371f8b190f" x="88.270164" y="353.629367" style="fill: #17293f; fill-opacity: 0.6" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="text_51">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="103.570164" y="355.860617" transform="rotate(-0 103.570164 355.860617)" data-containment="free" id="fig_dynamic_results_gallery-label-50">GPT-5.5</ns0:text>
+   </ns0:g>
+   <ns0:g id="PathCollection_27">
+    <ns0:g>
+     <ns0:use ns4:href="#md87065600b" x="150.090398" y="353.629367" style="fill: #007f86; fill-opacity: 0.6" />
+    </ns0:g>
+   </ns0:g>
+   <ns0:g id="text_52">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="165.390398" y="355.860617" transform="rotate(-0 165.390398 355.860617)" data-containment="free" id="fig_dynamic_results_gallery-label-51">GPT-5.6 Sol</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="legend_3">
+   <ns0:g id="line2d_86">
+    <ns0:path d="M 324.971852 352.885617  L 330.071852 352.885617  L 335.171852 352.885617  " style="fill: none; stroke: #17293f; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_53">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="341.121852" y="355.860617" transform="rotate(-0 341.121852 355.860617)" data-containment="free" id="fig_dynamic_results_gallery-label-52">0%</ns0:text>
+   </ns0:g>
+   <ns0:g id="line2d_87">
+    <ns0:path d="M 358.521617 352.885617  L 363.621617 352.885617  L 368.721617 352.885617  " style="fill: none; stroke: #a97512; stroke-width: 1.5; stroke-linecap: square" />
+   </ns0:g>
+   <ns0:g id="text_54">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="374.671617" y="355.860617" transform="rotate(-0 374.671617 355.860617)" data-containment="free" id="fig_dynamic_results_gallery-label-53">2.5%</ns0:text>
+   </ns0:g>
+   <ns0:g id="line2d_88">
+    <ns0:path d="M 398.446383 352.885617  L 403.546383 352.885617  L 408.646383 352.885617  " style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #a97512; stroke-width: 1.5" />
+   </ns0:g>
+   <ns0:g id="text_55">
+    <ns0:text style="font-size: 8.5px; font-family: 'STIXGeneral'; text-anchor: start; fill: #17293f" x="414.596383" y="355.860617" transform="rotate(-0 414.596383 355.860617)" data-containment="free" id="fig_dynamic_results_gallery-label-54">5%</ns0:text>
+   </ns0:g>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pa0d35b62d5">
+   <ns0:rect x="49.68" y="29.952" width="180.933333" height="96.274286" />
+  </ns0:clipPath>
+  <ns0:clipPath id="pf7b3ee9098">
+   <ns0:rect x="308.414667" y="29.952" width="180.933333" height="96.274286" />
+  </ns0:clipPath>
+  <ns0:clipPath id="p407260d972">
+   <ns0:rect x="49.68" y="203.245714" width="180.933333" height="96.274286" />
+  </ns0:clipPath>
+  <ns0:clipPath id="peba6accb55">
+   <ns0:rect x="308.414667" y="203.245714" width="180.933333" height="96.274286" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

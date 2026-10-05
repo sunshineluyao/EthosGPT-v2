@@ -1,0 +1,145 @@
+{
+  "files": [
+    "figures/fig_dynamic_error_directions.svg"
+  ],
+  "record_count": 19,
+  "contained_text": 0,
+  "free_text": 19,
+  "passed": 19,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_error_directions.svg",
+      "text_id": "fig_dynamic_error_directions-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

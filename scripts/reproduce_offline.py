@@ -48,10 +48,11 @@ def main() -> None:
     )
     run("assets/figure_sources/make_fig1_ethos_gallery.py")
     run("assets/figure_sources/make_fig2_value_bridge.py")
+    run("scripts/reproduce_dynamics.py")
     run("scripts/release_smoke.py")
     run("scripts/verify_results.py")
     run("scripts/audit_visual_assets.py")
-    print("PASS: archived outputs -> statistics -> signed results and conditional simulation -> figures; code-only boundary")
+    print("PASS: archived outputs -> statistics -> signed results, declared static and dynamic mechanisms -> figures; code-only boundary")
 
 if __name__ == "__main__":
     main()

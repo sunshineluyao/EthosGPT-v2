@@ -1,0 +1,393 @@
+{
+  "iconography_mode": "minimal-scientific",
+  "palette": {
+    "ink": "#17293F",
+    "surface": "#F4F7FA",
+    "primary": "#007F86",
+    "secondary": "#B93678",
+    "status_accent": "#A97512",
+    "divider": "#CED5DD"
+  },
+  "hero_graphic": {
+    "concept": "Knowledge, quality replacement, and shared resource choices",
+    "shape_ids": [
+      "measured-agreement",
+      "perceived-transition-boundary",
+      "quality-and-adjustment-outcomes"
+    ]
+  },
+  "semantic_graphics": [
+    {
+      "concept": "Useful knowledge",
+      "visual_encoding": "Original outlined annotated book",
+      "shape_ids": [
+        "hero-literature-book",
+        "hero-mokyr-label"
+      ],
+      "origin": "original",
+      "evidence_implication": "Literature grounding, not empirical measurement"
+    },
+    {
+      "concept": "Creative destruction",
+      "visual_encoding": "Ascending quality ladder with replacement direction",
+      "shape_ids": [
+        "hero-quality-ladder",
+        "hero-quality-label"
+      ],
+      "origin": "original",
+      "evidence_implication": "Conceptual quality-replacement mechanism"
+    },
+    {
+      "concept": "Representation",
+      "visual_encoding": "Model estimates and country-bootstrap intervals",
+      "shape_ids": [
+        "measured-agreement",
+        "representation-label"
+      ],
+      "origin": "verified aggregate inputs",
+      "evidence_implication": "Agreement with the unweighted derivative"
+    },
+    {
+      "concept": "Policy consequences",
+      "visual_encoding": "Separate actual/perceived boundaries and an actual attainable-set plot",
+      "shape_ids": [
+        "perceived-transition-boundary",
+        "quality-and-adjustment-outcomes"
+      ],
+      "origin": "computed mechanisms",
+      "evidence_implication": "Conditional results, not economic estimates"
+    }
+  ],
+  "composition_mechanism": "Protected title, plot, legend and reading-note bands; statistical plots with explicit evidence classes",
+  "grayscale_encoding": "Line patterns, marker shapes and open/filled admission marks complement color; heatmap intensity is ordinal",
+  "figures": [
+    {
+      "figure": "fig_dynamic_hero",
+      "width_inches": 6.9,
+      "height_inches": 4.4,
+      "evidence_status": "Measured survey comparison and separately labeled illustrative mechanisms",
+      "input_files": [
+        "inputs/metric_estimates.csv",
+        "results/boundary.csv",
+        "results/policy_menu.csv",
+        "results/selected_policies.csv"
+      ],
+      "input_sha256": {
+        "inputs/metric_estimates.csv": "054922fda8c86cbedd90e8a9c8419caf4bc2da8b35da7b4bdcca3a428c67ff80",
+        "results/boundary.csv": "288e168e699b8132f0843cd0ab4546ec9b9db5131321240f07dbaea1d3af4c76",
+        "results/policy_menu.csv": "4b7501d756b1f0dc67bf2a64deea05ac99ce5253d7b2b357bdaa5072d2b54ae5",
+        "results/selected_policies.csv": "e6396f3da0fdd654fc14a7b33525e0f134dcd8865d007373cf284239458e4a8b"
+      },
+      "exports": {
+        "pdf": "600ea3d02d14b6361c0f454167037f5f332c50ed8f843bf7790b4ca142f98338",
+        "svg": "ff1475064977709bdde70def35847f454da07b16103cf78f4fec44ba3df12f5a",
+        "png": "d2795db7925daaaf6041beaad931cc402338614540d6dcdd51c78041e88e6a99"
+      },
+      "editable_master": "fig_dynamic_hero.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_results_gallery",
+      "width_inches": 6.9,
+      "height_inches": 5.2,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/continuation.csv",
+        "results/error_sensitivity_controls.csv",
+        "results/audit_linked_policy_results.csv",
+        "inputs/country_question_scores.csv",
+        "results/selected_policies.csv",
+        "results/rollout_rate_grid.csv"
+      ],
+      "input_sha256": {
+        "results/continuation.csv": "ad432ccb6a6f30ffd7941b7b274987a2f4ef8c4378a670ef318b8b24413ad13b",
+        "results/error_sensitivity_controls.csv": "af3df5dbf6c4d82ae20063cc78515a6ac35aceb1f4d1de3806a42d916c850f64",
+        "results/audit_linked_policy_results.csv": "6c50762387d6b7afe64c1121804a78ab1968e789e609943b748e8617057ab649",
+        "inputs/country_question_scores.csv": "02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf",
+        "results/selected_policies.csv": "e6396f3da0fdd654fc14a7b33525e0f134dcd8865d007373cf284239458e4a8b",
+        "results/rollout_rate_grid.csv": "8a287647a735153734dece3825fff47117685e35d711384cf67ce68e3bc0a2b2"
+      },
+      "exports": {
+        "pdf": "75d2de009b6a40ea368190b129222e30b08c06cf63a3d9fb7a5a22afbe329e9d",
+        "svg": "bbd7fbd5557fcc20f6c07ce9d7cb383b7c27506767a82a560608ef53ee7320c0",
+        "png": "c6144c7f8b98a983c2ae84c8995ae56c0c1a4c3aa987db99559b67e6fa5d116d"
+      },
+      "editable_master": "fig_dynamic_results_gallery.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_policy_tradeoff",
+      "width_inches": 6.9,
+      "height_inches": 4.2,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/policy_menu.csv",
+        "results/exact_spending_menu.csv",
+        "results/selected_policies.csv",
+        "results/predicted_policy_point.csv"
+      ],
+      "input_sha256": {
+        "results/policy_menu.csv": "4b7501d756b1f0dc67bf2a64deea05ac99ce5253d7b2b357bdaa5072d2b54ae5",
+        "results/exact_spending_menu.csv": "c648929d5f30a680ce542d095decbc3d4e6347e1824a11e0ef1357e6c86a21c6",
+        "results/selected_policies.csv": "e6396f3da0fdd654fc14a7b33525e0f134dcd8865d007373cf284239458e4a8b",
+        "results/predicted_policy_point.csv": "aa8aa24ed1b2cc471324c2c95105bb4ea76ad0003c86216be0636da4d75b1d21"
+      },
+      "exports": {
+        "pdf": "9ae5a0d932eb0c9fb9e4331f3a69804b8ac249b3adac88bc2e53daee3072a8c4",
+        "svg": "4eeae166db1bd0951214c047253a9535b3f27590734ca947c2d73b68e40a2469",
+        "png": "26b9e38ffea34abc0f5c1e6341e994aef72c5f13cfda77977b982cd0345901ab"
+      },
+      "editable_master": "fig_dynamic_policy_tradeoff.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_policy_paths",
+      "width_inches": 6.9,
+      "height_inches": 4,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/selected_policy_paths.csv"
+      ],
+      "input_sha256": {
+        "results/selected_policy_paths.csv": "e90745917d2d7efa333567c7976a463bc4a0afeda19a4f31a1470c7a3721ac8c"
+      },
+      "exports": {
+        "pdf": "7ce20d4ff42df1cf202a752b7c1196e272145140de66665aa47abb35dc12d82d",
+        "svg": "ab8d471d1fc790355ac9c6f80e81e0404bdc6924ebcc0f0b74fc325f801633fe",
+        "png": "6f8affc0975e25c82a690763685dcb508681be8ca56d1013f559212a82d20307"
+      },
+      "editable_master": "fig_dynamic_policy_paths.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_culture_families",
+      "width_inches": 6.9,
+      "height_inches": 5.2,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/cultural_families.csv"
+      ],
+      "input_sha256": {
+        "results/cultural_families.csv": "6c178aa0474076d2abc6b39e44e2bcc7ef1ee6a221b8cfff0d87ad30143e47e5"
+      },
+      "exports": {
+        "pdf": "c7d0f1dc48f544fb47fb72a33cedecdb26517972b7e398d75282d3a252b69a40",
+        "svg": "f6cbdea5a17bb56bc46b1e363359bbc2b0670f77a9a199dbf2441679033d58b7",
+        "png": "d7472e7b40253d04d455fbb2aabfba438940266bea911decedecf5b1059c2765"
+      },
+      "editable_master": "fig_dynamic_culture_families.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_lag_and_rates",
+      "width_inches": 6.9,
+      "height_inches": 3.8,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/lag_rate_grid.csv",
+        "results/lag_rate_paths.csv"
+      ],
+      "input_sha256": {
+        "results/lag_rate_grid.csv": "62a668ac3ea2cd32aee35dc4d2b5b661f1642a320480413b33766222b1476f20",
+        "results/lag_rate_paths.csv": "7b4a7aa12868bd6a0d650995867c8021204c7648d982abbffc55b425fccb1d0a"
+      },
+      "exports": {
+        "pdf": "1827a444fd9fad28f628f4857ae45824117f30d94fc68efe2c3087b1153fab99",
+        "svg": "7a3e75bfe7deb7b5968d4b91faac179cbbb877213a7be188d1fb440bc7f20a8a",
+        "png": "a681eb8eee388bfa93139e69aeb79bd6b6e402f1edf06fff21258b6958a96663"
+      },
+      "editable_master": "fig_dynamic_lag_and_rates.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_rollout_rates",
+      "width_inches": 6.9,
+      "height_inches": 3.8,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/rollout_rate_grid.csv"
+      ],
+      "input_sha256": {
+        "results/rollout_rate_grid.csv": "8a287647a735153734dece3825fff47117685e35d711384cf67ce68e3bc0a2b2"
+      },
+      "exports": {
+        "pdf": "b2f251fe26f50e3025fd79f80e425087e5f6b9f83a08072505e50a9a689a1362",
+        "svg": "bc6774ace70fbdc862c05d9733c423d9239d6d4b07d8d9d27943189fc29c1c07",
+        "png": "31cf312b33dc08f477de36e4b3a8e3c9cfcb895dfc7a8d0a043d81821c929e5a"
+      },
+      "editable_master": "fig_dynamic_rollout_rates.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_error_directions",
+      "width_inches": 6.9,
+      "height_inches": 3.4,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/equal_distance_directions.csv",
+        "results/selected_policies.csv"
+      ],
+      "input_sha256": {
+        "results/equal_distance_directions.csv": "b266c80e2429953f56b4ab875a352828d672b405019181ac5d1cc201d5301f58",
+        "results/selected_policies.csv": "e6396f3da0fdd654fc14a7b33525e0f134dcd8865d007373cf284239458e4a8b"
+      },
+      "exports": {
+        "pdf": "bc32ae162fb67ee9f187178cd479cd492d0fb6f391c9e438a4895d569963f070",
+        "svg": "e04cb4962c17d88312efd25562640a7c6c0dbda68773985469ea456cc96ea803",
+        "png": "8b0bad6defc540e1fc667f4c21bb93e1d6456a11e4032330e0e62be8c6a7c8e4"
+      },
+      "editable_master": "fig_dynamic_error_directions.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_audit_sensitivity",
+      "width_inches": 6.9,
+      "height_inches": 3.3,
+      "evidence_status": "Observed error inputs propagated through specified, uncalibrated mechanisms",
+      "input_files": [
+        "results/audit_linked_summary.csv"
+      ],
+      "input_sha256": {
+        "results/audit_linked_summary.csv": "37f0fb1ad07aa52dbc7d5e1ae9965f45ad6fbea029e348eef7b5097ec9d77f95"
+      },
+      "exports": {
+        "pdf": "121369174374f696050aaa73f06a9c7aefe390c5eba12b769ebb132b8c143519",
+        "svg": "c4faa72b20bb6fbfa9be1d6c1604d3b6a35e7e7c33d58ebaf0610ceba65f4d05",
+        "png": "af4901fd72dd25d5880592fafcce6fb283fa16aa6609e5c228c2093287c15242"
+      },
+      "editable_master": "fig_dynamic_audit_sensitivity.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_boundaries",
+      "width_inches": 6.9,
+      "height_inches": 3.9,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/boundary.csv",
+        "results/continuation.csv"
+      ],
+      "input_sha256": {
+        "results/boundary.csv": "288e168e699b8132f0843cd0ab4546ec9b9db5131321240f07dbaea1d3af4c76",
+        "results/continuation.csv": "ad432ccb6a6f30ffd7941b7b274987a2f4ef8c4378a670ef318b8b24413ad13b"
+      },
+      "exports": {
+        "pdf": "1ad55aa3905d0422029e4cbf89cff4c0c815f87846bae71eb65e6b460985ccb1",
+        "svg": "9e9e336282a1600bd197a04dd5e6a5caf7f6a42f91b0065b40278d4f90cf6112",
+        "png": "d2d6599f55b37c21a1215a1992a4b2d7cf4c5c55e3c62546900db696926d2f74"
+      },
+      "editable_master": "fig_dynamic_boundaries.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_growth_benchmark",
+      "width_inches": 6.9,
+      "height_inches": 3.1,
+      "evidence_status": "Computed mechanism study",
+      "input_files": [
+        "results/growth_benchmark.csv"
+      ],
+      "input_sha256": {
+        "results/growth_benchmark.csv": "929d5d8d65852f4a55cecaeff02f2d9e358c81da75dc535d2687b55bc70cde85"
+      },
+      "exports": {
+        "pdf": "b5d68b76e5720aa57b976c63ad571252ebff07f7a1d83d1ed965c3b14c18a42f",
+        "svg": "77bba3f3c6fa00b0e48ded12c772d72b5c38b6cf54c6fab8a7867fca2f9127bf",
+        "png": "1bf29502eaf977774ddfe7fade11bd97e3e5acbd04124addfe5a9d3493c930f1"
+      },
+      "editable_master": "fig_dynamic_growth_benchmark.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_phase_space",
+      "width_inches": 6.9,
+      "height_inches": 4,
+      "evidence_status": "Separate aggregate two-state teaching model; finite-horizon basin classification",
+      "input_files": [
+        "sample_results/phase_basins.csv"
+      ],
+      "input_sha256": {
+        "sample_results/phase_basins.csv": "9517a864de6f9811c35eef99be319567757270640f0d3a9c0a90983e97533b0e"
+      },
+      "exports": {
+        "pdf": "3cab57a5327567b50ae27869585419e70f37dbcefa12a6346142c5c8b875f089",
+        "svg": "62d6045753ba4467ecd62638e7f20152ef9d1746c76158619718123730ecb447",
+        "png": "8c37e1c527b4f41d30a61fa7723457db9adbf4bf325fd65d7bdfdc7e0d1750e3"
+      },
+      "editable_master": "fig_dynamic_phase_space.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_rate_teaching",
+      "width_inches": 6.9,
+      "height_inches": 3.4,
+      "evidence_status": "Independent mathematical rate-tipping example; no disappearing stable branch",
+      "input_files": [
+        "sample_results/rate_tipping.csv"
+      ],
+      "input_sha256": {
+        "sample_results/rate_tipping.csv": "e2032bce3b6e82f2d24db0e35584fa7bdfbf306ec2c157e93f9d89a126e849dc"
+      },
+      "exports": {
+        "pdf": "cd86492a61ba8d006f77bcc1faaa060abdc231a6d7b545fd20ce0a0a62c5bb54",
+        "svg": "2b139aad137689c12c915e721e46dc6ec74b3df5e8ed260850d0d29cc6cdeeb3",
+        "png": "ceea26cca7a103e314140628c24fbc14715ba72a0022354c83624ac31ba4f9b2"
+      },
+      "editable_master": "fig_dynamic_rate_teaching.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    },
+    {
+      "figure": "fig_dynamic_cusp_teaching",
+      "width_inches": 6.9,
+      "height_inches": 4,
+      "evidence_status": "Mathematical normal form; no economic cusp identified",
+      "input_files": [
+        "sample_results/cusp_surface.csv"
+      ],
+      "input_sha256": {
+        "sample_results/cusp_surface.csv": "d861bd04af4d9260204040e1b27053c89b9f70aea435ef821200898659526698"
+      },
+      "exports": {
+        "pdf": "8883446d23d4b61c4d12b756766c346ab88fd957df4044b1776a4552d5fd722b",
+        "svg": "2404f7b42b7ec4e3b77a923298bc2a50c4736f205093dee02a80b2413481b4fb",
+        "png": "f779b34a35fb6216da1625db35fa7c6f9f88d4283583f62569d23e2a6f197709"
+      },
+      "editable_master": "fig_dynamic_cusp_teaching.svg",
+      "raster_layers": false,
+      "font_family": "STIXGeneral",
+      "ordinary_font_floor_pt": 8.5
+    }
+  ],
+  "config_sha256": "8de42b13418ccf9fc1ee469aa4314fdfab4eda92ddcf0d52e81b9e6e46c66003",
+  "preview_renderer": {
+    "renderer": "pdftoppm",
+    "dpi": 210,
+    "source": "Canonical released vector PDF; figure source and numeric results unchanged."
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "files": [
+    "figures/fig_dynamic_cusp_teaching.svg"
+  ],
+  "record_count": 36,
+  "contained_text": 0,
+  "free_text": 36,
+  "passed": 36,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-29",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-30",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-31",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-32",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-33",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-34",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_cusp_teaching.svg",
+      "text_id": "fig_dynamic_cusp_teaching-label-35",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}

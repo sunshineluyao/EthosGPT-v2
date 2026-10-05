@@ -1,0 +1,769 @@
+country,model,shape,items,projected_error
+Andorra,GPT-5.5,linear,all six,0.047498917008916924
+Argentina,GPT-5.5,linear,all six,-0.05977723531612418
+Armenia,GPT-5.5,linear,all six,-0.087662682850918106
+Australia,GPT-5.5,linear,all six,-0.03356498651450443
+Bangladesh,GPT-5.5,linear,all six,-0.1377404751885227
+Bolivia,GPT-5.5,linear,all six,0.021566143113908781
+Brazil,GPT-5.5,linear,all six,-0.046279535665463827
+Canada,GPT-5.5,linear,all six,0.057680602674759093
+Chile,GPT-5.5,linear,all six,-0.04048002498590729
+China,GPT-5.5,linear,all six,-0.11188771012828046
+Colombia,GPT-5.5,linear,all six,0.043113034932547117
+Cyprus,GPT-5.5,linear,all six,-0.02858201058201058
+Czechia,GPT-5.5,linear,all six,-0.10504444444444445
+Ecuador,GPT-5.5,linear,all six,0.056502233240105046
+Egypt,GPT-5.5,linear,all six,-0.033671608751330948
+Ethiopia,GPT-5.5,linear,all six,-0.034281481481481434
+Germany,GPT-5.5,linear,all six,-0.072801747313542595
+Great Britain,GPT-5.5,linear,all six,-0.24030737461121141
+Greece,GPT-5.5,linear,all six,0.014772751061338005
+Guatemala,GPT-5.5,linear,all six,-0.0872495536226187
+Hong Kong SAR,GPT-5.5,linear,all six,0.011531151868406274
+India,GPT-5.5,linear,all six,0.026042942785327865
+Indonesia,GPT-5.5,linear,all six,-0.013669345753805382
+Iran,GPT-5.5,linear,all six,-0.16336165577342043
+Iraq,GPT-5.5,linear,all six,0.0049303454715219422
+Japan,GPT-5.5,linear,all six,-0.14049319689376616
+Jordan,GPT-5.5,linear,all six,-0.054295238359656217
+Kazakhstan,GPT-5.5,linear,all six,0.021378126533880909
+Kenya,GPT-5.5,linear,all six,0.058079838183789964
+Kyrgyzstan,GPT-5.5,linear,all six,0.040368578643578651
+Lebanon,GPT-5.5,linear,all six,0.021173337073337163
+Libya,GPT-5.5,linear,all six,-0.056311655904759395
+Macau SAR,GPT-5.5,linear,all six,0.018506615022404527
+Malaysia,GPT-5.5,linear,all six,-0.0097067302429371463
+Maldives,GPT-5.5,linear,all six,-0.1602950191570881
+Mexico,GPT-5.5,linear,all six,-0.03498296593999918
+Mongolia,GPT-5.5,linear,all six,0.075679838485101653
+Morocco,GPT-5.5,linear,all six,-0.01377047927917479
+Myanmar,GPT-5.5,linear,all six,-0.142072863503898
+Netherlands,GPT-5.5,linear,all six,-0.090627355568408161
+New Zealand,GPT-5.5,linear,all six,0.038732106205224562
+Nicaragua,GPT-5.5,linear,all six,0.052590487202028371
+Nigeria,GPT-5.5,linear,all six,-0.13443756243756244
+Northern Ireland,GPT-5.5,linear,all six,0.072455756913651692
+Pakistan,GPT-5.5,linear,all six,-0.066967492514165339
+Peru,GPT-5.5,linear,all six,0.0040643553126310863
+Philippines,GPT-5.5,linear,all six,-0.0042904272376141587
+Puerto Rico,GPT-5.5,linear,all six,0.051243048054622986
+Romania,GPT-5.5,linear,all six,-0.012241103341103326
+Russia,GPT-5.5,linear,all six,-0.039149728049728112
+Serbia,GPT-5.5,linear,all six,0.023428165250387462
+Singapore,GPT-5.5,linear,all six,0.0068855872440590216
+Slovakia,GPT-5.5,linear,all six,0.030795658882474281
+South Korea,GPT-5.5,linear,all six,0.065586435786435845
+Taiwan ROC,GPT-5.5,linear,all six,-0.095675661375661414
+Tajikistan,GPT-5.5,linear,all six,0.02828925388337148
+Thailand,GPT-5.5,linear,all six,0.17709283992653263
+Tunisia,GPT-5.5,linear,all six,0.05608078449151252
+Turkey,GPT-5.5,linear,all six,-0.12291593282249019
+Ukraine,GPT-5.5,linear,all six,-0.07401374081362963
+United States,GPT-5.5,linear,all six,-0.10602924408016209
+Uzbekistan,GPT-5.5,linear,all six,0.065325330225330186
+Vietnam,GPT-5.5,linear,all six,0.086671193415637837
+Zimbabwe,GPT-5.5,linear,all six,-0.082257754335532118
+Andorra,GPT-5.6 Sol,linear,all six,0.022405583675583606
+Argentina,GPT-5.6 Sol,linear,all six,-0.084963901982790899
+Armenia,GPT-5.6 Sol,linear,all six,-0.070651571739807059
+Australia,GPT-5.6 Sol,linear,all six,-0.039971653181171032
+Bangladesh,GPT-5.6 Sol,linear,all six,-0.16396714185518935
+Bolivia,GPT-5.6 Sol,linear,all six,0.010310587558353221
+Brazil,GPT-5.6 Sol,linear,all six,-0.034830646776575012
+Canada,GPT-5.6 Sol,linear,all six,0.024885047119203401
+Chile,GPT-5.6 Sol,linear,all six,-0.043755580541462849
+China,GPT-5.6 Sol,linear,all six,-0.12044548790605827
+Colombia,GPT-5.6 Sol,linear,all six,0.0097108127103249717
+Cyprus,GPT-5.6 Sol,linear,all six,-0.028759788359788371
+Czechia,GPT-5.6 Sol,linear,all six,-0.12913333333333332
+Ecuador,GPT-5.6 Sol,linear,all six,0.030900011017882888
+Egypt,GPT-5.6 Sol,linear,all six,-0.051636053195775432
+Ethiopia,GPT-5.6 Sol,linear,all six,-0.075781481481481561
+Germany,GPT-5.6 Sol,linear,all six,-0.079797302869098183
+Great Britain,GPT-5.6 Sol,linear,all six,-0.2462051523889891
+Greece,GPT-5.6 Sol,linear,all six,0.017128306616893588
+Guatemala,GPT-5.6 Sol,linear,all six,-0.10825844251150765
+Hong Kong SAR,GPT-5.6 Sol,linear,all six,0.07696448520173961
+India,GPT-5.6 Sol,linear,all six,0.021149609451994414
+Indonesia,GPT-5.6 Sol,linear,all six,-0.010351567976027612
+Iran,GPT-5.6 Sol,linear,all six,-0.19488387799564272
+Iraq,GPT-5.6 Sol,linear,all six,-0.048916321195144677
+Japan,GPT-5.6 Sol,linear,all six,-0.15758208578265503
+Jordan,GPT-5.6 Sol,linear,all six,-0.077317460581878328
+Kazakhstan,GPT-5.6 Sol,linear,all six,0.025469237644992093
+Kenya,GPT-5.6 Sol,linear,all six,0.019268727072678855
+Kyrgyzstan,GPT-5.6 Sol,linear,all six,0.044313023088023026
+Lebanon,GPT-5.6 Sol,linear,all six,-0.012359996259996286
+Libya,GPT-5.6 Sol,linear,all six,-0.09242276701587035
+Macau SAR,GPT-5.6 Sol,linear,all six,0.010173281689071167
+Malaysia,GPT-5.6 Sol,linear,all six,-0.014811174687381568
+Maldives,GPT-5.6 Sol,linear,all six,-0.17484390804597699
+Mexico,GPT-5.6 Sol,linear,all six,-0.048862965939999253
+Mongolia,GPT-5.6 Sol,linear,all six,0.077597616262879421
+Morocco,GPT-5.6 Sol,linear,all six,-0.048526034834730399
+Myanmar,GPT-5.6 Sol,linear,all six,-0.17036175239278689
+Netherlands,GPT-5.6 Sol,linear,all six,-0.10562068890174155
+New Zealand,GPT-5.6 Sol,linear,all six,0.025974328427446718
+Nicaragua,GPT-5.6 Sol,linear,all six,0.050157153868695036
+Nigeria,GPT-5.6 Sol,linear,all six,-0.1639708957708958
+Northern Ireland,GPT-5.6 Sol,linear,all six,0.061573534691429371
+Pakistan,GPT-5.6 Sol,linear,all six,-0.072645270291943079
+Peru,GPT-5.6 Sol,linear,all six,-0.024268978020702159
+Philippines,GPT-5.6 Sol,linear,all six,-0.00019042723761419911
+Puerto Rico,GPT-5.6 Sol,linear,all six,0.040867492499067411
+Romania,GPT-5.6 Sol,linear,all six,-0.0098544366744367055
+Russia,GPT-5.6 Sol,linear,all six,-0.038487505827505812
+Serbia,GPT-5.6 Sol,linear,all six,0.041270387472609721
+Singapore,GPT-5.6 Sol,linear,all six,0.0099078094662812255
+Slovakia,GPT-5.6 Sol,linear,all six,0.025140103326918725
+South Korea,GPT-5.6 Sol,linear,all six,0.070675324675324752
+Taiwan ROC,GPT-5.6 Sol,linear,all six,-0.053837883597883551
+Tajikistan,GPT-5.6 Sol,linear,all six,0.018744809438927104
+Thailand,GPT-5.6 Sol,linear,all six,0.18270617325986599
+Tunisia,GPT-5.6 Sol,linear,all six,0.021180784491512554
+Turkey,GPT-5.6 Sol,linear,all six,-0.13866259948915685
+Ukraine,GPT-5.6 Sol,linear,all six,-0.057582629702518436
+United States,GPT-5.6 Sol,linear,all six,-0.099689244080162193
+Uzbekistan,GPT-5.6 Sol,linear,all six,0.054945330225330172
+Vietnam,GPT-5.6 Sol,linear,all six,0.12526230452674897
+Zimbabwe,GPT-5.6 Sol,linear,all six,-0.10161330989108772
+Andorra,GPT-5.5,saturating,all six,0.058486916926906767
+Argentina,GPT-5.5,saturating,all six,-0.03927532184539486
+Armenia,GPT-5.5,saturating,all six,-0.068686750961823084
+Australia,GPT-5.5,saturating,all six,-0.021570050780716273
+Bangladesh,GPT-5.5,saturating,all six,-0.15936772963933671
+Bolivia,GPT-5.5,saturating,all six,0.042972040802281231
+Brazil,GPT-5.5,saturating,all six,-0.019836322822091478
+Canada,GPT-5.5,saturating,all six,0.061182512939597991
+Chile,GPT-5.5,saturating,all six,-0.014662893950940696
+China,GPT-5.5,saturating,all six,-0.11414578373185459
+Colombia,GPT-5.5,saturating,all six,0.070432653418998806
+Cyprus,GPT-5.5,saturating,all six,-0.01170227313037561
+Czechia,GPT-5.5,saturating,all six,-0.11971844296768044
+Ecuador,GPT-5.5,saturating,all six,0.082679794637649059
+Egypt,GPT-5.5,saturating,all six,-0.0015675534721806689
+Ethiopia,GPT-5.5,saturating,all six,-0.01177002345796728
+Germany,GPT-5.5,saturating,all six,-0.052168871295625946
+Great Britain,GPT-5.5,saturating,all six,-0.22637413096507161
+Greece,GPT-5.5,saturating,all six,0.0049984490817923666
+Guatemala,GPT-5.5,saturating,all six,-0.045843384116193542
+Hong Kong SAR,GPT-5.5,saturating,all six,0.034375457303271413
+India,GPT-5.5,saturating,all six,0.01570148635242849
+Indonesia,GPT-5.5,saturating,all six,-0.0011751056349498558
+Iran,GPT-5.5,saturating,all six,-0.15198221772652215
+Iraq,GPT-5.5,saturating,all six,-0.0040759964994315917
+Japan,GPT-5.5,saturating,all six,-0.11580852637504734
+Jordan,GPT-5.5,saturating,all six,-0.030581524693867851
+Kazakhstan,GPT-5.5,saturating,all six,0.04357866497147269
+Kenya,GPT-5.5,saturating,all six,0.08445196545796245
+Kyrgyzstan,GPT-5.5,saturating,all six,0.082337564086866155
+Lebanon,GPT-5.5,saturating,all six,0.030100598097299473
+Libya,GPT-5.5,saturating,all six,-0.033363377000029143
+Macau SAR,GPT-5.5,saturating,all six,0.0058322913242645977
+Malaysia,GPT-5.5,saturating,all six,-0.012638638553862731
+Maldives,GPT-5.5,saturating,all six,-0.1462624314178789
+Mexico,GPT-5.5,saturating,all six,-0.018623811109256802
+Mongolia,GPT-5.5,saturating,all six,0.090932182500782568
+Morocco,GPT-5.5,saturating,all six,0.00071491282073331969
+Myanmar,GPT-5.5,saturating,all six,-0.12382264516829435
+Netherlands,GPT-5.5,saturating,all six,-0.098489529047270347
+New Zealand,GPT-5.5,saturating,all six,0.029371490198780197
+Nicaragua,GPT-5.5,saturating,all six,0.072875898143079001
+Nigeria,GPT-5.5,saturating,all six,-0.11406633814217194
+Northern Ireland,GPT-5.5,saturating,all six,0.13713884481088426
+Pakistan,GPT-5.5,saturating,all six,-0.051008120519302008
+Peru,GPT-5.5,saturating,all six,0.0071448544061071834
+Philippines,GPT-5.5,saturating,all six,0.002576609686097471
+Puerto Rico,GPT-5.5,saturating,all six,0.10469382690084811
+Romania,GPT-5.5,saturating,all six,0.0072796606455932528
+Russia,GPT-5.5,saturating,all six,-0.003406379809316698
+Serbia,GPT-5.5,saturating,all six,0.059277036805027314
+Singapore,GPT-5.5,saturating,all six,0.015650455357335873
+Slovakia,GPT-5.5,saturating,all six,0.065878498632810645
+South Korea,GPT-5.5,saturating,all six,0.060695952111865625
+Taiwan ROC,GPT-5.5,saturating,all six,-0.084660589244587053
+Tajikistan,GPT-5.5,saturating,all six,0.026832993899089906
+Thailand,GPT-5.5,saturating,all six,0.21557933422087833
+Tunisia,GPT-5.5,saturating,all six,0.099359834992083493
+Turkey,GPT-5.5,saturating,all six,-0.11576711947889205
+Ukraine,GPT-5.5,saturating,all six,-0.038086196813239818
+United States,GPT-5.5,saturating,all six,-0.12205997397473139
+Uzbekistan,GPT-5.5,saturating,all six,0.10025192999422386
+Vietnam,GPT-5.5,saturating,all six,0.083718362800321994
+Zimbabwe,GPT-5.5,saturating,all six,-0.055634226411488741
+Andorra,GPT-5.6 Sol,saturating,all six,0.031318495231849368
+Argentina,GPT-5.6 Sol,saturating,all six,-0.067247625102494282
+Armenia,GPT-5.6 Sol,saturating,all six,-0.052350455904177397
+Australia,GPT-5.6 Sol,saturating,all six,-0.026382640708000678
+Bangladesh,GPT-5.6 Sol,saturating,all six,-0.19176889804617872
+Bolivia,GPT-5.6 Sol,saturating,all six,0.030395680889494951
+Brazil,GPT-5.6 Sol,saturating,all six,-0.0071893944982465534
+Canada,GPT-5.6 Sol,saturating,all six,0.027432885638801051
+Chile,GPT-5.6 Sol,saturating,all six,-0.023201804932173789
+China,GPT-5.6 Sol,saturating,all six,-0.1250156874123057
+Colombia,GPT-5.6 Sol,saturating,all six,0.033432049530512389
+Cyprus,GPT-5.6 Sol,saturating,all six,-0.012742930418807263
+Czechia,GPT-5.6 Sol,saturating,all six,-0.14554247653479319
+Ecuador,GPT-5.6 Sol,saturating,all six,0.050805247371745056
+Egypt,GPT-5.6 Sol,saturating,all six,-0.023901006796256997
+Ethiopia,GPT-5.6 Sol,saturating,all six,-0.058034591177612657
+Germany,GPT-5.6 Sol,saturating,all six,-0.061783241663613347
+Great Britain,GPT-5.6 Sol,saturating,all six,-0.23668696447629947
+Greece,GPT-5.6 Sol,saturating,all six,0.0095900276581165692
+Guatemala,GPT-5.6 Sol,saturating,all six,-0.067289453680921527
+Hong Kong SAR,GPT-5.6 Sol,saturating,all six,0.10234120810243429
+India,GPT-5.6 Sol,saturating,all six,0.014436302142303162
+Indonesia,GPT-5.6 Sol,saturating,all six,0.0079070803752712485
+Iran,GPT-5.6 Sol,saturating,all six,-0.18789920711081776
+Iraq,GPT-5.6 Sol,saturating,all six,-0.060749173440952264
+Japan,GPT-5.6 Sol,saturating,all six,-0.13707608502664423
+Jordan,GPT-5.6 Sol,saturating,all six,-0.059626375736708738
+Kazakhstan,GPT-5.6 Sol,saturating,all six,0.046620556974563264
+Kenya,GPT-5.6 Sol,saturating,all six,0.044896327112761744
+Kyrgyzstan,GPT-5.6 Sol,saturating,all six,0.083922409422882538
+Lebanon,GPT-5.6 Sol,saturating,all six,-0.0054262919781820108
+Libya,GPT-5.6 Sol,saturating,all six,-0.075541331863961211
+Macau SAR,GPT-5.6 Sol,saturating,all six,-0.0092179815890949882
+Malaysia,GPT-5.6 Sol,saturating,all six,-0.024880973456267448
+Maldives,GPT-5.6 Sol,saturating,all six,-0.15959625179750292
+Mexico,GPT-5.6 Sol,saturating,all six,-0.033644536796819301
+Mongolia,GPT-5.6 Sol,saturating,all six,0.092512615648543461
+Morocco,GPT-5.6 Sol,saturating,all six,-0.040659820334495708
+Myanmar,GPT-5.6 Sol,saturating,all six,-0.15374289868767838
+Netherlands,GPT-5.6 Sol,saturating,all six,-0.11346607276237812
+New Zealand,GPT-5.6 Sol,saturating,all six,0.012715423262634416
+Nicaragua,GPT-5.6 Sol,saturating,all six,0.068602243022196377
+Nigeria,GPT-5.6 Sol,saturating,all six,-0.14618260285701479
+Northern Ireland,GPT-5.6 Sol,saturating,all six,0.12302737855377158
+Pakistan,GPT-5.6 Sol,saturating,all six,-0.05895826712187844
+Peru,GPT-5.6 Sol,saturating,all six,-0.026650474702421427
+Philippines,GPT-5.6 Sol,saturating,all six,0.012140049119563102
+Puerto Rico,GPT-5.6 Sol,saturating,all six,0.091341362684188326
+Romania,GPT-5.6 Sol,saturating,all six,0.0084280166879219243
+Russia,GPT-5.6 Sol,saturating,all six,-0.0049875837565793169
+Serbia,GPT-5.6 Sol,saturating,all six,0.079405625727719059
+Singapore,GPT-5.6 Sol,saturating,all six,0.017550121727985212
+Slovakia,GPT-5.6 Sol,saturating,all six,0.057192067396661952
+South Korea,GPT-5.6 Sol,saturating,all six,0.067185195351851773
+Taiwan ROC,GPT-5.6 Sol,saturating,all six,-0.036717431475273309
+Tajikistan,GPT-5.6 Sol,saturating,all six,0.01109610963980058
+Thailand,GPT-5.6 Sol,saturating,all six,0.22337893045082324
+Tunisia,GPT-5.6 Sol,saturating,all six,0.052772459928335562
+Turkey,GPT-5.6 Sol,saturating,all six,-0.13479852850947333
+Ukraine,GPT-5.6 Sol,saturating,all six,-0.019900674157314759
+United States,GPT-5.6 Sol,saturating,all six,-0.11832486128652316
+Uzbekistan,GPT-5.6 Sol,saturating,all six,0.086167563940896835
+Vietnam,GPT-5.6 Sol,saturating,all six,0.12769754434693303
+Zimbabwe,GPT-5.6 Sol,saturating,all six,-0.079293557125664202
+Andorra,GPT-5.5,spline,all six,0.05344926170455052
+Argentina,GPT-5.5,spline,all six,-0.05099098910919897
+Armenia,GPT-5.5,spline,all six,-0.078170523590506136
+Australia,GPT-5.5,spline,all six,-0.02770182233061776
+Bangladesh,GPT-5.5,spline,all six,-0.14794230322935351
+Bolivia,GPT-5.5,spline,all six,0.032032148605094263
+Brazil,GPT-5.5,spline,all six,-0.032497440978482874
+Canada,GPT-5.5,spline,all six,0.059331583776226535
+Chile,GPT-5.5,spline,all six,-0.027052980422627434
+China,GPT-5.5,spline,all six,-0.11324602007626743
+Colombia,GPT-5.5,spline,all six,0.056937952509265977
+Cyprus,GPT-5.5,spline,all six,-0.019881724475798529
+Czechia,GPT-5.5,spline,all six,-0.11351055829903979
+Ecuador,GPT-5.5,spline,all six,0.069686413822996077
+Egypt,GPT-5.5,spline,all six,-0.017308810769241397
+Ethiopia,GPT-5.5,spline,all six,-0.022625999608073655
+Germany,GPT-5.5,spline,all six,-0.062283663488324974
+Great Britain,GPT-5.5,spline,all six,-0.23392125099948566
+Greece,GPT-5.5,spline,all six,0.010147728841013455
+Guatemala,GPT-5.5,spline,all six,-0.06646410077845305
+Hong Kong SAR,GPT-5.5,spline,all six,0.021798162587538781
+India,GPT-5.5,spline,all six,0.021693876794908022
+Indonesia,GPT-5.5,spline,all six,-0.0076603035134237343
+Iran,GPT-5.5,spline,all six,-0.15766219898329698
+Iraq,GPT-5.5,spline,all six,0.00068074295397171219
+Japan,GPT-5.5,spline,all six,-0.12960888802970483
+Jordan,GPT-5.5,spline,all six,-0.041773977457087698
+Kazakhstan,GPT-5.5,spline,all six,0.032057980453255697
+Kenya,GPT-5.5,spline,all six,0.072404408503509321
+Kyrgyzstan,GPT-5.5,spline,all six,0.061493906418684206
+Lebanon,GPT-5.5,spline,all six,0.025919326568734059
+Libya,GPT-5.5,spline,all six,-0.044738430618527739
+Macau SAR,GPT-5.5,spline,all six,0.012268670070237346
+Malaysia,GPT-5.5,spline,all six,-0.01058953486091033
+Maldives,GPT-5.5,spline,all six,-0.15311778069695312
+Mexico,GPT-5.5,spline,all six,-0.026364050579544752
+Mongolia,GPT-5.5,spline,all six,0.083152156914921074
+Morocco,GPT-5.5,spline,all six,-0.0061261173791317056
+Myanmar,GPT-5.5,spline,all six,-0.13312768616783177
+Netherlands,GPT-5.5,spline,all six,-0.094734019055235416
+New Zealand,GPT-5.5,spline,all six,0.034063317736351663
+Nicaragua,GPT-5.5,spline,all six,0.062254837365128518
+Nigeria,GPT-5.5,spline,all six,-0.12432360465780218
+Northern Ireland,GPT-5.5,spline,all six,0.10410952377937567
+Pakistan,GPT-5.5,spline,all six,-0.058993679794945936
+Peru,GPT-5.5,spline,all six,0.0056198017692065429
+Philippines,GPT-5.5,spline,all six,0.00034521271985318153
+Puerto Rico,GPT-5.5,spline,all six,0.078530085482098971
+Romania,GPT-5.5,spline,all six,-0.002188594365853596
+Russia,GPT-5.5,spline,all six,-0.021876781893004182
+Serbia,GPT-5.5,spline,all six,0.041310637474094247
+Singapore,GPT-5.5,spline,all six,0.011172308849704557
+Slovakia,GPT-5.5,spline,all six,0.047911610640986008
+South Korea,GPT-5.5,spline,all six,0.062863862754529487
+Taiwan ROC,GPT-5.5,spline,all six,-0.090842427983539142
+Tajikistan,GPT-5.5,spline,all six,0.028606290920408513
+Thailand,GPT-5.5,spline,all six,0.19648883084795132
+Tunisia,GPT-5.5,spline,all six,0.077720923365299746
+Turkey,GPT-5.5,spline,all six,-0.11903612131182136
+Ukraine,GPT-5.5,spline,all six,-0.057603332592472925
+United States,GPT-5.5,spline,all six,-0.11431409766167856
+Uzbekistan,GPT-5.5,spline,all six,0.083867786838675712
+Vietnam,GPT-5.5,spline,all six,0.085737823415420064
+Zimbabwe,GPT-5.5,spline,all six,-0.069385871510636965
+Andorra,GPT-5.6 Sol,spline,all six,0.027072879811546421
+Argentina,GPT-5.6 Sol,spline,all six,-0.077739394047470628
+Armenia,GPT-5.6 Sol,spline,all six,-0.061593799310670792
+Australia,GPT-5.6 Sol,spline,all six,-0.033188497227737035
+Bangladesh,GPT-5.6 Sol,spline,all six,-0.17734617483429177
+Bolivia,GPT-5.6 Sol,spline,all six,0.019881786465176583
+Brazil,GPT-5.6 Sol,spline,all six,-0.020484324929100239
+Canada,GPT-5.6 Sol,spline,all six,0.026031860319436273
+Chile,GPT-5.6 Sol,spline,all six,-0.032958264373244707
+China,GPT-5.6 Sol,spline,all six,-0.12302090402688473
+Colombia,GPT-5.6 Sol,spline,all six,0.021697055389924468
+Cyprus,GPT-5.6 Sol,spline,all six,-0.020569296492259449
+Czechia,GPT-5.6 Sol,spline,all six,-0.13840213854595337
+Ecuador,GPT-5.6 Sol,spline,all six,0.040808277197481702
+Egypt,GPT-5.6 Sol,spline,all six,-0.037567174555249688
+Ethiopia,GPT-5.6 Sol,spline,all six,-0.066636674505193089
+Germany,GPT-5.6 Sol,spline,all six,-0.070678749908078098
+Great Britain,GPT-5.6 Sol,spline,all six,-0.24190159997067903
+Greece,GPT-5.6 Sol,spline,all six,0.013630025137309765
+Guatemala,GPT-5.6 Sol,spline,all six,-0.08783728925581942
+Hong Kong SAR,GPT-5.6 Sol,spline,all six,0.088472557649267203
+India,GPT-5.6 Sol,spline,all six,0.018581753338117749
+Indonesia,GPT-5.6 Sol,spline,all six,-0.0014146524846171682
+Iran,GPT-5.6 Sol,spline,all six,-0.19161430597918178
+Iraq,GPT-5.6 Sol,spline,all six,-0.054689615893764837
+Japan,GPT-5.6 Sol,spline,all six,-0.14877040572517805
+Jordan,GPT-5.6 Sol,spline,all six,-0.067930619432396228
+Kazakhstan,GPT-5.6 Sol,spline,all six,0.035673791152844248
+Kenya,GPT-5.6 Sol,spline,all six,0.033150243894455811
+Kyrgyzstan,GPT-5.6 Sol,spline,all six,0.064203873496873426
+Lebanon,GPT-5.6 Sol,spline,all six,-0.0087456446246816852
+Libya,GPT-5.6 Sol,spline,all six,-0.084019862717293003
+Macau SAR,GPT-5.6 Sol,spline,all six,0.00048252192208917549
+Malaysia,GPT-5.6 Sol,spline,all six,-0.019464746383544076
+Maldives,GPT-5.6 Sol,spline,all six,-0.16715762102617121
+Mexico,GPT-5.6 Sol,spline,all six,-0.040848674447857558
+Mongolia,GPT-5.6 Sol,spline,all six,0.084894410412863441
+Morocco,GPT-5.6 Sol,spline,all six,-0.044314973346209999
+Myanmar,GPT-5.6 Sol,spline,all six,-0.16229085489211159
+Netherlands,GPT-5.6 Sol,spline,all six,-0.10968790876716962
+New Zealand,GPT-5.6 Sol,spline,all six,0.019326180287791917
+Nicaragua,GPT-5.6 Sol,spline,all six,0.058748359998873352
+Nigeria,GPT-5.6 Sol,spline,all six,-0.15518962111870754
+Northern Ireland,GPT-5.6 Sol,spline,all six,0.091653173162091595
+Pakistan,GPT-5.6 Sol,spline,all six,-0.065844716831982911
+Peru,GPT-5.6 Sol,spline,all six,-0.02554298012379751
+Philippines,GPT-5.6 Sol,spline,all six,0.0071400489338449141
+Puerto Rico,GPT-5.6 Sol,spline,all six,0.066715193301028958
+Romania,GPT-5.6 Sol,spline,all six,-0.00050994416009233698
+Russia,GPT-5.6 Sol,spline,all six,-0.022332064197530851
+Serbia,GPT-5.6 Sol,spline,all six,0.060206349408250662
+Singapore,GPT-5.6 Sol,spline,all six,0.01361525205958109
+Slovakia,GPT-5.6 Sol,spline,all six,0.04070333080559508
+South Korea,GPT-5.6 Sol,spline,all six,0.068384861931484214
+Taiwan ROC,GPT-5.6 Sol,spline,all six,-0.046011799176954679
+Tajikistan,GPT-5.6 Sol,spline,all six,0.015944290920408569
+Thailand,GPT-5.6 Sol,spline,all six,0.20318267446935045
+Tunisia,GPT-5.6 Sol,spline,all six,0.036732281389991142
+Turkey,GPT-5.6 Sol,spline,all six,-0.1365027781019448
+Ukraine,GPT-5.6 Sol,spline,all six,-0.040368534238563361
+United States,GPT-5.6 Sol,spline,all six,-0.10920493222957989
+Uzbekistan,GPT-5.6 Sol,spline,all six,0.071392183546494625
+Vietnam,GPT-5.6 Sol,spline,all six,0.12707751559649011
+Zimbabwe,GPT-5.6 Sol,spline,all six,-0.090726003197879768
+Andorra,GPT-5.5,linear,Q48/Q57/Q159,0.12080110506777172
+Argentina,GPT-5.5,linear,Q48/Q57/Q159,-0.15027434842249648
+Armenia,GPT-5.5,linear,Q48/Q57/Q159,-0.30439858906525574
+Australia,GPT-5.5,linear,Q48/Q57/Q159,-0.11092687559354222
+Bangladesh,GPT-5.5,linear,Q48/Q57/Q159,0.042924576398260694
+Bolivia,GPT-5.5,linear,Q48/Q57/Q159,-0.17033994263623883
+Brazil,GPT-5.5,linear,Q48/Q57/Q159,-0.029287611061195935
+Canada,GPT-5.5,linear,Q48/Q57/Q159,0.076325713273081797
+Chile,GPT-5.5,linear,Q48/Q57/Q159,0.022143313476646932
+China,GPT-5.5,linear,Q48/Q57/Q159,-0.10227716199144773
+Colombia,GPT-5.5,linear,Q48/Q57/Q159,-0.11889458689458687
+Cyprus,GPT-5.5,linear,Q48/Q57/Q159,0.067283950617283955
+Czechia,GPT-5.5,linear,Q48/Q57/Q159,-0.072740740740740731
+Ecuador,GPT-5.5,linear,Q48/Q57/Q159,-0.089740429979941791
+Egypt,GPT-5.5,linear,Q48/Q57/Q159,-0.13047128070831762
+Ethiopia,GPT-5.5,linear,Q48/Q57/Q159,-0.10884656084656077
+Germany,GPT-5.5,linear,Q48/Q57/Q159,-0.16036165577342043
+Great Britain,GPT-5.5,linear,Q48/Q57/Q159,-0.35430893592004703
+Greece,GPT-5.5,linear,Q48/Q57/Q159,-0.03588327721661054
+Guatemala,GPT-5.5,linear,Q48/Q57/Q159,-0.28427886710239658
+Hong Kong SAR,GPT-5.5,linear,Q48/Q57/Q159,0.020133853151396992
+India,GPT-5.5,linear,Q48/Q57/Q159,0.010235032024505722
+Indonesia,GPT-5.5,linear,Q48/Q57/Q159,0.002511972437553793
+Iran,GPT-5.5,linear,Q48/Q57/Q159,-0.35438053740014508
+Iraq,GPT-5.5,linear,Q48/Q57/Q159,-0.12271957671957667
+Japan,GPT-5.5,linear,Q48/Q57/Q159,-0.14161893444246385
+Jordan,GPT-5.5,linear,Q48/Q57/Q159,-0.21343979244945432
+Kazakhstan,GPT-5.5,linear,Q48/Q57/Q159,-0.06528619528619542
+Kenya,GPT-5.5,linear,Q48/Q57/Q159,0.041284271284271354
+Kyrgyzstan,GPT-5.5,linear,Q48/Q57/Q159,-0.20088504088504089
+Lebanon,GPT-5.5,linear,Q48/Q57/Q159,-0.094533713200379677
+Libya,GPT-5.5,linear,Q48/Q57/Q159,-0.26327048260381603
+Macau SAR,GPT-5.5,linear,Q48/Q57/Q159,0.0026081871345029484
+Malaysia,GPT-5.5,linear,Q48/Q57/Q159,-0.044905168905168866
+Maldives,GPT-5.5,linear,Q48/Q57/Q159,-0.1854916985951468
+Mexico,GPT-5.5,linear,Q48/Q57/Q159,-0.08884057971014496
+Mongolia,GPT-5.5,linear,Q48/Q57/Q159,-0.021529007704446247
+Morocco,GPT-5.5,linear,Q48/Q57/Q159,-0.21000346835129419
+Myanmar,GPT-5.5,linear,Q48/Q57/Q159,-0.21874074074074074
+Netherlands,GPT-5.5,linear,Q48/Q57/Q159,-0.085992682561103539
+New Zealand,GPT-5.5,linear,Q48/Q57/Q159,0.048269253380364537
+Nicaragua,GPT-5.5,linear,Q48/Q57/Q159,-0.12901783264746225
+Nigeria,GPT-5.5,linear,Q48/Q57/Q159,-0.19751851851851845
+Northern Ireland,GPT-5.5,linear,Q48/Q57/Q159,-0.027604938271604873
+Pakistan,GPT-5.5,linear,Q48/Q57/Q159,-0.29133488733488738
+Peru,GPT-5.5,linear,Q48/Q57/Q159,-0.071858585858585997
+Philippines,GPT-5.5,linear,Q48/Q57/Q159,-0.02187412587412587
+Puerto Rico,GPT-5.5,linear,Q48/Q57/Q159,-0.15270728793309446
+Romania,GPT-5.5,linear,Q48/Q57/Q159,-0.2498518518518518
+Russia,GPT-5.5,linear,Q48/Q57/Q159,-0.18034550634550639
+Serbia,GPT-5.5,linear,Q48/Q57/Q159,-0.1034622770919067
+Singapore,GPT-5.5,linear,Q48/Q57/Q159,0.011552944410087251
+Slovakia,GPT-5.5,linear,Q48/Q57/Q159,-0.008004357298474974
+South Korea,GPT-5.5,linear,Q48/Q57/Q159,0.08079894179894187
+Taiwan ROC,GPT-5.5,linear,Q48/Q57/Q159,-0.29395414462081126
+Tajikistan,GPT-5.5,linear,Q48/Q57/Q159,-0.2264169000933707
+Thailand,GPT-5.5,linear,Q48/Q57/Q159,0.30816634749266331
+Tunisia,GPT-5.5,linear,Q48/Q57/Q159,-0.031679261753335741
+Turkey,GPT-5.5,linear,Q48/Q57/Q159,-0.19209600276266939
+Ukraine,GPT-5.5,linear,Q48/Q57/Q159,-0.020364672364672404
+United States,GPT-5.5,linear,Q48/Q57/Q159,-0.076563235429269502
+Uzbekistan,GPT-5.5,linear,Q48/Q57/Q159,-0.12025071225071224
+Vietnam,GPT-5.5,linear,Q48/Q57/Q159,-0.022109739368998682
+Zimbabwe,GPT-5.5,linear,Q48/Q57/Q159,-0.21535116598079562
+Andorra,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.067201105067771591
+Argentina,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.17827434842249654
+Armenia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.23454673721340388
+Australia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.13866020892687553
+Bangladesh,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.035991243064927375
+Bolivia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.18248809078438705
+Brazil,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.012650574024159006
+Canada,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.021110898458266851
+Chile,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.043906276439609884
+China,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.13759568050996634
+Colombia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.11762051282051279
+Cyprus,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.060765432098765434
+Czechia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.095777777777777753
+Ecuador,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.093133022572534405
+Egypt,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.15907868811572512
+Ethiopia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.13862433862433876
+Germany,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.17690980392156858
+Great Britain,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.35047189888300995
+Greece,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.00048709315375988077
+Guatemala,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.3188714596949892
+Hong Kong SAR,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.11768940870695259
+India,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.0069016986911723168
+Indonesia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.0016806201550387811
+Iran,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.37475090777051562
+Iraq,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.16960846560846554
+Japan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.17536708259061201
+Jordan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.27025460726426898
+Kazakhstan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.053078787878787906
+Kenya,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.021210197210197245
+Kyrgyzstan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.16458874458874473
+Lebanon,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.10964482431149102
+Libya,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.27578900112233429
+Macau SAR,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.015169590643274819
+Malaysia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.014134798534798406
+Maldives,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.22435095785440609
+Mexico,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.085640579710145062
+Mongolia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.025943822519261132
+Morocco,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.26170717205499799
+Myanmar,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.22355555555555556
+Netherlands,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.11870379367221467
+New Zealand,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.036017401528512606
+Nicaragua,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.11968449931412882
+Nigeria,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.20396296296296296
+Northern Ireland,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.046908641975308668
+Pakistan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.27518673918673914
+Peru,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.079636363636363672
+Philippines,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.0056519036519036663
+Puerto Rico,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.17552210274790922
+Romania,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.2382074074074074
+Russia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.18153069153069148
+Serbia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.080780795610425227
+Singapore,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.010812203669346508
+Slovakia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.036152505446623052
+South Korea,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.059080423280423351
+Taiwan ROC,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.24805784832451488
+Tajikistan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.21182430750077808
+Thailand,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.29941079193710773
+Tunisia,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.076123706197780208
+Turkey,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.15925155831822491
+Ukraine,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.0070905982905982295
+United States,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.076296568762602934
+Uzbekistan,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.11749515669515673
+Vietnam,GPT-5.6 Sol,linear,Q48/Q57/Q159,0.036319890260631066
+Zimbabwe,GPT-5.6 Sol,linear,Q48/Q57/Q159,-0.20283264746227719
+Andorra,GPT-5.5,saturating,Q48/Q57/Q159,0.14476050856481218
+Argentina,GPT-5.5,saturating,Q48/Q57/Q159,-0.12679265986263499
+Armenia,GPT-5.5,saturating,Q48/Q57/Q159,-0.27919271051715855
+Australia,GPT-5.5,saturating,Q48/Q57/Q159,-0.095123653112968498
+Bangladesh,GPT-5.5,saturating,Q48/Q57/Q159,0.018215103692053328
+Bolivia,GPT-5.5,saturating,Q48/Q57/Q159,-0.17152451748069214
+Brazil,GPT-5.5,saturating,Q48/Q57/Q159,0.0091462936200649575
+Canada,GPT-5.5,saturating,Q48/Q57/Q159,0.074053269646594713
+Chile,GPT-5.5,saturating,Q48/Q57/Q159,0.045086333057454381
+China,GPT-5.5,saturating,Q48/Q57/Q159,-0.079719621747737668
+Colombia,GPT-5.5,saturating,Q48/Q57/Q159,-0.086138927951424971
+Cyprus,GPT-5.5,saturating,Q48/Q57/Q159,0.089778099531981445
+Czechia,GPT-5.5,saturating,Q48/Q57/Q159,-0.058171020483478386
+Ecuador,GPT-5.5,saturating,Q48/Q57/Q159,-0.066078760489216223
+Egypt,GPT-5.5,saturating,Q48/Q57/Q159,-0.11790637354100732
+Ethiopia,GPT-5.5,saturating,Q48/Q57/Q159,-0.087918319551663168
+Germany,GPT-5.5,saturating,Q48/Q57/Q159,-0.1646753662349057
+Great Britain,GPT-5.5,saturating,Q48/Q57/Q159,-0.34973919358335664
+Greece,GPT-5.5,saturating,Q48/Q57/Q159,-0.084390685038288477
+Guatemala,GPT-5.5,saturating,Q48/Q57/Q159,-0.2293138220216526
+Hong Kong SAR,GPT-5.5,saturating,Q48/Q57/Q159,0.038000930068942819
+India,GPT-5.5,saturating,Q48/Q57/Q159,0.012884504491375234
+Indonesia,GPT-5.5,saturating,Q48/Q57/Q159,0.024867461036562268
+Iran,GPT-5.5,saturating,Q48/Q57/Q159,-0.3449383248439627
+Iraq,GPT-5.5,saturating,Q48/Q57/Q159,-0.14447180525135991
+Japan,GPT-5.5,saturating,Q48/Q57/Q159,-0.12716928336992123
+Jordan,GPT-5.5,saturating,Q48/Q57/Q159,-0.19889570579609911
+Kazakhstan,GPT-5.5,saturating,Q48/Q57/Q159,-0.03784737989497957
+Kenya,GPT-5.5,saturating,Q48/Q57/Q159,0.057048663263749549
+Kyrgyzstan,GPT-5.5,saturating,Q48/Q57/Q159,-0.15172190671117469
+Lebanon,GPT-5.5,saturating,Q48/Q57/Q159,-0.12211031564512242
+Libya,GPT-5.5,saturating,Q48/Q57/Q159,-0.25969312779556036
+Macau SAR,GPT-5.5,saturating,Q48/Q57/Q159,-0.043221367582504153
+Malaysia,GPT-5.5,saturating,Q48/Q57/Q159,-0.055270280284810305
+Maldives,GPT-5.5,saturating,Q48/Q57/Q159,-0.16429491787964223
+Mexico,GPT-5.5,saturating,Q48/Q57/Q159,-0.058097537619079313
+Mongolia,GPT-5.5,saturating,Q48/Q57/Q159,-0.023277408345833486
+Morocco,GPT-5.5,saturating,Q48/Q57/Q159,-0.20720799079301866
+Myanmar,GPT-5.5,saturating,Q48/Q57/Q159,-0.20023437548405615
+Netherlands,GPT-5.5,saturating,Q48/Q57/Q159,-0.095179964797756464
+New Zealand,GPT-5.5,saturating,Q48/Q57/Q159,0.044466494291915869
+Nicaragua,GPT-5.5,saturating,Q48/Q57/Q159,-0.11892292324585962
+Nigeria,GPT-5.5,saturating,Q48/Q57/Q159,-0.16929626124039301
+Northern Ireland,GPT-5.5,saturating,Q48/Q57/Q159,0.015969435923765866
+Pakistan,GPT-5.5,saturating,Q48/Q57/Q159,-0.2763173993168887
+Peru,GPT-5.5,saturating,Q48/Q57/Q159,-0.082193444542271538
+Philippines,GPT-5.5,saturating,Q48/Q57/Q159,0.010291603240656914
+Puerto Rico,GPT-5.5,saturating,Q48/Q57/Q159,-0.10260080420410173
+Romania,GPT-5.5,saturating,Q48/Q57/Q159,-0.23823276949368455
+Russia,GPT-5.5,saturating,Q48/Q57/Q159,-0.16700625868147601
+Serbia,GPT-5.5,saturating,Q48/Q57/Q159,-0.074032377025927451
+Singapore,GPT-5.5,saturating,Q48/Q57/Q159,0.027326411217324098
+Slovakia,GPT-5.5,saturating,Q48/Q57/Q159,0.024606890811590478
+South Korea,GPT-5.5,saturating,Q48/Q57/Q159,0.060248343803570331
+Taiwan ROC,GPT-5.5,saturating,Q48/Q57/Q159,-0.28184015448470917
+Tajikistan,GPT-5.5,saturating,Q48/Q57/Q159,-0.24671379636558488
+Thailand,GPT-5.5,saturating,Q48/Q57/Q159,0.35491226233562817
+Tunisia,GPT-5.5,saturating,Q48/Q57/Q159,-0.0057552487284324022
+Turkey,GPT-5.5,saturating,Q48/Q57/Q159,-0.18721996989769818
+Ukraine,GPT-5.5,saturating,Q48/Q57/Q159,0.011477418225042307
+United States,GPT-5.5,saturating,Q48/Q57/Q159,-0.080908858035797754
+Uzbekistan,GPT-5.5,saturating,Q48/Q57/Q159,-0.07356731869391013
+Vietnam,GPT-5.5,saturating,Q48/Q57/Q159,-0.040629714905082298
+Zimbabwe,GPT-5.5,saturating,Q48/Q57/Q159,-0.19409945540985557
+Andorra,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.086100638194088711
+Argentina,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.15584517358569283
+Armenia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.20232526438362097
+Australia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.12249683142382964
+Bangladesh,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.0066651984574715717
+Bolivia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.18430479600045524
+Brazil,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.027100279514160185
+Canada,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.017647301586988733
+Chile,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.06573498408369019
+China,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.12330953003675998
+Colombia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.077684870294341374
+Cyprus,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.078992674360482601
+Czechia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.081422345454169848
+Ecuador,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.071395670633779496
+Egypt,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.15320200060247205
+Ethiopia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.1187058325550687
+Germany,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.184235135487505
+Great Britain,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.34473853442543967
+Greece,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.03793034843432451
+Guatemala,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.26511910392691396
+Hong Kong SAR,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.13365111467890287
+India,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.013366720217540224
+Indonesia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.025734443855842934
+Iran,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.36694279068382812
+Iraq,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.19299904523244468
+Japan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.17038161958651041
+Jordan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.26628573267148081
+Kazakhstan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.024593511469987672
+Kenya,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.038944890222269116
+Kyrgyzstan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.11213138016705845
+Lebanon,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.13530797436450337
+Libya,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.2720532303808651
+Macau SAR,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.071556708334607047
+Malaysia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.026724896367075326
+Maldives,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.20251398379712096
+Mexico,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.052141179776361929
+Mongolia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.029484914255879176
+Morocco,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.27024570622382016
+Myanmar,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.20127022619666235
+Netherlands,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.12945079658602385
+New Zealand,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.029941771695161434
+Nicaragua,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.1105472619168473
+Nigeria,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.17808077586225196
+Northern Ireland,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.0050211790465428813
+Pakistan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.25913533383505033
+Peru,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.092268928229301189
+Philippines,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.034160279645693861
+Puerto Rico,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.12762544059489581
+Romania,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.22824525288812431
+Russia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.17029550553790254
+Serbia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.04632507305672047
+Singapore,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.024452920669674416
+Slovakia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.012829432533095708
+South Korea,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.029313124498743584
+Taiwan ROC,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.23453891537844684
+Tajikistan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.2366127898932805
+Thailand,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.3460747505040207
+Tunisia,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.064125541983011791
+Turkey,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.15307579760203052
+Ukraine,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.02639736300161781
+United States,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.084439852467595833
+Uzbekistan,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.072559609868484809
+Vietnam,GPT-5.6 Sol,saturating,Q48/Q57/Q159,0.024191703532466663
+Zimbabwe,GPT-5.6 Sol,saturating,Q48/Q57/Q159,-0.18072281085621159
+Andorra,GPT-5.5,spline,Q48/Q57/Q159,0.13235272796339459
+Argentina,GPT-5.5,spline,Q48/Q57/Q159,-0.13891728699893299
+Armenia,GPT-5.5,spline,Q48/Q57/Q159,-0.29060900385394217
+Australia,GPT-5.5,spline,Q48/Q57/Q159,-0.1026141896755888
+Bangladesh,GPT-5.5,spline,Q48/Q57/Q159,0.031531126105863061
+Bolivia,GPT-5.5,spline,Q48/Q57/Q159,-0.17097931172724029
+Brazil,GPT-5.5,spline,Q48/Q57/Q159,-0.008683912016239019
+Canada,GPT-5.5,spline,Q48/Q57/Q159,0.076156596241820529
+Chile,GPT-5.5,spline,Q48/Q57/Q159,0.035709528715454783
+China,GPT-5.5,spline,Q48/Q57/Q159,-0.090419376680540731
+Colombia,GPT-5.5,spline,Q48/Q57/Q159,-0.10121089655657553
+Cyprus,GPT-5.5,spline,Q48/Q57/Q159,0.079447151348879766
+Czechia,GPT-5.5,spline,Q48/Q57/Q159,-0.067000128029263833
+Ecuador,GPT-5.5,spline,Q48/Q57/Q159,-0.077431024070185192
+Egypt,GPT-5.5,spline,Q48/Q57/Q159,-0.12387266545657752
+Ethiopia,GPT-5.5,spline,Q48/Q57/Q159,-0.097152921810699511
+Germany,GPT-5.5,spline,Q48/Q57/Q159,-0.16305658570698506
+Great Britain,GPT-5.5,spline,Q48/Q57/Q159,-0.35236421712718013
+Greece,GPT-5.5,spline,Q48/Q57/Q159,-0.059435462443363674
+Guatemala,GPT-5.5,spline,Q48/Q57/Q159,-0.25663208262728965
+Hong Kong SAR,GPT-5.5,spline,Q48/Q57/Q159,0.028674957764782311
+India,GPT-5.5,spline,Q48/Q57/Q159,0.013568655383314273
+Indonesia,GPT-5.5,spline,Q48/Q57/Q159,0.01454124094809707
+Iran,GPT-5.5,spline,Q48/Q57/Q159,-0.34881186798999425
+Iraq,GPT-5.5,spline,Q48/Q57/Q159,-0.13248525181265919
+Japan,GPT-5.5,spline,Q48/Q57/Q159,-0.13586916367744251
+Jordan,GPT-5.5,spline,Q48/Q57/Q159,-0.20443183130885401
+Kazakhstan,GPT-5.5,spline,Q48/Q57/Q159,-0.051258530988901506
+Kenya,GPT-5.5,spline,Q48/Q57/Q159,0.051955312561238559
+Kyrgyzstan,GPT-5.5,spline,Q48/Q57/Q159,-0.17596977678014714
+Lebanon,GPT-5.5,spline,Q48/Q57/Q159,-0.10683796700784336
+Libya,GPT-5.5,spline,Q48/Q57/Q159,-0.26125775200565338
+Macau SAR,GPT-5.5,spline,Q48/Q57/Q159,-0.018891017255071814
+Malaysia,GPT-5.5,spline,Q48/Q57/Q159,-0.048441198691569001
+Maldives,GPT-5.5,spline,Q48/Q57/Q159,-0.17436397899815517
+Mexico,GPT-5.5,spline,Q48/Q57/Q159,-0.072229901592413701
+Mongolia,GPT-5.5,spline,Q48/Q57/Q159,-0.021908771242234469
+Morocco,GPT-5.5,spline,Q48/Q57/Q159,-0.20725946130448519
+Myanmar,GPT-5.5,spline,Q48/Q57/Q159,-0.20900334705075446
+Netherlands,GPT-5.5,spline,Q48/Q57/Q159,-0.090283894192588074
+New Zealand,GPT-5.5,spline,Q48/Q57/Q159,0.047016892895246847
+Nicaragua,GPT-5.5,spline,Q48/Q57/Q159,-0.1243251927668937
+Nigeria,GPT-5.5,spline,Q48/Q57/Q159,-0.18283969059594568
+Northern Ireland,GPT-5.5,spline,Q48/Q57/Q159,-0.0053339551897575999
+Pakistan,GPT-5.5,spline,Q48/Q57/Q159,-0.2827343259758075
+Peru,GPT-5.5,spline,Q48/Q57/Q159,-0.076871736292970977
+Philippines,GPT-5.5,spline,Q48/Q57/Q159,-0.0038853438468253211
+Puerto Rico,GPT-5.5,spline,Q48/Q57/Q159,-0.12633088366741896
+Romania,GPT-5.5,spline,Q48/Q57/Q159,-0.24342659873277148
+Russia,GPT-5.5,spline,Q48/Q57/Q159,-0.17393178201770801
+Serbia,GPT-5.5,spline,Q48/Q57/Q159,-0.088594708123761606
+Singapore,GPT-5.5,spline,Q48/Q57/Q159,0.020152823377811015
+Slovakia,GPT-5.5,spline,Q48/Q57/Q159,0.0082697017133327617
+South Korea,GPT-5.5,spline,Q48/Q57/Q159,0.071507231040564459
+Taiwan ROC,GPT-5.5,spline,Q48/Q57/Q159,-0.28906316284538502
+Tajikistan,GPT-5.5,spline,Q48/Q57/Q159,-0.23470326497677263
+Thailand,GPT-5.5,spline,Q48/Q57/Q159,0.33206549948787772
+Tunisia,GPT-5.5,spline,Q48/Q57/Q159,-0.018302292610605286
+Turkey,GPT-5.5,spline,Q48/Q57/Q159,-0.18811009109774535
+Ukraine,GPT-5.5,spline,Q48/Q57/Q159,-0.0058517779888150878
+United States,GPT-5.5,spline,Q48/Q57/Q159,-0.078247258494399327
+Uzbekistan,GPT-5.5,spline,Q48/Q57/Q159,-0.094839763638282143
+Vietnam,GPT-5.5,spline,Q48/Q57/Q159,-0.030244235126759209
+Zimbabwe,GPT-5.5,spline,Q48/Q57/Q159,-0.20491182746532541
+Andorra,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.075832091475054306
+Argentina,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.16761440634049685
+Armenia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.2172295251159449
+Australia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.13012650791975885
+Bangladesh,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.022157924459772535
+Bolivia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.18365036796866696
+Brazil,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.0085874953911682719
+Canada,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.020293024225359495
+Chile,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.056918911431504148
+China,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.13007373059000582
+Colombia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.096413914389222977
+Cyprus,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.070650004572473724
+Czechia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.090113543667123902
+Ecuador,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.081902815565384118
+Egypt,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.15592944460609748
+Ethiopia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.12755758573388212
+Germany,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.18136572150945424
+Great Britain,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.34791755594748186
+Greece,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.01808254063266402
+Guatemala,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.29197353667392895
+Hong Kong SAR,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.12525783842321855
+India,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.012124540156976754
+Indonesia,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.012855721057836438
+Iran,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.37027480351811504
+Iraq,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.18020431902802264
+Japan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.17444069728512432
+Jordan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.26671644036235187
+Kazakhstan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.038483002868188065
+Kenya,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.032751252204585579
+Kyrgyzstan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.13812769173213629
+Lebanon,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.12106830994337171
+Libya,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.27378367793157898
+Macau SAR,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.042055297090462754
+Malaysia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.019011612957686889
+Maldives,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.21302144950569976
+Mexico,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.067630110097214868
+Mongolia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.027293780844429336
+Morocco,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.26478829532368975
+Myanmar,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.21201262002743484
+Netherlands,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.12374561161371292
+New Zealand,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.033591433361639091
+Nicaragua,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.11558763446785382
+Nigeria,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.1904500060966316
+Northern Ireland,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.025517296753543695
+Pakistan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.26600691856839997
+Peru,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.085888800764850184
+Philippines,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.016198189760856421
+Puerto Rico,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.15028386034780303
+Romania,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.2326968319289307
+Russia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.17616130190796853
+Serbia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.063376875476299346
+Singapore,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.018367111443654639
+Slovakia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.024614303773635604
+South Korea,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.044904048598863489
+Taiwan ROC,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.24242367862041928
+Tajikistan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.22235511682862441
+Thailand,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.32313128823959236
+Tunisia,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.069934555985090893
+Turkey,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.15464668369033796
+Ukraine,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.0082228447821041245
+United States,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.079895884008802709
+Uzbekistan,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.093150007808378177
+Vietnam,GPT-5.6 Sol,spline,Q48/Q57/Q159,0.031495869125641451
+Zimbabwe,GPT-5.6 Sol,spline,Q48/Q57/Q159,-0.19180801402225278

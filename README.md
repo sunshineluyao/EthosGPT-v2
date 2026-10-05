@@ -36,13 +36,14 @@ commands after installation use only the files in this repository.
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.lock.txt
-make release-smoke          # fast checks of frozen hashes, coverage and result paths
+make release-smoke          # frozen model and dynamic-companion integrity checks
 make reproduce-offline      # rebuild analyses and editable SVG figures
-make release-contract       # tests, reference checks and visual-asset audit
+make release-contract       # empirical and dynamic tests, reference and visual checks
+make reproduce-dynamics     # isolated reproduction of the dynamic mechanisms
 ```
 
 The full run includes 20,000 country-bootstrap draws, 19,999 sign flips and
-spatial analyses. It needs no model API key. A later live call to the undated
+spatial analyses. The dynamic extension adds 3,072 archived-profile scenarios, 45 cultural-change scenarios, and 70 timing/rollout comparisons. It needs no model API key. A later live call to the undated
 `gpt-5.6-sol` identifier is outside the exact-reproduction claim. See
 [the complete command and environment guide](REPRODUCIBILITY.md).
 
@@ -58,13 +59,13 @@ This table covers every top-level folder and file. Follow the linked directories
 | [`config/`](config/) | YAML definitions for constructs, countries, languages, models, prompts, dataset, and the illustrative simulation. |
 | [`data/`](data/) | Country/item/language crosswalks and processed or analysis-ready Parquet data. The `raw/`, `external/`, and `interim/` folders contain boundary notes; raw WVS respondent data are not bundled. |
 | [`docs/`](docs/) | Data and model pipeline guides, result index, replication report, and statistical appendix. |
-| [`experiments/`](experiments/) | The archived [64-country GPT-5.5/GPT-5.6 Sol comparison](experiments/gpt55_gpt56_64country/): inputs, frozen outputs, manifests, scoring and sensitivity scripts, and result tables. |
+| [`experiments/`](experiments/) | The archived [64-country comparison](experiments/gpt55_gpt56_64country/) and the [dynamic growth and adjustment study](experiments/dynamic_growth/), with source, aggregate inputs, governed results, tests, editable figures, and an offline explorer. |
 | [`manifests/`](manifests/) | [Machine-readable result replication index](manifests/result_replication_index.json) tracing headline outputs through source, collection boundary, processing, and analysis. |
 | [`prompts/`](prompts/) | English prompt template, response schema, prompt manifest, and multilingual guidance; exact study prompts and ledger are also under `experiments/`. |
 | [`results/`](results/) | Released scenario tables, signed country and regional differences, and generated SVG/PDF figure exports. For editable inputs, see [`assets/figure_sources/`](assets/figure_sources/). |
 | [`scripts/`](scripts/) | Offline reproduction driver, release and visual checks, and figure generators. |
 | [`src/`](src/) | Python package namespace and pipeline module; the comparison's executable analysis is primarily under `experiments/` and `scripts/`. |
-| [`tests/`](tests/) | Tests for metrics, small-sample inference, extended analysis, and negative release checks. |
+| [`tests/`](tests/) | Tests for metrics, inference, and negative release checks. The dynamic study has 13 additional mechanism tests under `experiments/dynamic_growth/`. |
 
 | Root file | What it does |
 |---|---|
@@ -139,6 +140,38 @@ contains both and should not stand in for either country. These quantities
 are synthetic proxies. The code also evaluates weak, strong, two-item
 neutralization and no-decision-link scenarios; none identifies an actual
 economic or environmental effect.
+
+<a id="dynamic-study"></a>
+## Innovation and adjustment over time
+
+The [dynamic companion](experiments/dynamic_growth/README.md) asks when
+misread values change an innovation path, whether assistance keeps adoption
+viable within the same budget, and whether advice keeps pace with changing
+values. The [model guide](experiments/dynamic_growth/MODEL_GUIDE.md) explains
+the two illustrative adjustment groups, equations, decision rule, units, and
+assumptions. A [plain-language dictionary](docs/dynamic_dictionary.md) supports
+readers from other disciplines.
+
+| Question | Released calculation | Interpretation |
+|---|---|---|
+| Does error direction matter? | 3,072 archived-profile comparisons; equal-distance counterexamples | The same error size can improve, worsen, or leave outcomes unchanged under a specified response rule. |
+| Can assistance sustain rollout? | 35 equal-budget rate/allocation comparisons | A 2.5% budget diversion admits three of seven rates under the declared growth, worst-group exposure, and final-adoption criteria; zero and larger diversions admit none. |
+| Can advice become outdated? | 35 cultural-rate/update-delay comparisons | Fast value change with a long advice delay can stall adoption in the illustrative mechanism. |
+
+All economic coefficients, response weights, cultural laws, and policy
+criteria are declared research assumptions. The scenario tables describe a
+common hypothetical economy and retain positive, adverse, and null cases.
+The measured survey/model comparison remains unchanged.
+
+![Dynamic growth and adjustment results](experiments/dynamic_growth/figures/fig_dynamic_results_gallery.svg)
+
+Run `make reproduce-dynamics` for an isolated full run that compares all
+24 generated CSVs with the governed references. `make mechanisms` runs
+13 algebraic, stability, probability, resource, and counterexample tests.
+`make dynamic-figures` redraws the 14 editable figures in a new build directory.
+The [offline explorer](experiments/dynamic_growth/explore.html) uses embedded,
+precomputed scenarios; download it and open it locally. Its script has DOM
+and syntax tests; a browser-render test is not part of this release.
 
 <a id="replication"></a>
 ## Trace each result

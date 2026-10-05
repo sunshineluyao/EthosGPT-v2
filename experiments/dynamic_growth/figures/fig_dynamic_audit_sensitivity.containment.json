@@ -1,0 +1,243 @@
+{
+  "files": [
+    "figures/fig_dynamic_audit_sensitivity.svg"
+  ],
+  "record_count": 33,
+  "contained_text": 0,
+  "free_text": 33,
+  "passed": 33,
+  "failed": 0,
+  "records": [
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-0",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-1",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-2",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-3",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-4",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-5",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-6",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-7",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-8",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-9",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-10",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-11",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-12",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-13",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-14",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-15",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-16",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-17",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-18",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-19",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-20",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-21",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-22",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-23",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-24",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-25",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-26",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-27",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-28",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-29",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-30",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-31",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    },
+    {
+      "svg": "figures/fig_dynamic_audit_sensitivity.svg",
+      "text_id": "fig_dynamic_audit_sensitivity-label-32",
+      "container_id": null,
+      "status": "PASS",
+      "classification": "free"
+    }
+  ]
+}
