@@ -243,6 +243,13 @@ conditional mechanisms; country resource inputs do not make them national
 forecasts. The earlier coordination experiment remains separately reproducible.
 
 Run `make structural-check`, `make reproduce-structural`, or `make structural-figures`.
+The current [six-panel hero](results/figures/fig1_extended_hero.svg) preserves
+the empirical panels and adds a computed patent-valuation surface and planner
+state flow. Twelve structural views use the retained serif, navy, teal, blue,
+and rose visual system. Signed adviser differences and numeric endpoint keys
+resolve close trajectories; the original absolute paths remain available.
+The [visual revision guide](docs/structural_visual_revision.md) maps every view
+to its input, interpretation, and redraw command.
 The released value arrays can be independently checked with the streaming
 `verify_values.py` script. Full uncertainty propagation and empirical identification
 of the new economic mechanisms remain research tasks.

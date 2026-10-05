@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "structural_views": 12,
+  "checks": [
+    {
+      "figure": "fig_r3_advice_paths",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_advice_paths_absolute",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_initial_states",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_controls",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_welfare_weights",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_innovation_sizes",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_refinement",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_action_fields",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_system_summary",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_upgrade_comparisons",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_market_valuation",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    },
+    {
+      "figure": "fig_r3_phase_growth",
+      "live_text": true,
+      "vector_pdf": true,
+      "matches_manuscript_svg": true,
+      "manifest_ids_resolve": true
+    }
+  ],
+  "hero_matches_manuscript_svg": true,
+  "hero_preserves_empirical_weight_panel": true,
+  "frozen_evidence_files_unchanged": 107,
+  "scope": "Structural publication assets; all 97 manuscript pages separately reviewed as rendered images."
+}

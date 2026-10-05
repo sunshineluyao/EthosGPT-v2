@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "results": {
+    "China": {
+      "state_nodes": 10201,
+      "action_candidates": 3721,
+      "max_residual": 8.881784197001252e-15,
+      "off_grid_quadrature_checks": [
+        {
+          "state": [
+            0.08,
+            0.08
+          ],
+          "max_action_value_quadrature_difference": 6.750155989720952e-14,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.3,
+            0.05
+          ],
+          "max_action_value_quadrature_difference": 2.149391775674303e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.05,
+            0.3
+          ],
+          "max_action_value_quadrature_difference": 2.149391775674303e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.45,
+            0.35
+          ],
+          "max_action_value_quadrature_difference": 3.7481129311345285e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.8,
+            0.8
+          ],
+          "max_action_value_quadrature_difference": 7.478462293875054e-13,
+          "same_selected_action": true
+        }
+      ]
+    },
+    "Germany": {
+      "state_nodes": 10201,
+      "action_candidates": 3721,
+      "max_residual": 8.881784197001252e-15,
+      "off_grid_quadrature_checks": [
+        {
+          "state": [
+            0.08,
+            0.08
+          ],
+          "max_action_value_quadrature_difference": 6.750155989720952e-14,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.3,
+            0.05
+          ],
+          "max_action_value_quadrature_difference": 2.149391775674303e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.05,
+            0.3
+          ],
+          "max_action_value_quadrature_difference": 2.149391775674303e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.45,
+            0.35
+          ],
+          "max_action_value_quadrature_difference": 3.7481129311345285e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.8,
+            0.8
+          ],
+          "max_action_value_quadrature_difference": 7.478462293875054e-13,
+          "same_selected_action": true
+        }
+      ]
+    },
+    "Egypt": {
+      "state_nodes": 10201,
+      "action_candidates": 3721,
+      "max_residual": 8.881784197001252e-15,
+      "off_grid_quadrature_checks": [
+        {
+          "state": [
+            0.08,
+            0.08
+          ],
+          "max_action_value_quadrature_difference": 6.750155989720952e-14,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.3,
+            0.05
+          ],
+          "max_action_value_quadrature_difference": 2.1671553440683056e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.05,
+            0.3
+          ],
+          "max_action_value_quadrature_difference": 2.1671553440683056e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.45,
+            0.35
+          ],
+          "max_action_value_quadrature_difference": 3.765876499528531e-13,
+          "same_selected_action": true
+        },
+        {
+          "state": [
+            0.8,
+            0.8
+          ],
+          "max_action_value_quadrature_difference": 7.478462293875054e-13,
+          "same_selected_action": true
+        }
+      ]
+    }
+  },
+  "scope": "Full-grid residual of saved reference values, not a fresh solver convergence proof"
+}

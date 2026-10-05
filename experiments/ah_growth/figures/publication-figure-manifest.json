@@ -2,211 +2,431 @@
   "iconography_mode": "minimal-scientific",
   "palette": {
     "ink": "#18324A",
-    "primary": "#315EFB",
-    "secondary": "#128C80",
-    "status_accent": "#D97745",
-    "surface": "#FFFFFF",
-    "divider": "#CBD5E1"
+    "primary": "#007F86",
+    "secondary": "#4057D6",
+    "status_accent": "#B93678",
+    "surface": "#F4F7FA",
+    "divider": "#CFD9E3"
   },
-  "data_sources": [
-    "country-paths.csv",
-    "matched-sensitivity.csv",
-    "country-refinement.csv",
-    "three-country-upgrade-comparison.csv"
+  "style_reference": "Retained empirical figures: serif type, navy ink, teal and rose, quiet panels.",
+  "semantic_graphics": [
+    {
+      "concept": "Growth falls in all three cases; needs directions relative to human advice differ.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_advice_paths-axes-0",
+        "fig_r3_advice_paths-text-8"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Near-overlapping levels have small, explicitly reported adviser differences.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_advice_paths_absolute-axes-0",
+        "fig_r3_advice_paths_absolute-text-8"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Six starts approach the same tested endpoint within each country and policy.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_initial_states-axes-0",
+        "fig_r3_initial_states-text-14"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "The planner changes controls with need states; fixed-advice markets have distinct targets.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_controls-axes-0",
+        "fig_r3_controls-text-8"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Matched scans expose how innovation gains and needs depend on assumed parameters.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_welfare_weights-axes-0",
+        "fig_r3_welfare_weights-text-10"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Matched scans expose how innovation gains and needs depend on assumed parameters.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_innovation_sizes-axes-0",
+        "fig_r3_innovation_sizes-text-10"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Value-function agreement does not certify every path statistic.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_refinement-axes-0",
+        "fig_r3_refinement-text-10"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Research and assistance depend on current need states.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_action_fields-axes-0",
+        "fig_r3_action_fields-text-0"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Stationary needs coexist with continuing cumulative quality growth.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_system_summary-axes-0",
+        "fig_r3_system_summary-text-0"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Lower needs do not always mean closer human-reference needs.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_upgrade_comparisons-axes-0",
+        "fig_r3_upgrade_comparisons-text-0"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Initial needs alter normalized patent value modestly; the plotted range is disclosed.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_market_valuation-axes-0",
+        "fig_r3_market_valuation-text-9"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    },
+    {
+      "concept": "Needs settle while quality continues along the tested balanced-growth rays.",
+      "visual_encoding": "computed data marks with axes, units and redundant keys",
+      "shape_ids": [
+        "fig_r3_phase_growth-axes-0",
+        "fig_r3_phase_growth-text-4"
+      ],
+      "origin": "original",
+      "evidence_implication": "conditional computation, not measured national outcomes"
+    }
   ],
+  "composition_mechanism": "Shared country columns, aligned outcome rows, protected numerical keys and explicit unit/color scales.",
+  "grayscale_encoding": "Dashed/dash-dot advisers, open starts and star endpoints, distinct scan markers, and signed numeric keys accompany color.",
+  "minimum_design_font_points": 8,
+  "width_inches": 7,
   "figures": [
     {
       "name": "fig_r3_advice_paths",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "b1fa35ca1aefbe7c25251d2be162266197edd2d435d8cc092007b6e453e927f5"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Growth falls in all three cases; needs directions relative to human advice differ.",
+      "data_sources": [
+        "country-paths.csv"
+      ],
+      "svg_sha256": "0a104a83f8ec22c1c9588e75c907dd3e5451ae60cf6a43088bcf1cf76af84c0a",
+      "semantic_graphics": [
+        {
+          "concept": "Growth falls in all three cases; needs directions relative to human advice differ.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_advice_paths-axes-0",
+            "fig_r3_advice_paths-text-8"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
+    },
+    {
+      "name": "fig_r3_advice_paths_absolute",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Near-overlapping levels have small, explicitly reported adviser differences.",
+      "data_sources": [
+        "country-paths.csv"
+      ],
+      "svg_sha256": "cf8f9ca1faeec315ffdef6b64111f63ed306499f564ba62c9608ae02f9df4c06",
+      "semantic_graphics": [
+        {
+          "concept": "Near-overlapping levels have small, explicitly reported adviser differences.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_advice_paths_absolute-axes-0",
+            "fig_r3_advice_paths_absolute-text-8"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_initial_states",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "9f7ef3529f0f9a505f10d4a0e3e8b68bff7449f21155535b3a0fe90e43500406"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Six starts approach the same tested endpoint within each country and policy.",
+      "data_sources": [
+        "country-paths.csv"
+      ],
+      "svg_sha256": "bf5f9c879da4af979e46a36ac61954ddb2fb7adcabc901e12f82cebf337377da",
+      "semantic_graphics": [
+        {
+          "concept": "Six starts approach the same tested endpoint within each country and policy.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_initial_states-axes-0",
+            "fig_r3_initial_states-text-14"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_controls",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "450d1c4f7b086c238999f0cc444cfd3eb9b5cf8772094fda2859700326e1b829"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "The planner changes controls with need states; fixed-advice markets have distinct targets.",
+      "data_sources": [
+        "country-paths.csv",
+        "country-policy-comparisons.csv"
+      ],
+      "svg_sha256": "a837636180fab869f21d25050f0f707acb99325564b4d7e29fb11e2801061fde",
+      "semantic_graphics": [
+        {
+          "concept": "The planner changes controls with need states; fixed-advice markets have distinct targets.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_controls-axes-0",
+            "fig_r3_controls-text-8"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_welfare_weights",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "99ae46c2ca012c4504e7aff70fba8b9b63f0762dea1359aebd8de2cb405a2f0b"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Matched scans expose how innovation gains and needs depend on assumed parameters.",
+      "data_sources": [
+        "matched-sensitivity.csv"
+      ],
+      "svg_sha256": "10afa34c643d9dd503ff45a99dc3be1bde3f8ac4f827681fe378c3b0e5ec3b0b",
+      "semantic_graphics": [
+        {
+          "concept": "Matched scans expose how innovation gains and needs depend on assumed parameters.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_welfare_weights-axes-0",
+            "fig_r3_welfare_weights-text-10"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_innovation_sizes",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "1db8d404810062c83683a8cb90283779622b4eaa353e3cd7a48ae14a587c0d05"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Matched scans expose how innovation gains and needs depend on assumed parameters.",
+      "data_sources": [
+        "matched-sensitivity.csv"
+      ],
+      "svg_sha256": "f76b9289232201bc7f54b4321ceeef1e34700ece93d5f707f52cfd6df4db9064",
+      "semantic_graphics": [
+        {
+          "concept": "Matched scans expose how innovation gains and needs depend on assumed parameters.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_innovation_sizes-axes-0",
+            "fig_r3_innovation_sizes-text-10"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_refinement",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "0955111b4365d9c9b5ef0ced793bf76a22e3004080be8c321be59b6c83b1423b"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Value-function agreement does not certify every path statistic.",
+      "data_sources": [
+        "country-refinement.csv"
+      ],
+      "svg_sha256": "7d74950587622c73bec8b0fc799e62dd6fcf3a7f86b6325f9268eab30ca14831",
+      "semantic_graphics": [
+        {
+          "concept": "Value-function agreement does not certify every path statistic.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_refinement-axes-0",
+            "fig_r3_refinement-text-10"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_action_fields",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "d3d3848d68d05b5d6944ed25560cbf98b3dedc4bdca108f014be182656fbda3c"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Research and assistance depend on current need states.",
+      "data_sources": [
+        "systems/planner-phase-field.csv",
+        "country-paths.csv"
+      ],
+      "svg_sha256": "eff811f715363877153db0685c1d671d3ce35639f6e32fdf0a01973564a481ec",
+      "semantic_graphics": [
+        {
+          "concept": "Research and assistance depend on current need states.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_action_fields-axes-0",
+            "fig_r3_action_fields-text-0"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_system_summary",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "8bb211c2916240649bc786b61f854c1624db2d1e536f54f10e86876569778f24"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Stationary needs coexist with continuing cumulative quality growth.",
+      "data_sources": [
+        "systems/planner-phase-field.csv",
+        "country-paths.csv"
+      ],
+      "svg_sha256": "602d9f1eadee723d22b2063781df49611b58a53bb3f9a1fdf8aec12bd0a79135",
+      "semantic_graphics": [
+        {
+          "concept": "Stationary needs coexist with continuing cumulative quality growth.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_system_summary-axes-0",
+            "fig_r3_system_summary-text-0"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_upgrade_comparisons",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "19edee1773e8817af1f89643297ca0171153572c2ea7ea2cef18d4b08e3cd674"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Lower needs do not always mean closer human-reference needs.",
+      "data_sources": [
+        "three-country-upgrade-comparison.csv"
+      ],
+      "svg_sha256": "44a2453b94cd7e7df3ae291429bbc537c58c0764feb2caeeed5793bcf1811403",
+      "semantic_graphics": [
+        {
+          "concept": "Lower needs do not always mean closer human-reference needs.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_upgrade_comparisons-axes-0",
+            "fig_r3_upgrade_comparisons-text-0"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_market_valuation",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "d8fe687c37b22037ce6b649fce4cb130412d6be56b681ddc487915ad335e3dc0"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Initial needs alter normalized patent value modestly; the plotted range is disclosed.",
+      "data_sources": [
+        "systems/market-valuation-sheet.csv"
+      ],
+      "svg_sha256": "1dd59196758f85b89ebd50a63150cd7f3ce393ca7e4d37d5e23b3fbf7d089de0",
+      "semantic_graphics": [
+        {
+          "concept": "Initial needs alter normalized patent value modestly; the plotted range is disclosed.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_market_valuation-axes-0",
+            "fig_r3_market_valuation-text-9"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     },
     {
       "name": "fig_r3_phase_growth",
       "width_inches": 7,
       "evidence": "conditional synthetic model result",
-      "svg_sha256": "acc332655834f55879a302bc070ed1e3cad9d14ee18612cab8c71ae349bd96df"
+      "reader_task": "evidence",
+      "caption_evidence_class": "descriptive",
+      "message": "Needs settle while quality continues along the tested balanced-growth rays.",
+      "data_sources": [
+        "systems/planner-phase-field.csv",
+        "country-paths.csv"
+      ],
+      "svg_sha256": "5b1210d736f742954492d210f1454b76723ab4d618da52b5d211049462aef76c",
+      "semantic_graphics": [
+        {
+          "concept": "Needs settle while quality continues along the tested balanced-growth rays.",
+          "visual_encoding": "computed data marks with axes, units and redundant keys",
+          "shape_ids": [
+            "fig_r3_phase_growth-axes-0",
+            "fig_r3_phase_growth-text-4"
+          ],
+          "origin": "original",
+          "evidence_implication": "conditional computation, not measured national outcomes"
+        }
+      ]
     }
-  ],
-  "minimum_design_font_points": 7.5,
-  "width_inches": 7,
-  "semantic_graphics": [
-    {
-      "concept": "advice paths",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_advice_paths-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_advice_paths.svg"
-    },
-    {
-      "concept": "initial states",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_initial_states-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_initial_states.svg"
-    },
-    {
-      "concept": "controls",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_controls-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_controls.svg"
-    },
-    {
-      "concept": "welfare weights",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_welfare_weights-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_welfare_weights.svg"
-    },
-    {
-      "concept": "innovation sizes",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_innovation_sizes-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_innovation_sizes.svg"
-    },
-    {
-      "concept": "refinement",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_refinement-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_refinement.svg"
-    },
-    {
-      "concept": "action fields",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_action_fields-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_action_fields.svg"
-    },
-    {
-      "concept": "system summary",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_system_summary-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_system_summary.svg"
-    },
-    {
-      "concept": "upgrade comparisons",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_upgrade_comparisons-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_upgrade_comparisons.svg"
-    },
-    {
-      "concept": "market valuation",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_market_valuation-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_market_valuation.svg"
-    },
-    {
-      "concept": "phase growth",
-      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
-      "shape_ids": [
-        "figure_1",
-        "fig_r3_phase_growth-text-0"
-      ],
-      "origin": "original vector plots from the released conditional synthetic tables",
-      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
-      "asset": "fig_r3_phase_growth.svg"
-    }
-  ],
-  "composition_mechanism": "Matched country columns and separate institution/metric panels; empirical hero panels retain their original evidence.",
-  "grayscale_encoding": "Advice uses distinct line styles; country upgrade uses circle/square/diamond markers; numeric axes and panel labels distinguish fields."
+  ]
 }

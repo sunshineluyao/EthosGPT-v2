@@ -111,7 +111,12 @@ the 24 cached metric records, and compare four numerical result tables. It
 reuses released value arrays; it does not claim a fresh continuous-control
 solution. The separate `experiments/ah_growth/verify_values.py` streams the
 complete saved reference Bellman state/action pairs. `make structural-figures`
-redraws the eleven live-text SVG/vector-PDF figures.
+redraws twelve live-text SVG/vector-PDF structural views, including the retained
+absolute paths alongside the main difference view, and the six-panel integrated
+hero. The hero reuses the preserved empirical vector under
+`assets/figure_sources/retained/` and the released structural CSVs. CairoSVG is
+pinned in the root environment; Linux installations need `libcairo2` and the
+Nimbus Roman fonts (`fonts-urw-base35`). The Docker recipe includes both.
 
 The [structural rule guide](docs/structural_growth_guide.md) defines the market,
 planner, objective, units, comparison baselines and numerical limits. This

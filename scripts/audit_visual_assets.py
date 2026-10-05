@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
@@ -18,19 +19,24 @@ def local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-def audit_svg(path: Path) -> None:
+def audit_svg(path: Path, allow_plot_clipping: bool = False) -> None:
     root = ET.parse(path).getroot()
     assert local(root.tag) == "svg"
     assert root.get("viewBox") and root.get("width") and root.get("height")
     ids: set[str] = set()
     titles = sum(1 for child in root if local(child.tag) == "title")
     live_text = 0
+    all_ids = {element.get("id"): element for element in root.iter() if element.get("id")}
     for element in root.iter():
         kind = local(element.tag)
         if kind in {"text", "textPath"}:
             live_text += 1
         assert kind != "image", f"embedded or linked raster in {path.name}"
-        assert "clip-path" not in element.attrib and "mask" not in element.attrib
+        assert "mask" not in element.attrib
+        if "clip-path" in element.attrib:
+            assert allow_plot_clipping, f"unexpected clipping in {path.name}"
+            match = re.fullmatch(r"url\(#([^)]*)\)", element.get("clip-path", ""))
+            assert match and match[1] in all_ids and local(all_ids[match[1]].tag) == "clipPath", f"unresolved plot clip in {path.name}"
         element_id = element.get("id")
         if element_id:
             assert element_id not in ids, f"duplicate SVG id {element_id} in {path.name}"
@@ -52,7 +58,7 @@ def main() -> None:
     assert len(stems) == len(set(stems)) == 8
     assert manifest["format_contract"]["embedded_raster_images"] is False
 
-    featured = {"fig1_ethos_gallery", "fig2_value_bridge"}
+    featured = {"fig1_ethos_gallery", "fig2_value_bridge", "fig1_extended_hero"}
     companion = {"figS10_regional_scenario"}
     released = [*stems, *featured, *companion]
     expected = {f"{stem}{suffix}" for stem in released for suffix in (".pdf", ".svg")}
@@ -60,7 +66,23 @@ def main() -> None:
     assert actual_core == expected, f"stale or missing figure assets: {sorted(actual_core ^ expected)}"
     for stem in released:
         assert (FIGS / f"{stem}.pdf").stat().st_size > 0
-        audit_svg(FIGS / f"{stem}.svg")
+        audit_svg(FIGS / f"{stem}.svg", allow_plot_clipping=stem == "fig1_extended_hero")
+
+    structural = ROOT / "experiments/ah_growth/figures"
+    registry = json.loads((structural / "publication-figure-manifest.json").read_text())
+    assert len(registry["figures"]) == 12
+    expected_structural = {r["name"] + s for r in registry["figures"] for s in (".svg", ".pdf")}
+    assert {p.name for p in structural.iterdir() if p.suffix in {".svg", ".pdf"}} == expected_structural
+    for record in registry["figures"]:
+        path = structural / (record["name"] + ".svg")
+        audit_svg(path, allow_plot_clipping=True)
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == record["svg_sha256"]
+        ids = {n.get("id") for n in ET.parse(path).getroot().iter() if n.get("id")}
+        for graphic in record["semantic_graphics"]:
+            assert all(i in ids for i in graphic["shape_ids"])
+        for source in record["data_sources"]:
+            assert (ROOT / "experiments/ah_growth/country_revision_results" / source).is_file()
+        assert (structural / (record["name"] + ".pdf")).stat().st_size > 0
 
     teaser = ROOT / "assets/featured/ethosgpt_release_arc.svg"
     audit_svg(teaser)
@@ -72,7 +94,7 @@ def main() -> None:
     assert (FIGS / "figS2_study_design.drawio").stat().st_size > 0
     assert (FIGS / "fig1_spatial_story.drawio").stat().st_size > 0
     ET.parse(FIGS / "fig1_spatial_story.drawio")
-    print("PASS: eight legacy vectors, two featured vectors, one regional case, editable teaser and draw.io masters, live text >=7 px, no embedded raster or stale assets")
+    print("PASS: eight legacy vectors, three featured vectors, one regional case, twelve structural vectors, editable teaser and draw.io masters, live text >=7 px, resolved plot clips, no embedded raster or stale assets")
 
 
 if __name__ == "__main__":

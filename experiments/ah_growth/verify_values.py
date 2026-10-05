@@ -65,6 +65,7 @@ def main():
         results[country] = {"state_nodes": len(value), "action_candidates": len(a), "max_residual": largest,
                             "off_grid_quadrature_checks": action_checks}
         print(json.dumps({"country": country, "max_residual": largest}), flush=True)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps({"status": "passed", "results": results,
                                       "scope": "Full-grid residual of saved reference values, not a fresh solver convergence proof"}, indent=2) + "\n")
 

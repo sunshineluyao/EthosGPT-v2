@@ -20,6 +20,7 @@ python experiments/ah_growth/verify_results.py
 python experiments/ah_growth/verify_values.py --root experiments/ah_growth --output /tmp/ah-bellman-check.json
 python experiments/ah_growth/reproduce.py --refresh-metrics
 python experiments/ah_growth/publication_figures.py
+python scripts/make_structural_hero.py
 ```
 
 `verify_results.py` checks input-rule algebra, resource constraints, exact

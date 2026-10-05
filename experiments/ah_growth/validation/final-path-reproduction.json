@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "path_rows": 25245,
+  "comparison_rows": 15,
+  "matched_sensitivity_rows": 27,
+  "max_held_state_step_error": 9.90960785651751e-17,
+  "max_budget_excess": 0.0,
+  "scope": "Frozen aggregate inputs and conditional synthetic paths; no empirical causal validation",
+  "fresh_path_and_metric_comparisons": {
+    "country-policy-comparisons.csv": {
+      "rows": 15,
+      "max_absolute_metric_difference": 2.220446049250313e-16
+    },
+    "matched-sensitivity.csv": {
+      "rows": 27,
+      "max_absolute_metric_difference": 0.0
+    },
+    "country-refinement.csv": {
+      "rows": 12,
+      "max_absolute_metric_difference": 2.220446049250313e-16
+    },
+    "three-country-upgrade-comparison.csv": {
+      "rows": 3,
+      "max_absolute_metric_difference": 1.0001765041178778e-16
+    }
+  },
+  "saved_values_reused": true
+}

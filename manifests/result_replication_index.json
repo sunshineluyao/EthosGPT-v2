@@ -265,6 +265,56 @@
       "evidence_status": "SYNTHETIC",
       "interpretation_boundary": "Country names label archived representation-error inputs in one common hypothetical economy. Response weights, recovery coefficients, cultural laws and viability criteria are assumed. No country growth forecast, welfare optimum or empirically fitted policy rule is identified.",
       "data_revision": "Frozen empirical source commit 4ce0359ef6b9b6045b1a7f439a407f8429837fd9; SHA-256 governed by experiments/dynamic_growth/RELEASE_MANIFEST.json; configuration 8de42b13418ccf9fc1ee469aa4314fdfab4eda92ddcf0d52e81b9e6e46c66003"
+    },
+    {
+      "result_id": "R8-structural-innovation-and-adjustment",
+      "reported_result_or_boundary": "Matched China/Germany/Egypt adviser contrasts, constrained dynamic welfare, sensitivity and joint refinement; all economic outputs are conditional synthetic mechanisms.",
+      "original_sources": [
+        "Published aggregate six-item profiles; Aghion and Howitt (1992) theoretical market core; dated resource anchors documented in experiments/ah_growth/design_results/country-source-ledger.csv; declared extension equations in docs/structural_growth_guide.md"
+      ],
+      "query_code": [
+        "NOT_APPLICABLE: no additional model query or participant collection"
+      ],
+      "queried_data": [
+        "experiments/gpt55_gpt56_64country/outputs/gpt-5.5_scores.jsonl",
+        "experiments/gpt55_gpt56_64country/outputs/gpt-5.6-sol_scores.jsonl",
+        "NOT_RELEASED: raw upstream survey participant records"
+      ],
+      "process_code": [
+        "experiments/gpt55_gpt56_64country/score_wave1.py",
+        "experiments/ah_growth/node2.py"
+      ],
+      "processed_data": [
+        "experiments/ah_growth/inputs/country_question_scores.csv",
+        "experiments/ah_growth/design_results/country-source-ledger.csv",
+        "experiments/ah_growth/design_results/conditional-resource-scenarios.csv"
+      ],
+      "analysis_code": [
+        "experiments/ah_growth/model.py",
+        "experiments/ah_growth/control.py",
+        "experiments/ah_growth/node2_diagnostics.py",
+        "experiments/ah_growth/reproduce_structural.py",
+        "experiments/ah_growth/publication_figures.py",
+        "scripts/make_structural_hero.py"
+      ],
+      "result_outputs": [
+        "experiments/ah_growth/country_revision_results/country-policy-comparisons.csv",
+        "experiments/ah_growth/country_revision_results/three-country-upgrade-comparison.csv",
+        "experiments/ah_growth/country_revision_results/matched-sensitivity.csv",
+        "experiments/ah_growth/country_revision_results/country-refinement.csv",
+        "experiments/ah_growth/figures/fig_r3_advice_paths.svg",
+        "experiments/ah_growth/figures/fig_r3_system_summary.svg",
+        "results/figures/fig1_extended_hero.svg"
+      ],
+      "commands": [
+        "make structural-check",
+        "make reproduce-structural",
+        "make structural-full",
+        "make structural-figures"
+      ],
+      "evidence_status": "SYNTHETIC",
+      "interpretation_boundary": "Dated R&D/GDP moments anchor one assumed resource conversion. Needs states, response mappings, welfare penalty and model clock are unestimated. Same capacity is not equal spending; a welfare planner is separate from the adviser-version contrast. No national forecast, causal model-update effect or global continuous-control proof is identified.",
+      "data_revision": "Aggregate input SHA-256 02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf; frozen numeric tables and value arrays governed by experiments/ah_growth/validation/frozen-evidence-manifest.json"
     }
   ]
 }
