@@ -83,3 +83,15 @@ continuous-control optimality, and implementation of the whole planner path
 remain research tasks. The original uncapped linear-utility planner is
 unbounded for these reference parameters; the declared cap makes this extension
 finite. Do not attribute the cap, aid, or needs mechanism to the original theory.
+
+## Complete value recomputation
+
+Run `make structural-full` from the repository root to solve every current
+Bellman value array from zero, repeat six initial states, all 27 matched
+weight/quality rows and 12 joint-refinement settings. The explicit entry is
+`experiments/ah_growth/reproduce_structural.py`; `--verify` recomputes market
+paths and held-control rollouts using released values. It writes fresh outputs
+separately from reference files and uses no historical computed outputs or API
+keys. The full rerun matched the reference to numerical precision; its report
+is in `validation/full-reproduction.json`. Model assumptions, normative weights
+and unresolved method gaps remain as described in the scientific guide.

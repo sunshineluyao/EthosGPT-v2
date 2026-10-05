@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "mode": "full",
+  "upgrade_max_absolute_difference": 1.93421667571414e-16,
+  "sensitivity_rows": 27,
+  "refinement_settings": 12,
+  "sensitivity_max_difference": 4.440892098500626e-16,
+  "refinement_max_difference": 1.7763568394002505e-15,
+  "market_checks": [
+    {
+      "country": "China",
+      "source": "Human survey",
+      "bvp_residual": 9.962015892036888e-09,
+      "stationary_target_error": 7.077671781985373e-16
+    },
+    {
+      "country": "China",
+      "source": "GPT-5.5",
+      "bvp_residual": 9.889129979524789e-09,
+      "stationary_target_error": 2.42861286636753e-17
+    },
+    {
+      "country": "China",
+      "source": "GPT-5.6 Sol",
+      "bvp_residual": 9.976798427453836e-09,
+      "stationary_target_error": 1.3877787807814457e-17
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "bvp_residual": 9.937254387768838e-09,
+      "stationary_target_error": 1.177877240188252e-15
+    },
+    {
+      "country": "Germany",
+      "source": "GPT-5.5",
+      "bvp_residual": 9.970389167634551e-09,
+      "stationary_target_error": 6.036837696399289e-16
+    },
+    {
+      "country": "Germany",
+      "source": "GPT-5.6 Sol",
+      "bvp_residual": 9.983747182034354e-09,
+      "stationary_target_error": 5.499073418846478e-16
+    },
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "bvp_residual": 9.93421269685406e-09,
+      "stationary_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "GPT-5.5",
+      "bvp_residual": 9.910837278041714e-09,
+      "stationary_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "GPT-5.6 Sol",
+      "bvp_residual": 9.986798836266726e-09,
+      "stationary_target_error": 6.938893903907228e-18
+    }
+  ],
+  "aggregate_input_sha256": "02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf",
+  "evidence_ceiling": "Conditional structural scenarios, not identified national effects"
+}

@@ -78,3 +78,7 @@ reproduce-structural:
 	$(PYTHON) experiments/ah_growth/reproduce.py --refresh-metrics
 structural-figures:
 	$(PYTHON) experiments/ah_growth/publication_figures.py
+
+.PHONY: structural-full
+structural-full:
+	python experiments/ah_growth/reproduce_structural.py --full --output .build/full-structural
