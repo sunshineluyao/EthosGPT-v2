@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "pdf_pages": 11,
+  "svg_structural_status": "PASS",
+  "manifest_status": "PASS",
+  "approved_baseline": "byte-identical",
+  "countries": [
+    "China",
+    "Germany",
+    "Egypt"
+  ],
+  "limitations": [
+    "Conditional structural parameters",
+    "Egypt tiny transient G changes 6.596% in last joint refinement",
+    "No continuous optimum error bound"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "pymupdf": "1.26.6",
+    "Pillow": "12.3.0"
+  }
+}

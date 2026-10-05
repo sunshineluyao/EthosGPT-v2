@@ -1,0 +1,235 @@
+{
+  "status": "Prepared computed author-review refresh; not manuscript integration",
+  "countries": [
+    "China",
+    "Germany",
+    "Egypt"
+  ],
+  "source_hashes": {
+    "equilibrium-paths.csv": "fc5edfb2535ea8eae84856634f35a125dedb0176efd87b67773d1358ee6c2881",
+    "held-optimal-paths.csv": "517786544b21d3272a82425100e4a8ac8761680c3e04b99f26c9dd81fad3935b",
+    "review-policy-comparisons.csv": "df72813c63603ea8729c7958c8476fec03369913636d689d65c09ee53ff6dd71",
+    "held-control-refinement.csv": "234de849aaeb1cf298260d328b93f8496e08b29fe9c11a21973d83d9ca19286c"
+  },
+  "parameters": {
+    "China": {
+      "parameters": {
+        "theta": 0.95,
+        "q": 0.08,
+        "chi": 2.8852895148669746,
+        "rho": 0.1,
+        "capacity": 0.08198079947930792,
+        "aid_labor": 0.04,
+        "lost_capacity": 0.18,
+        "entry": [
+          0.75,
+          0.38
+        ],
+        "recovery": [
+          0.12,
+          0.32
+        ],
+        "aid_recovery": [
+          1.2,
+          1.0
+        ],
+        "horizon": 100.0,
+        "omega": 0.3,
+        "initial": [
+          0.08,
+          0.08
+        ]
+      },
+      "resource_match": {
+        "country": "China",
+        "RD_GDP": 0.0258,
+        "xi_assumed": 0.75,
+        "n_ref": 0.020990399739653956,
+        "chi_conditionally_matched": 2.8852895148669746,
+        "headroom_multiplier_assumed": 2.0,
+        "source_status": "dated revised observation",
+        "reference_period": "2023",
+        "status": "conditional resource match under assumed q, theta, xi, rho; not an independent estimate"
+      }
+    },
+    "Germany": {
+      "parameters": {
+        "theta": 0.95,
+        "q": 0.08,
+        "chi": 3.3003565062388533,
+        "rho": 0.1,
+        "capacity": 0.09022954361328653,
+        "aid_labor": 0.04,
+        "lost_capacity": 0.18,
+        "entry": [
+          0.75,
+          0.38
+        ],
+        "recovery": [
+          0.12,
+          0.32
+        ],
+        "aid_recovery": [
+          1.2,
+          1.0
+        ],
+        "horizon": 100.0,
+        "omega": 0.3,
+        "initial": [
+          0.08,
+          0.08
+        ]
+      },
+      "resource_match": {
+        "country": "Germany",
+        "RD_GDP": 0.031,
+        "xi_assumed": 0.75,
+        "n_ref": 0.025114771806643264,
+        "chi_conditionally_matched": 3.3003565062388533,
+        "headroom_multiplier_assumed": 2.0,
+        "source_status": "dated rounded observation",
+        "reference_period": "2023",
+        "status": "conditional resource match under assumed q, theta, xi, rho; not an independent estimate"
+      }
+    },
+    "Egypt": {
+      "parameters": {
+        "theta": 0.95,
+        "q": 0.08,
+        "chi": 2.0888697647733765,
+        "rho": 0.1,
+        "capacity": 0.05697382515312148,
+        "aid_labor": 0.04,
+        "lost_capacity": 0.18,
+        "entry": [
+          0.75,
+          0.38
+        ],
+        "recovery": [
+          0.12,
+          0.32
+        ],
+        "aid_recovery": [
+          1.2,
+          1.0
+        ],
+        "horizon": 100.0,
+        "omega": 0.3,
+        "initial": [
+          0.08,
+          0.08
+        ]
+      },
+      "resource_match": {
+        "country": "Egypt",
+        "RD_GDP": 0.0103,
+        "xi_assumed": 0.75,
+        "n_ref": 0.008486912576560741,
+        "chi_conditionally_matched": 2.0888697647733765,
+        "headroom_multiplier_assumed": 2.0,
+        "source_status": "dated rounded WIPO indicator",
+        "reference_period": "2023",
+        "status": "conditional resource match under assumed q, theta, xi, rho; not an independent estimate",
+        "source_url": "https://www.wipo.int/edocs/gii-ranking/2025/eg.pdf",
+        "source_location": "PDF p.8, indicator 2.3.2",
+        "working_country": "Egypt replaces Kenya by author correction; interpretation remains pending"
+      }
+    }
+  },
+  "egypt_market_checks": [
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "initial": [
+        0.0,
+        0.0
+      ],
+      "bvp_residual": 9.454750020631037e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_residual": 9.93421269685406e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "initial": [
+        0.3,
+        0.05
+      ],
+      "bvp_residual": 9.963271601387215e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "initial": [
+        0.05,
+        0.3
+      ],
+      "bvp_residual": 9.987415152416295e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "initial": [
+        0.45,
+        0.35
+      ],
+      "bvp_residual": 9.84497034256871e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "Human survey",
+      "initial": [
+        0.8,
+        0.8
+      ],
+      "bvp_residual": 9.853356415555213e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "GPT-5.5",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_residual": 9.910837278041714e-09,
+      "terminal_research_target_error": 1.0408340855860843e-17
+    },
+    {
+      "country": "Egypt",
+      "source": "GPT-5.6 Sol",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_residual": 9.986798836266726e-09,
+      "terminal_research_target_error": 6.938893903907228e-18
+    }
+  ],
+  "matched_sweep_settings": {
+    "state_grid": 101,
+    "control_points_each_dimension": 61,
+    "decision_dt": 0.125
+  },
+  "max_sweep_value_consistency_error": 0.0003707929793212994,
+  "non_claims": [
+    "Conditional mechanisms, not national forecasts",
+    "Group parameters and welfare weights remain assumptions",
+    "No continuous-control global optimality theorem",
+    "Small Bellman/rollout value discrepancy is not a bound on every path indicator",
+    "Fixed-q and omega sweeps do not themselves measure GPT upgrade effects"
+  ],
+  "refinement_note": "State grid, action grid and dt change together: a joint refinement check, not isolated state-grid convergence"
+}

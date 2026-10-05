@@ -102,6 +102,23 @@ rendering. No model API call or additional participant data is required.
 Its hypotheses and policy objectives are specified in
 [the model guide](experiments/dynamic_growth/MODEL_GUIDE.md).
 
+## Structural market and welfare planner (R3)
+
+Run `make structural-check` for the frozen rule, budget, state-step, reporting,
+and comparison contracts. Run `make reproduce-structural` to rebuild all three
+country market paths and held-action planner paths in an isolated copy, clear
+the 24 cached metric records, and compare four numerical result tables. It
+reuses released value arrays; it does not claim a fresh continuous-control
+solution. The separate `experiments/ah_growth/verify_values.py` streams the
+complete saved reference Bellman state/action pairs. `make structural-figures`
+redraws the eleven live-text SVG/vector-PDF figures.
+
+The [structural rule guide](docs/structural_growth_guide.md) defines the market,
+planner, objective, units, comparison baselines and numerical limits. This
+model remains separate from the earlier coordination/tipping experiment.
+Validation receipts are in `experiments/ah_growth/validation/`. No new model
+requests or participant-level inputs are required.
+
 ## Random seeds and resampling settings
 
 - Analysis seed: 20260902

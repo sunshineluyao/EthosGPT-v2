@@ -1,0 +1,13 @@
+{
+  "grid": 101,
+  "controls": 3721,
+  "dt": 0.125,
+  "iterations": 5,
+  "bellman_residual": 1.4210854715202004e-14,
+  "max_discount": 0.9887538253899198,
+  "value_initial": 9.87327378725962,
+  "seconds": 5.25434112199946,
+  "maximum_research_budget_violation": 0.0,
+  "minimum_interpolation_weight": 0.0,
+  "maximum_interpolation_row_sum_error": 2.220446049250313e-16
+}

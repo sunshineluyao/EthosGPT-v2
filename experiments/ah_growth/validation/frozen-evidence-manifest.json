@@ -1,0 +1,434 @@
+{
+  "scope": "frozen published aggregate profiles and author-supplied R3 conditional synthetic tables/value arrays",
+  "participant_rows_added": false,
+  "files": [
+    {
+      "path": "inputs/country_question_scores.csv",
+      "sha256": "02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf"
+    },
+    {
+      "path": "inputs/creative_country_simulation.csv",
+      "sha256": "fd437dc1bc6ce0d730cf3c08d0884bb82c2a2acb39503f4649113087544c9f01"
+    },
+    {
+      "path": "country_revision_results/country-paths.csv",
+      "sha256": "d90db7d46913bc9f8d14ff4484ee54c040383bd52695db013f19de666a5ce1e6"
+    },
+    {
+      "path": "country_revision_results/country-policy-comparisons.csv",
+      "sha256": "9547349e788c4c8f518f42ddae68561c6e3a5d748c9e49f17c0e854134246225"
+    },
+    {
+      "path": "country_revision_results/country-refinement.csv",
+      "sha256": "86b9fb4d97a7dac5df6589a1b836cdf5d2f765e4e88f11e8cec9416728a6ba87"
+    },
+    {
+      "path": "country_revision_results/country-solver-settings.csv",
+      "sha256": "b6489f066233845bcabc07a43b41c57247958b48d5cf96a51f9b6933e0d6522e"
+    },
+    {
+      "path": "country_revision_results/delivery-validation.json",
+      "sha256": "867e82b46c66c2f292ef39be68160fca6d255c4ebcb9feebd87bb223d76612a4"
+    },
+    {
+      "path": "country_revision_results/egypt-initial-convergence.csv",
+      "sha256": "cef14d452479cf305c14d17a0959e1cc2962326fa939105bc33368ebebed2cca"
+    },
+    {
+      "path": "country_revision_results/evidence.json",
+      "sha256": "55eb0ab13f24675fbef0871a0feac764d65b52dcb54dab2657e11b4e85b93ddb"
+    },
+    {
+      "path": "country_revision_results/figure-manifest.json",
+      "sha256": "5fbcc8253bcb18d0a4e3f962af851565f6dbfd6adc6dec65c6104fb0c675b588"
+    },
+    {
+      "path": "country_revision_results/figure4-point-values.csv",
+      "sha256": "ae7fa57e288fe93d050954220cfad339b2fae989dd5b7bb589fe46a77da1a660"
+    },
+    {
+      "path": "country_revision_results/figure5-point-values.csv",
+      "sha256": "9350ed75c048a1a6a2c623cd082c9bb62f49e87c16f13d84afdebb91e02b65b6"
+    },
+    {
+      "path": "country_revision_results/figure6-numerical-values.csv",
+      "sha256": "c6c159fa7ca956b76ea6b59dd071d15b9ee048f5a18345ec818660762e83c30b"
+    },
+    {
+      "path": "country_revision_results/final-layout-audit.json",
+      "sha256": "9a6da3af21a13ea7f2244197c8db266b8d19e514a5a152e4094e73326b01e16f"
+    },
+    {
+      "path": "country_revision_results/matched-sensitivity.csv",
+      "sha256": "1c55c374390ec3b92bbdbc095457fda36ac6f76abd901e532154c0296c0dfaba"
+    },
+    {
+      "path": "country_revision_results/metrics-China-base-101-61-0.125.json",
+      "sha256": "cac6a9c86aa15f6bb284bd4282f8e027694bfc2b70673d91dcaee37e8214e62a"
+    },
+    {
+      "path": "country_revision_results/metrics-China-omega-0-101-61-0.125.json",
+      "sha256": "c369ddf239bdf11f69d517aabf138518c597fed1a17610026b391f826c4d4863"
+    },
+    {
+      "path": "country_revision_results/metrics-China-omega-0.15-101-61-0.125.json",
+      "sha256": "e2f9c863caa5d9660a4862105cd27ebf75b78f23fdee698972e227499c02cff2"
+    },
+    {
+      "path": "country_revision_results/metrics-China-omega-0.6-101-61-0.125.json",
+      "sha256": "811dd25a9ca97032cda5de82a3675a722e95baeb84dc504371b77a0ee1cec1ce"
+    },
+    {
+      "path": "country_revision_results/metrics-China-omega-0.9-101-61-0.125.json",
+      "sha256": "bd478318b932744b459791b3fb378801f37393ba6d0a908d2519068c65c0a72f"
+    },
+    {
+      "path": "country_revision_results/metrics-China-q-0.06-101-61-0.125.json",
+      "sha256": "3ddb6438e39af97945f8ef2edc320382a4e80db67f37cf598535fa72e7fdb6ef"
+    },
+    {
+      "path": "country_revision_results/metrics-China-q-0.12-101-61-0.125.json",
+      "sha256": "227f3fcbfc458dd548a16b6f079cc429c0a145206be4239824e785ffe6abccc7"
+    },
+    {
+      "path": "country_revision_results/metrics-China-q-0.16-101-61-0.125.json",
+      "sha256": "cd7d60b86c1ea9eec1b0551ff892aa8ebce2b6eac134202a6cc9c294bc713822"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-base-101-61-0.125.json",
+      "sha256": "eeb362c017615a4e9dd39ea737b06243ed690c6403bfc191069722af00748fca"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-omega-0-101-61-0.125.json",
+      "sha256": "39f9c63157be11a0ff7fc95f8b6db99eb2a1650c45cacb374cf34be46b746fd2"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-omega-0.15-101-61-0.125.json",
+      "sha256": "9d6537827f79d18b504bd091944d545e3ebe61a4cea7251055821d0d78890ec6"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-omega-0.6-101-61-0.125.json",
+      "sha256": "2a449bd5e2cc288d4e59a32d4b38a2a16026663747c2331e76edc74bab4bdb18"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-omega-0.9-101-61-0.125.json",
+      "sha256": "1abc642564523b979d263e7a34489d3bbf13066dc7e169c5aa17ef72614ddd79"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-q-0.06-101-61-0.125.json",
+      "sha256": "8787d60b30df607bc484521c2b27e1b065735b810005df3a0cd1ffa615ad9633"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-q-0.12-101-61-0.125.json",
+      "sha256": "aa807147579076c9c6b3b15e1c835a58f66f15c59418490f3c4fc418ee2f2b3c"
+    },
+    {
+      "path": "country_revision_results/metrics-Egypt-q-0.16-101-61-0.125.json",
+      "sha256": "4d5d4397e3b45cde5224883dd88793eb98b7a621a41af045b07359e917ccfa34"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-base-101-61-0.125.json",
+      "sha256": "16c7f7b9d073460ab5f4b3839cb272f994185b23a6492be7a8768d2634736982"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-omega-0-101-61-0.125.json",
+      "sha256": "2d40b00d6747041b8ea20bafcc3df8ad3a9d257034bc6122341c22fe5afcef4a"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-omega-0.15-101-61-0.125.json",
+      "sha256": "bda90b552ab3fc92ab47506972ff149082a6097addacecb8d0779c5a9360de22"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-omega-0.6-101-61-0.125.json",
+      "sha256": "64a8a8f467b9c57446511dfe0241a0293f1c94f231f7af782ecd2b29ab4d661f"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-omega-0.9-101-61-0.125.json",
+      "sha256": "3fe0fbf03e527cc52f76f34cf76e584093867c5c6ebef64b4aebdef9063fb91a"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-q-0.06-101-61-0.125.json",
+      "sha256": "3e383b669087d3af79a110a031adbf997d9f19b769417d3d388a8519d8160340"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-q-0.12-101-61-0.125.json",
+      "sha256": "cf2cba5c874c7fff37020f7f056c8f607bf9449fd6f7715215ab2d16dc0a135e"
+    },
+    {
+      "path": "country_revision_results/metrics-Germany-q-0.16-101-61-0.125.json",
+      "sha256": "0d8fff3a358aa39b444b9cba979df02d2dac06eb69cc23218107994a22668afa"
+    },
+    {
+      "path": "country_revision_results/policy-China-base-101-61-0.125.npz",
+      "sha256": "2aa0391f524d28bee5b9599e95c06c2b823ee56c10b695f48190fd3a1a0d4895"
+    },
+    {
+      "path": "country_revision_results/policy-China-omega-0-101-61-0.125.npz",
+      "sha256": "09295725a048ba9072d03eea4a5b58a558251253a741e591de4dd3b33c9e335a"
+    },
+    {
+      "path": "country_revision_results/policy-China-omega-0.15-101-61-0.125.npz",
+      "sha256": "4876de6934486b5a01320e7a56040c4bd39ac50189f04d9475e6681e2b2f3a7e"
+    },
+    {
+      "path": "country_revision_results/policy-China-omega-0.6-101-61-0.125.npz",
+      "sha256": "094c6d5b976ebbce88e0daccf012276ebb9a23add0120a236cef787d85bf3553"
+    },
+    {
+      "path": "country_revision_results/policy-China-omega-0.9-101-61-0.125.npz",
+      "sha256": "797666369b3b513ac90aceb4cf36f8b99e746be6de23212d3e29e8ba49b56384"
+    },
+    {
+      "path": "country_revision_results/policy-China-q-0.06-101-61-0.125.npz",
+      "sha256": "93a5d3bcfd5e979c191e082f4e8494465e1d5ca0357a2801b1aa05b0f193699a"
+    },
+    {
+      "path": "country_revision_results/policy-China-q-0.12-101-61-0.125.npz",
+      "sha256": "a83c6ebd4055627477f1e626c1d30d021710c03079c87bd57bcfbecf0332767c"
+    },
+    {
+      "path": "country_revision_results/policy-China-q-0.16-101-61-0.125.npz",
+      "sha256": "45642a74c5fd015f7e039fc3225a884aba0196d4980ef845f83694aa021d604a"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-101-61-0.125.npz",
+      "sha256": "1cca9040db64d0ae03a00c1a12c82dbf343d208b1e430754f0071c51ea8f649b"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-101-61-0.125.solver.json",
+      "sha256": "7ee232e24cf6cbe38f9701e3e8b12e973670374b62a9644be40de9e3a9ba2166"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-41-31-0.5.npz",
+      "sha256": "5914d6489c4422deec61991cd9eba00074fbcdfea9d1d3bab1a8e6b65f1134ea"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-61-41-0.25.npz",
+      "sha256": "eff648b47d024372f8d2bc24f1299521ebf81ce0fbd1d138564d93b5927e0c82"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-61-41-0.25.solver.json",
+      "sha256": "d477e965012f7ac031cd513cfbd0b26c0fbcb5dd7370cfa337dd41e74ce6d61c"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-81-61-0.25.npz",
+      "sha256": "25beca0f68f627c0759d7038174d40318a5d5f6afe30ad3e38d89c40e946d070"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-base-81-61-0.25.solver.json",
+      "sha256": "3f3a988d324c54d5569865fa618c10de7be8a3c13bca676d85dc5ec0dc563382"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0-101-61-0.125.npz",
+      "sha256": "823f3e6c14341145138a8f6932562921c33a91e17e2b047cb237b56e018d86e4"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0-101-61-0.125.solver.json",
+      "sha256": "a9d734c9aa5e50e6f2968fbd63ad2914eadd822770fc811eef17623038fdc8c8"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0.15-101-61-0.125.npz",
+      "sha256": "efa17a76a87978b5e91ee9507d0795634d78396a9d0fc0d4ea55230c681565fd"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0.15-101-61-0.125.solver.json",
+      "sha256": "e39e191fa5c96b50dac327acd673072abf1f409e96497de58697e58aca066fc4"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0.6-101-61-0.125.npz",
+      "sha256": "d8afbe3432c9e254c4796e3643298c8c9369214e5522eb6b7a2e97ebb7677d3a"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0.6-101-61-0.125.solver.json",
+      "sha256": "6d39f22395a5b7b910d8fe509a7f73b815250deb301be0c8a86fcea6f5c8cca9"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0.9-101-61-0.125.npz",
+      "sha256": "15df50e56eaa1ff1a4003f4740a3566b51e11cec2ff324aa0dfd8bedf7e7b996"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-omega-0.9-101-61-0.125.solver.json",
+      "sha256": "7c072d76b058c15ea3ac40b795ea4e7bb7517533171c7c7aaf8c6f83e6484564"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-q-0.06-101-61-0.125.npz",
+      "sha256": "feaca39193c5f94b03bdbf57e0edf00672661714793cc588be1e9352a5046578"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-q-0.06-101-61-0.125.solver.json",
+      "sha256": "07b51b4ff6b5233ddd1911fd75f614b838dcfca5f0b2eea9b618ddaccfc4d4b1"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-q-0.12-101-61-0.125.npz",
+      "sha256": "1502cc0dd22fefe8b4541955e4aa23306fa4c3c61f82f461db58297f1a99aabb"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-q-0.12-101-61-0.125.solver.json",
+      "sha256": "f2e3d7efc72ceea589de74a986cdfcd45c9a65839128552f23d2b952b2811222"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-q-0.16-101-61-0.125.npz",
+      "sha256": "7d2f16c42cc289408d90bf7a0afc740e797ebc1d5bf66fa5ddd068a331c94a08"
+    },
+    {
+      "path": "country_revision_results/policy-Egypt-q-0.16-101-61-0.125.solver.json",
+      "sha256": "451598d24c19d2f5604ead9c5af451b35bfda8928c36ef23f8445576381fd047"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-base-101-61-0.125.npz",
+      "sha256": "26ba4bba56baaf25ea315d94439147c5f38b6bdf05ea378a2fe0e4c257663def"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-omega-0-101-61-0.125.npz",
+      "sha256": "ecaf85ce4acb5e328f6c9a35d753272c39fbb208941962c8e96adb9d3a466368"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-omega-0.15-101-61-0.125.npz",
+      "sha256": "c6a1950c70f8d40bd98126819961b05581ba023221280114269df2820eb01ac1"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-omega-0.6-101-61-0.125.npz",
+      "sha256": "ea844cadcf8e83e18dcccab6ec1e82bc21d4e1b85dbb84070b86fe190d10b236"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-omega-0.9-101-61-0.125.npz",
+      "sha256": "583567a08fe0340f56270f0675e0d656dc73b92f1ca9f886957747b19d931914"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-q-0.06-101-61-0.125.npz",
+      "sha256": "9c58ea891880aab170d306bce5fab61e584c478336e0f2f5835466835e93b9a3"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-q-0.12-101-61-0.125.npz",
+      "sha256": "7dcdc66f6fe83f67e509769863f86420bee4508896251542670e79afb821dbcd"
+    },
+    {
+      "path": "country_revision_results/policy-Germany-q-0.16-101-61-0.125.npz",
+      "sha256": "a7ced176276bfacaf904ba60f324ab3f3eff64ef91bbcb81ee38689b60ef4be3"
+    },
+    {
+      "path": "country_revision_results/r3-basic-manifest.json",
+      "sha256": "35d430f960580d8563bae71133b020b8c0c862af09d6adb5fffa9bc00c78195b"
+    },
+    {
+      "path": "country_revision_results/r3-meta-audit.json",
+      "sha256": "02f0afb1df36f54ab6597a044442dbae4e4020a2dc29593c0079db5af845f92f"
+    },
+    {
+      "path": "country_revision_results/r3-system-layout.json",
+      "sha256": "24838db84937de974f1fd0ca0e69ad3c089ecff63ec9e5947a91bf5f1538b92f"
+    },
+    {
+      "path": "country_revision_results/r3-system-manifest.json",
+      "sha256": "9185c5a18cd2124e9cdca9b4564e519f9b919947ecf8b66e956628398e3119c0"
+    },
+    {
+      "path": "country_revision_results/systems/figure-manifest.json",
+      "sha256": "f137f08408e9ff43baf921e29c8c0f99ca77f688471c01cc99095aa4b5afda4a"
+    },
+    {
+      "path": "country_revision_results/systems/market-valuation-sheet.csv",
+      "sha256": "16f2a8c76b1762f2187fff96fcafcf03793076f46c734c1ef2c7c1c3b34812a2"
+    },
+    {
+      "path": "country_revision_results/systems/planner-phase-field.csv",
+      "sha256": "dcf5ec42f8e56287dbc1420f1fe125164a30855636fd557b8e80b5213f1dbd19"
+    },
+    {
+      "path": "country_revision_results/systems/preview-evidence.json",
+      "sha256": "a34ed88d80e1209667a7f51d7fd51b505e0098f8e7dbc70c4d8d20a17d08066f"
+    },
+    {
+      "path": "country_revision_results/three-country-upgrade-comparison.csv",
+      "sha256": "183b4d24de29526cfa752ab7e044138b9bfff5c7fcab228a0d9a5e4a49599ace"
+    },
+    {
+      "path": "node2_results/equilibrium-paths.csv",
+      "sha256": "fc5edfb2535ea8eae84856634f35a125dedb0176efd87b67773d1358ee6c2881"
+    },
+    {
+      "path": "node2_results/held-control-method.json",
+      "sha256": "1d16bfef041aec129f52303100371f588828109b2e934c79d8a029bdf26a6ad2"
+    },
+    {
+      "path": "node2_results/held-control-refinement.csv",
+      "sha256": "234de849aaeb1cf298260d328b93f8496e08b29fe9c11a21973d83d9ca19286c"
+    },
+    {
+      "path": "node2_results/held-optimal-paths.csv",
+      "sha256": "517786544b21d3272a82425100e4a8ac8761680c3e04b99f26c9dd81fad3935b"
+    },
+    {
+      "path": "node2_results/numerical-validation.json",
+      "sha256": "6ce690e0f2b8e3f4f8e6e63631f1211c0b34ae2f5755fb380145ee1a0a94e5dd"
+    },
+    {
+      "path": "node2_results/policy-China-101-41-0.25.npz",
+      "sha256": "d9eaa4a126e11d63f76278b15aceec7a1b829858c49bd03fe81245e81b49e5c3"
+    },
+    {
+      "path": "node2_results/policy-China-101-61-0.125.npz",
+      "sha256": "2aa0391f524d28bee5b9599e95c06c2b823ee56c10b695f48190fd3a1a0d4895"
+    },
+    {
+      "path": "node2_results/policy-China-31-21-1.npz",
+      "sha256": "5a3da05921a24495cd633a10e0e895424a88c6c09270edf57fa0e7a014b8ef3e"
+    },
+    {
+      "path": "node2_results/policy-China-41-31-0.5.npz",
+      "sha256": "f5fc85a618489a15f364a0bbfb3f78b92018a8e4815c68deb8300df305652846"
+    },
+    {
+      "path": "node2_results/policy-China-61-41-0.25.npz",
+      "sha256": "0b203ed5c5e7c289040b81d6b03d549c2f13a5e5ce4c5d3bab31e8b049734668"
+    },
+    {
+      "path": "node2_results/policy-China-61-41-0.5.npz",
+      "sha256": "fb0fa547094142dd455a5cb571e6044ff435c9f694b4695e4e70d89df7c6727f"
+    },
+    {
+      "path": "node2_results/policy-China-81-41-0.25.npz",
+      "sha256": "3725a2c2298ba31040a735f4d00271a087b41f0222eeccb265dc28e3fa55bc2c"
+    },
+    {
+      "path": "node2_results/policy-China-81-61-0.25.npz",
+      "sha256": "0d28b09efcd5f495161bb0c82093539a4a2a9540b7f6dca619c0e7d5820b070f"
+    },
+    {
+      "path": "node2_results/policy-Germany-101-41-0.25.npz",
+      "sha256": "ecedf0b8ab28f60fafc3961456f7db60d7d8eb646e86bb57e2e3f869c80bc358"
+    },
+    {
+      "path": "node2_results/policy-Germany-101-61-0.125.npz",
+      "sha256": "26ba4bba56baaf25ea315d94439147c5f38b6bdf05ea378a2fe0e4c257663def"
+    },
+    {
+      "path": "node2_results/policy-Germany-41-31-0.5.npz",
+      "sha256": "1d2775fa4e139f2b9b1c1b8074802dfae0b1b45131eedc6733cd7484d7fa893c"
+    },
+    {
+      "path": "node2_results/policy-Germany-61-41-0.25.npz",
+      "sha256": "8fe6b9d269f0708ed268481ad8061ea39192f9652fb01135356d0713563ad8b8"
+    },
+    {
+      "path": "node2_results/policy-Germany-81-61-0.25.npz",
+      "sha256": "abca94e1294449d3204b2372caa6483ff52044178a5c34866daf8fa0e5c24ce6"
+    },
+    {
+      "path": "node2_results/review-policy-comparisons.csv",
+      "sha256": "df72813c63603ea8729c7958c8476fec03369913636d689d65c09ee53ff6dd71"
+    },
+    {
+      "path": "node2_results/review-stationary-equilibria.csv",
+      "sha256": "358186e526c5a908ee4a65cdc55c63a98058b6d92a4afc30663438520b2c8de4"
+    },
+    {
+      "path": "node2_results/review-validation.json",
+      "sha256": "ee7e3e68258b01fe466e446618a7ffb58bbeb41da11d3a5c27b2dba39b6a0536"
+    },
+    {
+      "path": "node2_results/solver-refinement.csv",
+      "sha256": "be13309f895cfb0fec112d6ff50d782e875e779eb7ccbf39f546de71b2df0fb0"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "China": {
+    "original_unconstrained_linear_utility_planner_unbounded": true,
+    "bounded_extension_margin": 0.08107693270735528,
+    "local_action_constancy_checked_at_radius": 1e-05,
+    "all_tested_neighbors_same_action": true,
+    "interpretation": "Stationary market implementation only; sampled planner transition implementation is not priced here"
+  },
+  "Germany": {
+    "original_unconstrained_linear_utility_planner_unbounded": true,
+    "bounded_extension_margin": 0.0761768270944742,
+    "local_action_constancy_checked_at_radius": 1e-05,
+    "all_tested_neighbors_same_action": true,
+    "interpretation": "Stationary market implementation only; sampled planner transition implementation is not priced here"
+  },
+  "Kenya": {
+    "original_unconstrained_linear_utility_planner_unbounded": true,
+    "bounded_extension_margin": 0.09146313465783666,
+    "local_action_constancy_checked_at_radius": 1e-05,
+    "all_tested_neighbors_same_action": true,
+    "interpretation": "Stationary market implementation only; sampled planner transition implementation is not priced here"
+  },
+  "time_unit_invariance": {
+    "max_invariant_metric_error": 3.9968028886505635e-15,
+    "welfare_scaling_error": 1.7763568394002505e-15,
+    "note": "Changing units rescales chi, rho, recovery and aid-recovery rates, H and delta together; changing delta alone changes the scenario"
+  },
+  "reference_held_rollout_max_relative_value_error": 5.8731793953548106e-05,
+  "sensitivity_held_rollout_max_relative_value_error": 0.0004446581418935,
+  "primary_results_files": [
+    "review-policy-comparisons.csv",
+    "review-stationary-equilibria.csv",
+    "held-optimal-paths.csv",
+    "held-initial-state-convergence.csv",
+    "refined-comparative-statics.csv"
+  ],
+  "superseded_diagnostics": [
+    "Interpolated-control planner rows in policy-comparisons.csv",
+    "Planner rows in stationary-equilibria.csv",
+    "Coarse interpolated-control comparative-statics.csv"
+  ]
+}

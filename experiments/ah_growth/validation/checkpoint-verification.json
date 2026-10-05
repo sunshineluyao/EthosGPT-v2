@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "checksummed_files": 167,
+  "checksum_failures": [],
+  "git_blob_matches": {
+    "main.tex": "2fcc4535af21398eef007800f52664c2730070cf",
+    "sections/appendix.tex": "147b16bff39cfabcebcb6ad47f4a71bd9d0675f2"
+  },
+  "rule_profiles_checked": 128,
+  "max_rule_table_difference": 1.7763568394002505e-15,
+  "max_static_dynamic_moment_difference": 1.1102230246251565e-16,
+  "max_pressure_product_identity_difference": 4.54009659728305e-17,
+  "path_rows_checked": 25245,
+  "maximum_labor_budget_excess": 0.0,
+  "max_held_need_step_error": 9.90960785651751e-17,
+  "max_held_log_growth_step_error": 2.8189256484623115e-16,
+  "max_upgrade_contrast_error": 2.3115190317390955e-16,
+  "matched_sensitivity_rows": 27,
+  "physical_checks": {
+    "China": {
+      "research_cap": 0.08198079947930792,
+      "chi_conditional": 2.8852895148669746,
+      "finite_value_margin": 0.08107693270735528,
+      "minimum_manufacturing_labor": 0.7740192005206921,
+      "drastic_innovation_margin": 0.026000000000000023
+    },
+    "Egypt": {
+      "research_cap": 0.05697382515312148,
+      "chi_conditional": 2.0888697647733765,
+      "finite_value_margin": 0.09047912794033278,
+      "minimum_manufacturing_labor": 0.7990261748468785,
+      "drastic_innovation_margin": 0.026000000000000023
+    },
+    "Germany": {
+      "research_cap": 0.09022954361328653,
+      "chi_conditional": 3.3003565062388533,
+      "finite_value_margin": 0.0761768270944742,
+      "minimum_manufacturing_labor": 0.7657704563867135,
+      "drastic_innovation_margin": 0.026000000000000023
+    }
+  },
+  "last_joint_refinement_G_change_percent": {
+    "China": -0.0028757547663627037,
+    "Egypt": 6.595983554529394,
+    "Germany": -0.005085082822309239
+  },
+  "max_matched_sweep_relative_value_error": 0.0003707929793212,
+  "worst_group_counterexample": {
+    "average_instantaneous_max": 1.0,
+    "max_group_average": 0.5
+  },
+  "analytic_core": {
+    "finite_core_scenario": {
+      "theta": 0.6,
+      "q": 0.8,
+      "chi": 0.09,
+      "rho": 0.1,
+      "capacity": 0.07,
+      "aid_labor": 0.04,
+      "lost_capacity": 0.18,
+      "entry": [
+        0.75,
+        0.38
+      ],
+      "recovery": [
+        0.12,
+        0.32
+      ],
+      "aid_recovery": [
+        1.2,
+        1.0
+      ],
+      "horizon": 20.0,
+      "omega": 0.3,
+      "initial": [
+        0.08,
+        0.08
+      ]
+    },
+    "core_market": {
+      "n": 0.040404040404040435,
+      "m": 0.9595959595959596,
+      "arrival": 0.003636363636363639,
+      "wage": 0.36598824480402253,
+      "profit": 0.23413389398237133,
+      "patent": 2.2591866963211267,
+      "g_log": 0.0021374060541895254,
+      "g_mean": 0.002909090909090911,
+      "entry_gap": 0.0
+    },
+    "core_planner": {
+      "n": 0.4166666666666666,
+      "value": 10.338369173669818
+    },
+    "independent_scalar_optimum": 0.4166666537498072,
+    "planner_control_error": 1.2916859359890509e-08,
+    "legacy_unconstrained_planner_correctly_rejected": true
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3"
+  },
+  "limits": [
+    "Saved Bellman values checked separately; this script is not a fresh full Bellman solve",
+    "No identification of country structural parameters or real-world upgrade effects",
+    "No continuous-control optimum or all-parameter global stability theorem"
+  ]
+}

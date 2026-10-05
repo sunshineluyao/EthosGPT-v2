@@ -1,0 +1,36 @@
+{
+  "status": "Node 1 source/design checks; country choice and normative model awaiting author confirmation; no new structural simulations released",
+  "countries": [
+    "China",
+    "Germany",
+    "Kenya"
+  ],
+  "country_selection": "Purposive contrasting regional and income contexts; not three representative cultures or a global representative sample",
+  "country_profiles": 9,
+  "old_result_rows": 640,
+  "old_numeric_fields_checked": 9600,
+  "maximum_archive_error": 2.7338131758369855e-11,
+  "errors_by_field": {
+    "innovation_support": 4.993783164763954e-13,
+    "transition_assistance": 4.9649173661237e-13,
+    "coordination": 4.902189765232379e-13,
+    "arrival_probability": 4.993228053251642e-13,
+    "annual_log_quality": 4.971370537454334e-14,
+    "unassisted_transition": 5.000166947155549e-13,
+    "delta_arrival_pp": 4.986233648196503e-12,
+    "delta_20step_log_quality_pp": 2.7338131758369855e-11,
+    "delta_unassisted_transitions_per_100": 6.5352168121535215e-12
+  },
+  "general_time_scale_bridge_error": 0.0,
+  "whole_process_parity_claimed": false,
+  "resource_conversion_scenarios": 27,
+  "explicit_open_gaps": [
+    "German full primary table needs successful retrieval/download before numerical release",
+    "Kenyan approximate R&D/GDP statement does not specify the statistical reference year; dated primary survey/table still needed",
+    "Common employment/FTE denominators are incomplete",
+    "No innovation-step size q, arrival rate chi, aid effect or welfare weight is identified by these source values",
+    "PWT 11.0 metadata verified, data-file access blocked; no TFP values extracted",
+    "Six archived item profiles do not identify comprehensive cultural types; within-country diversity and small archived cells must remain explicit"
+  ],
+  "input_sha256": "02de313c50665256e3f605276876d3686d2108fd9ad67c48058900fe9532dabf"
+}

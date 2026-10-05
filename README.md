@@ -232,3 +232,17 @@ Code and original vector assets use the [MIT License](LICENSE); source-data
 rights are recorded separately in [DATA_LICENSE.md](DATA_LICENSE.md). Use
 [`CITATION.cff`](CITATION.cff) for software citation. Result tables,
 archived outputs and figure masters remain directly inspectable here.
+
+## Structural innovation and transition extension (R3)
+
+The [structural-growth experiment](experiments/ah_growth/README.md) adds an explicit
+advice rule, monopoly research-entry dynamics, two illustrative transition-needs
+states, and a constrained welfare planner. The [rule guide](docs/structural_growth_guide.md)
+defines all equations and matched comparisons with intuitive examples. These are
+conditional mechanisms; country resource inputs do not make them national
+forecasts. The earlier coordination experiment remains separately reproducible.
+
+Run `make structural-check`, `make reproduce-structural`, or `make structural-figures`.
+The released value arrays can be independently checked with the streaming
+`verify_values.py` script. Full uncertainty propagation and empirical identification
+of the new economic mechanisms remain research tasks.

@@ -1,0 +1,101 @@
+{
+  "iconography_mode": "minimal-scientific",
+  "palette": {
+    "ink": "#18324A",
+    "surface": "#F5F7FB",
+    "primary": "#315EFB",
+    "secondary": "#128C80",
+    "status_accent": "#D97745",
+    "divider": "#CBD5E1"
+  },
+  "semantic_graphics": [
+    {
+      "concept": "Compatible market valuations",
+      "visual_encoding": "3D sheet with six convergent equilibrium paths",
+      "shape_ids": [
+        "valuation-sheet",
+        "panel-title"
+      ],
+      "origin": "original reproducible Python numerical graphics",
+      "evidence_implication": "Future pricing selects a compatible initial patent value; no physical potential."
+    },
+    {
+      "concept": "Controlled state transition",
+      "visual_encoding": "Phase arrows, computed paths and stationary star",
+      "shape_ids": [
+        "local-flow-speed",
+        "planner-state-star"
+      ],
+      "origin": "original reproducible Python numerical graphics",
+      "evidence_implication": "One conditional numerical convergence result, not a global proof."
+    },
+    {
+      "concept": "State-contingent optimal action",
+      "visual_encoding": "Surface height for research share, ordered face color for assistance",
+      "shape_ids": [
+        "research-policy-surface",
+        "panel-subtitle"
+      ],
+      "origin": "original reproducible Python numerical graphics",
+      "evidence_implication": "Computed finite-grid policy; facets are visualization only."
+    },
+    {
+      "concept": "Balanced growth",
+      "visual_encoding": "3D trajectories with a stationary-need reference ray",
+      "shape_ids": [
+        "balanced-growth-path-0",
+        "balanced-growth-reference-ray"
+      ],
+      "origin": "original reproducible Python numerical graphics",
+      "evidence_implication": "Normalized states stabilize while expected log-quality continues increasing."
+    },
+    {
+      "concept": "Version-upgrade propagation",
+      "visual_encoding": "Bias-change bars and two-axis outcome displacement",
+      "shape_ids": [
+        "upgrade-tvd-change-0",
+        "upgrade-effect-0"
+      ],
+      "origin": "original reproducible Python numerical graphics",
+      "evidence_implication": "Observed adviser bias change is distinct from conditional model consequences. No real-world causal effect."
+    }
+  ],
+  "composition_mechanism": "Admissible pricing sheet, feedback phase flow, action surface and balanced-growth rays show four different structures of the same conditional model.",
+  "grayscale_encoding": "Axes and geometry carry all variables. Solid paths, open starts, star endpoints, dashed reference ray are redundant cues. Numeric colorbar defines assistance in C.",
+  "evidence_status": "Numerical conditional-model results; author-facing style preview, interpretation not approved.",
+  "title_band": [
+    0.89,
+    0.97
+  ],
+  "viewport_band": [
+    0.26,
+    0.84
+  ],
+  "legend_band": [
+    0.16,
+    0.235
+  ],
+  "caption_band": [
+    0.055,
+    0.13
+  ],
+  "legend_revision": "r3: ordered E, A, C, B, D with result conclusions and a rate-versus-cumulative inset;  visible sample glyphs, unified blue computed paths, forward-time arrows, direct variable axis labels, panel-specific color scales, market/planner scope",
+  "legend_semantics": {
+    "blue_solid_arrow": "computed path, forward model time; not adviser-version identity",
+    "open_circle": "start at t=0",
+    "orange_star": "stationary normalized target in A-C",
+    "green_arrow": "instantaneous state-change direction in B",
+    "orange_dashed": "balanced-growth reference ray in D",
+    "background_B": "darker = faster state adjustment",
+    "surface_height_C": "research share n*",
+    "surface_color_C": "darker = stronger assistance a*"
+  },
+  "outputs": [
+    "/workspace/scratch/9853a5f2a9e0/EthosGPT-AH-Revision/figure_sources/ah_growth/country_revision_results/systems/system-preview.pdf",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_System_E_Upgrade_Bias_Impacts.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_System_A_Market_Valuation_Sheet.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_System_C_Optimal_Control_Surface.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_System_B_Controlled_Phase_Flow.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_System_D_Balanced_Growth_Rays.svg"
+  ]
+}

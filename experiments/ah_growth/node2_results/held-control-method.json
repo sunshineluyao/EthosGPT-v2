@@ -1,0 +1,10 @@
+{
+  "primary_policy": "Re-optimize the discrete Bellman action at the actual state; hold it for dt; integrate physical states exactly and rewards with 7-point quadrature",
+  "purpose": "Avoid artificial attractors introduced by bilinear interpolation of discontinuous control maps",
+  "limitations": [
+    "Finite state/action grids and held-decision time interval remain approximations",
+    "Small action switching bands are reported as bands rather than a falsely exact stationary point",
+    "Off-grid Bellman value interpolation remains and convergence must be inspected",
+    "State-dependent market implementation was priced for the interpolated feedback, not this newly diagnosed held-control policy"
+  ]
+}

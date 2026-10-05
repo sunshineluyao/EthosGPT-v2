@@ -1,0 +1,24 @@
+{
+  "status": "Focal conditional upgrade comparison; author interpretation pending",
+  "full_country_rules": 64,
+  "country_market_cases": 4,
+  "benchmark": "Same-country Human survey rule under the identical physical economy and initial state",
+  "effects": "GPT-5.6 result minus GPT-5.5 result, with each rule implemented through its derived tax/subsidy and aid",
+  "error_change": "Absolute GPT-5.6 deviation from the human rule minus absolute GPT-5.5 deviation; positive means farther from the human-rule baseline",
+  "held_fixed": [
+    "country resource input and physical parameters",
+    "initial u=(0.08,0.08)",
+    "horizon H=100",
+    "general six-item mapping",
+    "market institution"
+  ],
+  "item_metric": "Retain archived TVD and W1, averaging six items equally per country. Directed-score MAE is an auxiliary diagnostic; it is not TVD.",
+  "non_claims": [
+    "No real-world causal upgrade effect identified",
+    "Human rule is a reference, not proven socially optimal policy",
+    "Lower model need level is not automatically closer to local human preferences",
+    "Planner is a separate normative benchmark, not an upgrade treatment",
+    "Egypt is proposed; Kenya remains undated; all numerical country results are conditional"
+  ],
+  "next_integration": "Organize Section 7 around upgrade-to-bias-to-control-to-growth/needs propagation. Keep planner comparison secondary."
+}

@@ -42,7 +42,7 @@ release-smoke:
 	$(PYTHON) scripts/reproduce_dynamics.py --check
 
 lint:
-	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country experiments/dynamic_growth tests
+	$(PYTHON) -m compileall -q src scripts experiments/gpt55_gpt56_64country experiments/dynamic_growth experiments/ah_growth tests
 
 test:
 	$(PYTHON) -m pytest -q tests
@@ -57,7 +57,7 @@ verify:
 audit-visual:
 	$(PYTHON) scripts/audit_visual_assets.py
 
-release-contract: lint release-smoke verify audit-visual negative-tests mechanisms
+release-contract: lint release-smoke verify audit-visual negative-tests mechanisms structural-check
 
 reproduce-offline:
 	$(PYTHON) scripts/reproduce_offline.py
@@ -70,3 +70,11 @@ reproduce-dynamics:
 
 dynamic-figures:
 	$(PYTHON) scripts/reproduce_dynamics.py --figures-only
+
+.PHONY: structural-check reproduce-structural structural-figures
+structural-check:
+	$(PYTHON) experiments/ah_growth/verify_results.py
+reproduce-structural:
+	$(PYTHON) experiments/ah_growth/reproduce.py --refresh-metrics
+structural-figures:
+	$(PYTHON) experiments/ah_growth/publication_figures.py

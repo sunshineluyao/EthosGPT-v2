@@ -1,0 +1,98 @@
+{
+  "iconography_mode": "minimal-scientific",
+  "palette": {
+    "ink": "#18324A",
+    "surface": "#F5F7FB",
+    "primary": "#315EFB",
+    "secondary": "#128C80",
+    "status_accent": "#D97745",
+    "divider": "#CBD5E1"
+  },
+  "semantic_graphics": [
+    {
+      "concept": "Advice comparison",
+      "visual_encoding": "Three time-series sharing the same physical economy",
+      "shape_ids": [
+        "advice-0-GPT-5.5-0",
+        "advice-0-GPT-5.6-0",
+        "figure-1-title"
+      ],
+      "origin": "Original reproducible Python figures",
+      "evidence_implication": "Conditional upgrade comparison, not real-world causality"
+    },
+    {
+      "concept": "Initial conditions",
+      "visual_encoding": "Computed state trajectories with start circles, time arrows and endpoint stars",
+      "shape_ids": [
+        "initial-path-0-0-0",
+        "figure-2-title"
+      ],
+      "origin": "Original reproducible Python figures",
+      "evidence_implication": "Six tested starts, not a global stability theorem"
+    },
+    {
+      "concept": "Research and aid",
+      "visual_encoding": "Separate research-share and assistance-index trajectories",
+      "shape_ids": [
+        "research-0-GPT-5.5",
+        "assistance-0-GPT-5.6",
+        "figure-3-title"
+      ],
+      "origin": "Original reproducible Python figures",
+      "evidence_implication": "Adviser rules versus normative planner"
+    },
+    {
+      "concept": "Normative tradeoff",
+      "visual_encoding": "Output-needs coordinates and numeric table",
+      "shape_ids": [
+        "weight-response-0",
+        "figure-4-title"
+      ],
+      "origin": "Original reproducible Python figures",
+      "evidence_implication": "A weight scan, not a Pareto-frontier theorem"
+    },
+    {
+      "concept": "Innovation size",
+      "visual_encoding": "Two responses to quality jumps and numeric table",
+      "shape_ids": [
+        "innovation-gain-0",
+        "innovation-needs-0",
+        "figure-5-title"
+      ],
+      "origin": "Original reproducible Python figures",
+      "evidence_implication": "Fixed-economy reoptimized planner sensitivity"
+    },
+    {
+      "concept": "Numerical verification",
+      "visual_encoding": "Value discrepancy and relative path change with settings table",
+      "shape_ids": [
+        "value-check-0",
+        "gain-check-0",
+        "figure-6-title"
+      ],
+      "origin": "Original reproducible Python figures",
+      "evidence_implication": "Joint refinement, not known exact-solution error"
+    }
+  ],
+  "composition_mechanism": "Advice comparison is primary; physical mechanism and normative sensitivity are secondary; numerical checks are separate.",
+  "evidence_status": "Conditional computed review; interpretation pending",
+  "countries": [
+    "China",
+    "Germany",
+    "Egypt"
+  ],
+  "grayscale_encoding": "Adviser line styles, omega marker shapes, direct numerical tables, labeled axes and open starts versus stars preserve meaning without color.",
+  "outputs": [
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_01_Advice_Growth.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_02_Initial_States.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_03_Research_Assistance.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_04_Output_Needs_Values.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_05_Innovation_Values.svg",
+    "/workspace/scratch/9853a5f2a9e0/output/EthosGPT_R3_06_Numerical_Values.svg"
+  ],
+  "source_hashes": {
+    "country-paths.csv": "d90db7d46913bc9f8d14ff4484ee54c040383bd52695db013f19de666a5ce1e6",
+    "matched-sensitivity.csv": "1c55c374390ec3b92bbdbc095457fda36ac6f76abd901e532154c0296c0dfaba",
+    "country-refinement.csv": "86b9fb4d97a7dac5df6589a1b836cdf5d2f765e4e88f11e8cec9416728a6ba87"
+  }
+}

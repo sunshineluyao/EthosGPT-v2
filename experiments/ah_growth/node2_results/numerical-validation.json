@@ -1,0 +1,640 @@
+{
+  "analytic_core": {
+    "finite_core_scenario": {
+      "theta": 0.6,
+      "q": 0.8,
+      "chi": 0.09,
+      "rho": 0.1,
+      "capacity": 0.07,
+      "aid_labor": 0.04,
+      "lost_capacity": 0.18,
+      "entry": [
+        0.75,
+        0.38
+      ],
+      "recovery": [
+        0.12,
+        0.32
+      ],
+      "aid_recovery": [
+        1.2,
+        1.0
+      ],
+      "horizon": 20.0,
+      "omega": 0.3,
+      "initial": [
+        0.08,
+        0.08
+      ]
+    },
+    "core_market": {
+      "n": 0.040404040404040435,
+      "m": 0.9595959595959596,
+      "arrival": 0.003636363636363639,
+      "wage": 0.36598824480402253,
+      "profit": 0.23413389398237133,
+      "patent": 2.2591866963211267,
+      "g_log": 0.0021374060541895254,
+      "g_mean": 0.002909090909090911,
+      "entry_gap": 0.0
+    },
+    "core_planner": {
+      "n": 0.4166666666666666,
+      "value": 10.338369173669818
+    },
+    "independent_scalar_optimum": 0.4166666537498072,
+    "planner_control_error": 1.2916859359890509e-08,
+    "legacy_unconstrained_planner_correctly_rejected": true
+  },
+  "scope": "Node 2 conditional numerical review; approved manuscript untouched",
+  "candidate_source_sha256": {
+    "model.py": "9badee1052a49c27ecbaa3e8d68cadd56165e2cd6c7471c880bc482c56459d36",
+    "control.py": "20939f334227296f32b3206c263e881229cfbf60d674ee685566892b2ee716ca",
+    "node2.py": "97bdb9d648fa8f9310577c60da8301b40e4078e13796175987aae79e08876477",
+    "country_design.py": "ba87560601c57e534b656dce69aa999e1cc6de0d85c3ed63494dac7a3f914f43"
+  },
+  "planner_asset_pricing": {
+    "China": {
+      "discrete_asset_pricing_residual": 1.6653345369377348e-16,
+      "interpretation": "Patent value along planner controls; a state-dependent subsidy is a new implementing institution, not original Aghion--Howitt policy"
+    },
+    "Germany": {
+      "discrete_asset_pricing_residual": 1.3877787807814457e-16,
+      "interpretation": "Patent value along planner controls; a state-dependent subsidy is a new implementing institution, not original Aghion--Howitt policy"
+    },
+    "Kenya": {
+      "discrete_asset_pricing_residual": 3.3306690738754696e-16,
+      "interpretation": "Patent value along planner controls; a state-dependent subsidy is a new implementing institution, not original Aghion--Howitt policy"
+    }
+  },
+  "feedback_fixed_points": {
+    "China": [
+      {
+        "u_A": 0.0565374216532413,
+        "u_B": 0.026968455742160335,
+        "n": 0.058006648481992995,
+        "a": 0.5993537749328732,
+        "flow_residual": 4.713451501690637e-15,
+        "eigenvalues": [
+          -0.9448345023940415,
+          -1.9844718524994474
+        ],
+        "jacobian_step_change": 1.6237011735142914e-10,
+        "locally_stable": true,
+        "g_log": 0.012880659660417062,
+        "g_mean": 0.013389277972613496
+      }
+    ],
+    "Germany": [
+      {
+        "u_A": 0.06625243774804733,
+        "u_B": 0.0319946261267027,
+        "n": 0.06539588524688021,
+        "a": 0.6208414591601576,
+        "flow_residual": 3.469446951953614e-18,
+        "eigenvalues": [
+          -1.81206627241518,
+          -0.9719382604210253
+        ],
+        "jacobian_step_change": 7.771561172376096e-11,
+        "locally_stable": true,
+        "g_log": 0.0166104811411167,
+        "g_mean": 0.017266378828463245
+      }
+    ],
+    "Kenya": [
+      {
+        "u_A": 0.0,
+        "u_B": 0.0,
+        "n": 0.0,
+        "a": 0.0,
+        "flow_residual": 0.0,
+        "eigenvalues": [
+          -0.12000000000000001,
+          -0.32
+        ],
+        "jacobian_step_change": 0.0,
+        "locally_stable": true,
+        "g_log": 0.0,
+        "g_mean": 0.0
+      }
+    ]
+  },
+  "continuous_policy_validation": {
+    "China": {
+      "discrete_value": 10.35281404289958,
+      "continuous_feedback_value_plus_tail": 10.35275133202216,
+      "absolute_error": 6.271087741893666e-05,
+      "relative_error": 6.057375043999613e-06,
+      "tail": 0.0017944605403593923,
+      "note": "The ODE uses interpolated feedback; residual measures agreement with a step-held-control Bellman scheme, not an exact continuous HJB proof"
+    },
+    "Germany": {
+      "discrete_value": 10.697233371095498,
+      "continuous_feedback_value_plus_tail": 10.69712690057178,
+      "absolute_error": 0.00010647052371837162,
+      "relative_error": 9.953089740610821e-06,
+      "tail": 0.002731688752249236,
+      "note": "The ODE uses interpolated feedback; residual measures agreement with a step-held-control Bellman scheme, not an exact continuous HJB proof"
+    },
+    "Kenya": {
+      "discrete_value": 9.916893906237336,
+      "continuous_feedback_value_plus_tail": 9.891395318883504,
+      "absolute_error": 0.025498587353832036,
+      "relative_error": 0.0025712272002622605,
+      "tail": 0.0004575229380887493,
+      "note": "The ODE uses interpolated feedback; residual measures agreement with a step-held-control Bellman scheme, not an exact continuous HJB proof"
+    }
+  },
+  "market_terminal_horizon": {
+    "China": {
+      "H100_vs_H150_max_path_error": 1.669753221106296e-09
+    },
+    "Germany": {
+      "H100_vs_H150_max_path_error": 1.8082681740860806e-09
+    },
+    "Kenya": {
+      "H100_vs_H150_max_path_error": 1.997020906280289e-09
+    }
+  },
+  "market_path_validation": [
+    {
+      "country": "China",
+      "source": "Human survey",
+      "initial": [
+        0.0,
+        0.0
+      ],
+      "bvp_max_residual": 9.992071288922818e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.016969886006451995,
+      "maximum_budget_violation": -0.04399347623997863
+    },
+    {
+      "country": "China",
+      "source": "Human survey",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.962015892036888e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.016237768879218017,
+      "maximum_budget_violation": -0.04418652754245712
+    },
+    {
+      "country": "China",
+      "source": "Human survey",
+      "initial": [
+        0.3,
+        0.05
+      ],
+      "bvp_max_residual": 9.947527819585603e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.015148774583414903,
+      "maximum_budget_violation": -0.04418652754245712
+    },
+    {
+      "country": "China",
+      "source": "Human survey",
+      "initial": [
+        0.05,
+        0.3
+      ],
+      "bvp_max_residual": 9.940407185425672e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.015116500617101902,
+      "maximum_budget_violation": -0.04418652754245712
+    },
+    {
+      "country": "China",
+      "source": "Human survey",
+      "initial": [
+        0.45,
+        0.35
+      ],
+      "bvp_max_residual": 9.929470401583469e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.012491939702981347,
+      "maximum_budget_violation": -0.04418652754245712
+    },
+    {
+      "country": "China",
+      "source": "Human survey",
+      "initial": [
+        0.8,
+        0.8
+      ],
+      "bvp_max_residual": 9.819304647001591e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.0076598598408855745,
+      "maximum_budget_violation": -0.04418652754245712
+    },
+    {
+      "country": "China",
+      "source": "GPT-5.5",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.889129979524789e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.015428538273106418,
+      "maximum_budget_violation": -0.046328969463552014
+    },
+    {
+      "country": "China",
+      "source": "GPT-5.6 Sol",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.976798427453836e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.015305482407426796,
+      "maximum_budget_violation": -0.046389195277596114
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "initial": [
+        0.0,
+        0.0
+      ],
+      "bvp_max_residual": 9.870694210912517e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.013894338602192913,
+      "maximum_budget_violation": -0.056032004386088755
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.937254387768838e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.013263645547284875,
+      "maximum_budget_violation": -0.05619727397372816
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "initial": [
+        0.3,
+        0.05
+      ],
+      "bvp_max_residual": 9.884676904638137e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.012327713397839668,
+      "maximum_budget_violation": -0.05619727397372816
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "initial": [
+        0.05,
+        0.3
+      ],
+      "bvp_max_residual": 9.98448483907291e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.012297846129432077,
+      "maximum_budget_violation": -0.05619727397372816
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "initial": [
+        0.45,
+        0.35
+      ],
+      "bvp_max_residual": 9.937533739715753e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.010040781595701542,
+      "maximum_budget_violation": -0.05619727397372816
+    },
+    {
+      "country": "Germany",
+      "source": "Human survey",
+      "initial": [
+        0.8,
+        0.8
+      ],
+      "bvp_max_residual": 9.987137976871279e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.005880509749364493,
+      "maximum_budget_violation": -0.05619727397372816
+    },
+    {
+      "country": "Germany",
+      "source": "GPT-5.5",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.970389167634551e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.012677573467209213,
+      "maximum_budget_violation": -0.05633177009553895
+    },
+    {
+      "country": "Germany",
+      "source": "GPT-5.6 Sol",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.983747182034354e-09,
+      "free_entry_or_corner_error": 2.220446049250313e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 5.551115123125783e-17,
+      "minimum_research": 0.01259938695129581,
+      "maximum_budget_violation": -0.056319054747690694
+    },
+    {
+      "country": "Kenya",
+      "source": "Human survey",
+      "initial": [
+        0.0,
+        0.0
+      ],
+      "bvp_max_residual": 9.84689797938678e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.020380274772574425,
+      "maximum_budget_violation": -0.0126961897339231
+    },
+    {
+      "country": "Kenya",
+      "source": "Human survey",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.99374455957994e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.01937650337708774,
+      "maximum_budget_violation": -0.01293064673684334
+    },
+    {
+      "country": "Kenya",
+      "source": "Human survey",
+      "initial": [
+        0.3,
+        0.05
+      ],
+      "bvp_max_residual": 9.97613580778178e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.017921335563736207,
+      "maximum_budget_violation": -0.012930646736836679
+    },
+    {
+      "country": "Kenya",
+      "source": "Human survey",
+      "initial": [
+        0.05,
+        0.3
+      ],
+      "bvp_max_residual": 9.975242686176617e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.01787410063876138,
+      "maximum_budget_violation": -0.0129306467368379
+    },
+    {
+      "country": "Kenya",
+      "source": "Human survey",
+      "initial": [
+        0.45,
+        0.35
+      ],
+      "bvp_max_residual": 9.900323800006244e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.01436650023359931,
+      "maximum_budget_violation": -0.012930646736840232
+    },
+    {
+      "country": "Kenya",
+      "source": "Human survey",
+      "initial": [
+        0.8,
+        0.8
+      ],
+      "bvp_max_residual": 9.960897124027735e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.00790927664422214,
+      "maximum_budget_violation": -0.012930646736839677
+    },
+    {
+      "country": "Kenya",
+      "source": "GPT-5.5",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.955208763920551e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.0202432106913365,
+      "maximum_budget_violation": -0.012202869932111268
+    },
+    {
+      "country": "Kenya",
+      "source": "GPT-5.6 Sol",
+      "initial": [
+        0.08,
+        0.08
+      ],
+      "bvp_max_residual": 9.947169405506251e-09,
+      "free_entry_or_corner_error": 1.1102230246251565e-16,
+      "initial_state_error": 0.0,
+      "terminal_patent_error": 0.0,
+      "minimum_research": 0.020312967951287342,
+      "maximum_budget_violation": -0.013577779856895442
+    }
+  ],
+  "approved_manuscript_preserved": {
+    "main.tex": true,
+    "sections/appendix.tex": true
+  },
+  "round_rule": {
+    "innovation_intercept": 0.5,
+    "innovation_loading": 0.3,
+    "aid_intercept": 0.5,
+    "aid_loading": 0.3,
+    "cooperation_intercept": 0.5,
+    "cooperation_loading": 0.3,
+    "arrival_base": 0.05,
+    "arrival_innovation": 0.2,
+    "arrival_cooperation": 0.1,
+    "quality_jump": 0.08,
+    "rounds": 20.0,
+    "round_duration": 5.0
+  },
+  "reference_parameter_ledger": [
+    {
+      "country": "China",
+      "RD_GDP": 0.0258,
+      "xi_assumed": 0.75,
+      "n_ref": 0.020990399739653956,
+      "chi_conditionally_matched": 2.8852895148669746,
+      "headroom_multiplier_assumed": 2.0,
+      "source_status": "dated revised observation",
+      "reference_period": "2023",
+      "status": "conditional resource match under assumed q, theta, xi, rho; not an independent estimate",
+      "theta": 0.95,
+      "q": 0.08,
+      "chi": 2.8852895148669746,
+      "rho": 0.1,
+      "capacity": 0.08198079947930792,
+      "aid_labor": 0.04,
+      "lost_capacity": 0.18,
+      "entry": [
+        0.75,
+        0.38
+      ],
+      "recovery": [
+        0.12,
+        0.32
+      ],
+      "aid_recovery": [
+        1.2,
+        1.0
+      ],
+      "horizon": 100.0,
+      "omega": 0.3
+    },
+    {
+      "country": "Germany",
+      "RD_GDP": 0.031,
+      "xi_assumed": 0.75,
+      "n_ref": 0.025114771806643264,
+      "chi_conditionally_matched": 3.3003565062388533,
+      "headroom_multiplier_assumed": 2.0,
+      "source_status": "dated rounded observation",
+      "reference_period": "2023",
+      "status": "conditional resource match under assumed q, theta, xi, rho; not an independent estimate",
+      "theta": 0.95,
+      "q": 0.08,
+      "chi": 3.3003565062388533,
+      "rho": 0.1,
+      "capacity": 0.09022954361328653,
+      "aid_labor": 0.04,
+      "lost_capacity": 0.18,
+      "entry": [
+        0.75,
+        0.38
+      ],
+      "recovery": [
+        0.12,
+        0.32
+      ],
+      "aid_recovery": [
+        1.2,
+        1.0
+      ],
+      "horizon": 100.0,
+      "omega": 0.3
+    },
+    {
+      "country": "Kenya",
+      "RD_GDP": 0.008,
+      "xi_assumed": 0.75,
+      "n_ref": 0.0066042927903137046,
+      "chi_conditionally_matched": 2.005518763796907,
+      "headroom_multiplier_assumed": 2.0,
+      "source_status": "undated approximate official benchmark",
+      "reference_period": "unspecified",
+      "status": "conditional resource match under assumed q, theta, xi, rho; not an independent estimate",
+      "theta": 0.95,
+      "q": 0.08,
+      "chi": 2.005518763796907,
+      "rho": 0.1,
+      "capacity": 0.05320858558062741,
+      "aid_labor": 0.04,
+      "lost_capacity": 0.18,
+      "entry": [
+        0.75,
+        0.38
+      ],
+      "recovery": [
+        0.12,
+        0.32
+      ],
+      "aid_recovery": [
+        1.2,
+        1.0
+      ],
+      "horizon": 100.0,
+      "omega": 0.3
+    }
+  ],
+  "evidence_ceiling": "Conditional mechanisms and numerically solved scenarios; no country forecast, causality, comprehensive cultural measurement, or data-identified innovation/aid/justice parameters",
+  "non_claims": [
+    "No universal empirical q=4% or 8%",
+    "Model time units are not calendar years; delta=5 is an assumed normalization",
+    "GERD/GDP is not observed research labor or the policy capacity budget",
+    "A one-moment match does not independently validate chi or the model",
+    "Fluid transition-need states are not measured unemployment or full inequality",
+    "Purposive countries do not represent whole cultures",
+    "Low Bellman residual is not continuous-control global optimality or a uniqueness theorem",
+    "Multiple initial trajectories approaching one root do not prove global stability",
+    "Full original unconstrained planner can be unbounded under otherwise plausible assumptions"
+  ],
+  "open_method_gaps": [
+    "Kenyan approximate R&D/GDP statement lacks statistical reference year and Frascati scope; UNESCO 2021 annex has missing Kenya R&D observations for 2015--2018",
+    "q, theta, wage fraction, time scale, assistance/recovery effects and capacity headroom need independent evidence",
+    "Two hypothetical groups are not independently estimated population groups",
+    "Grid feedback and asset-pricing implementation remain a numerical approximation with corner policy issues",
+    "No independently qualified growth economist has reviewed this candidate"
+  ],
+  "runtime_seconds": 289.0931763648987,
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3"
+  }
+}

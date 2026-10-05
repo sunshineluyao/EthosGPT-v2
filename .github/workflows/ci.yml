@@ -10,3 +10,4 @@ jobs:
       - run: pip install -r requirements.lock.txt
       - run: make reproduce-offline
       - run: make release-contract
+      - run: make reproduce-structural

@@ -1,0 +1,22 @@
+{
+  "G": 0.0023242374281809597,
+  "g_log": 2.3242374281809598e-05,
+  "mean_quality": 1.0023961536339208,
+  "Ubar": 0.0015069168788725163,
+  "Umax": 0.001978791445857792,
+  "final_u_A": 1.2742617695523936e-07,
+  "final_u_B": 3.2891620740383423e-16,
+  "welfare_to_T": 9.911511805189356,
+  "average_output": 1.0015137044243805,
+  "value_initial": 9.910902549234892,
+  "rollout_value_plus_tail": 9.911966892328886,
+  "rollout_relative_value_error": 0.00010739113705393599,
+  "terminal_n_min": 0.0,
+  "terminal_n_max": 0.0,
+  "terminal_a_min": 0.0,
+  "terminal_a_max": 0.0,
+  "late_u_A_min": 1.2742617695523936e-07,
+  "late_u_A_max": 1.404641224088454e-06,
+  "late_u_B_min": 3.2891620740383423e-16,
+  "late_u_B_max": 1.979565873017032e-13
+}

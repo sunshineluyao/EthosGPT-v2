@@ -1,0 +1,212 @@
+{
+  "iconography_mode": "minimal-scientific",
+  "palette": {
+    "ink": "#18324A",
+    "primary": "#315EFB",
+    "secondary": "#128C80",
+    "status_accent": "#D97745",
+    "surface": "#FFFFFF",
+    "divider": "#CBD5E1"
+  },
+  "data_sources": [
+    "country-paths.csv",
+    "matched-sensitivity.csv",
+    "country-refinement.csv",
+    "three-country-upgrade-comparison.csv"
+  ],
+  "figures": [
+    {
+      "name": "fig_r3_advice_paths",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "b1fa35ca1aefbe7c25251d2be162266197edd2d435d8cc092007b6e453e927f5"
+    },
+    {
+      "name": "fig_r3_initial_states",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "9f7ef3529f0f9a505f10d4a0e3e8b68bff7449f21155535b3a0fe90e43500406"
+    },
+    {
+      "name": "fig_r3_controls",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "450d1c4f7b086c238999f0cc444cfd3eb9b5cf8772094fda2859700326e1b829"
+    },
+    {
+      "name": "fig_r3_welfare_weights",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "99ae46c2ca012c4504e7aff70fba8b9b63f0762dea1359aebd8de2cb405a2f0b"
+    },
+    {
+      "name": "fig_r3_innovation_sizes",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "1db8d404810062c83683a8cb90283779622b4eaa353e3cd7a48ae14a587c0d05"
+    },
+    {
+      "name": "fig_r3_refinement",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "0955111b4365d9c9b5ef0ced793bf76a22e3004080be8c321be59b6c83b1423b"
+    },
+    {
+      "name": "fig_r3_action_fields",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "d3d3848d68d05b5d6944ed25560cbf98b3dedc4bdca108f014be182656fbda3c"
+    },
+    {
+      "name": "fig_r3_system_summary",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "8bb211c2916240649bc786b61f854c1624db2d1e536f54f10e86876569778f24"
+    },
+    {
+      "name": "fig_r3_upgrade_comparisons",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "19edee1773e8817af1f89643297ca0171153572c2ea7ea2cef18d4b08e3cd674"
+    },
+    {
+      "name": "fig_r3_market_valuation",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "d8fe687c37b22037ce6b649fce4cb130412d6be56b681ddc487915ad335e3dc0"
+    },
+    {
+      "name": "fig_r3_phase_growth",
+      "width_inches": 7,
+      "evidence": "conditional synthetic model result",
+      "svg_sha256": "acc332655834f55879a302bc070ed1e3cad9d14ee18612cab8c71ae349bd96df"
+    }
+  ],
+  "minimum_design_font_points": 7.5,
+  "width_inches": 7,
+  "semantic_graphics": [
+    {
+      "concept": "advice paths",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_advice_paths-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_advice_paths.svg"
+    },
+    {
+      "concept": "initial states",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_initial_states-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_initial_states.svg"
+    },
+    {
+      "concept": "controls",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_controls-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_controls.svg"
+    },
+    {
+      "concept": "welfare weights",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_welfare_weights-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_welfare_weights.svg"
+    },
+    {
+      "concept": "innovation sizes",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_innovation_sizes-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_innovation_sizes.svg"
+    },
+    {
+      "concept": "refinement",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_refinement-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_refinement.svg"
+    },
+    {
+      "concept": "action fields",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_action_fields-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_action_fields.svg"
+    },
+    {
+      "concept": "system summary",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_system_summary-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_system_summary.svg"
+    },
+    {
+      "concept": "upgrade comparisons",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_upgrade_comparisons-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_upgrade_comparisons.svg"
+    },
+    {
+      "concept": "market valuation",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_market_valuation-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_market_valuation.svg"
+    },
+    {
+      "concept": "phase growth",
+      "visual_encoding": "numeric curves, sampled state fields, or policy-coordinate symbols with explicit axes",
+      "shape_ids": [
+        "figure_1",
+        "fig_r3_phase_growth-text-0"
+      ],
+      "origin": "original vector plots from the released conditional synthetic tables",
+      "evidence_implication": "computed conditional mechanism; neither a measured national outcome nor a general theorem",
+      "asset": "fig_r3_phase_growth.svg"
+    }
+  ],
+  "composition_mechanism": "Matched country columns and separate institution/metric panels; empirical hero panels retain their original evidence.",
+  "grayscale_encoding": "Advice uses distinct line styles; country upgrade uses circle/square/diamond markers; numeric axes and panel labels distinguish fields."
+}
